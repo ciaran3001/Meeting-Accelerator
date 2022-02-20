@@ -569,6 +569,25 @@ Screen1 As screen:
                     Y: =141
                     ZIndex: =10
 
+            Image1_1 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =undraw_calendar_re_ki49
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                X: =16
+                Y: =12
+                ZIndex: =3
+
     Btn_LoadData As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
