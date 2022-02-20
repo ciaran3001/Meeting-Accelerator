@@ -215,22 +215,22 @@ Screen1 As screen:
 
                 Title1 As Label:
                     DisplayMode: =DisplayMode.Edit
-                    FontSize: =15
+                    FontSize: =14
                     FontWeight: =FontWeight.Semibold
-                    Height: =37
+                    Height: =32
                     OnSelect: =Select(Parent)
                     PCFTeamsTheme: =TeamsTheme.Default
                     TabIndex: =-1
                     Text: =ThisItem.subject
-                    VerticalAlignment: =VerticalAlign.Top
+                    VerticalAlignment: =VerticalAlign.Middle
                     Width: =333
                     X: =100
-                    Y: =20
+                    Y: =13
                     ZIndex: =3
 
                 Subtitle1 As Label:
                     DisplayMode: =DisplayMode.Edit
-                    FontSize: =12
+                    FontSize: =11
                     FontWeight: =FontWeight.Normal
                     Height: =30
                     OnSelect: =Select(Parent)
@@ -249,7 +249,7 @@ Screen1 As screen:
                     BorderThickness: =2
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledFill: =RGBA(0, 0, 0, 0)
-                    Height: =64
+                    Height: =34
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Image: ='Meeting Icon'
@@ -259,10 +259,37 @@ Screen1 As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
-                    Width: =70
-                    X: =12
-                    Y: =24
+                    Width: =37
+                    X: =433
+                    Y: =67
                     ZIndex: =5
+
+                Label4 As Label:
+                    Alignment: =Align.Right
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =14
+                    FontWeight: =FontWeight.Semibold
+                    Height: =32
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: |-
+                        =Text(DateTimeValue(ThisItem.start), "hh:mm") & "pm"
+                    Width: =70
+                    X: =10
+                    Y: =13
+                    ZIndex: =6
+
+                Label4_1 As Label:
+                    Alignment: =Align.Right
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =10
+                    FontWeight: =FontWeight.Semibold
+                    Height: =24
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: =DateDiff(ThisItem.start, ThisItem.end,Minutes) & " min"
+                    Width: =70
+                    X: =10
+                    Y: =40
+                    ZIndex: =7
 
         Container2_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =App.Height
