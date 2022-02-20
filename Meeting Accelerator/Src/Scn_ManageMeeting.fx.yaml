@@ -16,7 +16,7 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingBottom: =10
+            PaddingBottom: =20
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
@@ -37,6 +37,15 @@
                 Y: =0
                 ZIndex: =1
 
+            Container8 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =30
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =2
+
             Label6_1 As Label:
                 AlignInContainer: =AlignInContainer.Stretch
                 Alignment: =Align.Justify
@@ -46,29 +55,23 @@
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =320
-                Text: ="Organised by" & SelectedMeeting.organizer
+                Text: ="Organised by " & Lower(SelectedMeeting.organizer)
                 Width: =320
                 X: =0
                 Y: =0
-                ZIndex: =2
-
-            HtmlText2 As htmlViewer:
-                AlignInContainer: =AlignInContainer.Stretch
-                Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =1
-                HtmlText: =SelectedMeeting.body
                 ZIndex: =3
 
             Label6_2 As Label:
                 AlignInContainer: =AlignInContainer.Stretch
-                Alignment: =Align.Center
+                Alignment: =Align.Justify
                 DisplayMode: =DisplayMode.Edit
-                FontSize: =15
-                FontWeight: =FontWeight.Semibold
+                FontSize: =13
+                FontWeight: =FontWeight.Normal
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =320
-                Text: =SelectedMeeting.start & " to " & SelectedMeeting.end
+                Text: |-
+                    =Text(DateTimeValue(SelectedMeeting.start), "hh:mm") & " to " & Text(DateTimeValue(SelectedMeeting.end), "hh:mm") & " ("& DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " mins)"
                 Width: =320
                 X: =0
                 Y: =0
@@ -76,32 +79,25 @@
 
             Label6_3 As Label:
                 AlignInContainer: =AlignInContainer.Stretch
-                Alignment: =Align.Center
+                Alignment: =Align.Justify
                 DisplayMode: =DisplayMode.Edit
-                FontSize: =15
-                FontWeight: =FontWeight.Semibold
+                FontSize: =12
+                FontWeight: =FontWeight.Normal
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =320
-                Text: ="Meeting Info"
+                Text: |-
+                    ="Attendees: " & SelectedMeeting.requiredAttendees
                 Width: =320
                 X: =0
                 Y: =0
                 ZIndex: =5
 
-            Label6_4 As Label:
+            HtmlText2 As htmlViewer:
                 AlignInContainer: =AlignInContainer.Stretch
-                Alignment: =Align.Center
-                DisplayMode: =DisplayMode.Edit
-                FontSize: =15
-                FontWeight: =FontWeight.Semibold
-                Height: =32
-                LayoutMinHeight: =32
-                LayoutMinWidth: =320
-                Text: ="Meeting Info"
-                Width: =320
-                X: =0
-                Y: =0
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                HtmlText: =SelectedMeeting.body
                 ZIndex: =6
 
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
@@ -149,6 +145,7 @@
                     ZIndex: =1
 
             MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250

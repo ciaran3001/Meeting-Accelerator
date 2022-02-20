@@ -597,7 +597,7 @@ Scn_HomeScreen As screen:
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#EE8C1D"), -20%)
-                    OnSelect: =Launch(SelectedMeeting.webLink);
+                    OnSelect: =Navigate(Scn_ManageMeeting, ScreenTransition.Fade);
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: |-
                         =ColorFade(ColorValue("#EE8C1D"), -20%)
