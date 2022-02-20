@@ -26,7 +26,7 @@ Screen1 As screen:
             Width: =App.Width
             ZIndex: =1
 
-            Container1 As groupContainer.horizontalAutoLayoutContainer:
+            Ctn_MeetingTabs As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =50
@@ -37,6 +37,7 @@ Screen1 As screen:
                 ZIndex: =1
 
                 Container3 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =50
                     LayoutMinWidth: =100
@@ -80,6 +81,7 @@ Screen1 As screen:
                         ZIndex: =2
 
                 Container3_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =50
                     LayoutMinWidth: =100
@@ -124,6 +126,7 @@ Screen1 As screen:
                         ZIndex: =2
 
                 Container3_2 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =50
                     LayoutMinWidth: =100
@@ -191,7 +194,7 @@ Screen1 As screen:
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =250
                 LayoutMinWidth: =320
-                LoadingSpinner: =LoadingSpinner.Data
+                LoadingSpinner: =LoadingSpinner.Controls
                 LoadingSpinnerColor: |-
                     =ColorValue("#EE8C1D")
                 OnSelect: |-
