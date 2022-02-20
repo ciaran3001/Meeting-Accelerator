@@ -2928,7 +2928,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "HtmlText1",
-    "ParentIndex": 7,
+    "ParentIndex": 8,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -3803,7 +3803,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label2_3",
-    "ParentIndex": 8,
+    "ParentIndex": 7,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

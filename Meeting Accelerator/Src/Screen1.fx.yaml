@@ -51,7 +51,8 @@ Screen1 As screen:
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
                         OnSelect: |-
-                            =Set(SelectedMeetingTab, "History");
+                            =Clear(MyMeetings);
+                            Set(SelectedMeetingTab, "History");
                             Select(Btn_LoadData);
                             Set(SelectedMeeting, Blank());
                         PCFTeamsTheme: =TeamsTheme.Default
@@ -93,7 +94,8 @@ Screen1 As screen:
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
                         OnSelect: |-
-                            =Set(SelectedMeetingTab, "Today");
+                            =Clear(MyMeetings);
+                            Set(SelectedMeetingTab, "Today");
                             Select(Btn_LoadData);
                             Set(SelectedMeeting, Blank());
                         PCFTeamsTheme: =TeamsTheme.Default
@@ -136,7 +138,8 @@ Screen1 As screen:
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
                         OnSelect: |-
-                            =Set(SelectedMeetingTab, "Upcoming");
+                            =Clear(MyMeetings);
+                            Set(SelectedMeetingTab, "Upcoming");
                             Select(Btn_LoadData);
                             Set(SelectedMeeting, Blank());
                         PCFTeamsTheme: =TeamsTheme.Default
