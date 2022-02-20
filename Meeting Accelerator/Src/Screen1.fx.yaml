@@ -469,6 +469,7 @@ Screen1 As screen:
                             Today()
                         ).value
                     );
+                    ,
                     If(
                         SelectedMeetingTab = "Upcoming",
                         ClearCollect(
