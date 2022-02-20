@@ -316,6 +316,7 @@ Screen1 As screen:
                     ZIndex: =3
 
                 Label2 As Label:
+                    Alignment: =Align.Justify
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =20
                     Height: =46
@@ -330,7 +331,7 @@ Screen1 As screen:
                     Alignment: =Align.Right
                     Color: =RGBA(146, 154, 157, 1)
                     DisplayMode: =DisplayMode.Edit
-                    FontSize: =15
+                    FontSize: =13
                     Height: =34
                     PCFTeamsTheme: =TeamsTheme.Default
                     Text: =DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " min"
@@ -362,6 +363,20 @@ Screen1 As screen:
                     X: =124
                     Y: =277
                     ZIndex: =7
+
+                Label2_4 As Label:
+                    Alignment: =Align.Justify
+                    Color: =RGBA(146, 154, 157, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =13
+                    Height: =34
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: |-
+                        ="Importance: " & SelectedMeeting.importance
+                    Width: =321
+                    X: =249
+                    Y: =95
+                    ZIndex: =8
 
     Button3 As Button:
         DisplayMode: =DisplayMode.Edit
