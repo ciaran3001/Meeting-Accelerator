@@ -205,32 +205,32 @@ Screen1 As screen:
 
                 Title1 As Label:
                     DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
+                    FontSize: =15
                     FontWeight: =FontWeight.Semibold
-                    Height: =48
+                    Height: =37
                     OnSelect: =Select(Parent)
                     PCFTeamsTheme: =TeamsTheme.Default
                     TabIndex: =-1
                     Text: =ThisItem.organizer
                     VerticalAlignment: =VerticalAlign.Top
-                    Width: =351
-                    X: =101
-                    Y: =0
+                    Width: =333
+                    X: =100
+                    Y: =20
                     ZIndex: =3
 
                 Subtitle1 As Label:
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =12
                     FontWeight: =FontWeight.Normal
-                    Height: =24
+                    Height: =30
                     OnSelect: =Select(Parent)
                     PCFTeamsTheme: =TeamsTheme.Default
                     TabIndex: =-1
                     Text: =ThisItem.subject
                     VerticalAlignment: =VerticalAlign.Top
-                    Width: =437
-                    X: =101
-                    Y: =36
+                    Width: =352
+                    X: =100
+                    Y: =45
                     ZIndex: =4
 
                 Image2_1 As image:
