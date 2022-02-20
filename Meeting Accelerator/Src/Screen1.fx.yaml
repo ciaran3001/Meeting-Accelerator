@@ -200,28 +200,6 @@ Screen1 As screen:
                     Width: =Parent.TemplateWidth
                     ZIndex: =1
 
-                Image1 As image:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledFill: =RGBA(0, 0, 0, 0)
-                    Height: =28
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: =ThisItem.WebLink
-                    OnSelect: =Select(Parent)
-                    PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedFill: =RGBA(0, 0, 0, 0)
-                    RadiusBottomLeft: =3
-                    RadiusBottomRight: =3
-                    RadiusTopLeft: =3
-                    RadiusTopRight: =3
-                    Width: =28
-                    X: =12
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =2
-
                 Title1 As Label:
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =20
@@ -230,9 +208,9 @@ Screen1 As screen:
                     OnSelect: =Select(Parent)
                     PCFTeamsTheme: =TeamsTheme.Default
                     TabIndex: =-1
-                    Text: =ThisItem.Organizer.EmailAddress.Name
+                    Text: =ThisItem.organizer
                     VerticalAlignment: =VerticalAlign.Top
-                    Width: =437
+                    Width: =351
                     X: =101
                     Y: =0
                     ZIndex: =3
@@ -245,7 +223,7 @@ Screen1 As screen:
                     OnSelect: =Select(Parent)
                     PCFTeamsTheme: =TeamsTheme.Default
                     TabIndex: =-1
-                    Text: =ThisItem.Subject
+                    Text: =ThisItem.subject
                     VerticalAlignment: =VerticalAlign.Top
                     Width: =437
                     X: =101
@@ -273,16 +251,6 @@ Screen1 As screen:
                     Y: =24
                     ZIndex: =5
 
-                Button2 As Button:
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =32
-                    OnSelect: =Launch(ThisItem.webLink);
-                    PCFTeamsTheme: =TeamsTheme.Default
-                    Width: =96
-                    X: =231
-                    Y: =56
-                    ZIndex: =6
-
         Container2_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =App.Height
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -291,25 +259,44 @@ Screen1 As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =30
+            PaddingLeft: =30
+            PaddingRight: =30
+            PaddingTop: =30
             Width: =App.Width
             ZIndex: =2
 
-            Subtitle1_1 As Label:
-                DisplayMode: =DisplayMode.Edit
-                FontSize: =12
-                FontWeight: =FontWeight.Normal
-                Height: =24
-                LayoutMinHeight: =32
-                LayoutMinWidth: =320
-                OnSelect: =Select(Parent)
-                PCFTeamsTheme: =TeamsTheme.Default
-                TabIndex: =-1
-                Text: =ThisItem.Subject
-                VerticalAlignment: =VerticalAlign.Top
-                Width: =437
-                X: =116
-                Y: =140
-                ZIndex: =1
+            Container4 As groupContainer.manualLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                X: =40
+                Y: =40
+                ZIndex: =2
+
+                Button1 As Button:
+                    DisabledFillColor: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Height: =Parent.Height
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: =""
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =40
+                    ZIndex: =1
+
+                Button2 As Button:
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =13
+                    Height: =45
+                    OnSelect: =Launch(ThisItem.webLink);
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: |-
+                        ="Open in Outlook
+                        "
+                    Width: =141
+                    X: =455
+                    Y: =295
+                    ZIndex: =2
 
     Button3 As Button:
         DisplayMode: =DisplayMode.Edit
@@ -319,7 +306,7 @@ Screen1 As screen:
             ClearCollect(MyMeetings, Office365Outlook.GetEventsCalendarViewV3(DefaultCalendar.Name, Today(), DateAdd(Today(), 1,Days)).value);
         PCFTeamsTheme: =TeamsTheme.Default
         Width: =96
-        X: =896
-        Y: =244
+        X: =0
+        Y: =736
         ZIndex: =6
 

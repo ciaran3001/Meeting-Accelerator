@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "ciarank_agendaitem",
+    "MaxGetRowsCount": 500,
     "Name": "Agenda Items",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
