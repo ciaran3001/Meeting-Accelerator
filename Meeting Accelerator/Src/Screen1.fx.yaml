@@ -164,6 +164,7 @@ Screen1 As screen:
                         ZIndex: =2
 
             Rectangle3_3 As rectangle:
+                AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(243, 242, 241, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -179,7 +180,6 @@ Screen1 As screen:
                 ZIndex: =2
 
             Gallery1 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
-                AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(243, 242, 241, 1)
                 DelayItemLoading: =true
                 FocusedBorderColor: =RGBA(98, 100, 167, 1)
@@ -210,7 +210,7 @@ Screen1 As screen:
                     OnSelect: =Select(Parent)
                     PressedFill: =RGBA(0,0,0,0)
                     TabIndex: =0
-                    Width: =479
+                    Width: =452
                     ZIndex: =1
 
                 Title1 As Label:
@@ -260,8 +260,8 @@ Screen1 As screen:
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
                     Width: =37
-                    X: =433
-                    Y: =67
+                    X: =410
+                    Y: =66
                     ZIndex: =5
 
                 Label4 As Label:
