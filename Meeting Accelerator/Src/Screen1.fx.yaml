@@ -13,7 +13,6 @@ Screen1 As screen:
         Container2 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =0.6
             Height: =App.Height
-            LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100
@@ -27,6 +26,7 @@ Screen1 As screen:
             ZIndex: =1
 
             Container1 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =50
                 LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -154,7 +154,6 @@ Screen1 As screen:
                         ZIndex: =2
 
             Rectangle3_3 As rectangle:
-                AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(243, 242, 241, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -170,6 +169,7 @@ Screen1 As screen:
                 ZIndex: =2
 
             Gallery1 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(243, 242, 241, 1)
                 DelayItemLoading: =true
                 FocusedBorderColor: =RGBA(98, 100, 167, 1)
