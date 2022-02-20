@@ -1,0 +1,114 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ciarank_agendaitems",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ciarank_agendaitem",
+    "Name": "Agenda Items",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "ciarank_addressed": "Addressed",
+      "ciarank_agendaitem_AsyncOperations": "System Jobs",
+      "ciarank_agendaitem_BulkDeleteFailures": "Bulk Delete Failures",
+      "ciarank_agendaitem_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ciarank_agendaitem_ProcessSession": "Process Sessions",
+      "ciarank_agendaitemid": "Agenda Item",
+      "ciarank_name": "Name",
+      "ciarank_Outcome_ciarank_AgendaItem_ciaran": "Outcomes",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Agenda Items",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Agenda Items (Views)",
+    "Name": "_ciarank_agendaitem_views",
+    "RelatedEntityName": "Agenda Items",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "310b87c6-25b8-40d6-a98f-b75b37c56d79": "Active Agenda Items",
+      "45c4249e-7920-4d01-ab7b-cf1952021b2d": "Inactive Agenda Items",
+      "7b6c5cde-7193-457c-8056-d2419883a75d": "Agenda Item Lookup View",
+      "c6682389-c04c-4c69-96c4-058e599e2893": "Agenda Item Advanced Find View",
+      "c7ddd516-73ad-4fa8-9912-68ec6705b4e2": "Agenda Item Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Agenda Items)",
+    "Name": "ciarank_agendaitem_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Agenda Items"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Agenda Items",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Agenda Items)",
+    "Name": "ciarank_agendaitem_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Agenda Items"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Agenda Items",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Addressed (Agenda Items)",
+    "Name": "ciarank_ciarank_agendaitem_addressed",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ciarank_addressed",
+        "OptionSetReferenceEntityName": "Agenda Items"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ciarank_addressed",
+    "RelatedEntityName": "Agenda Items",
+    "Type": "OptionSetInfo"
+  }
+]

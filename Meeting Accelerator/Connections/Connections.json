@@ -1,0 +1,56 @@
+{
+  "3366b927-9f80-404c-a909-5e027c12df46": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365users/connections/2307393d04e646248f375aad3f1ffc06",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1551/1.0.1551.2693/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "3366b927-9f80-404c-a909-5e027c12df46"
+  },
+  "7376846b-1611-4a4c-9f5c-27f336b3f625": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365/connections/4ab8f035aee04b478e00215ac2f0364c",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1538/1.0.1538.2621/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7376846b-1611-4a4c-9f5c-27f336b3f625"
+  },
+  "d178c17d-30ba-4b33-9fb2-d8142e2aba7b": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_todo/connections/a313b483908b4c7fbc8b910061e7bbd7",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Microsoft To-Do (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1443/1.0.1443.2341/todo/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_todo"
+    },
+    "datasets": {},
+    "dataSources": [
+      "MicrosoftTo-Do(Business)"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d178c17d-30ba-4b33-9fb2-d8142e2aba7b"
+  }
+}

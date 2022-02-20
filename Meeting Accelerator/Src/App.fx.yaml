@@ -1,0 +1,11 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: =Set(SelectedMeetingTab, "Today");
+
+    Teams As hostControl.TeamsHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

@@ -1,0 +1,39 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_ciarank_agendaitemdefinition_forms",
+      "Namespace": "Agenda Item Definitions (Forms)",
+      "Values": {
+        "Information": "861a0290-62a0-4629-9495-47b7b7b8902a"
+      }
+    },
+    {
+      "Kind": "default.cds_ciarank_agendaitem_forms",
+      "Namespace": "Agenda Items (Forms)",
+      "Values": {
+        "Information": "b5cdeb68-b994-42b9-8e1f-f8be4db4be07"
+      }
+    },
+    {
+      "Kind": "default.cds_ciarank_meetingtype_forms",
+      "Namespace": "Meeting Types (Forms)",
+      "Values": {
+        "Information": "e3b34437-b8a2-4bfb-8f29-e104c5ab0fae"
+      }
+    },
+    {
+      "Kind": "default.cds_ciarank_meeting_forms",
+      "Namespace": "Meetings (Forms)",
+      "Values": {
+        "Information": "3c4d5100-38aa-4ae1-bc7c-f496ec10e271"
+      }
+    },
+    {
+      "Kind": "default.cds_ciarank_outcome_forms",
+      "Namespace": "Outcomes (Forms)",
+      "Values": {
+        "Information": "63e65c65-fe3e-4eb0-b5d1-8303dbedf8b9"
+      }
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ciarank_agendaitemdefinitions",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ciarank_agendaitemdefinition",
+    "Name": "Agenda Item Definitions",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "ciarank_agendaitemdefinition_AsyncOperations": "System Jobs",
+      "ciarank_agendaitemdefinition_BulkDeleteFailures": "Bulk Delete Failures",
+      "ciarank_agendaitemdefinition_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ciarank_agendaitemdefinition_ProcessSession": "Process Sessions",
+      "ciarank_agendaitemdefinitionid": "Agenda Item Definition",
+      "ciarank_name": "Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Agenda Item Definitions",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Agenda Item Definitions (Views)",
+    "Name": "_ciarank_agendaitemdefinition_views",
+    "RelatedEntityName": "Agenda Item Definitions",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1e5bd740-897e-4437-b3fb-d3711a0970c6": "Active Agenda Item Definitions",
+      "691fcc01-3c52-49d4-8149-9375ca6a58ad": "Agenda Item Definition Advanced Find View",
+      "7b1d1023-b175-4a5c-98be-a7befd802b78": "Agenda Item Definition Associated View",
+      "b688c222-c344-4247-aee6-728ff65bd8ad": "Agenda Item Definition Lookup View",
+      "ddbff75e-c6b3-4a73-8356-6eeb5c516f45": "Inactive Agenda Item Definitions"
+    }
+  },
+  {
+    "DisplayName": "Status (Agenda Item Definitions)",
+    "Name": "ciarank_agendaitemdefinition_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Agenda Item Definitions"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Agenda Item Definitions",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Agenda Item Definitions)",
+    "Name": "ciarank_agendaitemdefinition_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Agenda Item Definitions"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Agenda Item Definitions",
+    "Type": "OptionSetInfo"
+  }
+]

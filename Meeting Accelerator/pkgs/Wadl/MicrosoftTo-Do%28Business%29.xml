@@ -1,0 +1,865 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/todo" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="MicrosoftTo-Do(Business)" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Microsoft To-Do (Business)">Microsoft To-Do is an intelligent task management app that makes it easy to plan and manage your day. Connect to Microsoft To-Do to manage your tasks from various services. You can perform actions such as creating tasks.</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://europe-002.azure-apim.net/apim/todo" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ToDo__ux40_odata_context_def" />
+      <string name="ToDo__ux40_odata_id_def" />
+      <string name="ToDo__ux40_odata_etag_def" />
+      <string name="ToDo_id_def" />
+      <dateTimeString name="ToDo_createdDateTime_def" />
+      <dateTimeString name="ToDo_lastModifiedDateTime_def" />
+      <string name="ToDo_changeKey_def" />
+      <string name="ToDo_categories_def_items_def" />
+      <array type="string" name="ToDo_categories_def" />
+      <string name="ToDo_assignedTo_def" />
+      <string name="ToDo_body_def_contentType_def" />
+      <string name="ToDo_body_def_content_def" />
+      <object name="ToDo_body_def">
+        <property name="contentType" type="string" />
+        <property name="content" type="string" />
+      </object>
+      <dateTimeString name="ToDo_completedDateTime_def_dateTime_def" />
+      <object name="ToDo_completedDateTime_def">
+        <property name="dateTime" typeRef="ToDo_completedDateTime_def_dateTime_def" />
+      </object>
+      <dateTimeString name="ToDo_dueDateTime_def_dateTime_def" />
+      <object name="ToDo_dueDateTime_def">
+        <property name="dateTime" typeRef="ToDo_dueDateTime_def_dateTime_def" />
+      </object>
+      <string name="ToDo_importance_def" />
+      <boolean name="ToDo_isReminderOn_def" />
+      <string name="ToDo_owner_def" />
+      <string name="ToDo_parentFolderId_def" />
+      <dateTimeString name="ToDo_reminderDateTime_def_dateTime_def" />
+      <object name="ToDo_reminderDateTime_def">
+        <property name="dateTime" typeRef="ToDo_reminderDateTime_def_dateTime_def" />
+      </object>
+      <dateTimeString name="ToDo_startDateTime_def_dateTime_def" />
+      <object name="ToDo_startDateTime_def">
+        <property name="dateTime" typeRef="ToDo_startDateTime_def_dateTime_def" />
+      </object>
+      <string name="ToDo_status_def" />
+      <string name="ToDo_subject_def" />
+      <object name="ToDo">
+        <property name="@odata.context" type="string" />
+        <property name="@odata.id" type="string" />
+        <property name="@odata.etag" type="string" />
+        <property name="id" type="string" />
+        <property name="createdDateTime" typeRef="ToDo_createdDateTime_def" />
+        <property name="lastModifiedDateTime" typeRef="ToDo_lastModifiedDateTime_def" />
+        <property name="changeKey" type="string" />
+        <property name="categories" typeRef="ToDo_categories_def" />
+        <property name="assignedTo" type="string" />
+        <property name="body" typeRef="ToDo_body_def" />
+        <property name="completedDateTime" typeRef="ToDo_completedDateTime_def" />
+        <property name="dueDateTime" typeRef="ToDo_dueDateTime_def" />
+        <property name="importance" type="string" />
+        <property name="isReminderOn" type="boolean" />
+        <property name="owner" type="string" />
+        <property name="parentFolderId" type="string" />
+        <property name="reminderDateTime" typeRef="ToDo_reminderDateTime_def" />
+        <property name="startDateTime" typeRef="ToDo_startDateTime_def" />
+        <property name="status" type="string" />
+        <property name="subject" type="string" />
+      </object>
+      <string name="ToDoHtml__ux40_odata_context_def" />
+      <string name="ToDoHtml__ux40_odata_id_def" />
+      <string name="ToDoHtml__ux40_odata_etag_def" />
+      <string name="ToDoHtml_id_def" />
+      <dateTimeString name="ToDoHtml_createdDateTime_def" />
+      <dateTimeString name="ToDoHtml_lastModifiedDateTime_def" />
+      <string name="ToDoHtml_categories_def_items_def" />
+      <array type="string" name="ToDoHtml_categories_def" />
+      <string name="ToDoHtml_assignedTo_def" />
+      <string name="ToDoHtml_body_def_content_def" />
+      <object name="ToDoHtml_body_def">
+        <property name="content" type="string" />
+      </object>
+      <dateTimeString name="ToDoHtml_completedDateTime_def_dateTime_def" />
+      <object name="ToDoHtml_completedDateTime_def">
+        <property name="dateTime" typeRef="ToDoHtml_completedDateTime_def_dateTime_def" />
+      </object>
+      <dateTimeString name="ToDoHtml_dueDateTime_def_dateTime_def" />
+      <object name="ToDoHtml_dueDateTime_def">
+        <property name="dateTime" typeRef="ToDoHtml_dueDateTime_def_dateTime_def" />
+      </object>
+      <string name="ToDoHtml_importance_def" />
+      <boolean name="ToDoHtml_isReminderOn_def" />
+      <string name="ToDoHtml_owner_def" />
+      <string name="ToDoHtml_parentFolderId_def" />
+      <dateTimeString name="ToDoHtml_reminderDateTime_def_dateTime_def" />
+      <object name="ToDoHtml_reminderDateTime_def">
+        <property name="dateTime" typeRef="ToDoHtml_reminderDateTime_def_dateTime_def" />
+      </object>
+      <dateTimeString name="ToDoHtml_startDateTime_def_dateTime_def" />
+      <object name="ToDoHtml_startDateTime_def">
+        <property name="dateTime" typeRef="ToDoHtml_startDateTime_def_dateTime_def" />
+      </object>
+      <string name="ToDoHtml_status_def" />
+      <string name="ToDoHtml_subject_def" />
+      <object name="ToDoHtml">
+        <property name="@odata.context" type="string" />
+        <property name="@odata.id" type="string" />
+        <property name="@odata.etag" type="string" />
+        <property name="id" type="string" />
+        <property name="createdDateTime" typeRef="ToDoHtml_createdDateTime_def" />
+        <property name="lastModifiedDateTime" typeRef="ToDoHtml_lastModifiedDateTime_def" />
+        <property name="categories" typeRef="ToDoHtml_categories_def" />
+        <property name="assignedTo" type="string" />
+        <property name="body" typeRef="ToDoHtml_body_def" />
+        <property name="completedDateTime" typeRef="ToDoHtml_completedDateTime_def" />
+        <property name="dueDateTime" typeRef="ToDoHtml_dueDateTime_def" />
+        <property name="importance" type="string" />
+        <property name="isReminderOn" type="boolean" />
+        <property name="owner" type="string" />
+        <property name="parentFolderId" type="string" />
+        <property name="reminderDateTime" typeRef="ToDoHtml_reminderDateTime_def" />
+        <property name="startDateTime" typeRef="ToDoHtml_startDateTime_def" />
+        <property name="status" type="string" />
+        <property name="subject" type="string" />
+      </object>
+      <dateTimeString name="CreateToDoBody_DueDateTime_def_DateTime_def" />
+      <string name="CreateToDoBody_DueDateTime_def_TimeZone_def" />
+      <object name="CreateToDoBody_DueDateTime_def">
+        <property name="DateTime" typeRef="CreateToDoBody_DueDateTime_def_DateTime_def" />
+        <property name="TimeZone" type="string" />
+      </object>
+      <dateTimeString name="CreateToDoBody_ReminderDateTime_def_DateTime_def" />
+      <string name="CreateToDoBody_ReminderDateTime_def_TimeZone_def" />
+      <object name="CreateToDoBody_ReminderDateTime_def">
+        <property name="DateTime" typeRef="CreateToDoBody_ReminderDateTime_def_DateTime_def" />
+        <property name="TimeZone" type="string" />
+      </object>
+      <dateTimeString name="CreateToDoBody_StartDateTime_def_DateTime_def" />
+      <string name="CreateToDoBody_StartDateTime_def_TimeZone_def" />
+      <object name="CreateToDoBody_StartDateTime_def">
+        <property name="DateTime" typeRef="CreateToDoBody_StartDateTime_def_DateTime_def" />
+        <property name="TimeZone" type="string" />
+      </object>
+      <string name="CreateToDoBody_Importance_def" />
+      <string name="CreateToDoBody_Subject_def" />
+      <string name="CreateToDoBody_Status_def" />
+      <string name="CreateToDoBody_Sensitivity_def" />
+      <string name="CreateToDoBody_Body_def_ContentType_def" />
+      <string name="CreateToDoBody_Body_def_Content_def" />
+      <object name="CreateToDoBody_Body_def">
+        <property name="ContentType" type="string" />
+        <property name="Content" type="string" />
+      </object>
+      <string name="CreateToDoBody_Categories_def_items_def" />
+      <array type="string" name="CreateToDoBody_Categories_def" />
+      <boolean name="CreateToDoBody_IsReminderOn_def" />
+      <object name="CreateToDoBody">
+        <property name="DueDateTime" typeRef="CreateToDoBody_DueDateTime_def" />
+        <property name="ReminderDateTime" typeRef="CreateToDoBody_ReminderDateTime_def" />
+        <property name="StartDateTime" typeRef="CreateToDoBody_StartDateTime_def" />
+        <property name="Importance" type="string" />
+        <property name="Subject" type="string" />
+        <property name="Status" type="string" />
+        <property name="Sensitivity" type="string" />
+        <property name="Body" typeRef="CreateToDoBody_Body_def" />
+        <property name="Categories" typeRef="CreateToDoBody_Categories_def" />
+        <property name="IsReminderOn" type="boolean" />
+      </object>
+      <dateTimeString name="CreateToDoHtmlBody_DueDateTime_def_DateTime_def" />
+      <string name="CreateToDoHtmlBody_DueDateTime_def_TimeZone_def" />
+      <object name="CreateToDoHtmlBody_DueDateTime_def">
+        <property name="DateTime" typeRef="CreateToDoHtmlBody_DueDateTime_def_DateTime_def" />
+        <property name="TimeZone" type="string" />
+      </object>
+      <dateTimeString name="CreateToDoHtmlBody_ReminderDateTime_def_DateTime_def" />
+      <string name="CreateToDoHtmlBody_ReminderDateTime_def_TimeZone_def" />
+      <object name="CreateToDoHtmlBody_ReminderDateTime_def">
+        <property name="DateTime" typeRef="CreateToDoHtmlBody_ReminderDateTime_def_DateTime_def" />
+        <property name="TimeZone" type="string" />
+      </object>
+      <dateTimeString name="CreateToDoHtmlBody_StartDateTime_def_DateTime_def" />
+      <string name="CreateToDoHtmlBody_StartDateTime_def_TimeZone_def" />
+      <object name="CreateToDoHtmlBody_StartDateTime_def">
+        <property name="DateTime" typeRef="CreateToDoHtmlBody_StartDateTime_def_DateTime_def" />
+        <property name="TimeZone" type="string" />
+      </object>
+      <string name="CreateToDoHtmlBody_Importance_def" />
+      <string name="CreateToDoHtmlBody_Subject_def" />
+      <string name="CreateToDoHtmlBody_Status_def" />
+      <string name="CreateToDoHtmlBody_Sensitivity_def" />
+      <string name="CreateToDoHtmlBody_Body_def_ContentType_def" />
+      <string name="CreateToDoHtmlBody_Body_def_Content_def" />
+      <object name="CreateToDoHtmlBody_Body_def">
+        <property name="ContentType" type="string" />
+        <property name="Content" type="string" />
+      </object>
+      <string name="CreateToDoHtmlBody_Categories_def_items_def" />
+      <array type="string" name="CreateToDoHtmlBody_Categories_def" />
+      <boolean name="CreateToDoHtmlBody_IsReminderOn_def" />
+      <object name="CreateToDoHtmlBody">
+        <property name="DueDateTime" typeRef="CreateToDoHtmlBody_DueDateTime_def" />
+        <property name="ReminderDateTime" typeRef="CreateToDoHtmlBody_ReminderDateTime_def" />
+        <property name="StartDateTime" typeRef="CreateToDoHtmlBody_StartDateTime_def" />
+        <property name="Importance" type="string" />
+        <property name="Subject" type="string" />
+        <property name="Status" type="string" />
+        <property name="Sensitivity" type="string" />
+        <property name="Body" typeRef="CreateToDoHtmlBody_Body_def" />
+        <property name="Categories" typeRef="CreateToDoHtmlBody_Categories_def" />
+        <property name="IsReminderOn" type="boolean" />
+      </object>
+      <dateTimeString name="UpdateToDoBody_DueDateTime_def_DateTime_def" />
+      <string name="UpdateToDoBody_DueDateTime_def_TimeZone_def" />
+      <object name="UpdateToDoBody_DueDateTime_def">
+        <property name="DateTime" typeRef="UpdateToDoBody_DueDateTime_def_DateTime_def" />
+        <property name="TimeZone" type="string" />
+      </object>
+      <dateTimeString name="UpdateToDoBody_ReminderDateTime_def_DateTime_def" />
+      <string name="UpdateToDoBody_ReminderDateTime_def_TimeZone_def" />
+      <object name="UpdateToDoBody_ReminderDateTime_def">
+        <property name="DateTime" typeRef="UpdateToDoBody_ReminderDateTime_def_DateTime_def" />
+        <property name="TimeZone" type="string" />
+      </object>
+      <dateTimeString name="UpdateToDoBody_StartDateTime_def_DateTime_def" />
+      <string name="UpdateToDoBody_StartDateTime_def_TimeZone_def" />
+      <object name="UpdateToDoBody_StartDateTime_def">
+        <property name="DateTime" typeRef="UpdateToDoBody_StartDateTime_def_DateTime_def" />
+        <property name="TimeZone" type="string" />
+      </object>
+      <string name="UpdateToDoBody_Importance_def" />
+      <string name="UpdateToDoBody_Subject_def" />
+      <string name="UpdateToDoBody_Status_def" />
+      <string name="UpdateToDoBody_Sensitivity_def" />
+      <string name="UpdateToDoBody_Body_def_ContentType_def" />
+      <string name="UpdateToDoBody_Body_def_Content_def" />
+      <object name="UpdateToDoBody_Body_def">
+        <property name="ContentType" type="string" />
+        <property name="Content" type="string" />
+      </object>
+      <string name="UpdateToDoBody_Categories_def_items_def" />
+      <array type="string" name="UpdateToDoBody_Categories_def" />
+      <boolean name="UpdateToDoBody_IsReminderOn_def" />
+      <object name="UpdateToDoBody">
+        <property name="DueDateTime" typeRef="UpdateToDoBody_DueDateTime_def" />
+        <property name="ReminderDateTime" typeRef="UpdateToDoBody_ReminderDateTime_def" />
+        <property name="StartDateTime" typeRef="UpdateToDoBody_StartDateTime_def" />
+        <property name="Importance" type="string" />
+        <property name="Subject" type="string" />
+        <property name="Status" type="string" />
+        <property name="Sensitivity" type="string" />
+        <property name="Body" typeRef="UpdateToDoBody_Body_def" />
+        <property name="Categories" typeRef="UpdateToDoBody_Categories_def" />
+        <property name="IsReminderOn" type="boolean" />
+      </object>
+      <string name="TodoList__ux40_odata_id_def" />
+      <string name="TodoList_id_def" />
+      <string name="TodoList_changeKey_def" />
+      <string name="TodoList_name_def" />
+      <boolean name="TodoList_isDefaultFolder_def" />
+      <string name="TodoList_parentGroupKey_def" />
+      <object name="TodoList">
+        <property name="@odata.id" type="string" />
+        <property name="id" type="string" />
+        <property name="changeKey" type="string" />
+        <property name="name" type="string" />
+        <property name="isDefaultFolder" type="boolean" />
+        <property name="parentGroupKey" type="string" />
+      </object>
+      <string name="TodoList_V2__ux40_odata_etag_def" />
+      <string name="TodoList_V2_id_def" />
+      <string name="TodoList_V2_displayName_def" />
+      <string name="TodoList_V2_wellknownListName_def" />
+      <boolean name="TodoList_V2_isOwner_def" />
+      <boolean name="TodoList_V2_isShared_def" />
+      <object name="TodoList_V2">
+        <property name="@odata.etag" type="string" />
+        <property name="id" type="string" />
+        <property name="displayName" type="string" />
+        <property name="wellknownListName" type="string" />
+        <property name="isOwner" type="boolean" />
+        <property name="isShared" type="boolean" />
+      </object>
+      <string name="CreateToDoListBody_name_def" />
+      <object name="CreateToDoListBody">
+        <property name="name" type="string" />
+      </object>
+      <string name="ToDo_V2__ux40_odata_context_def" />
+      <string name="ToDo_V2__ux40_odata_etag_def" />
+      <string name="ToDo_V2_id_def" />
+      <dateTimeString name="ToDo_V2_createdDateTime_def" />
+      <dateTimeString name="ToDo_V2_lastModifiedDateTime_def" />
+      <string name="ToDo_V2_body_def_contentType_def" />
+      <string name="ToDo_V2_body_def_content_def" />
+      <object name="ToDo_V2_body_def">
+        <property name="contentType" type="string" />
+        <property name="content" type="string" />
+      </object>
+      <dateTimeString name="ToDo_V2_bodyLastModifiedDateTime_def" />
+      <dateTimeString name="ToDo_V2_completedDateTime_def_dateTime_def" />
+      <object name="ToDo_V2_completedDateTime_def">
+        <property name="dateTime" typeRef="ToDo_V2_completedDateTime_def_dateTime_def" />
+      </object>
+      <dateTimeString name="ToDo_V2_dueDateTime_def_dateTime_def" />
+      <object name="ToDo_V2_dueDateTime_def">
+        <property name="dateTime" typeRef="ToDo_V2_dueDateTime_def_dateTime_def" />
+      </object>
+      <string name="ToDo_V2_importance_def" />
+      <boolean name="ToDo_V2_isReminderOn_def" />
+      <dateTimeString name="ToDo_V2_reminderDateTime_def_dateTime_def" />
+      <object name="ToDo_V2_reminderDateTime_def">
+        <property name="dateTime" typeRef="ToDo_V2_reminderDateTime_def_dateTime_def" />
+      </object>
+      <string name="ToDo_V2_status_def" />
+      <string name="ToDo_V2_title_def" />
+      <object name="ToDo_V2">
+        <property name="@odata.context" type="string" />
+        <property name="@odata.etag" type="string" />
+        <property name="id" type="string" />
+        <property name="createdDateTime" typeRef="ToDo_V2_createdDateTime_def" />
+        <property name="lastModifiedDateTime" typeRef="ToDo_V2_lastModifiedDateTime_def" />
+        <property name="body" typeRef="ToDo_V2_body_def" />
+        <property name="bodyLastModifiedDateTime" typeRef="ToDo_V2_bodyLastModifiedDateTime_def" />
+        <property name="completedDateTime" typeRef="ToDo_V2_completedDateTime_def" />
+        <property name="dueDateTime" typeRef="ToDo_V2_dueDateTime_def" />
+        <property name="importance" type="string" />
+        <property name="isReminderOn" type="boolean" />
+        <property name="reminderDateTime" typeRef="ToDo_V2_reminderDateTime_def" />
+        <property name="status" type="string" />
+        <property name="title" type="string" />
+      </object>
+      <dateTimeString name="CreateToDo_V2_dueDateTime_def_dateTime_def" />
+      <string name="CreateToDo_V2_dueDateTime_def_timeZone_def" />
+      <object name="CreateToDo_V2_dueDateTime_def">
+        <property name="dateTime" typeRef="CreateToDo_V2_dueDateTime_def_dateTime_def" />
+        <property name="timeZone" type="string" />
+      </object>
+      <dateTimeString name="CreateToDo_V2_reminderDateTime_def_dateTime_def" />
+      <string name="CreateToDo_V2_reminderDateTime_def_timeZone_def" />
+      <object name="CreateToDo_V2_reminderDateTime_def">
+        <property name="dateTime" typeRef="CreateToDo_V2_reminderDateTime_def_dateTime_def" />
+        <property name="timeZone" type="string" />
+      </object>
+      <string name="CreateToDo_V2_importance_def" />
+      <string name="CreateToDo_V2_title_def" />
+      <string name="CreateToDo_V2_status_def" />
+      <string name="CreateToDo_V2_body_def_contentType_def" />
+      <string name="CreateToDo_V2_body_def_content_def" />
+      <object name="CreateToDo_V2_body_def">
+        <property name="contentType" type="string" />
+        <property name="content" type="string" />
+      </object>
+      <boolean name="CreateToDo_V2_isReminderOn_def" />
+      <object name="CreateToDo_V2">
+        <property name="dueDateTime" typeRef="CreateToDo_V2_dueDateTime_def" />
+        <property name="reminderDateTime" typeRef="CreateToDo_V2_reminderDateTime_def" />
+        <property name="importance" type="string" />
+        <property name="title" type="string" />
+        <property name="status" type="string" />
+        <property name="body" typeRef="CreateToDo_V2_body_def" />
+        <property name="isReminderOn" type="boolean" />
+      </object>
+      <dateTimeString name="UpdateToDo_V2_dueDateTime_def_dateTime_def" />
+      <string name="UpdateToDo_V2_dueDateTime_def_timeZone_def" />
+      <object name="UpdateToDo_V2_dueDateTime_def">
+        <property name="dateTime" typeRef="UpdateToDo_V2_dueDateTime_def_dateTime_def" />
+        <property name="timeZone" type="string" />
+      </object>
+      <dateTimeString name="UpdateToDo_V2_reminderDateTime_def_dateTime_def" />
+      <string name="UpdateToDo_V2_reminderDateTime_def_timeZone_def" />
+      <object name="UpdateToDo_V2_reminderDateTime_def">
+        <property name="dateTime" typeRef="UpdateToDo_V2_reminderDateTime_def_dateTime_def" />
+        <property name="timeZone" type="string" />
+      </object>
+      <string name="UpdateToDo_V2_importance_def" />
+      <string name="UpdateToDo_V2_title_def" />
+      <string name="UpdateToDo_V2_status_def" />
+      <string name="UpdateToDo_V2_body_def_contentType_def" />
+      <string name="UpdateToDo_V2_body_def_content_def" />
+      <object name="UpdateToDo_V2_body_def">
+        <property name="contentType" type="string" />
+        <property name="content" type="string" />
+      </object>
+      <boolean name="UpdateToDo_V2_isReminderOn_def" />
+      <object name="UpdateToDo_V2">
+        <property name="dueDateTime" typeRef="UpdateToDo_V2_dueDateTime_def" />
+        <property name="reminderDateTime" typeRef="UpdateToDo_V2_reminderDateTime_def" />
+        <property name="importance" type="string" />
+        <property name="title" type="string" />
+        <property name="status" type="string" />
+        <property name="body" typeRef="UpdateToDo_V2_body_def" />
+        <property name="isReminderOn" type="boolean" />
+      </object>
+      <string name="CreateToDoList_V2_displayName_def" />
+      <object name="CreateToDoList_V2">
+        <property name="displayName" type="string" />
+      </object>
+      <array typeRef="TodoList_V2" name="GetAllTodoListsV2_responses_200_def" />
+      <array typeRef="ToDo_V2" name="ListToDosByFolderV2_responses_200_def" />
+      <array typeRef="TodoList" name="GetAllTodoLists_responses_200_def" />
+      <array typeRef="ToDo" name="ListToDosByFolder_responses_200_def" />
+      <array typeRef="ToDo" name="ListAllToDos_responses_200_def" />
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-002.azure-apim.net/apim/todo">
+    <resource path="/{connectionId}/lists">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetAllTodoListsV2" siena:isDeprecated="false" siena:family="GetAllTodoLists" siena:revision="2" siena:status="Preview">
+        <doc title="List all to-do lists (V2)&#xA;Returns a list of all the to-do lists." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:GetAllTodoListsV2_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/lists">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateToDoListV2" visibility="important" siena:isDeprecated="false" siena:family="CreateToDoList" siena:revision="2" siena:status="Preview">
+        <doc title="Create a to-do list (V2)&#xA;This operation is used to create a new to-do list." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="displayName" path="/displayName" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:TodoList_V2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/lists/{folderId}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="folderId" type="xs:string" required="true">
+        <doc title="To-do list" />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="GetToDoListV2" visibility="important" siena:isDeprecated="false" siena:family="GetToDoList" siena:revision="2" siena:status="Preview">
+        <doc title="Get a to-do list (V2)&#xA;This operation is used to get a specific to-do list." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:TodoList_V2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/lists/{folderId}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="folderId" type="xs:string" required="true">
+        <doc title="To-do list" />
+      </param>
+      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateToDoList" visibility="important" siena:isDeprecated="false" siena:family="UpdateToDoList" siena:revision="1" siena:status="Preview">
+        <doc title="Update a to-do list&#xA;This operation is used to update a specific to-do list." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="displayName" path="/displayName" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:TodoList_V2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/lists/{folderId}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="folderId" type="xs:string" required="true">
+        <doc title="To-do list" />
+      </param>
+      <method siena:requiresAuthentication="true" name="DELETE" id="DeleteToDoList" visibility="important" siena:isDeprecated="false" siena:family="DeleteToDoList" siena:revision="1" siena:status="Preview">
+        <doc title="Delete a to-do list&#xA;This operation is used to delete a specific to-do list." />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/lists/{folderId}/tasks">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="folderId" type="xs:string" required="true">
+        <doc title="To-do list" />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="ListToDosByFolderV2" visibility="advanced" siena:isDeprecated="false" siena:family="ListToDosByFolder" siena:revision="2" siena:status="Preview">
+        <doc title="List to-do's by folder (V2)&#xA;This operation is used to retrieve all to-do's from a specific list." />
+        <request>
+          <param style="query" name="$top" type="xs:int">
+            <doc title="Total number of entries to retrieve (default = 10, maximum = 999)." />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListToDosByFolderV2_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/lists/{folderId}/tasks">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="folderId" type="xs:string" required="true">
+        <doc title="To-do list" />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="CreateToDoV3" visibility="important" siena:isDeprecated="false" siena:family="CreateToDo" siena:revision="3" siena:status="Preview">
+        <doc title="Add a to-do (V3)&#xA;This operation is used to create a to-do in the specified to-do list." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="dueDateTime" path="/dueDateTime" type="service:CreateToDo_V2_dueDateTime_def" />
+            <param style="plain" name="reminderDateTime" path="/reminderDateTime" type="service:CreateToDo_V2_reminderDateTime_def" />
+            <param style="plain" name="importance" path="/importance" type="xs:string">
+              <doc title="Importance" />
+              <option value="low" />
+              <option value="normal" />
+              <option value="high" />
+            </param>
+            <param style="plain" name="title" path="/title" type="xs:string" required="true" default="DefaultToDo">
+              <doc title="Title" />
+            </param>
+            <param style="plain" name="status" path="/status" type="xs:string">
+              <doc title="Status" />
+              <option value="notStarted" />
+              <option value="inProgress" />
+              <option value="completed" />
+              <option value="waitingOnOthers" />
+              <option value="deferred" />
+            </param>
+            <param style="plain" name="body" path="/body" type="service:CreateToDo_V2_body_def">
+              <doc title="Body" />
+            </param>
+            <param style="plain" name="isReminderOn" path="/isReminderOn" type="xs:boolean" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ToDo_V2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/lists/{folderId}/tasks/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="folderId" type="xs:string" required="true">
+        <doc title="To-do list" />
+      </param>
+      <param style="template" name="id" type="xs:string" required="true">
+        <doc title="To-do task" />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="GetToDoV3" visibility="important" siena:isDeprecated="false" siena:family="GetToDo" siena:revision="3" siena:status="Preview">
+        <doc title="Get a to-do (V3)&#xA;This operation is used to get the to-do with the given Id." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:ToDo_V2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/lists/{folderId}/tasks/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="folderId" type="xs:string" required="true">
+        <doc title="To-do list" />
+      </param>
+      <param style="template" name="id" type="xs:string" required="true">
+        <doc title="To-do task" />
+      </param>
+      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateToDoV2" visibility="important" siena:isDeprecated="false" siena:family="UpdateToDo" siena:revision="2" siena:status="Preview">
+        <doc title="Update to-do (V2)&#xA;This operation is used to update a specific to-do." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="dueDateTime" path="/dueDateTime" type="service:UpdateToDo_V2_dueDateTime_def" />
+            <param style="plain" name="reminderDateTime" path="/reminderDateTime" type="service:UpdateToDo_V2_reminderDateTime_def" />
+            <param style="plain" name="importance" path="/importance" type="xs:string">
+              <doc title="Importance" />
+              <option value="low" />
+              <option value="normal" />
+              <option value="high" />
+            </param>
+            <param style="plain" name="title" path="/title" type="xs:string">
+              <doc title="Title" />
+            </param>
+            <param style="plain" name="status" path="/status" type="xs:string">
+              <doc title="Status" />
+              <option value="notStarted" />
+              <option value="inProgress" />
+              <option value="completed" />
+              <option value="waitingOnOthers" />
+              <option value="deferred" />
+            </param>
+            <param style="plain" name="body" path="/body" type="service:UpdateToDo_V2_body_def">
+              <doc title="Body" />
+            </param>
+            <param style="plain" name="isReminderOn" path="/isReminderOn" type="xs:boolean" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ToDo_V2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/lists/{folderId}/tasks/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="folderId" type="xs:string" required="true">
+        <doc title="To-do list" />
+      </param>
+      <param style="template" name="id" type="xs:string" required="true">
+        <doc title="To-do task" />
+      </param>
+      <method siena:requiresAuthentication="true" name="DELETE" id="DeleteToDoV2" visibility="advanced" siena:isDeprecated="false" siena:family="DeleteToDo" siena:revision="2" siena:status="Preview">
+        <doc title="Delete to-do (V2)&#xA;This operation is used to delete a task." />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/taskfolders">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetAllTodoLists" siena:isDeprecated="true" siena:family="GetAllTodoLists" siena:revision="1" siena:status="Production">
+        <doc title="List all to-do lists&#xA;Returns a list of all the to-do lists." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:GetAllTodoLists_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/taskfolders">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateToDoList" visibility="important" siena:isDeprecated="true" siena:family="CreateToDoList" siena:revision="1" siena:status="Preview">
+        <doc title="Create a to-do list&#xA;This operation is used to create a new to-do list." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="name" path="/name" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:TodoList" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/taskFolders/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true">
+        <doc title="To-do list" />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="GetToDoList" visibility="important" siena:isDeprecated="true" siena:family="GetToDoList" siena:revision="1" siena:status="Preview">
+        <doc title="Get a to-do list&#xA;This operation is used to get a specific to-do list." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:TodoList" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/taskFolders/{folderId}/tasks">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="folderId" type="xs:string" required="true">
+        <doc title="To-do list" />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="ListToDosByFolder" visibility="advanced" siena:isDeprecated="true" siena:family="ListToDosByFolder" siena:revision="1" siena:status="Preview">
+        <doc title="List to-do's by folder&#xA;This operation is used to retrieve all to-do's from a specific list." />
+        <request>
+          <param style="query" name="$top" type="xs:int">
+            <doc title="Total number of entries to retrieve (default = 10, maximum = 999)." />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListToDosByFolder_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/tasks">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListAllToDos" visibility="advanced" siena:isDeprecated="false" siena:family="ListAllToDos" siena:revision="1" siena:status="Preview">
+        <doc title="List all to-do's&#xA;This operation is used to retrieve all to-do's from all lists." />
+        <request>
+          <param style="query" name="$top" type="xs:int">
+            <doc title="Total number of entries to retrieve (default = 10, maximum = 999)." />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListAllToDos_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/tasks">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateToDo" visibility="important" siena:isDeprecated="true" siena:family="CreateToDo" siena:revision="1" siena:status="Production">
+        <doc title="Add a to-do&#xA;This operation is used to create a to-do in the specified to-do list (defaults to To-Do)." />
+        <request>
+          <param style="query" name="folderId" type="xs:string">
+            <doc title="To-do list" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="DueDateTime" path="/DueDateTime" type="service:CreateToDoBody_DueDateTime_def" />
+            <param style="plain" name="ReminderDateTime" path="/ReminderDateTime" type="service:CreateToDoBody_ReminderDateTime_def" />
+            <param style="plain" name="StartDateTime" path="/StartDateTime" type="service:CreateToDoBody_StartDateTime_def" />
+            <param style="plain" name="Importance" path="/Importance" type="xs:string">
+              <doc title="Importance" />
+              <option value="Low" />
+              <option value="Normal" />
+              <option value="High" />
+            </param>
+            <param style="plain" name="Subject" path="/Subject" type="xs:string" required="true">
+              <doc title="Subject" />
+            </param>
+            <param style="plain" name="Status" path="/Status" type="xs:string">
+              <doc title="Status" />
+              <option value="NotStarted" />
+              <option value="InProgress" />
+              <option value="Completed" />
+              <option value="WaitingOnOthers" />
+              <option value="Deferred" />
+            </param>
+            <param style="plain" name="Sensitivity" path="/Sensitivity" type="xs:string">
+              <doc title="Sensitivity" />
+              <option value="Normal" />
+              <option value="Personal" />
+              <option value="Private" />
+              <option value="Confidential" />
+            </param>
+            <param style="plain" name="Body" path="/Body" type="service:CreateToDoBody_Body_def">
+              <doc title="Body" />
+            </param>
+            <param style="plain" name="Categories" path="/Categories" type="service:CreateToDoBody_Categories_def">
+              <doc title="Categories" />
+            </param>
+            <param style="plain" name="IsReminderOn" path="/IsReminderOn" type="xs:boolean" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ToDo" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/v2/tasks">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateToDoV2" visibility="important" siena:isDeprecated="true" siena:family="CreateToDo" siena:revision="2" siena:status="Production">
+        <doc title="Add a to-do (V2)&#xA;This operation is used to create a to-do in the specified to-do list (defaults to To-Do)." />
+        <request>
+          <param style="query" name="folderId" type="xs:string">
+            <doc title="To-do list" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="DueDateTime" path="/DueDateTime" type="service:CreateToDoHtmlBody_DueDateTime_def" />
+            <param style="plain" name="ReminderDateTime" path="/ReminderDateTime" type="service:CreateToDoHtmlBody_ReminderDateTime_def" />
+            <param style="plain" name="StartDateTime" path="/StartDateTime" type="service:CreateToDoHtmlBody_StartDateTime_def" />
+            <param style="plain" name="Importance" path="/Importance" type="xs:string">
+              <doc title="Importance" />
+              <option value="Low" />
+              <option value="Normal" />
+              <option value="High" />
+            </param>
+            <param style="plain" name="Subject" path="/Subject" type="xs:string" required="true" default="DefaultToDo">
+              <doc title="Subject" />
+            </param>
+            <param style="plain" name="Status" path="/Status" type="xs:string">
+              <doc title="Status" />
+              <option value="NotStarted" />
+              <option value="InProgress" />
+              <option value="Completed" />
+              <option value="WaitingOnOthers" />
+              <option value="Deferred" />
+            </param>
+            <param style="plain" name="Sensitivity" path="/Sensitivity" type="xs:string">
+              <doc title="Sensitivity" />
+              <option value="Normal" />
+              <option value="Personal" />
+              <option value="Private" />
+              <option value="Confidential" />
+            </param>
+            <param style="plain" name="Body" path="/Body" type="service:CreateToDoHtmlBody_Body_def">
+              <doc title="Body" />
+            </param>
+            <param style="plain" name="Categories" path="/Categories" type="service:CreateToDoHtmlBody_Categories_def">
+              <doc title="Categories" />
+            </param>
+            <param style="plain" name="IsReminderOn" path="/IsReminderOn" type="xs:boolean" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ToDoHtml" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/tasks/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true">
+        <doc title="To-do Id" />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="GetToDo" visibility="important" siena:isDeprecated="true" siena:family="GetToDo" siena:revision="1" siena:status="Production">
+        <doc title="Get a to-do&#xA;This operation is used to get the to-Do with the given Id." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:ToDo" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/tasks/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true">
+        <doc title="To-do task" />
+      </param>
+      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateToDo" visibility="important" siena:isDeprecated="true" siena:family="UpdateToDo" siena:revision="1" siena:status="Preview">
+        <doc title="Update to-do&#xA;This operation is used to update a specific to-do." />
+        <request>
+          <param style="query" name="folderId" type="xs:string" required="true">
+            <doc title="To-do list" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="DueDateTime" path="/DueDateTime" type="service:UpdateToDoBody_DueDateTime_def" />
+            <param style="plain" name="ReminderDateTime" path="/ReminderDateTime" type="service:UpdateToDoBody_ReminderDateTime_def" />
+            <param style="plain" name="StartDateTime" path="/StartDateTime" type="service:UpdateToDoBody_StartDateTime_def" />
+            <param style="plain" name="Importance" path="/Importance" type="xs:string">
+              <doc title="Importance" />
+              <option value="Low" />
+              <option value="Normal" />
+              <option value="High" />
+            </param>
+            <param style="plain" name="Subject" path="/Subject" type="xs:string">
+              <doc title="Subject" />
+            </param>
+            <param style="plain" name="Status" path="/Status" type="xs:string">
+              <doc title="Status" />
+              <option value="NotStarted" />
+              <option value="InProgress" />
+              <option value="Completed" />
+              <option value="WaitingOnOthers" />
+              <option value="Deferred" />
+            </param>
+            <param style="plain" name="Sensitivity" path="/Sensitivity" type="xs:string">
+              <doc title="Sensitivity" />
+              <option value="Normal" />
+              <option value="Personal" />
+              <option value="Private" />
+              <option value="Confidential" />
+            </param>
+            <param style="plain" name="Body" path="/Body" type="service:UpdateToDoBody_Body_def">
+              <doc title="Body" />
+            </param>
+            <param style="plain" name="Categories" path="/Categories" type="service:UpdateToDoBody_Categories_def">
+              <doc title="Categories" />
+            </param>
+            <param style="plain" name="IsReminderOn" path="/IsReminderOn" type="xs:boolean" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ToDo" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/tasks/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true">
+        <doc title="To-do task" />
+      </param>
+      <method siena:requiresAuthentication="true" name="DELETE" id="DeleteToDo" visibility="advanced" siena:isDeprecated="true" siena:family="DeleteToDo" siena:revision="1" siena:status="Preview">
+        <doc title="Delete to-do&#xA;This operation is used to delete a task." />
+        <request>
+          <param style="query" name="folderId" type="xs:string" required="true">
+            <doc title="To-do list" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/v2/tasks/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true">
+        <doc title="To-do task" />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="GetToDoV2" visibility="important" siena:isDeprecated="true" siena:family="GetToDo" siena:revision="2" siena:status="Preview">
+        <doc title="Get a to-do (V2)&#xA;This operation is used to get the to-do with the given Id." />
+        <request>
+          <param style="query" name="folderId" type="xs:string" required="true">
+            <doc title="To-do list" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ToDo" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_todo" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

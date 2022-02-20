@@ -1,0 +1,117 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ciarank_outcomes",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ciarank_outcome",
+    "Name": "Outcomes",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "ciarank_AgendaItem": "Agenda Item",
+      "ciarank_Meeting": "Meeting",
+      "ciarank_name": "Name",
+      "ciarank_outcome_AsyncOperations": "System Jobs",
+      "ciarank_outcome_BulkDeleteFailures": "Bulk Delete Failures",
+      "ciarank_outcome_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ciarank_outcome_ProcessSession": "Process Sessions",
+      "ciarank_outcomeid": "Outcome",
+      "ciarank_outcometype": "Outcome Type",
+      "ciarank_timedue": "Time due",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Outcomes",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Outcomes (Views)",
+    "Name": "_ciarank_outcome_views",
+    "RelatedEntityName": "Outcomes",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "284e81df-2b8b-41b2-8e54-4e2b64006fc5": "Outcome Advanced Find View",
+      "bbf553b6-44b9-4f55-ba65-b859d02464ee": "Outcome Associated View",
+      "c01ecae8-82a6-46f1-a409-c2df0865bbb5": "Active Outcomes",
+      "cf1796c8-cb8a-4caf-be48-4574ed039158": "Inactive Outcomes",
+      "e2a27ecf-1dd1-4aae-a474-99cdf4f8a532": "Outcome Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Outcomes)",
+    "Name": "ciarank_outcome_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Outcomes"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Outcomes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Outcomes)",
+    "Name": "ciarank_outcome_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Outcomes"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Outcomes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Outcome Type Choices",
+    "Name": "ciarank_outcometype",
+    "OptionSetInfoNameMapping": {
+      "491910000": "Task",
+      "491910001": "Decision",
+      "491910002": "Escalation"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ciarank_outcometype",
+        "OptionSetReferenceEntityName": "Outcomes"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ciarank_outcometype",
+    "RelatedEntityName": "Outcomes",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ciarank_meetings",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ciarank_meeting",
+    "Name": "Meetings",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "ciarank_meeting_AsyncOperations": "System Jobs",
+      "ciarank_meeting_BulkDeleteFailures": "Bulk Delete Failures",
+      "ciarank_meeting_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ciarank_meeting_ProcessSession": "Process Sessions",
+      "ciarank_meetingid": "Meeting",
+      "ciarank_Outcome_ciarank_Meeting_ciarank_M": "Outcomes",
+      "ciarank_subject": "Subject",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Meetings",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Meetings (Views)",
+    "Name": "_ciarank_meeting_views",
+    "RelatedEntityName": "Meetings",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1906fb84-e7c5-44b5-b28b-28168683947b": "Active Meetings",
+      "2b48c4d5-62a4-4234-ad4d-db32b9609464": "Meeting Lookup View",
+      "3c2d20ca-7caa-4d36-b57e-f13eb1d51ed6": "Meeting Advanced Find View",
+      "fbaaa9c0-e5e2-449b-887a-ba5f84afd465": "Meeting Associated View",
+      "fdb7832f-8592-4391-8b6c-162c278d7f9f": "Inactive Meetings"
+    }
+  },
+  {
+    "DisplayName": "Status (Meetings)",
+    "Name": "ciarank_meeting_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Meetings"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Meetings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Meetings)",
+    "Name": "ciarank_meeting_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Meetings"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Meetings",
+    "Type": "OptionSetInfo"
+  }
+]
