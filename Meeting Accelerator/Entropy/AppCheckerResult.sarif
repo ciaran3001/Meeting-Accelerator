@@ -313,19 +313,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Container1.Title1_1.TabIndex"
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Cnt_Title.Title1_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Container1.Title1_1.TabIndex",
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Cnt_Title.Title1_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen1",
-                "type": "Screen1.Container2_1.Container2.Container1.Title1_1"
+                "type": "Screen1.Container2_1.Container2.Cnt_Title.Title1_1"
               }
             }
           ],
@@ -343,19 +343,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Container1.Button1_5.FocusedBorderThickness"
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Cnt_Title.Button1_5.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Container1.Button1_5.FocusedBorderThickness",
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Cnt_Title.Button1_5.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "Screen1",
-                "type": "Screen1.Container2_1.Container2.Container1.Button1_5"
+                "type": "Screen1.Container2_1.Container2.Cnt_Title.Button1_5"
               }
             }
           ],

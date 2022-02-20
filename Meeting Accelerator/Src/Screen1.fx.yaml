@@ -15,6 +15,7 @@ Screen1 As screen:
             FillPortions: =0
             Height: =App.Height
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -26,7 +27,7 @@ Screen1 As screen:
             Width: =450
             ZIndex: =1
 
-            Container1 As groupContainer.manualLayoutContainer:
+            Cnt_Title As groupContainer.manualLayoutContainer:
                 Fill: =RGBA(255, 255, 255, 1)
                 FillPortions: =0
                 Height: =125

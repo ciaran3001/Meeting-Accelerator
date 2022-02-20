@@ -1460,7 +1460,7 @@
     "StyleName": "",
     "Type": "ControlInfo"
   },
-  "Container1": {
+  "Cnt_Title": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
       "BorderColor",
@@ -1549,18 +1549,13 @@
     "IsLocked": false,
     "LayoutName": "",
     "MetaDataIDKey": "",
-    "Name": "Container1",
+    "Name": "Cnt_Title",
     "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
         "Category": "Design",
-        "PropertyName": "BorderColor",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "BorderStyle",
+        "PropertyName": "X",
         "RuleProviderType": "Unknown"
       },
       {
@@ -1570,62 +1565,17 @@
       },
       {
         "Category": "Design",
-        "PropertyName": "X",
+        "PropertyName": "BorderStyle",
         "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
-        "PropertyName": "Y",
+        "PropertyName": "BorderColor",
         "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
-        "PropertyName": "Width",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "Height",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "DisplayMode",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "LayoutMode",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "LayoutDirection",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "LayoutAlignItems",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "LayoutJustifyContent",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "LayoutGap",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "LayoutOverflowX",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "LayoutOverflowY",
+        "PropertyName": "ZIndex",
         "RuleProviderType": "Unknown"
       },
       {
@@ -1635,7 +1585,57 @@
       },
       {
         "Category": "Design",
-        "PropertyName": "ZIndex",
+        "PropertyName": "LayoutGap",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "LayoutOverflowY",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "LayoutOverflowX",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "LayoutJustifyContent",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "LayoutAlignItems",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "LayoutDirection",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Height",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "LayoutMode",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "DisplayMode",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Width",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Y",
         "RuleProviderType": "Unknown"
       }
     ],
@@ -1700,7 +1700,14 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "LayoutGap",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "LayoutGap",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "LayoutOverflowX",
       "LayoutOverflowY",
       "LayoutWrap",
