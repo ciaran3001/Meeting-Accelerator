@@ -311,9 +311,57 @@ Screen1 As screen:
                     RadiusTopRight: =5
                     Size: =12
                     Text: ="Open in Outlook"
-                    X: =75
-                    Y: =140
+                    X: =57
+                    Y: =219
                     ZIndex: =3
+
+                Label2 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =20
+                    Height: =46
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: =SelectedMeeting.subject
+                    Width: =520
+                    X: =249
+                    Y: =60
+                    ZIndex: =4
+
+                Label2_1 As Label:
+                    Alignment: =Align.Right
+                    Color: =RGBA(146, 154, 157, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =15
+                    Height: =34
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: =DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " min"
+                    Width: =93
+                    X: =124
+                    Y: =95
+                    ZIndex: =5
+
+                Label2_2 As Label:
+                    Alignment: =Align.Right
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =20
+                    Height: =45
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: |-
+                        ="Starts at " & Text(DateTimeValue(SelectedMeeting.start), "hh:mm")
+                    Width: =194
+                    X: =23
+                    Y: =60
+                    ZIndex: =6
+
+                Label2_3 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =20
+                    Height: =46
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: =SelectedMeeting.subject
+                    Width: =545
+                    X: =124
+                    Y: =277
+                    ZIndex: =7
 
     Button3 As Button:
         DisplayMode: =DisplayMode.Edit
