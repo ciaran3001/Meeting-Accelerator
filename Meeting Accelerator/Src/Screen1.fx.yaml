@@ -569,15 +569,17 @@ Screen1 As screen:
                     Y: =141
                     ZIndex: =10
 
-            Container6 As groupContainer.verticalAutoLayoutContainer:
+            Cnt_NoMeetingSelected As groupContainer.verticalAutoLayoutContainer:
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Visible: =If(SelectedMeeting.subject = Blank(), true, false)
                 ZIndex: =4
 
                 Container7 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
@@ -619,6 +621,7 @@ Screen1 As screen:
                     ZIndex: =3
 
                 Container9 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
