@@ -191,7 +191,15 @@ Screen1 As screen:
                 LoadingSpinner: =LoadingSpinner.Data
                 LoadingSpinnerColor: |-
                     =ColorValue("#EE8C1D")
-                OnSelect: =Set(SelectedMeeting, ThisItem);
+                OnSelect: |-
+                    =Set(SelectedMeeting, ThisItem);
+                    
+                    UpdateContext({BodyToCheckForAgenda : Lower(SelectedMeeting.body)});
+                    If("agenda" in BodyToCheckForAgenda Or "itinerary" in BodyToCheckForAgenda,
+                        Set(AgendaFound, true);
+                        ,
+                        Set(AgendaFound, false);
+                    );
                 TemplatePadding: =0
                 TemplateSize: =120
                 X: =560
@@ -419,13 +427,14 @@ Screen1 As screen:
 
                 Label2_3 As Label:
                     DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
-                    Height: =46
+                    FontSize: =10
+                    FontWeight: =FontWeight.Semibold
+                    Height: =24
                     PCFTeamsTheme: =TeamsTheme.Default
-                    Text: =SelectedMeeting.subject
+                    Text: =If(AgendaFound, " " , "We did not find an agenda for this meeting!")
                     Width: =545
-                    X: =50
-                    Y: =635
+                    X: =52
+                    Y: =207
                     ZIndex: =7
 
                 Label2_4 As Label:

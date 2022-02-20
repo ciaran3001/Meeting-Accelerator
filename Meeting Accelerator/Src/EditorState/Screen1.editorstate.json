@@ -2856,7 +2856,7 @@
       {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "",
@@ -3783,6 +3783,14 @@
         "InvariantPropertyName": "Text",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "FontWeight",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
     "HasDynamicProperties": false,
@@ -3806,6 +3814,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "User"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "FontWeight",
         "RuleProviderType": "Unknown"
       },
       {
