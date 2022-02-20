@@ -434,7 +434,7 @@ Screen1 As screen:
                     Text: =If(AgendaFound, " " , "We did not find an agenda for this meeting!")
                     Width: =545
                     X: =52
-                    Y: =207
+                    Y: =202
                     ZIndex: =7
 
                 Label2_4 As Label:
