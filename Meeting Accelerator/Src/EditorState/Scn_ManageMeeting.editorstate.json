@@ -134,7 +134,8 @@
       "Size",
       "Italic",
       "Underline",
-      "Strikethrough"
+      "Strikethrough",
+      "OnSelect"
     ],
     "DynamicProperties": [
       {
@@ -184,7 +185,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_6",
-    "ParentIndex": 0,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -361,6 +362,11 @@
         "Category": "Design",
         "PropertyName": "Strikethrough",
         "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Behavior",
+        "PropertyName": "OnSelect",
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "defaultButtonStyle",
@@ -501,7 +507,8 @@
       "Size",
       "Italic",
       "Underline",
-      "Strikethrough"
+      "Strikethrough",
+      "OnSelect"
     ],
     "DynamicProperties": [
       {
@@ -551,7 +558,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_7",
-    "ParentIndex": 0,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -728,6 +735,11 @@
         "Category": "Design",
         "PropertyName": "Strikethrough",
         "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Behavior",
+        "PropertyName": "OnSelect",
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "defaultButtonStyle",
@@ -753,7 +765,8 @@
       "LayoutOverflowX",
       "LayoutOverflowY",
       "LayoutWrap",
-      "ZIndex"
+      "ZIndex",
+      "Visible"
     ],
     "DynamicProperties": [
       {
@@ -895,6 +908,11 @@
         "Category": "Design",
         "PropertyName": "ZIndex",
         "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Visible",
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "",
@@ -920,7 +938,8 @@
       "LayoutOverflowX",
       "LayoutOverflowY",
       "LayoutWrap",
-      "ZIndex"
+      "ZIndex",
+      "Visible"
     ],
     "DynamicProperties": [
       {
@@ -1062,6 +1081,11 @@
         "Category": "Design",
         "PropertyName": "ZIndex",
         "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Visible",
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "",
@@ -3124,7 +3148,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label8",
-    "ParentIndex": 1,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -3380,7 +3404,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label8_2",
-    "ParentIndex": 1,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

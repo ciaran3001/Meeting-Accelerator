@@ -206,6 +206,9 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    Visible: |-
+                        =
+                        !AddingOutcome
                     ZIndex: =2
 
                     Label8 As Label:
@@ -235,6 +238,8 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        OnSelect: |-
+                            =UpdateContext({AddingOutcome : true});
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: |-
                             =ColorFade(ColorValue("#EE8C1D"), -20%)
@@ -253,6 +258,7 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    Visible: =AddingOutcome
                     ZIndex: =3
 
                     Label8_2 As Label:
@@ -284,6 +290,8 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        OnSelect: |-
+                            =UpdateContext({AddingOutcome : false});
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: |-
                             =ColorFade(ColorValue("#EE8C1D"), -20%)
