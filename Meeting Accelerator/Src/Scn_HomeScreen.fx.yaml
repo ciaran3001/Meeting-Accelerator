@@ -15,7 +15,6 @@ Scn_HomeScreen As screen:
             FillPortions: =0
             Height: =App.Height
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =10
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -121,168 +120,170 @@ Scn_HomeScreen As screen:
 
             Cnt_MeetingTabs As groupContainer.horizontalAutoLayoutContainer:
                 FillPortions: =0
-                Height: =50
+                Height: =53
+                LayoutDirection: =LayoutDirection.Vertical
                 LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMinHeight: =50
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =2
 
-                Container3 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =50
-                    LayoutMinWidth: =100
-                    LayoutMode: =LayoutMode.Auto
-                    ZIndex: =1
-
-                    Label3 As Label:
-                        AlignInContainer: =AlignInContainer.Center
-                        Alignment: =Align.Center
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =32
-                        LayoutMinHeight: =32
-                        LayoutMinWidth: =320
-                        OnSelect: |-
-                            =Clear(MyMeetings);
-                            Set(SelectedMeetingTab, "History");
-                            Select(Btn_LoadData);
-                            Set(SelectedMeeting, Blank());
-                        PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="History"
-                        Width: =Parent.Width
-                        X: =0
-                        Y: =0
-                        ZIndex: =1
-
-                    Rectangle3 As rectangle:
-                        AlignInContainer: =AlignInContainer.Stretch
-                        BorderColor: =RGBA(243, 242, 241, 1)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledFill: =RGBA(238, 140, 29, 1)
-                        DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(238, 140, 29, 1)
-                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                        Height: =3
-                        HoverFill: =RGBA(98, 100, 167, 1)
-                        PressedFill: =RGBA(98, 100, 167, 1)
-                        Visible: =If(SelectedMeetingTab =  "History", true, false)
-                        X: =42
-                        Y: =185
-                        ZIndex: =2
-
-                Container3_1 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =50
-                    LayoutMinWidth: =100
-                    LayoutMode: =LayoutMode.Auto
-                    ZIndex: =2
-
-                    Label3_1 As Label:
-                        AlignInContainer: =AlignInContainer.Center
-                        Alignment: =Align.Center
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =32
-                        LayoutMinHeight: =32
-                        LayoutMinWidth: =320
-                        OnSelect: |-
-                            =Clear(MyMeetings);
-                            Set(SelectedMeetingTab, "Today");
-                            Select(Btn_LoadData);
-                            Set(SelectedMeeting, Blank());
-                        PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="Today"
-                        Width: =Parent.Width
-                        X: =0
-                        Y: =0
-                        ZIndex: =1
-
-                    Rectangle3_1 As rectangle:
-                        AlignInContainer: =AlignInContainer.Stretch
-                        BorderColor: =RGBA(243, 242, 241, 1)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledFill: =RGBA(238, 140, 29, 1)
-                        DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(238, 140, 29, 1)
-                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                        Height: =3
-                        HoverFill: =RGBA(98, 100, 167, 1)
-                        OnSelect: =
-                        PressedFill: =RGBA(98, 100, 167, 1)
-                        Visible: =If(SelectedMeetingTab =  "Today", true, false)
-                        X: =42
-                        Y: =185
-                        ZIndex: =2
-
-                Container3_2 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =50
-                    LayoutMinWidth: =100
-                    LayoutMode: =LayoutMode.Auto
-                    ZIndex: =3
-
-                    Label3_2 As Label:
-                        AlignInContainer: =AlignInContainer.Center
-                        Alignment: =Align.Center
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =32
-                        LayoutMinHeight: =32
-                        LayoutMinWidth: =320
-                        OnSelect: |-
-                            =Clear(MyMeetings);
-                            Set(SelectedMeetingTab, "Upcoming");
-                            Select(Btn_LoadData);
-                            Set(SelectedMeeting, Blank());
-                        PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="Upcoming"
-                        Width: =Parent.Width
-                        X: =0
-                        Y: =0
-                        ZIndex: =1
-
-                    Rectangle3_2 As rectangle:
-                        AlignInContainer: =AlignInContainer.Stretch
-                        BorderColor: =RGBA(243, 242, 241, 1)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledFill: =RGBA(238, 140, 29, 1)
-                        DisplayMode: =DisplayMode.Disabled
-                        Fill: =RGBA(238, 140, 29, 1)
-                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                        Height: =3
-                        HoverFill: =RGBA(98, 100, 167, 1)
-                        PressedFill: =RGBA(98, 100, 167, 1)
-                        Visible: =If(SelectedMeetingTab =  "Upcoming", true, false)
-                        X: =42
-                        Y: =185
-                        ZIndex: =2
-
                 Container1 As groupContainer.verticalAutoLayoutContainer:
-                    LayoutDirection: =LayoutDirection.Vertical
+                    FillPortions: =0
+                    Height: =50
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =4
 
-            Rectangle3_3 As rectangle:
-                AlignInContainer: =AlignInContainer.Stretch
-                BorderColor: =RGBA(243, 242, 241, 1)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledFill: =RGBA(217, 221, 229, 1)
-                DisplayMode: =DisplayMode.Disabled
-                Fill: =RGBA(238, 140, 29, 1)
-                FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                Height: =3
-                HoverFill: =RGBA(98, 100, 167, 1)
-                PressedFill: =RGBA(98, 100, 167, 1)
-                X: =42
-                Y: =185
-                ZIndex: =3
+                    Container3 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =50
+                        LayoutMinWidth: =100
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =1
+
+                        Label3 As Label:
+                            AlignInContainer: =AlignInContainer.Center
+                            Alignment: =Align.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =32
+                            LayoutMinHeight: =32
+                            LayoutMinWidth: =320
+                            OnSelect: |-
+                                =Clear(MyMeetings);
+                                Set(SelectedMeetingTab, "History");
+                                Select(Btn_LoadData);
+                                Set(SelectedMeeting, Blank());
+                            PCFTeamsTheme: =TeamsTheme.Default
+                            Text: ="History"
+                            Width: =Parent.Width
+                            X: =0
+                            Y: =0
+                            ZIndex: =1
+
+                        Rectangle3 As rectangle:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            BorderColor: =RGBA(243, 242, 241, 1)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            DisabledFill: =RGBA(238, 140, 29, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(238, 140, 29, 1)
+                            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                            Height: =3
+                            HoverFill: =RGBA(98, 100, 167, 1)
+                            PressedFill: =RGBA(98, 100, 167, 1)
+                            Visible: =If(SelectedMeetingTab =  "History", true, false)
+                            X: =42
+                            Y: =185
+                            ZIndex: =2
+
+                    Container3_1 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =50
+                        LayoutMinWidth: =100
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =2
+
+                        Label3_1 As Label:
+                            AlignInContainer: =AlignInContainer.Center
+                            Alignment: =Align.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =32
+                            LayoutMinHeight: =32
+                            LayoutMinWidth: =320
+                            OnSelect: |-
+                                =Clear(MyMeetings);
+                                Set(SelectedMeetingTab, "Today");
+                                Select(Btn_LoadData);
+                                Set(SelectedMeeting, Blank());
+                            PCFTeamsTheme: =TeamsTheme.Default
+                            Text: ="Today"
+                            Width: =Parent.Width
+                            X: =0
+                            Y: =0
+                            ZIndex: =1
+
+                        Rectangle3_1 As rectangle:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            BorderColor: =RGBA(243, 242, 241, 1)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            DisabledFill: =RGBA(238, 140, 29, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(238, 140, 29, 1)
+                            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                            Height: =3
+                            HoverFill: =RGBA(98, 100, 167, 1)
+                            OnSelect: =
+                            PressedFill: =RGBA(98, 100, 167, 1)
+                            Visible: =If(SelectedMeetingTab =  "Today", true, false)
+                            X: =42
+                            Y: =185
+                            ZIndex: =2
+
+                    Container3_2 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =50
+                        LayoutMinWidth: =100
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =3
+
+                        Label3_2 As Label:
+                            AlignInContainer: =AlignInContainer.Center
+                            Alignment: =Align.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =32
+                            LayoutMinHeight: =32
+                            LayoutMinWidth: =320
+                            OnSelect: |-
+                                =Clear(MyMeetings);
+                                Set(SelectedMeetingTab, "Upcoming");
+                                Select(Btn_LoadData);
+                                Set(SelectedMeeting, Blank());
+                            PCFTeamsTheme: =TeamsTheme.Default
+                            Text: ="Upcoming"
+                            Width: =Parent.Width
+                            X: =0
+                            Y: =0
+                            ZIndex: =1
+
+                        Rectangle3_2 As rectangle:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            BorderColor: =RGBA(243, 242, 241, 1)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            DisabledFill: =RGBA(238, 140, 29, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(238, 140, 29, 1)
+                            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                            Height: =3
+                            HoverFill: =RGBA(98, 100, 167, 1)
+                            PressedFill: =RGBA(98, 100, 167, 1)
+                            Visible: =If(SelectedMeetingTab =  "Upcoming", true, false)
+                            X: =42
+                            Y: =185
+                            ZIndex: =2
+
+                Rectangle3_3 As rectangle:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =RGBA(217, 221, 229, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Fill: =RGBA(238, 140, 29, 1)
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    Height: =3
+                    HoverFill: =RGBA(98, 100, 167, 1)
+                    PressedFill: =RGBA(98, 100, 167, 1)
+                    X: =42
+                    Y: =185
+                    ZIndex: =5
 
             Gal_MyMeetings As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
                 BorderColor: =RGBA(243, 242, 241, 1)
