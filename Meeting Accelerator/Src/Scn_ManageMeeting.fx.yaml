@@ -116,8 +116,23 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =15
                 PaddingTop: =5
                 ZIndex: =4
+
+                Label7 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    FillPortions: =1
+                    FontSize: =20
+                    FontWeight: =FontWeight.Bold
+                    Height: =45
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    Text: =SelectedMeeting.subject
+                    Width: =320
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
 
                 Icon3 As icon.Add:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -142,7 +157,7 @@
                     PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Width: =50
-                    ZIndex: =1
+                    ZIndex: =2
 
             MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
                 Fill: =RGBA(255, 255, 255, 1)
