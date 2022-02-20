@@ -1,6 +1,7 @@
 Screen1 As screen:
     Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+    OnVisible: =Select(Btn_LoadData);
 
     Container2_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =App.Height
@@ -389,13 +390,15 @@ Screen1 As screen:
                     Y: =251
                     ZIndex: =9
 
-    Button3 As Button:
+    Btn_LoadData As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |-
             =Set(DefaultCalendar, LookUp(Office365Outlook.CalendarGetTables().value, DisplayName = "Calendar"));
             ClearCollect(MyMeetings, Office365Outlook.GetEventsCalendarViewV3(DefaultCalendar.Name, Today(), DateAdd(Today(), 1,Days)).value);
         PCFTeamsTheme: =TeamsTheme.Default
+        Visible: |
+            =false
         Width: =96
         X: =0
         Y: =736

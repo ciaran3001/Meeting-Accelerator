@@ -193,19 +193,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Button3.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Btn_LoadData.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Button3.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Btn_LoadData.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen1",
-                "type": "Screen1.Button3"
+                "type": "Screen1.Btn_LoadData"
               }
             }
           ],
