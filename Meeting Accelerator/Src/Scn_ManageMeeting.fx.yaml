@@ -188,6 +188,19 @@
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =1
 
+                    Label8_1 As Label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =320
+                        Text: ="Agenda Items"
+                        Width: =320
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
                 Container10 As groupContainer.verticalAutoLayoutContainer:
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
