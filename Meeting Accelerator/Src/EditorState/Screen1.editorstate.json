@@ -373,7 +373,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_3",
-    "ParentIndex": 5,
+    "ParentIndex": 6,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -722,7 +722,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_4",
-    "ParentIndex": 6,
+    "ParentIndex": 5,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -3838,7 +3838,7 @@
       {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "",
@@ -3992,7 +3992,7 @@
       {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "",
@@ -4146,7 +4146,7 @@
       {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "",
