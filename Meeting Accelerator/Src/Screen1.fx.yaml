@@ -280,6 +280,7 @@ Screen1 As screen:
                 ZIndex: =2
 
                 Button1 As Button:
+                    BorderRadius: =5
                     DisabledFillColor: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.Disabled
                     Height: =Parent.Height

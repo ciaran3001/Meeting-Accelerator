@@ -134,6 +134,14 @@
         "InvariantPropertyName": "DisabledFillColor",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "BorderRadius",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
     "HasDynamicProperties": false,
@@ -157,6 +165,11 @@
       {
         "Category": "Data",
         "PropertyName": "DisabledFillColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "BorderRadius",
         "RuleProviderType": "Unknown"
       },
       {
