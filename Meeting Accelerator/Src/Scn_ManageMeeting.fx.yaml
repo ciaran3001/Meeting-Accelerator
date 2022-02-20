@@ -6,6 +6,7 @@
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutMode: =LayoutMode.Auto
+        PaddingRight: =20
         Width: =Parent.Width
         ZIndex: =1
 
@@ -115,10 +116,37 @@
             HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
                 FillPortions: =0
                 Height: =75
+                LayoutJustifyContent: =LayoutJustifyContent.End
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                PaddingTop: =5
                 ZIndex: =4
+
+                Icon3 As icon.Add:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Color: =RGBA(238, 140, 29, 1)
+                    DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -30%)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.Cancel
+                    OnSelect: |+
+                        =Navigate(Scn_HomeScreen, ScreenTransition.Fade);
+                        
+                    PaddingBottom: =3
+                    PaddingLeft: =3
+                    PaddingRight: =3
+                    PaddingTop: =3
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =50
+                    ZIndex: =1
 
             MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical

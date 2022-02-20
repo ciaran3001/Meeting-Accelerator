@@ -320,6 +320,7 @@ Scn_HomeScreen As screen:
                     );
                 TemplatePadding: =0
                 TemplateSize: =120
+                Transition: =Transition.Pop
                 X: =560
                 Y: =140
                 ZIndex: =4

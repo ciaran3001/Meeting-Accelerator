@@ -4202,7 +4202,7 @@
       {
         "Category": "Design",
         "PropertyName": "Transition",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",
