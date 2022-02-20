@@ -26,6 +26,77 @@ Screen1 As screen:
             Width: =450
             ZIndex: =1
 
+            Container1 As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =0
+                Height: =125
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =1
+
+                Image1 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =undraw_conversation_re_c26v
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    X: =16
+                    Y: =12
+                    ZIndex: =1
+
+                Title1_1 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =14
+                    FontWeight: =FontWeight.Semibold
+                    Height: =58
+                    OnSelect: =false
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    TabIndex: =-1
+                    Text: ="What meeting do you want to accelerate?"
+                    VerticalAlignment: =VerticalAlign.Middle
+                    Width: =251
+                    X: =126
+                    Y: =12
+                    ZIndex: =2
+
+                Button1_5 As button:
+                    BorderColor: =
+                    BorderThickness: =0
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(238, 140, 29, 1)
+                    FocusedBorderThickness: =0
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    HoverBorderColor: =RGBA(238, 140, 29, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    OnSelect: =Launch(SelectedMeeting.webLink);
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
+                    Size: =12
+                    Text: ="Learn more "
+                    Width: =118
+                    X: =126
+                    Y: =72
+                    ZIndex: =3
+
             Cnt_MeetingTabs As groupContainer.horizontalAutoLayoutContainer:
                 FillPortions: =0
                 Height: =50
@@ -33,7 +104,7 @@ Screen1 As screen:
                 LayoutMinHeight: =50
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =1
+                ZIndex: =2
 
                 Container3 As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -182,7 +253,7 @@ Screen1 As screen:
                 PressedFill: =RGBA(98, 100, 167, 1)
                 X: =42
                 Y: =185
-                ZIndex: =2
+                ZIndex: =3
 
             Gal_MyMeetings As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
                 BorderColor: =RGBA(243, 242, 241, 1)
@@ -209,7 +280,7 @@ Screen1 As screen:
                 TemplateSize: =120
                 X: =560
                 Y: =140
-                ZIndex: =3
+                ZIndex: =4
 
                 Rectangle1 As rectangle:
                     BorderColor: =RGBA(243, 242, 241, 1)

@@ -8,7 +8,9 @@
     "Button1_2": 45,
     "Button1_3": 31,
     "Button1_4": 46,
+    "Button1_5": 66,
     "Cnt_MeetingTabs": 7,
+    "Container1": 63,
     "Container2": 6,
     "Container2_1": 5,
     "Container2_2": 24,
@@ -21,6 +23,7 @@
     "HeaderContainer1": 39,
     "HtmlText1": 32,
     "Icon2": 62,
+    "Image1": 64,
     "Image2": 42,
     "Image2_1": 22,
     "Label1": 43,
@@ -48,17 +51,22 @@
     "Subtitle1": 23,
     "Teams": 3,
     "ThemeScreen": 41,
-    "Title1": 21
+    "Title1": 21,
+    "Title1_1": 65
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "02/20/2022 21:41:07",
+  "HeaderLastSavedDateTimeUTC": "02/20/2022 21:44:30",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
-    "Meeting Icon": "0001.svg"
+    "Meeting Icon": "0001.svg",
+    "undraw_calendar_re_ki49": "3a41a941-ae88-4879-9c9f-fb5ebec8f48c.svg",
+    "undraw_conversation_re_c26v": "b00fd68e-7e43-4c60-933a-6a707435fc42.svg"
   },
   "LocalResourceRootPaths": {
-    "Meeting Icon": "https://docserverpwaprodneu.blob.core.windows.net/b9cebcdd-87f5-48d8-97e2-c3ec3be51404-1/resource/Assets0Images00001.svg?sv=2017-04-17&sr=b&sig=Askx2F2tmky500i8uMjODestm%2FZmGvR%2FaPZL6HVSwYI%3D&spr=https&se=2022-02-21T21%3A28%3A46Z&sp=r"
+    "Meeting Icon": "https://docserverpwaprodneu.blob.core.windows.net/b9cebcdd-87f5-48d8-97e2-c3ec3be51404-1/resource/Assets0Images00001.svg?sv=2017-04-17&sr=b&sig=Askx2F2tmky500i8uMjODestm%2FZmGvR%2FaPZL6HVSwYI%3D&spr=https&se=2022-02-21T21%3A28%3A46Z&sp=r",
+    "undraw_calendar_re_ki49": "https://docserverpwaprodneu.blob.core.windows.net/b9cebcdd-87f5-48d8-97e2-c3ec3be51404-1/resource/66f8f7d8-45e7-4c20-aced-80cb94002c4b.svg?sv=2017-04-17&sr=b&sig=ux8PDMrads6DeqXWdjmGqHy4yTIhTk6%2Fsv7aH5ghFok%3D&spr=https&se=2022-02-21T21%3A57%3A52Z&sp=r",
+    "undraw_conversation_re_c26v": "https://docserverpwaprodneu.blob.core.windows.net/b9cebcdd-87f5-48d8-97e2-c3ec3be51404-1/resource/eefc511d-2c9e-4bd4-b241-23ff657c8b27.svg?sv=2017-04-17&sr=b&sig=p5vSHK5py8NIqx26rYymY1PD1n8uva%2BCJUBSmf4ZJSE%3D&spr=https&se=2022-02-21T21%3A58%3A04Z&sp=r"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -94,13 +102,13 @@
   "OrderGroupControls": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 5,
-    "gallery": 2,
+    "button": 2,
+    "gallery": 4,
     "groupContainer": 0,
     "htmlViewer": 6,
-    "icon": 3,
-    "image": 4,
-    "rectangle": 1
+    "icon": 5,
+    "image": 1,
+    "rectangle": 3
   },
   "PublishOrderIndices": {
     "App": 0,
@@ -110,7 +118,9 @@
     "Button1_2": 37,
     "Button1_3": 30,
     "Button1_4": 29,
+    "Button1_5": 29,
     "Cnt_MeetingTabs": 2,
+    "Container1": 0,
     "Container2": 1,
     "Container2_1": 0,
     "Container2_2": 22,
@@ -123,6 +133,7 @@
     "HeaderContainer1": 41,
     "HtmlText1": 32,
     "Icon2": 16,
+    "Image1": 0,
     "Image2": 34,
     "Image2_1": 21,
     "Label1": 35,
@@ -150,17 +161,20 @@
     "Subtitle1": 19,
     "Teams": 2,
     "ThemeScreen": 40,
-    "Title1": 18
+    "Title1": 18,
+    "Title1_1": 18
   },
   "ResourcesJsonIndices": {
     "Image-Meeting Icon": 1,
-    "Image-SampleImage": 0
+    "Image-SampleImage": 0,
+    "Image-undraw_calendar_re_ki49": 2,
+    "Image-undraw_conversation_re_c26v": 3
   },
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.2063809,
     "ControlCount": {
-      "button": 4,
+      "button": 5,
       "gallery": 1,
       "galleryTemplate": 1,
       "groupContainer": 13,
@@ -169,7 +183,7 @@
       "icon": 7,
       "image": 2,
       "Microsoft_CoreControls_Button": 2,
-      "Microsoft_CoreControls_Label": 17,
+      "Microsoft_CoreControls_Label": 18,
       "rectangle": 5,
       "screen": 3
     },
