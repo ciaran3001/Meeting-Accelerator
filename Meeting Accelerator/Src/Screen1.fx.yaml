@@ -202,8 +202,8 @@ Screen1 As screen:
                     BorderColor: =RGBA(243, 242, 241, 1)
                     DisabledFill: |-
                         =If(ThisItem.id = SelectedMeeting.id, ColorValue("#DBF6FF"),White)
-                    DisplayMode: =DisplayMode.Disabled
-                    Fill: =RGBA(255, 255, 255, 1)
+                    Fill: |-
+                        =If(ThisItem.id = SelectedMeeting.id, ColorValue("#DBF6FF"),White)
                     FocusedBorderColor: =RGBA(98, 100, 167, 1)
                     Height: =105
                     HoverFill: =RGBA(0,0,0,0)
@@ -221,7 +221,7 @@ Screen1 As screen:
                     OnSelect: =Select(Parent)
                     PCFTeamsTheme: =TeamsTheme.Default
                     TabIndex: =-1
-                    Text: =ThisItem.organizer
+                    Text: =ThisItem.subject
                     VerticalAlignment: =VerticalAlign.Top
                     Width: =333
                     X: =100
@@ -236,7 +236,7 @@ Screen1 As screen:
                     OnSelect: =Select(Parent)
                     PCFTeamsTheme: =TeamsTheme.Default
                     TabIndex: =-1
-                    Text: =ThisItem.subject
+                    Text: ="Organised by " & ThisItem.organizer
                     VerticalAlignment: =VerticalAlign.Top
                     Width: =352
                     X: =100
