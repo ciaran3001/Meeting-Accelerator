@@ -186,14 +186,14 @@ Screen1 As screen:
                 FocusedBorderThickness: =2
                 Items: =MyMeetings
                 Layout: =Layout.Vertical
-                LayoutMinHeight: =287
+                LayoutMinHeight: =250
                 LayoutMinWidth: =320
                 LoadingSpinner: =LoadingSpinner.Data
                 LoadingSpinnerColor: |-
                     =ColorValue("#EE8C1D")
                 OnSelect: =Set(SelectedMeeting, ThisItem);
                 TemplatePadding: =0
-                TemplateSize: =149
+                TemplateSize: =120
                 X: =560
                 Y: =140
                 ZIndex: =3
@@ -240,7 +240,7 @@ Screen1 As screen:
                     VerticalAlignment: =VerticalAlign.Top
                     Width: =352
                     X: =100
-                    Y: =45
+                    Y: =36
                     ZIndex: =4
 
                 Image2_1 As image:
@@ -272,9 +272,9 @@ Screen1 As screen:
                     Height: =32
                     PCFTeamsTheme: =TeamsTheme.Default
                     Text: |-
-                        =Text(DateTimeValue(ThisItem.start), "hh:mm") & "pm"
-                    Width: =70
-                    X: =10
+                        =Text(DateTimeValue(ThisItem.start), "hh:mm") 
+                    Width: =59
+                    X: =21
                     Y: =13
                     ZIndex: =6
 
@@ -288,8 +288,31 @@ Screen1 As screen:
                     Text: =DateDiff(ThisItem.start, ThisItem.end,Minutes) & " min"
                     Width: =70
                     X: =10
-                    Y: =40
+                    Y: =37
                     ZIndex: =7
+
+                Icon2 As icon.Add:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Height: =32
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.Clock
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =4
+                    PaddingLeft: =3
+                    PaddingRight: =3
+                    PaddingTop: =10
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =32
+                    X: =7
+                    Y: =13
+                    ZIndex: =8
 
         Container2_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =App.Height
