@@ -201,7 +201,7 @@ Screen1 As screen:
                     =Set(SelectedMeeting, ThisItem);
                     
                     UpdateContext({BodyToCheckForAgenda : Lower(SelectedMeeting.body)});
-                    If("agenda" in BodyToCheckForAgenda Or "itinerary" in BodyToCheckForAgenda,
+                    If("agenda" in BodyToCheckForAgenda Or "itinerary" in BodyToCheckForAgenda Or "topic" in BodyToCheckForAgenda,
                         Set(AgendaFound, true);
                         ,
                         Set(AgendaFound, false);
