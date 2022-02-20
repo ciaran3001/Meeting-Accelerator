@@ -261,6 +261,13 @@ Scn_HomeScreen As screen:
                         Y: =185
                         ZIndex: =2
 
+                Container1 As groupContainer.verticalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =4
+
             Rectangle3_3 As rectangle:
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(243, 242, 241, 1)
