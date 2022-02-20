@@ -28,6 +28,7 @@
     "HeaderContainer1": 8,
     "HeaderContainer2": 65,
     "HtmlText1": 47,
+    "HtmlText2": 80,
     "Icon2": 31,
     "Image1": 14,
     "Image1_1": 52,
@@ -46,6 +47,7 @@
     "Label4": 32,
     "Label4_1": 35,
     "Label5": 51,
+    "Label6": 81,
     "MainSectionContainer1": 9,
     "MainSectionContainer2": 66,
     "Rectangle1": 30,
@@ -69,7 +71,7 @@
     "Title1_1": 15
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "02/20/2022 22:16:13",
+  "HeaderLastSavedDateTimeUTC": "02/20/2022 22:21:06",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -120,13 +122,13 @@
   "OrderGroupControls": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 2,
-    "gallery": 4,
+    "button": 3,
+    "gallery": 5,
     "groupContainer": 0,
-    "htmlViewer": 6,
-    "icon": 5,
-    "image": 1,
-    "rectangle": 3
+    "htmlViewer": 1,
+    "icon": 6,
+    "image": 2,
+    "rectangle": 4
   },
   "PublishOrderIndices": {
     "App": 0,
@@ -156,6 +158,7 @@
     "HeaderContainer1": 53,
     "HeaderContainer2": 58,
     "HtmlText1": 44,
+    "HtmlText2": 0,
     "Icon2": 23,
     "Image1": 3,
     "Image1_1": 32,
@@ -174,6 +177,7 @@
     "Label4": 24,
     "Label4_1": 27,
     "Label5": 33,
+    "Label6": 0,
     "MainSectionContainer1": 54,
     "MainSectionContainer2": 59,
     "Rectangle1": 22,

@@ -107,7 +107,9 @@ Scn_HomeScreen As screen:
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Image: =Cog
-                    OnSelect: =Navigate(Scn_Configuration, ScreenTransition.Fade);
+                    OnSelect: |+
+                        =Navigate(Scn_Configuration, ScreenTransition.Fade);
+                        
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     RadiusBottomLeft: =3
