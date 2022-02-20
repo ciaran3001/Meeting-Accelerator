@@ -118,6 +118,15 @@ Scn_HomeScreen As screen:
                     Y: =83
                     ZIndex: =4
 
+            Container5 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =25
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =2
+
             Cnt_MeetingTabs As groupContainer.horizontalAutoLayoutContainer:
                 FillPortions: =0
                 Height: =53
@@ -126,7 +135,7 @@ Scn_HomeScreen As screen:
                 LayoutMinHeight: =50
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =2
+                ZIndex: =3
 
                 Container1 As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
