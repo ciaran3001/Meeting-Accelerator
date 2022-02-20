@@ -36,12 +36,72 @@
                 Y: =0
                 ZIndex: =1
 
+            Label6_1 As Label:
+                AlignInContainer: =AlignInContainer.Stretch
+                Alignment: =Align.Justify
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =12
+                FontWeight: =FontWeight.Normal
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =320
+                Text: ="Organised by" & SelectedMeeting.organizer
+                Width: =320
+                X: =0
+                Y: =0
+                ZIndex: =2
+
             HtmlText2 As htmlViewer:
                 AlignInContainer: =AlignInContainer.Stretch
                 Fill: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 HtmlText: =SelectedMeeting.body
-                ZIndex: =2
+                ZIndex: =3
+
+            Label6_2 As Label:
+                AlignInContainer: =AlignInContainer.Stretch
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =15
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =320
+                Text: =SelectedMeeting.start & " to " & SelectedMeeting.end
+                Width: =320
+                X: =0
+                Y: =0
+                ZIndex: =4
+
+            Label6_3 As Label:
+                AlignInContainer: =AlignInContainer.Stretch
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =15
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =320
+                Text: ="Meeting Info"
+                Width: =320
+                X: =0
+                Y: =0
+                ZIndex: =5
+
+            Label6_4 As Label:
+                AlignInContainer: =AlignInContainer.Stretch
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =15
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =320
+                Text: ="Meeting Info"
+                Width: =320
+                X: =0
+                Y: =0
+                ZIndex: =6
 
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =7
