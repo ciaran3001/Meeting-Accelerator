@@ -201,7 +201,7 @@ Screen1 As screen:
                     OnSelect: =Select(Parent)
                     PressedFill: =RGBA(0,0,0,0)
                     TabIndex: =0
-                    Width: =Parent.TemplateWidth
+                    Width: =479
                     ZIndex: =1
 
                 Title1 As Label:
@@ -393,9 +393,61 @@ Screen1 As screen:
     Btn_LoadData As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        OnSelect: |-
-            =Set(DefaultCalendar, LookUp(Office365Outlook.CalendarGetTables().value, DisplayName = "Calendar"));
-            ClearCollect(MyMeetings, Office365Outlook.GetEventsCalendarViewV3(DefaultCalendar.Name, Today(), DateAdd(Today(), 1,Days)).value);
+        OnSelect: |
+            =Set(
+                DefaultCalendar,
+                LookUp(
+                    Office365Outlook.CalendarGetTables().value,
+                    DisplayName = "Calendar"
+                )
+            );
+            If(
+                SelectedMeetingTab = "Today",
+                ClearCollect(
+                    MyMeetings,
+                    Office365Outlook.GetEventsCalendarViewV3(
+                        DefaultCalendar.Name,
+                        Today(),
+                        DateAdd(
+                            Today(),
+                            1,
+                            Days
+                        )
+                    ).value
+                );
+                ,
+                If(
+                    SelectedMeetingTab = "History",
+                    ClearCollect(
+                        MyMeetings,
+                        Office365Outlook.GetEventsCalendarViewV3(
+                            DefaultCalendar.Name,
+                            DateAdd(
+                                Today(),
+                                -30,
+                                Days
+                            ),
+                            Today()
+                        ).value
+                    );
+                    If(
+                        SelectedMeetingTab = "Upcoming",
+                        ClearCollect(
+                            MyMeetings,
+                            Office365Outlook.GetEventsCalendarViewV3(
+                                DefaultCalendar.Name,
+                                Today(),
+                                DateAdd(
+                                    Today(),
+                                    30,
+                                    Days
+                                )
+                            ).value
+                        );
+                    );
+                );
+                
+            );
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: |
             =false
