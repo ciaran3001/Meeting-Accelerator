@@ -221,3 +221,79 @@
                         Y: =0
                         ZIndex: =1
 
+                    Button1_7 As button:
+                        BorderColor: =
+                        BorderThickness: =0
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(238, 140, 29, 1)
+                        FocusedBorderThickness: =0
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =RGBA(238, 140, 29, 1)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
+                        Size: =15
+                        Text: ="Add"
+                        X: =108
+                        Y: =276
+                        ZIndex: =2
+
+                Container10_1 As groupContainer.verticalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =3
+
+                    Label8_2 As Label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =320
+                        Text: |-
+                            ="Add Outcome
+                            "
+                        Width: =320
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+                    Button1_6 As button:
+                        BorderColor: =
+                        BorderThickness: =0
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(238, 140, 29, 1)
+                        FocusedBorderThickness: =0
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =RGBA(238, 140, 29, 1)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
+                        Size: =15
+                        Text: ="Finish"
+                        X: =108
+                        Y: =276
+                        ZIndex: =2
+
