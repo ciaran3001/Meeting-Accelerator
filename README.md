@@ -1,0 +1,2 @@
+# Meeting-Accelerator
+Meeting accelerator is an application designed to be used directly from Microsoft teams. It's purpose is to help users keep meetings on track, generate meaningful outcomes, and to see the history of their meeting's efficacy.
