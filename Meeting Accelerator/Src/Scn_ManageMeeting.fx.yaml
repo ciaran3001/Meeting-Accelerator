@@ -13,6 +13,7 @@
         SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =3
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -46,59 +47,73 @@
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =2
 
-            Label6_1 As Label:
-                AlignInContainer: =AlignInContainer.Stretch
-                Alignment: =Align.Justify
-                DisplayMode: =DisplayMode.Edit
-                FontSize: =12
-                FontWeight: =FontWeight.Normal
-                Height: =32
-                LayoutMinHeight: =32
-                LayoutMinWidth: =320
-                Text: ="Organised by " & Lower(SelectedMeeting.organizer)
-                Width: =320
-                X: =0
-                Y: =0
-                ZIndex: =3
+            Container8_1 As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =0
+                Height: =110
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                ZIndex: =6
 
-            Label6_2 As Label:
-                AlignInContainer: =AlignInContainer.Stretch
-                Alignment: =Align.Justify
-                DisplayMode: =DisplayMode.Edit
-                FontSize: =13
-                FontWeight: =FontWeight.Normal
-                Height: =32
-                LayoutMinHeight: =32
-                LayoutMinWidth: =320
-                Text: |-
-                    =Text(DateTimeValue(SelectedMeeting.start), "hh:mm") & " to " & Text(DateTimeValue(SelectedMeeting.end), "hh:mm") & " ("& DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " mins)"
-                Width: =320
-                X: =0
-                Y: =0
-                ZIndex: =4
+                Label6_1 As Label:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Alignment: =Align.Justify
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =12
+                    FontWeight: =FontWeight.Normal
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    Text: ="Organised by " & Lower(SelectedMeeting.organizer)
+                    Width: =320
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
 
-            Label6_3 As Label:
-                AlignInContainer: =AlignInContainer.Stretch
-                Alignment: =Align.Justify
-                DisplayMode: =DisplayMode.Edit
-                FontSize: =12
-                FontWeight: =FontWeight.Normal
-                Height: =32
-                LayoutMinHeight: =32
-                LayoutMinWidth: =320
-                Text: |-
-                    ="Attendees: " & SelectedMeeting.requiredAttendees
-                Width: =320
-                X: =0
-                Y: =0
-                ZIndex: =5
+                Label6_2 As Label:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Alignment: =Align.Justify
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =13
+                    FontWeight: =FontWeight.Normal
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    Text: |-
+                        =Text(DateTimeValue(SelectedMeeting.start), "hh:mm") & " to " & Text(DateTimeValue(SelectedMeeting.end), "hh:mm") & " ("& DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " mins)"
+                    Width: =320
+                    X: =0
+                    Y: =0
+                    ZIndex: =2
+
+                Label6_3 As Label:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Alignment: =Align.Justify
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =12
+                    FontWeight: =FontWeight.Normal
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    Text: |-
+                        ="Attendees: " & SelectedMeeting.requiredAttendees
+                    Width: =320
+                    X: =0
+                    Y: =0
+                    ZIndex: =3
 
             HtmlText2 As htmlViewer:
                 AlignInContainer: =AlignInContainer.Stretch
                 Fill: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 HtmlText: =SelectedMeeting.body
-                ZIndex: =6
+                ZIndex: =7
 
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =7
@@ -160,10 +175,23 @@
                     ZIndex: =2
 
             MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
-                Fill: =RGBA(255, 255, 255, 1)
-                LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =20
                 ZIndex: =5
+
+                Container6 As groupContainer.verticalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =1
+
+                Container10 As groupContainer.verticalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =2
 
