@@ -181,6 +181,7 @@ Screen1 As screen:
                 LoadingSpinner: =LoadingSpinner.Data
                 LoadingSpinnerColor: |-
                     =ColorValue("#EE8C1D")
+                OnSelect: =Set(SelectedMeeting, ThisItem);
                 TemplatePadding: =0
                 TemplateSize: =149
                 X: =560
@@ -189,7 +190,9 @@ Screen1 As screen:
 
                 Rectangle1 As rectangle:
                     BorderColor: =RGBA(243, 242, 241, 1)
-                    DisabledFill: =RGBA(0,0,0,0)
+                    DisabledFill: |-
+                        =If(ThisItem.id = SelectedMeeting.id, ColorValue("#DBF6FF"),White)
+                    DisplayMode: =DisplayMode.Disabled
                     Fill: =RGBA(255, 255, 255, 1)
                     FocusedBorderColor: =RGBA(98, 100, 167, 1)
                     Height: =105
@@ -284,19 +287,33 @@ Screen1 As screen:
                     Y: =40
                     ZIndex: =1
 
-                Button2 As Button:
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =13
-                    Height: =45
-                    OnSelect: =Launch(ThisItem.webLink);
-                    PCFTeamsTheme: =TeamsTheme.Default
-                    Text: |-
-                        ="Open in Outlook
-                        "
-                    Width: =141
-                    X: =455
-                    Y: =295
-                    ZIndex: =2
+                Button1_3 As button:
+                    BorderColor: =
+                    BorderThickness: =0
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(238, 140, 29, 1)
+                    FocusedBorderThickness: =0
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    HoverBorderColor: =RGBA(238, 140, 29, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    OnSelect: =Launch(SelectedMeeting.webLink);
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
+                    Size: =12
+                    Text: ="Open in Outlook"
+                    X: =75
+                    Y: =140
+                    ZIndex: =3
 
     Button3 As Button:
         DisplayMode: =DisplayMode.Edit
