@@ -1,4 +1,5 @@
 "Scn_ManageMeeting As screen.'tabletAutoLayout_Sidebar_ver1.0'":
+    Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
 
     ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
