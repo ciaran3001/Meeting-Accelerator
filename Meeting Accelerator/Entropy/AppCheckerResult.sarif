@@ -373,6 +373,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gal_MyMeetings.Rectangle1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gal_MyMeetings.Rectangle1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Screen1",
+                "type": "Screen1.Container2_1.Container2.Gal_MyMeetings.Rectangle1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.undraw_calendar_re_ki49"
                 }
               ],

@@ -290,6 +290,7 @@ Screen1 As screen:
                     Fill: |-
                         =If(ThisItem.id = SelectedMeeting.id, ColorValue("#DBF6FF"),White)
                     FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    FocusedBorderThickness: =0
                     Height: =105
                     HoverFill: =RGBA(0,0,0,0)
                     OnSelect: =Select(Parent)
@@ -401,7 +402,7 @@ Screen1 As screen:
 
         Container2_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =App.Height
-            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100
@@ -415,7 +416,7 @@ Screen1 As screen:
             ZIndex: =2
 
             Container4 As groupContainer.manualLayoutContainer:
-                AlignInContainer: =AlignInContainer.Start
+                AlignInContainer: =AlignInContainer.SetByContainer
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Visible: =If(SelectedMeeting.subject = Blank(), false, true)
@@ -570,6 +571,7 @@ Screen1 As screen:
                     ZIndex: =10
 
             Cnt_NoMeetingSelected As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100

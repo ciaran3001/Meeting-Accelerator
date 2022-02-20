@@ -6431,7 +6431,7 @@
       {
         "Category": "Design",
         "PropertyName": "FocusedBorderThickness",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",
