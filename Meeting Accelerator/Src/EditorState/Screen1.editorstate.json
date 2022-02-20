@@ -2865,16 +2865,37 @@
   "HtmlText1": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
-      "DisplayMode",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "DisplayMode",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "DisabledFill",
       "Font",
       "Color",
       "Fill",
-      "BorderColor",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "BorderColor",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "DisabledBorderColor",
       "PressedBorderColor",
       "HoverBorderColor",
-      "BorderStyle",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "BorderStyle",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "Width",
       "Height",
       "X",
@@ -2885,6 +2906,14 @@
         "AutoRuleBindingEnabled": false,
         "AutoRuleBindingString": "\"Show your <b><font color=blue>HTML</font></b> text here.\"",
         "InvariantPropertyName": "HtmlText",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "BorderThickness",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       }
@@ -2980,6 +3009,11 @@
       {
         "Category": "Design",
         "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "BorderThickness",
         "RuleProviderType": "Unknown"
       }
     ],

@@ -375,7 +375,7 @@ Screen1 As screen:
                     Size: =12
                     Text: ="Open in Outlook"
                     Width: =165
-                    X: =317
+                    X: =240
                     Y: =141
                     ZIndex: =3
 
@@ -443,11 +443,14 @@ Screen1 As screen:
                     ZIndex: =8
 
                 HtmlText1 As htmlViewer:
+                    BorderColor: =RGBA(128, 128, 128, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    BorderThickness: =1
                     Height: =404
                     HtmlText: =SelectedMeeting.body
                     Width: =719
-                    X: =50
-                    Y: =251
+                    X: =52
+                    Y: =231
                     ZIndex: =9
 
                 Button1_4 As button:
@@ -475,7 +478,7 @@ Screen1 As screen:
                     Size: =12
                     Text: ="Track Meeting"
                     Width: =165
-                    X: =124
+                    X: =52
                     Y: =141
                     ZIndex: =10
 
