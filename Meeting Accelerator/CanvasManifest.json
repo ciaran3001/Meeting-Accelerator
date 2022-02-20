@@ -96,8 +96,9 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1",
-    "ThemeScreen",
-    "Scn_ManageMeeting"
+    "Scn_HomeScreen",
+    "Scn_ThemeScreen",
+    "Scn_ManageMeeting",
+    "Scn_Configuration"
   ]
 }

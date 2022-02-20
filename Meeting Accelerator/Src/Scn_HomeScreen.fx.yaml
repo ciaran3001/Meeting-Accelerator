@@ -1,4 +1,4 @@
-Screen1 As screen:
+Scn_HomeScreen As screen:
     Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
     OnVisible: =Select(Btn_LoadData);
@@ -98,7 +98,7 @@ Screen1 As screen:
                     Y: =72
                     ZIndex: =3
 
-                Image1_2 As image:
+                Img_Cog As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
