@@ -316,8 +316,8 @@ Screen1 As screen:
                     Size: =12
                     Text: ="Open in Outlook"
                     Width: =165
-                    X: =50
-                    Y: =155
+                    X: =317
+                    Y: =141
                     ZIndex: =3
 
                 Label2 As Label:
@@ -390,6 +390,35 @@ Screen1 As screen:
                     X: =50
                     Y: =251
                     ZIndex: =9
+
+                Button1_4 As button:
+                    BorderColor: =
+                    BorderThickness: =0
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(238, 140, 29, 1)
+                    FocusedBorderThickness: =0
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    HoverBorderColor: =RGBA(238, 140, 29, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    OnSelect: =Launch(SelectedMeeting.webLink);
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
+                    Size: =12
+                    Text: ="Track Meeting"
+                    Width: =165
+                    X: =124
+                    Y: =141
+                    ZIndex: =10
 
     Btn_LoadData As Button:
         DisplayMode: =DisplayMode.Edit
