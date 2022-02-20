@@ -43,19 +43,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gal_MyMeetings.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gal_MyMeetings.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen1",
-                "type": "Screen1.Container2_1.Container2.Gallery1"
+                "type": "Screen1.Container2_1.Container2.Gal_MyMeetings"
               }
             }
           ],
@@ -73,19 +73,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gallery1.TabIndex"
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gal_MyMeetings.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gallery1.TabIndex",
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gal_MyMeetings.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen1",
-                "type": "Screen1.Container2_1.Container2.Gallery1"
+                "type": "Screen1.Container2_1.Container2.Gal_MyMeetings"
               }
             }
           ],
@@ -103,19 +103,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gallery1.Rectangle1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gal_MyMeetings.Rectangle1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gallery1.Rectangle1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Container2_1.Container2.Gal_MyMeetings.Rectangle1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen1",
-                "type": "Screen1.Container2_1.Container2.Gallery1.Rectangle1"
+                "type": "Screen1.Container2_1.Container2.Gal_MyMeetings.Rectangle1"
               }
             }
           ],
