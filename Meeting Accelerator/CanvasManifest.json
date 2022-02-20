@@ -97,6 +97,7 @@
   },
   "ScreenOrder": [
     "Screen1",
-    "ThemeScreen"
+    "ThemeScreen",
+    "Scn_ManageMeeting"
   ]
 }
