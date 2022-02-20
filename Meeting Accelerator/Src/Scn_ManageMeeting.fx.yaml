@@ -195,3 +195,16 @@
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =2
 
+                    Label8 As Label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =320
+                        Text: ="Outcomes"
+                        Width: =320
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
