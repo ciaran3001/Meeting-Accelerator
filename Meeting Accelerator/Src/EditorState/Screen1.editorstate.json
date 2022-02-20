@@ -963,7 +963,14 @@
         "PropertyName": "FillPortions"
       },
       {
-        "ControlPropertyState": "AlignInContainer",
+        "ControlPropertyState": {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "AlignInContainer",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Property": {
           "Category": "Design",
           "PropertyName": "AlignInContainer",
@@ -1129,7 +1136,7 @@
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "500",
+        "AutoRuleBindingString": "",
         "InvariantPropertyName": "Width",
         "IsLockable": false,
         "NameMapSourceSchema": "?"

@@ -12,7 +12,7 @@ Screen1 As screen:
         ZIndex: =5
 
         Container2 As groupContainer.verticalAutoLayoutContainer:
-            FillPortions: =0.6
+            FillPortions: =0
             Height: =App.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -23,11 +23,10 @@ Screen1 As screen:
             PaddingLeft: =30
             PaddingRight: =30
             PaddingTop: =30
-            Width: =App.Width
+            Width: =450
             ZIndex: =1
 
             Cnt_MeetingTabs As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =50
                 LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
