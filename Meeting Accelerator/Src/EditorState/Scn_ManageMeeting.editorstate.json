@@ -5131,7 +5131,14 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "ItemBorderColor",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "ItemBorderColor",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "DisabledBorderColor",
       "PressedBorderColor",
       "HoverBorderColor",

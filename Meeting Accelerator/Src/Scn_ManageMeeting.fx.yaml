@@ -278,6 +278,7 @@
                                     Height: |
                                         =200
                                     HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    ItemBorderColor: =RGBA(0, 0, 0, 1)
                                     ItemBorderThickness: =0
                                     ItemColorSet: |-
                                         =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
