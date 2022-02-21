@@ -20,6 +20,7 @@
       "ciarank_outcomeid": "Outcome",
       "ciarank_outcometype": "Outcome Type",
       "ciarank_timedue": "Time due",
+      "ciarank_todoitemid": "TODO Item ID",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -100,7 +101,9 @@
     "OptionSetInfoNameMapping": {
       "491910000": "Task",
       "491910001": "Decision",
-      "491910002": "Escalation"
+      "491910002": "Escalation",
+      "491910003": "Follow-up",
+      "491910004": "Statement"
     },
     "OptionSetIsBooleanValued": false,
     "OptionSetIsGlobal": true,

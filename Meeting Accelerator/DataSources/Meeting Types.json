@@ -10,6 +10,7 @@
     "Name": "Meeting Types",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "ciarank_Meeting_MeetingType_ciarank_Meeti": "Meetings",
       "ciarank_meetingtype_AsyncOperations": "System Jobs",
       "ciarank_meetingtype_BulkDeleteFailures": "Bulk Delete Failures",
       "ciarank_meetingtype_PrincipalObjectAttributeAccesses": "Field Sharing",
