@@ -5164,7 +5164,14 @@
         "NameMapSourceSchema": "?"
       },
       "Height",
-      "DisplayMode",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "DisplayMode",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "ZIndex",
       "Size",
       "BorderThickness",
@@ -5173,6 +5180,22 @@
         "AutoRuleBindingEnabled": false,
         "AutoRuleBindingString": "",
         "InvariantPropertyName": "ShowLabels",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Explode",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "ItemBorderThickness",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       }
@@ -5290,6 +5313,16 @@
         "Category": "Design",
         "PropertyName": "ShowLabels",
         "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Explode",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ItemBorderThickness",
+        "RuleProviderType": "Unknown"
       }
     ],
     "StyleName": "defaultPieChartStyle",
@@ -5350,6 +5383,14 @@
         "AutoRuleBindingEnabled": false,
         "AutoRuleBindingString": "",
         "InvariantPropertyName": "ShowLabels",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "ItemBorderThickness",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       }
@@ -5466,6 +5507,11 @@
       {
         "Category": "Design",
         "PropertyName": "ShowLabels",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ItemBorderThickness",
         "RuleProviderType": "Unknown"
       }
     ],

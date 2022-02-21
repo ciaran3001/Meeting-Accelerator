@@ -273,10 +273,12 @@
                                     BorderThickness: =2
                                     Color: =RGBA(37, 36, 35, 1)
                                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisplayMode: =DisplayMode.View
                                     Font: =Font.'Segoe UI'
                                     Height: |
                                         =200
                                     HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    ItemBorderThickness: =0
                                     ItemColorSet: |-
                                         =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
                                     Items: |-
@@ -344,6 +346,7 @@
                                     Height: |
                                         =200
                                     HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    ItemBorderThickness: =0
                                     ItemColorSet: |-
                                         =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
                                     Items: |-
