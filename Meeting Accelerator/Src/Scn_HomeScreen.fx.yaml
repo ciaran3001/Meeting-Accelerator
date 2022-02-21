@@ -311,7 +311,7 @@ Scn_HomeScreen As screen:
                     =ColorValue("#EE8C1D")
                 OnSelect: |-
                     =Set(SelectedMeeting, ThisItem);
-                    Set(AssociatedMeetingRecord, Blank());
+                    //Set(AssociatedMeetingRecord, Blank());
                     
                     UpdateContext({BodyToCheckForAgenda : Lower(SelectedMeeting.body)});
                     If("agenda" in BodyToCheckForAgenda Or "itinerary" in BodyToCheckForAgenda Or "topic" in BodyToCheckForAgenda,
@@ -615,7 +615,12 @@ Scn_HomeScreen As screen:
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#EE8C1D"), -20%)
-                    OnSelect: =Navigate(Scn_ManageMeeting, ScreenTransition.Fade);
+                    OnSelect: |-
+                        =If(IsBlank(AssociatedMeetingRecord),
+                            Patch(Meetings, Defaults(Meetings), { } );
+                        ,
+                            Navigate(Scn_ManageMeeting, ScreenTransition.Fade);
+                        );
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: |-
                         =ColorFade(ColorValue("#EE8C1D"), -20%)

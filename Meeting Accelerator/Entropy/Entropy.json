@@ -99,7 +99,7 @@
     "Title1_2": 86
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "02/21/2022 20:02:48",
+  "HeaderLastSavedDateTimeUTC": "02/21/2022 20:04:25",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -119,35 +119,36 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "Agenda Item Definitions": 21,
+    "Agenda Item Definitions": 22,
     "Agenda Item Definitions\\ciarank_agendaitemdefinition_statecode": 3,
     "Agenda Item Definitions\\ciarank_agendaitemdefinition_statuscode": 4,
-    "Agenda Item Definitions\\default.cds_ciarank_agendaitemdefinition_views": 15,
-    "Agenda Items": 22,
+    "Agenda Item Definitions\\default.cds_ciarank_agendaitemdefinition_views": 16,
+    "Agenda Items": 23,
     "Agenda Items\\ciarank_agendaitem_statecode": 6,
     "Agenda Items\\ciarank_agendaitem_statuscode": 7,
     "Agenda Items\\ciarank_ciarank_agendaitem_addressed": 5,
-    "Agenda Items\\default.cds_ciarank_agendaitem_views": 16,
-    "CustomGallerySample": 20,
-    "LegendSample": 27,
-    "Meeting Types": 23,
+    "Agenda Items\\default.cds_ciarank_agendaitem_views": 17,
+    "CustomGallerySample": 21,
+    "LegendSample": 28,
+    "Meeting Types": 24,
     "Meeting Types\\ciarank_meetingtype_statecode": 8,
     "Meeting Types\\ciarank_meetingtype_statuscode": 9,
-    "Meeting Types\\default.cds_ciarank_meetingtype_views": 17,
-    "Meetings": 24,
+    "Meeting Types\\default.cds_ciarank_meetingtype_views": 18,
+    "Meetings": 25,
+    "Meetings\\ciarank_ciarank_meeting_agendadetected": 15,
     "Meetings\\ciarank_meeting_statecode": 10,
     "Meetings\\ciarank_meeting_statuscode": 11,
-    "Meetings\\default.cds_ciarank_meeting_views": 18,
+    "Meetings\\default.cds_ciarank_meeting_views": 19,
     "MicrosoftTo-Do(Business)": 0,
-    "MyMeetings": 28,
+    "MyMeetings": 29,
     "Office365Outlook": 1,
     "Office365Users": 2,
-    "Outcomes": 25,
+    "Outcomes": 26,
     "Outcomes\\ciarank_outcome_statecode": 13,
     "Outcomes\\ciarank_outcome_statuscode": 14,
     "Outcomes\\ciarank_outcometype": 12,
-    "Outcomes\\default.cds_ciarank_outcome_views": 19,
-    "PieChartSample": 26
+    "Outcomes\\default.cds_ciarank_outcome_views": 20,
+    "PieChartSample": 27
   },
   "OrderGroupControls": {
     "Group1": {
@@ -302,6 +303,6 @@
       "screen": 4
     },
     "DeserializationLoadTime": 3.6812364,
-    "ErrorCount": 2
+    "ErrorCount": 0
   }
 }

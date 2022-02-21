@@ -10,13 +10,21 @@
     "Name": "Meetings",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "ciarank_agendadetected": "Agenda Detected",
+      "ciarank_endtime": "End Time",
+      "ciarank_followupmeetingcalendarid": "Follow-up Meeting Calendar ID ",
+      "ciarank_followupmeetingoutlookid": "Follow-up Meeting Outlook ID",
       "ciarank_meeting_AsyncOperations": "System Jobs",
       "ciarank_meeting_BulkDeleteFailures": "Bulk Delete Failures",
       "ciarank_meeting_PrincipalObjectAttributeAccesses": "Field Sharing",
       "ciarank_meeting_ProcessSession": "Process Sessions",
       "ciarank_meetingid": "Meeting",
+      "ciarank_MeetingType": "Meeting Type",
       "ciarank_Outcome_ciarank_Meeting_ciarank_M": "Outcomes",
+      "ciarank_outlookid": "Outlook ID",
+      "ciarank_starttime": "Start Time",
       "ciarank_subject": "Subject",
+      "ciarank_todolistid": "TODO List ID",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -50,6 +58,26 @@
       "fbaaa9c0-e5e2-449b-887a-ba5f84afd465": "Meeting Associated View",
       "fdb7832f-8592-4391-8b6c-162c278d7f9f": "Inactive Meetings"
     }
+  },
+  {
+    "DisplayName": "Agenda Detected (Meetings)",
+    "Name": "ciarank_ciarank_meeting_agendadetected",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ciarank_agendadetected",
+        "OptionSetReferenceEntityName": "Meetings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ciarank_agendadetected",
+    "RelatedEntityName": "Meetings",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Meetings)",
