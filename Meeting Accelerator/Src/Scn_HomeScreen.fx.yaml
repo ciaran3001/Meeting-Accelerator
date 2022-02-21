@@ -629,7 +629,12 @@ Scn_HomeScreen As screen:
                     RadiusTopLeft: =5
                     RadiusTopRight: =5
                     Size: =12
-                    Text: ="Track Meeting"
+                    Text: |-
+                        =If(IsBlank(AssociatedMeetingRecord),
+                            "Track Meeting"
+                        ,
+                            "Open Meeting"
+                        )
                     Width: =165
                     X: =52
                     Y: =141
