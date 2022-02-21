@@ -75,6 +75,49 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
+                Gallery1 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    DelayItemLoading: =true
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    FocusedBorderThickness: =2
+                    Height: =120
+                    Items: =Split(SelectedMeeting.requiredAttendees, ";")
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =32
+                    Width: =380
+                    Y: =80
+                    ZIndex: =1
+
+                    Rectangle4 As rectangle:
+                        BorderColor: =RGBA(243, 242, 241, 1)
+                        DisabledFill: =RGBA(0,0,0,0)
+                        Fill: =RGBA(0,0,0,0)
+                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                        Height: =Parent.TemplateHeight
+                        HoverFill: =RGBA(0,0,0,0)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(0,0,0,0)
+                        TabIndex: =0
+                        Width: =Parent.TemplateWidth
+                        ZIndex: =1
+
+                    Title3 As Label:
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =10.5
+                        FontWeight: =FontWeight.Normal
+                        Height: =24
+                        OnSelect: =Select(Parent)
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        TabIndex: =-1
+                        Text: =ThisItem.Result
+                        VerticalAlignment: =VerticalAlign.Top
+                        Width: =Parent.TemplateWidth - 24
+                        X: =12
+                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2) - 2
+                        ZIndex: =2
+
                 Label6_1 As Label:
                     Alignment: =Align.Justify
                     DisplayMode: =DisplayMode.Edit
@@ -136,7 +179,7 @@
 
                 HtmlText2 As htmlViewer:
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =536
+                    Height: =486
                     HtmlText: =SelectedMeeting.body
                     PaddingBottom: =10
                     PaddingLeft: =10
@@ -164,20 +207,6 @@
                 PaddingLeft: =15
                 PaddingTop: =5
                 ZIndex: =4
-
-                Label7 As Label:
-                    DisplayMode: =DisplayMode.Edit
-                    FillPortions: =1
-                    FontSize: =20
-                    FontWeight: =FontWeight.Bold
-                    Height: =45
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =320
-                    Text: =SelectedMeeting.subject
-                    Width: =320
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
 
                 Icon3 As icon.Add:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -230,6 +259,52 @@
                         X: =0
                         Y: =0
                         ZIndex: =1
+
+                    PieChart1 As pieChart:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderThickness: =2
+                        Color: =RGBA(37, 36, 35, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Segoe UI'
+                        Height: |
+                            =200
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        ItemColorSet: |-
+                            =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
+                        Items: |-
+                            =Table({Completed : 5},
+                            {Completed : 2})
+                        LabelPosition: =LabelPosition.Inside
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        ShowLabels: =false
+                        Size: =15
+                        Width: =200
+                        X: =40
+                        Y: =70
+                        ZIndex: =4
+
+                    PieChart1_1 As pieChart:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderThickness: =2
+                        Color: =RGBA(37, 36, 35, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Segoe UI'
+                        Height: |
+                            =200
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        ItemColorSet: |-
+                            =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
+                        Items: |-
+                            =Table({Completed : 5},
+                            {Completed : 2})
+                        LabelPosition: =LabelPosition.Inside
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        ShowLabels: =false
+                        Size: =15
+                        Width: =200
+                        X: =40
+                        Y: =70
+                        ZIndex: =5
 
                 Container10 As groupContainer.verticalAutoLayoutContainer:
                     LayoutDirection: =LayoutDirection.Vertical
