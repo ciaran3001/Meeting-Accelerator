@@ -464,6 +464,32 @@ Scn_HomeScreen As screen:
                     Y: =0
                     ZIndex: =9
 
+                Button1_11 As button:
+                    BorderColor: =
+                    BorderThickness: =0
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(238, 140, 29, 0)
+                    FocusedBorderThickness: =0
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =140
+                    HoverBorderColor: =RGBA(238, 140, 29, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    OnSelect: =Select(Parent);
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
+                    Size: =12
+                    Text: =
+                    Width: =390
+                    ZIndex: =10
+
         Container2_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =App.Height
             LayoutDirection: =LayoutDirection.Vertical
