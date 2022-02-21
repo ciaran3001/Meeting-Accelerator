@@ -11,7 +11,7 @@
         ZIndex: =1
 
         SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
-            FillPortions: =3
+            FillPortions: =0
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =10
             LayoutMinHeight: =100
@@ -21,6 +21,7 @@
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
+            Width: =400
             ZIndex: =2
 
             Label6 As Label:
