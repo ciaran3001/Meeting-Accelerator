@@ -322,6 +322,8 @@ Scn_HomeScreen As screen:
                     
                     
                     Set(AssociatedMeetingRecord, LookUp(Meetings, 'Outlook ID' = ThisItem.id));
+                ShowNavigation: =true
+                ShowScrollbar: =false
                 TemplatePadding: =0
                 TemplateSize: =140
                 Transition: =Transition.Pop

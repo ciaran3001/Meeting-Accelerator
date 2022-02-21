@@ -4061,7 +4061,9 @@
       "Width",
       "Height",
       "ZIndex",
-      "FocusedBorderThickness"
+      "FocusedBorderThickness",
+      "ShowNavigation",
+      "ShowScrollbar"
     ],
     "DynamicProperties": [
       {
@@ -4258,6 +4260,16 @@
         "Category": "Design",
         "PropertyName": "PressedFill",
         "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ShowNavigation",
+        "RuleProviderType": "User"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ShowScrollbar",
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "defaultGalleryStyle",
