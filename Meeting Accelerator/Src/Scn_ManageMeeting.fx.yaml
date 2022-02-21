@@ -272,7 +272,7 @@
 
                     Container12 As groupContainer.horizontalAutoLayoutContainer:
                         FillPortions: =0
-                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutJustifyContent: =LayoutJustifyContent.End
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
@@ -321,6 +321,18 @@
                                 Y: =58
                                 ZIndex: =2
 
+                            Label6_3 As Label:
+                                Alignment: =Align.Center
+                                DisplayMode: =DisplayMode.Edit
+                                FontSize: =15
+                                FontWeight: =FontWeight.Semibold
+                                Height: =32
+                                Text: ="Agenda Completed"
+                                Width: =200
+                                X: =0
+                                Y: =0
+                                ZIndex: =3
+
                         Container14 As groupContainer.manualLayoutContainer:
                             FillPortions: =0
                             LayoutMinHeight: =100
@@ -364,6 +376,18 @@
                                 X: =58
                                 Y: =58
                                 ZIndex: =2
+
+                            Label6_4 As Label:
+                                Alignment: =Align.Center
+                                DisplayMode: =DisplayMode.Edit
+                                FontSize: =15
+                                FontWeight: =FontWeight.Semibold
+                                Height: =32
+                                Text: ="Time Left (Min)"
+                                Width: =200
+                                X: =0
+                                Y: =0
+                                ZIndex: =3
 
                     Label8 As Label:
                         AlignInContainer: =AlignInContainer.Stretch
