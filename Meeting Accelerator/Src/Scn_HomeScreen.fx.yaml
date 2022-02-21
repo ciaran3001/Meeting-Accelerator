@@ -311,6 +311,7 @@ Scn_HomeScreen As screen:
                     =ColorValue("#EE8C1D")
                 OnSelect: |-
                     =Set(SelectedMeeting, ThisItem);
+                    Set(AssociatedMeetingRecord, Blank());
                     
                     UpdateContext({BodyToCheckForAgenda : Lower(SelectedMeeting.body)});
                     If("agenda" in BodyToCheckForAgenda Or "itinerary" in BodyToCheckForAgenda Or "topic" in BodyToCheckForAgenda,
@@ -318,6 +319,9 @@ Scn_HomeScreen As screen:
                         ,
                         Set(AgendaFound, false);
                     );
+                    
+                    
+                    Set(AssociatedMeetingRecord, LookUp(Meetings, 'Outlook ID' = ThisItem.id));
                 TemplatePadding: =0
                 TemplateSize: =140
                 Transition: =Transition.Pop
