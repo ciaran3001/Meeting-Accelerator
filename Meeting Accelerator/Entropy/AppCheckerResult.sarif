@@ -704,19 +704,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.PieChart1.ShowLabels"
+                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Container12.Container14.PieChart1_1.ShowLabels"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.PieChart1.ShowLabels",
+                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Container12.Container14.PieChart1_1.ShowLabels",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "ShowLabels",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.PieChart1"
+                "type": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Container12.Container14.PieChart1_1"
               }
             }
           ],
@@ -734,19 +734,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.PieChart1_1.ShowLabels"
+                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Container12.Container13.PieChart1.ShowLabels"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.PieChart1_1.ShowLabels",
+                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Container12.Container13.PieChart1.ShowLabels",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "ShowLabels",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.PieChart1_1"
+                "type": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Container12.Container13.PieChart1"
               }
             }
           ],
