@@ -282,136 +282,172 @@
                             FillPortions: =0
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
-                            Width: =200
+                            Width: =400
                             ZIndex: =1
 
-                            PieChart1 As pieChart:
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderThickness: =2
-                                Color: =RGBA(37, 36, 35, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                Font: =Font.'Segoe UI'
-                                Height: |
-                                    =200
-                                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                ItemColorSet: |-
-                                    =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
-                                Items: |-
-                                    =Table({Completed : 5},
-                                    {Completed : 2})
-                                LabelPosition: =LabelPosition.Inside
-                                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                                ShowLabels: =false
-                                Size: =15
-                                Width: =200
-                                ZIndex: =1
-
-                            Circle1 As circle:
-                                BorderColor: =RGBA(243, 242, 241, 1)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
+                            Button1_10 As button:
+                                BorderColor: =
+                                BorderThickness: =0
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(255, 255, 255, 1)
                                 DisabledFill: =RGBA(255, 255, 255, 1)
                                 DisplayMode: =DisplayMode.Disabled
-                                Fill: =RGBA(98, 100, 167, 1)
-                                Height: =83
-                                HoverFill: =RGBA(98, 100, 167, 1)
-                                PressedFill: =RGBA(98, 100, 167, 1)
-                                Width: =83
-                                X: =58
-                                Y: =58
-                                ZIndex: =2
-
-                            Label6_3 As Label:
-                                Alignment: =Align.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontSize: =15
-                                FontWeight: =FontWeight.Semibold
-                                Height: =32
-                                Text: ="Agenda Completed"
-                                Width: =200
-                                X: =0
-                                Y: =0
-                                ZIndex: =3
-
-                            Label6_6 As Label:
-                                Alignment: =Align.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontSize: =15
-                                FontWeight: =FontWeight.Semibold
-                                Height: =34
-                                Text: ="100%"
-                                Width: =59
-                                X: =70
-                                Y: =82
-                                ZIndex: =4
-
-                        Container14 As groupContainer.manualLayoutContainer:
-                            FillPortions: =0
-                            LayoutMinHeight: =100
-                            LayoutMinWidth: =250
-                            Width: =200
-                            Y: =40
-                            ZIndex: =2
-
-                            PieChart1_1 As pieChart:
-                                BorderColor: =RGBA(0, 0, 0, 0)
-                                BorderThickness: =2
-                                Color: =RGBA(37, 36, 35, 1)
-                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                Fill: =RGBA(238, 140, 29, 1)
+                                FocusedBorderThickness: =0
                                 Font: =Font.'Segoe UI'
-                                Height: |
-                                    =200
-                                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                ItemColorSet: |-
-                                    =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
-                                Items: |-
-                                    =Table({Completed : 5},
-                                    {Completed : 2})
-                                LabelPosition: =LabelPosition.Inside
-                                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                                ShowLabels: =false
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                HoverBorderColor: =RGBA(238, 140, 29, 1)
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                OnSelect: =
+                                PressedColor: =RGBA(255, 255, 255, 1)
+                                PressedFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                RadiusBottomLeft: =15
+                                RadiusBottomRight: =15
+                                RadiusTopLeft: =15
+                                RadiusTopRight: =15
                                 Size: =15
-                                Width: =200
+                                Text: =""
+                                Width: =400
                                 ZIndex: =1
 
-                            Circle1_1 As circle:
-                                BorderColor: =RGBA(243, 242, 241, 1)
-                                BorderStyle: =BorderStyle.None
-                                BorderThickness: =2
-                                DisabledFill: =RGBA(255, 255, 255, 1)
-                                DisplayMode: =DisplayMode.Disabled
-                                Fill: =RGBA(98, 100, 167, 1)
-                                Height: =83
-                                HoverFill: =RGBA(98, 100, 167, 1)
-                                PressedFill: =RGBA(98, 100, 167, 1)
-                                Width: =83
-                                X: =58
-                                Y: =58
-                                ZIndex: =2
+                            Group1 As group:
+                                Height: =5
+                                Width: =5
+                                X: =40
+                                Y: =40
+                                ZIndex: =5
 
-                            Label6_4 As Label:
-                                Alignment: =Align.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontSize: =15
-                                FontWeight: =FontWeight.Semibold
-                                Height: =32
-                                Text: ="Time Left (Min)"
-                                Width: =200
-                                X: =0
-                                Y: =0
-                                ZIndex: =3
+                                PieChart1 As pieChart:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderThickness: =2
+                                    Color: =RGBA(37, 36, 35, 1)
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    Font: =Font.'Segoe UI'
+                                    Height: |
+                                        =200
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    ItemColorSet: |-
+                                        =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
+                                    Items: |-
+                                        =Table({Completed : 5},
+                                        {Completed : 2})
+                                    LabelPosition: =LabelPosition.Inside
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    ShowLabels: =false
+                                    Size: =15
+                                    Width: =200
+                                    ZIndex: =2
 
-                            Label6_5 As Label:
-                                Alignment: =Align.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontSize: =15
-                                FontWeight: =FontWeight.Semibold
-                                Height: =34
-                                Text: ="100%"
-                                Width: =59
-                                X: =70
-                                Y: =82
-                                ZIndex: =4
+                                Circle1 As circle:
+                                    BorderColor: =RGBA(243, 242, 241, 1)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledFill: =RGBA(255, 255, 255, 1)
+                                    DisplayMode: =DisplayMode.Disabled
+                                    Fill: =RGBA(98, 100, 167, 1)
+                                    Height: =83
+                                    HoverFill: =RGBA(98, 100, 167, 1)
+                                    PressedFill: =RGBA(98, 100, 167, 1)
+                                    Width: =83
+                                    X: =58
+                                    Y: =58
+                                    ZIndex: =3
+
+                                Label6_3 As Label:
+                                    Alignment: =Align.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontSize: =15
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =32
+                                    Text: ="Agenda Completed"
+                                    Width: =200
+                                    X: =0
+                                    Y: =0
+                                    ZIndex: =4
+
+                                Label6_6 As Label:
+                                    Alignment: =Align.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontSize: =15
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =34
+                                    Text: ="100%"
+                                    Width: =59
+                                    X: =70
+                                    Y: =82
+                                    ZIndex: =5
+
+                            Group2 As group:
+                                Height: =5
+                                Width: =5
+                                X: =40
+                                Y: =40
+                                ZIndex: =9
+
+                                PieChart1_1 As pieChart:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderThickness: =2
+                                    Color: =RGBA(37, 36, 35, 1)
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    Font: =Font.'Segoe UI'
+                                    Height: |
+                                        =200
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    ItemColorSet: |-
+                                        =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
+                                    Items: |-
+                                        =Table({Completed : 5},
+                                        {Completed : 2})
+                                    LabelPosition: =LabelPosition.Inside
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    ShowLabels: =false
+                                    Size: =15
+                                    Width: =200
+                                    X: =200
+                                    ZIndex: =6
+
+                                Circle1_1 As circle:
+                                    BorderColor: =RGBA(243, 242, 241, 1)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledFill: =RGBA(255, 255, 255, 1)
+                                    DisplayMode: =DisplayMode.Disabled
+                                    Fill: =RGBA(98, 100, 167, 1)
+                                    Height: =83
+                                    HoverFill: =RGBA(98, 100, 167, 1)
+                                    PressedFill: =RGBA(98, 100, 167, 1)
+                                    Width: =83
+                                    X: =258
+                                    Y: =58
+                                    ZIndex: =7
+
+                                Label6_4 As Label:
+                                    Alignment: =Align.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontSize: =15
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =32
+                                    Text: ="Time Left (Min)"
+                                    Width: =200
+                                    X: =200
+                                    Y: =0
+                                    ZIndex: =8
+
+                                Label6_5 As Label:
+                                    Alignment: =Align.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontSize: =15
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =34
+                                    Text: ="100%"
+                                    Width: =59
+                                    X: =270
+                                    Y: =82
+                                    ZIndex: =9
 
                     Label8 As Label:
                         AlignInContainer: =AlignInContainer.Stretch
