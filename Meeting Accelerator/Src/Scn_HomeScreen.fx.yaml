@@ -443,6 +443,21 @@ Scn_HomeScreen As screen:
                     Y: =63
                     ZIndex: =8
 
+                Title1_2 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =16
+                    FontWeight: =FontWeight.Semibold
+                    Height: =35
+                    OnSelect: =Select(Parent)
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    TabIndex: =-1
+                    Text: =Text(DateTimeValue(ThisItem.start), "dd") & " " &Left(Text(DateTimeValue(ThisItem.start), "mmmm"),3)
+                    VerticalAlignment: =VerticalAlign.Middle
+                    Width: =292
+                    X: =3
+                    Y: =0
+                    ZIndex: =9
+
         Container2_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =App.Height
             LayoutDirection: =LayoutDirection.Vertical
