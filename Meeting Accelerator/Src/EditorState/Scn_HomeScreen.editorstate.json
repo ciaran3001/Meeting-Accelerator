@@ -6951,7 +6951,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "%TemplateBrowseGalleryRectangle1.ID%",
     "Name": "Rectangle1",
-    "ParentIndex": 1,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -8320,7 +8320,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Title1_2",
-    "ParentIndex": 2,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

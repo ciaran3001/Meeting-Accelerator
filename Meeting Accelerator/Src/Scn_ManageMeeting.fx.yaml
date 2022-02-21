@@ -32,88 +32,117 @@
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =320
-                Text: ="Meeting Info"
+                Text: =SelectedMeeting.subject
                 Width: =320
                 X: =0
                 Y: =0
                 ZIndex: =1
 
-            Container8 As groupContainer.verticalAutoLayoutContainer:
+            Container11_1 As groupContainer.manualLayoutContainer:
                 FillPortions: =0
-                Height: =30
-                LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                ZIndex: =2
-
-            Container8_1 As groupContainer.verticalAutoLayoutContainer:
-                Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =0
-                Height: =110
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =10
                 PaddingLeft: =10
-                PaddingRight: =10
-                PaddingTop: =10
-                ZIndex: =6
+                ZIndex: =4
+
+                Button1_9 As button:
+                    BorderColor: =
+                    BorderThickness: =0
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(255, 255, 255, 1)
+                    DisabledFill: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Fill: =RGBA(238, 140, 29, 1)
+                    FocusedBorderThickness: =0
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =Parent.Height
+                    HoverBorderColor: =RGBA(238, 140, 29, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    OnSelect: =
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
+                    Size: =15
+                    Text: =""
+                    Width: =Parent.Width
+                    ZIndex: =1
 
                 Label6_1 As Label:
-                    AlignInContainer: =AlignInContainer.Stretch
                     Alignment: =Align.Justify
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =12
                     FontWeight: =FontWeight.Normal
                     Height: =32
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =320
                     Text: ="Organised by " & Lower(SelectedMeeting.organizer)
                     Width: =320
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
+                    X: =12
+                    Y: =48
+                    ZIndex: =2
 
                 Label6_2 As Label:
-                    AlignInContainer: =AlignInContainer.Stretch
                     Alignment: =Align.Justify
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =13
                     FontWeight: =FontWeight.Normal
                     Height: =32
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =320
                     Text: |-
                         =Text(DateTimeValue(SelectedMeeting.start), "hh:mm") & " to " & Text(DateTimeValue(SelectedMeeting.end), "hh:mm") & " ("& DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " mins)"
                     Width: =320
-                    X: =0
-                    Y: =0
-                    ZIndex: =2
-
-                Label6_3 As Label:
-                    AlignInContainer: =AlignInContainer.Stretch
-                    Alignment: =Align.Justify
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =12
-                    FontWeight: =FontWeight.Normal
-                    Height: =32
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =320
-                    Text: |-
-                        ="Attendees: " & SelectedMeeting.requiredAttendees
-                    Width: =320
-                    X: =0
-                    Y: =0
+                    X: =12
+                    Y: =16
                     ZIndex: =3
 
-            HtmlText2 As htmlViewer:
-                AlignInContainer: =AlignInContainer.Stretch
-                Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =1
-                HtmlText: =SelectedMeeting.body
-                ZIndex: =7
+            Container11 As groupContainer.manualLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =5
+
+                Button1_8 As button:
+                    BorderColor: =
+                    BorderThickness: =0
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(255, 255, 255, 1)
+                    DisabledFill: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Fill: =RGBA(238, 140, 29, 1)
+                    FocusedBorderThickness: =0
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =536
+                    HoverBorderColor: =RGBA(238, 140, 29, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    OnSelect: =
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
+                    Size: =15
+                    Text: =""
+                    Width: =384
+                    ZIndex: =1
+
+                HtmlText2 As htmlViewer:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =536
+                    HtmlText: =SelectedMeeting.body
+                    PaddingBottom: =10
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    PaddingTop: =10
+                    Width: =384
+                    ZIndex: =2
 
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =7
