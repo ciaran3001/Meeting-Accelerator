@@ -319,7 +319,7 @@ Scn_HomeScreen As screen:
                         Set(AgendaFound, false);
                     );
                 TemplatePadding: =0
-                TemplateSize: =120
+                TemplateSize: =140
                 Transition: =Transition.Pop
                 X: =560
                 Y: =140
@@ -339,6 +339,7 @@ Scn_HomeScreen As screen:
                     PressedFill: =RGBA(0,0,0,0)
                     TabIndex: =0
                     Width: =452
+                    Y: =35
                     ZIndex: =1
 
                 Title1 As Label:
@@ -351,9 +352,9 @@ Scn_HomeScreen As screen:
                     TabIndex: =-1
                     Text: =ThisItem.subject
                     VerticalAlignment: =VerticalAlign.Middle
-                    Width: =333
-                    X: =100
-                    Y: =13
+                    Width: =292
+                    X: =97
+                    Y: =60
                     ZIndex: =3
 
                 Subtitle1 As Label:
@@ -366,9 +367,9 @@ Scn_HomeScreen As screen:
                     TabIndex: =-1
                     Text: ="Organised by " & ThisItem.organizer
                     VerticalAlignment: =VerticalAlign.Top
-                    Width: =352
-                    X: =100
-                    Y: =36
+                    Width: =293
+                    X: =97
+                    Y: =87
                     ZIndex: =4
 
                 Image2_1 As image:
@@ -403,7 +404,7 @@ Scn_HomeScreen As screen:
                         =Text(DateTimeValue(ThisItem.start), "hh:mm") 
                     Width: =59
                     X: =21
-                    Y: =13
+                    Y: =64
                     ZIndex: =6
 
                 Label4_1 As Label:
@@ -416,7 +417,7 @@ Scn_HomeScreen As screen:
                     Text: =DateDiff(ThisItem.start, ThisItem.end,Minutes) & " min"
                     Width: =70
                     X: =10
-                    Y: =37
+                    Y: =88
                     ZIndex: =7
 
                 Icon2 As icon.Add:
@@ -438,8 +439,8 @@ Scn_HomeScreen As screen:
                     PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Width: =32
-                    X: =7
-                    Y: =13
+                    X: =10
+                    Y: =63
                     ZIndex: =8
 
         Container2_2 As groupContainer.verticalAutoLayoutContainer:
