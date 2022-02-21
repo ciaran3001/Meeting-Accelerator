@@ -434,49 +434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ThemeScreen.Button1_1.FocusedBorderThickness"
+                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Button1_7.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ThemeScreen.Button1_1.FocusedBorderThickness",
+                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Button1_7.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "Scn_ThemeScreen",
-                "type": "Scn_ThemeScreen.Button1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scn_ThemeScreen.Button1_2.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_ThemeScreen.Button1_2.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Scn_ThemeScreen",
-                "type": "Scn_ThemeScreen.Button1_2"
+                "module": "Scn_ManageMeeting",
+                "type": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Button1_7"
               }
             }
           ],
@@ -524,19 +494,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Button1_7.FocusedBorderThickness"
+                  "fullyQualifiedName": "Scn_ThemeScreen.Button1_1.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Button1_7.FocusedBorderThickness",
+                  "fullyQualifiedName": "Scn_ThemeScreen.Button1_1.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container10.Button1_7"
+                "module": "Scn_ThemeScreen",
+                "type": "Scn_ThemeScreen.Button1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_ThemeScreen.Button1_2.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_ThemeScreen.Button1_2.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Scn_ThemeScreen",
+                "type": "Scn_ThemeScreen.Button1_2"
               }
             }
           ],

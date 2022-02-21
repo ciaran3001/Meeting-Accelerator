@@ -22,7 +22,7 @@ Scn_HomeScreen As screen:
             PaddingBottom: =30
             PaddingLeft: =30
             PaddingRight: =30
-            PaddingTop: =30
+            PaddingTop: =40
             Width: =450
             ZIndex: =1
 
@@ -444,7 +444,6 @@ Scn_HomeScreen As screen:
 
         Container2_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =App.Height
-            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100
@@ -453,7 +452,6 @@ Scn_HomeScreen As screen:
             PaddingBottom: =30
             PaddingLeft: =30
             PaddingRight: =30
-            PaddingTop: =30
             Width: =App.Width
             ZIndex: =2
 
@@ -578,9 +576,9 @@ Scn_HomeScreen As screen:
                     BorderThickness: =1
                     Height: =404
                     HtmlText: =SelectedMeeting.body
-                    Width: =719
-                    X: =52
-                    Y: =231
+                    Width: =731
+                    X: =34
+                    Y: =226
                     ZIndex: =9
 
                 Button1_4 As button:
