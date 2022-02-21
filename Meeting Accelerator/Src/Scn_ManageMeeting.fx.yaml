@@ -443,7 +443,7 @@
                                     FontSize: =15
                                     FontWeight: =FontWeight.Semibold
                                     Height: =34
-                                    Text: ="100%"
+                                    Text: ="100"
                                     Width: =59
                                     X: =270
                                     Y: =82
