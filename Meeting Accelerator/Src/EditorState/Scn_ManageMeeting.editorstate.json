@@ -558,7 +558,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_7",
-    "ParentIndex": 1,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -1499,7 +1499,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Circle1",
-    "ParentIndex": 0,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -1618,7 +1618,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Circle1_1",
-    "ParentIndex": 0,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -1720,7 +1720,14 @@
     ],
     "DynamicProperties": [
       {
-        "ControlPropertyState": "FillPortions",
+        "ControlPropertyState": {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FillPortions",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Property": {
           "Category": "Design",
           "PropertyName": "FillPortions",
@@ -2398,7 +2405,14 @@
       "LayoutMode",
       "LayoutDirection",
       "LayoutAlignItems",
-      "LayoutJustifyContent",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "LayoutJustifyContent",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "LayoutGap",
       "LayoutOverflowX",
       "LayoutOverflowY",
@@ -2460,7 +2474,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Container12",
-    "ParentIndex": 2,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -2565,7 +2579,14 @@
       "Fill",
       "X",
       "Y",
-      "Width",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Width",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "Height",
       "DisplayMode",
       "LayoutMode",
@@ -2580,7 +2601,14 @@
     ],
     "DynamicProperties": [
       {
-        "ControlPropertyState": "FillPortions",
+        "ControlPropertyState": {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FillPortions",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Property": {
           "Category": "Design",
           "PropertyName": "FillPortions",
@@ -2726,7 +2754,14 @@
       "Fill",
       "X",
       "Y",
-      "Width",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Width",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "Height",
       "DisplayMode",
       "LayoutMode",
@@ -2741,7 +2776,14 @@
     ],
     "DynamicProperties": [
       {
-        "ControlPropertyState": "FillPortions",
+        "ControlPropertyState": {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FillPortions",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Property": {
           "Category": "Design",
           "PropertyName": "FillPortions",
@@ -4335,7 +4377,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label8",
-    "ParentIndex": 0,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -4901,7 +4943,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "PieChart1",
-    "ParentIndex": 1,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -5078,7 +5120,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "PieChart1_1",
-    "ParentIndex": 1,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

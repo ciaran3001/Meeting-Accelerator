@@ -272,14 +272,17 @@
 
                     Container12 As groupContainer.horizontalAutoLayoutContainer:
                         FillPortions: =0
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         ZIndex: =1
 
                         Container13 As groupContainer.manualLayoutContainer:
+                            FillPortions: =0
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
+                            Width: =200
                             ZIndex: =1
 
                             PieChart1 As pieChart:
@@ -301,7 +304,6 @@
                                 ShowLabels: =false
                                 Size: =15
                                 Width: =200
-                                X: =8
                                 ZIndex: =1
 
                             Circle1 As circle:
@@ -315,14 +317,15 @@
                                 HoverFill: =RGBA(98, 100, 167, 1)
                                 PressedFill: =RGBA(98, 100, 167, 1)
                                 Width: =83
-                                X: =66
+                                X: =58
                                 Y: =58
                                 ZIndex: =2
 
                         Container14 As groupContainer.manualLayoutContainer:
+                            FillPortions: =0
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
-                            Width: =463
+                            Width: =200
                             Y: =40
                             ZIndex: =2
 
