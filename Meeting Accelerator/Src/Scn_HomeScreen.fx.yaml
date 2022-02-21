@@ -780,3 +780,17 @@ Scn_HomeScreen As screen:
         Y: =736
         ZIndex: =6
 
+    Label2_5 As Label:
+        Alignment: =Align.Right
+        Color: =RGBA(146, 154, 157, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =13
+        Height: =37
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: |-
+            ="Accelerator ID: " & AssociatedMeetingRecord.'Meeting Accelerator ID'
+        Width: =251
+        X: =1015
+        Y: =45
+        ZIndex: =7
+
