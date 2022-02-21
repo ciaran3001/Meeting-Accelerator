@@ -619,7 +619,15 @@ Scn_HomeScreen As screen:
                         =ColorFade(ColorValue("#EE8C1D"), -20%)
                     OnSelect: |-
                         =If(IsBlank(AssociatedMeetingRecord),
-                            Patch(Meetings, Defaults(Meetings), { } );
+                            Patch(Meetings, Defaults(Meetings), 
+                            { 
+                            Subject: SelectedMeeting.subject,
+                            'Outlook ID': SelectedMeeting.iCalUId,
+                            'Agenda Detected': AgendaFound,
+                            'Start Time': DateTimeValue(SelectedMeeting.start),
+                            'End Time': DateTimeValue(SelectedMeeting.end)
+                            
+                            });
                         ,
                             Navigate(Scn_ManageMeeting, ScreenTransition.Fade);
                         );
