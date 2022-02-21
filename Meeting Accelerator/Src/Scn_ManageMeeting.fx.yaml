@@ -6,7 +6,7 @@
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutMode: =LayoutMode.Auto
-        PaddingRight: =20
+        PaddingRight: =10
         Width: =Parent.Width
         ZIndex: =1
 
@@ -23,21 +23,6 @@
             PaddingTop: =10
             Width: =400
             ZIndex: =2
-
-            Label6 As Label:
-                AlignInContainer: =AlignInContainer.Stretch
-                Alignment: =Align.Center
-                DisplayMode: =DisplayMode.Edit
-                FontSize: =15
-                FontWeight: =FontWeight.Semibold
-                Height: =32
-                LayoutMinHeight: =32
-                LayoutMinWidth: =320
-                Text: =SelectedMeeting.subject
-                Width: =320
-                X: =0
-                Y: =0
-                ZIndex: =1
 
             Container11_1 As groupContainer.manualLayoutContainer:
                 FillPortions: =0
@@ -75,49 +60,6 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
-                Gallery1 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
-                    BorderColor: =RGBA(243, 242, 241, 1)
-                    DelayItemLoading: =true
-                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                    FocusedBorderThickness: =2
-                    Height: =120
-                    Items: =Split(SelectedMeeting.requiredAttendees, ";")
-                    Layout: =Layout.Vertical
-                    LoadingSpinner: =LoadingSpinner.Data
-                    TemplatePadding: =0
-                    TemplateSize: =32
-                    Width: =380
-                    Y: =80
-                    ZIndex: =1
-
-                    Rectangle4 As rectangle:
-                        BorderColor: =RGBA(243, 242, 241, 1)
-                        DisabledFill: =RGBA(0,0,0,0)
-                        Fill: =RGBA(0,0,0,0)
-                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                        Height: =Parent.TemplateHeight
-                        HoverFill: =RGBA(0,0,0,0)
-                        OnSelect: =Select(Parent)
-                        PressedFill: =RGBA(0,0,0,0)
-                        TabIndex: =0
-                        Width: =Parent.TemplateWidth
-                        ZIndex: =1
-
-                    Title3 As Label:
-                        DisplayMode: =DisplayMode.Edit
-                        FontSize: =10.5
-                        FontWeight: =FontWeight.Normal
-                        Height: =24
-                        OnSelect: =Select(Parent)
-                        PCFTeamsTheme: =TeamsTheme.Default
-                        TabIndex: =-1
-                        Text: =ThisItem.Result
-                        VerticalAlignment: =VerticalAlign.Top
-                        Width: =Parent.TemplateWidth - 24
-                        X: =12
-                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2) - 2
-                        ZIndex: =2
-
                 Label6_1 As Label:
                     Alignment: =Align.Justify
                     DisplayMode: =DisplayMode.Edit
@@ -126,8 +68,8 @@
                     Height: =32
                     Text: ="Organised by " & Lower(SelectedMeeting.organizer)
                     Width: =320
-                    X: =12
-                    Y: =48
+                    X: =20
+                    Y: =82
                     ZIndex: =2
 
                 Label6_2 As Label:
@@ -139,9 +81,48 @@
                     Text: |-
                         =Text(DateTimeValue(SelectedMeeting.start), "hh:mm") & " to " & Text(DateTimeValue(SelectedMeeting.end), "hh:mm") & " ("& DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " mins)"
                     Width: =320
-                    X: =12
-                    Y: =16
+                    X: =20
+                    Y: =50
                     ZIndex: =3
+
+                Label6 As Label:
+                    Alignment: =Align.Center
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =15
+                    FontWeight: =FontWeight.Semibold
+                    Height: =32
+                    Text: =SelectedMeeting.subject
+                    Width: =320
+                    X: =30
+                    Y: =0
+                    ZIndex: =4
+
+                Icon3 As icon.Add:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Color: =RGBA(238, 140, 29, 1)
+                    DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -30%)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.Cancel
+                    OnSelect: |+
+                        =Navigate(Scn_HomeScreen, ScreenTransition.Fade);
+                        
+                    PaddingBottom: =3
+                    PaddingLeft: =3
+                    PaddingRight: =3
+                    PaddingTop: =3
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =50
+                    X: =315
+                    Y: =10
+                    ZIndex: =5
 
             Container11 As groupContainer.manualLayoutContainer:
                 LayoutMinHeight: =100
@@ -197,42 +178,6 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =3
 
-            HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
-                FillPortions: =0
-                Height: =75
-                LayoutJustifyContent: =LayoutJustifyContent.End
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                PaddingLeft: =15
-                PaddingTop: =5
-                ZIndex: =4
-
-                Icon3 As icon.Add:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    Color: =RGBA(238, 140, 29, 1)
-                    DisabledBorderColor: =RGBA(243, 242, 241, 1)
-                    DisabledColor: =RGBA(220, 220, 220, 1)
-                    DisabledFill: =RGBA(0, 0, 0, 0)
-                    Height: =50
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverColor: |-
-                        =ColorFade(ColorValue("#EE8C1D"), -30%)
-                    HoverFill: =RGBA(0, 0, 0, 0)
-                    Icon: =Icon.Cancel
-                    OnSelect: |+
-                        =Navigate(Scn_HomeScreen, ScreenTransition.Fade);
-                        
-                    PaddingBottom: =3
-                    PaddingLeft: =3
-                    PaddingRight: =3
-                    PaddingTop: =3
-                    PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
-                    PressedFill: =RGBA(0, 0, 0, 0)
-                    Width: =50
-                    ZIndex: =2
-
             MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -251,6 +196,7 @@
                         AlignInContainer: =AlignInContainer.Stretch
                         Alignment: =Align.Center
                         DisplayMode: =DisplayMode.Edit
+                        FontSize: =15
                         Height: =32
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
