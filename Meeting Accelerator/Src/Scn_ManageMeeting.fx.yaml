@@ -201,25 +201,6 @@
                         Y: =0
                         ZIndex: =1
 
-                    "ComboBox1 As 'Combo box'.pcfdataset":
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =32
-                        Items: ='MicrosoftTo-Do(Business)'.GetAllTodoListsV2().displayName
-                        LayoutMinHeight: =32
-                        LayoutMinWidth: =320
-                        PCFTeamsTheme: =TeamsTheme.Default
-                        Width: =320
-                        X: =0
-                        Y: =0
-                        ZIndex: =2
-
-                        displayName1 As pcfDataField.textualColumn:
-                            FieldDisplayName: ="displayName"
-                            FieldName: ="displayName"
-                            FieldVariantName: ="textualColumn"
-                            Order: =1
-                            ZIndex: =8
-
                 Container10 As groupContainer.verticalAutoLayoutContainer:
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
