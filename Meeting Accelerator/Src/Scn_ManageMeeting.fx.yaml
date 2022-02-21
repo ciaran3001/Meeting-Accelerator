@@ -333,6 +333,18 @@
                                 Y: =0
                                 ZIndex: =3
 
+                            Label6_6 As Label:
+                                Alignment: =Align.Center
+                                DisplayMode: =DisplayMode.Edit
+                                FontSize: =15
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                Text: ="100%"
+                                Width: =59
+                                X: =70
+                                Y: =82
+                                ZIndex: =4
+
                         Container14 As groupContainer.manualLayoutContainer:
                             FillPortions: =0
                             LayoutMinHeight: =100
@@ -388,6 +400,18 @@
                                 X: =0
                                 Y: =0
                                 ZIndex: =3
+
+                            Label6_5 As Label:
+                                Alignment: =Align.Center
+                                DisplayMode: =DisplayMode.Edit
+                                FontSize: =15
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                Text: ="100%"
+                                Width: =59
+                                X: =70
+                                Y: =82
+                                ZIndex: =4
 
                     Label8 As Label:
                         AlignInContainer: =AlignInContainer.Stretch
