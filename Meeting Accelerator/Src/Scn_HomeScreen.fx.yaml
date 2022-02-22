@@ -593,15 +593,16 @@ Scn_HomeScreen As screen:
                     ZIndex: =6
 
                 Label2_3 As Label:
+                    Alignment: =Align.Right
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =10
                     FontWeight: =FontWeight.Semibold
                     Height: =24
                     PCFTeamsTheme: =TeamsTheme.Default
                     Text: =If(AgendaFound, " " , "We did not find an agenda for this meeting!")
-                    Width: =545
-                    X: =52
-                    Y: =202
+                    Width: =395
+                    X: =370
+                    Y: =265
                     ZIndex: =7
 
                 Label2_4 As Label:
@@ -734,8 +735,8 @@ Scn_HomeScreen As screen:
                     PCFTeamsTheme: =TeamsTheme.Default
                     Text: ="Meeting Type"
                     Width: =260
-                    X: =39
-                    Y: =202
+                    X: =34
+                    Y: =204
                     ZIndex: =13
 
             Cnt_NoMeetingSelected As groupContainer.verticalAutoLayoutContainer:

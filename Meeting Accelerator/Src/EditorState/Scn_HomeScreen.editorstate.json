@@ -6397,6 +6397,14 @@
         "InvariantPropertyName": "FontWeight",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Alignment",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
     "HasDynamicProperties": false,
@@ -6425,6 +6433,11 @@
       {
         "Category": "Data",
         "PropertyName": "FontWeight",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "Alignment",
         "RuleProviderType": "Unknown"
       },
       {
