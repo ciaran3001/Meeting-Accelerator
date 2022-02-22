@@ -632,8 +632,7 @@
                                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                     DisplayMode: =DisplayMode.View
                                     Font: =Font.'Segoe UI'
-                                    Height: |
-                                        =200
+                                    Height: =138
                                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                                     ItemBorderColor: =RGBA(0, 0, 0, 1)
                                     ItemBorderThickness: =0
@@ -646,7 +645,9 @@
                                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                                     ShowLabels: =false
                                     Size: =15
-                                    Width: =200
+                                    Width: =138
+                                    X: =105
+                                    Y: =34
                                     ZIndex: =2
 
                                 Circle1 As circle:
@@ -656,37 +657,37 @@
                                     DisabledFill: =RGBA(255, 255, 255, 1)
                                     DisplayMode: =DisplayMode.Disabled
                                     Fill: =RGBA(98, 100, 167, 1)
-                                    Height: =83
+                                    Height: =57
                                     HoverFill: =RGBA(98, 100, 167, 1)
                                     PressedFill: =RGBA(98, 100, 167, 1)
-                                    Width: =83
-                                    X: =58
-                                    Y: =58
+                                    Width: =57
+                                    X: =146
+                                    Y: =75
                                     ZIndex: =3
-
-                                Label6_3 As Label:
-                                    Alignment: =Align.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    FontSize: =15
-                                    FontWeight: =FontWeight.Semibold
-                                    Height: =32
-                                    Text: ="Agenda Completed"
-                                    Width: =200
-                                    X: =0
-                                    Y: =0
-                                    ZIndex: =4
 
                                 Label6_6 As Label:
                                     Alignment: =Align.Center
                                     DisplayMode: =DisplayMode.Edit
                                     FontSize: =15
                                     FontWeight: =FontWeight.Semibold
-                                    Height: =34
+                                    Height: =41
                                     Text: ="100%"
-                                    Width: =59
-                                    X: =70
-                                    Y: =82
-                                    ZIndex: =5
+                                    Width: =49
+                                    X: =149
+                                    Y: =83
+                                    ZIndex: =4
+
+                                Label6_3 As Label:
+                                    Alignment: =Align.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontSize: =15
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =68
+                                    Text: ="Agenda Completed"
+                                    Width: =138
+                                    X: =105
+                                    Y: =0
+                                    ZIndex: =9
 
                             Group2 As group:
                                 Height: =5
@@ -700,9 +701,9 @@
                                     BorderThickness: =2
                                     Color: =RGBA(37, 36, 35, 1)
                                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisplayMode: =DisplayMode.View
                                     Font: =Font.'Segoe UI'
-                                    Height: |
-                                        =200
+                                    Height: =157
                                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                                     ItemBorderThickness: =0
                                     ItemColorSet: |-
@@ -714,9 +715,10 @@
                                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                                     ShowLabels: =false
                                     Size: =15
-                                    Width: =200
-                                    X: =200
-                                    ZIndex: =6
+                                    Width: =157
+                                    X: =243
+                                    Y: =25
+                                    ZIndex: =5
 
                                 Circle1_1 As circle:
                                     BorderColor: =RGBA(243, 242, 241, 1)
@@ -725,37 +727,37 @@
                                     DisabledFill: =RGBA(255, 255, 255, 1)
                                     DisplayMode: =DisplayMode.Disabled
                                     Fill: =RGBA(98, 100, 167, 1)
-                                    Height: =83
+                                    Height: =66
                                     HoverFill: =RGBA(98, 100, 167, 1)
                                     PressedFill: =RGBA(98, 100, 167, 1)
-                                    Width: =83
-                                    X: =258
-                                    Y: =58
-                                    ZIndex: =7
+                                    Width: =66
+                                    X: =288
+                                    Y: =69
+                                    ZIndex: =6
 
                                 Label6_4 As Label:
                                     Alignment: =Align.Center
                                     DisplayMode: =DisplayMode.Edit
                                     FontSize: =15
                                     FontWeight: =FontWeight.Semibold
-                                    Height: =32
+                                    Height: =55
                                     Text: ="Time Left (Min)"
-                                    Width: =200
-                                    X: =200
+                                    Width: =157
+                                    X: =243
                                     Y: =0
-                                    ZIndex: =8
+                                    ZIndex: =7
 
                                 Label6_5 As Label:
                                     Alignment: =Align.Center
                                     DisplayMode: =DisplayMode.Edit
                                     FontSize: =15
                                     FontWeight: =FontWeight.Semibold
-                                    Height: =34
+                                    Height: =37
                                     Text: ="100"
-                                    Width: =59
-                                    X: =270
-                                    Y: =82
-                                    ZIndex: =9
+                                    Width: =47
+                                    X: =298
+                                    Y: =84
+                                    ZIndex: =8
 
                 Container10_1 As groupContainer.verticalAutoLayoutContainer:
                     LayoutDirection: =LayoutDirection.Vertical

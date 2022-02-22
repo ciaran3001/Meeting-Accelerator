@@ -3519,7 +3519,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Circle1",
-    "ParentIndex": 5,
+    "ParentIndex": 7,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -3638,7 +3638,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Circle1_1",
-    "ParentIndex": 6,
+    "ParentIndex": 5,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -3800,7 +3800,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Container10",
-    "ParentIndex": 0,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -4850,7 +4850,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Container6",
-    "ParentIndex": 2,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -7119,7 +7119,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label6_3",
-    "ParentIndex": 2,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -7228,7 +7228,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label6_4",
-    "ParentIndex": 4,
+    "ParentIndex": 3,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -7337,7 +7337,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label6_5",
-    "ParentIndex": 8,
+    "ParentIndex": 6,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -7446,7 +7446,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label6_6",
-    "ParentIndex": 7,
+    "ParentIndex": 8,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -8640,7 +8640,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "PieChart1",
-    "ParentIndex": 1,
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -8717,7 +8717,7 @@
       {
         "Category": "Design",
         "PropertyName": "Height",
-        "RuleProviderType": "User"
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -8804,7 +8804,14 @@
         "NameMapSourceSchema": "?"
       },
       "Height",
-      "DisplayMode",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "DisplayMode",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "ZIndex",
       "Size",
       "BorderThickness",
@@ -8835,7 +8842,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "PieChart1_1",
-    "ParentIndex": 3,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -8912,7 +8919,7 @@
       {
         "Category": "Design",
         "PropertyName": "Height",
-        "RuleProviderType": "User"
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
