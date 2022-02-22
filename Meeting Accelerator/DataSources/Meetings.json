@@ -11,6 +11,7 @@
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
       "ciarank_agendadetected": "Agenda Detected",
+      "ciarank_AgendaItem_Meeting_ciarank_Meetin": "Agenda Items",
       "ciarank_endtime": "End Time",
       "ciarank_followupmeetingcalendarid": "Follow-up Meeting Calendar ID ",
       "ciarank_followupmeetingoutlookid": "Follow-up Meeting Outlook ID",
