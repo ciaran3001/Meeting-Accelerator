@@ -1899,7 +1899,7 @@
                 BorderThickness: =2
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
-                Height: =57
+                Height: =44
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Image: =To_Do
@@ -1909,8 +1909,8 @@
                 RadiusBottomRight: =3
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
-                Width: =56
-                X: =630
+                Width: =43
+                X: =643
                 Y: =16
                 ZIndex: =18
 
@@ -1920,7 +1920,7 @@
                 BorderThickness: =2
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
-                Height: =57
+                Height: =46
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Image: ='To_Do Not Enabled'
@@ -1930,8 +1930,8 @@
                 RadiusBottomRight: =3
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
-                Width: =56
-                X: =676
+                Width: =46
+                X: =686
                 Y: =16
                 ZIndex: =19
 
