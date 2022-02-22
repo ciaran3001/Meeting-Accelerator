@@ -1754,19 +1754,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Button1_33.FocusedBorderThickness"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Button1_33.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Button1_33.FocusedBorderThickness",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Button1_33.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Button1_33"
+                "type": "Scn_ManageMeeting.Button1_33"
               }
             }
           ],
