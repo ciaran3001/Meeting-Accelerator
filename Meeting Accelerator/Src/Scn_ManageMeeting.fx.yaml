@@ -1,7 +1,9 @@
 "Scn_ManageMeeting As screen.'tabletAutoLayout_Sidebar_ver1.0'":
     Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
-    OnVisible: =Select(Btn_ProcessAttendees);
+    OnVisible: |-
+        =Select(Btn_GetAssociatedMeetingData);
+        Select(Btn_ProcessAttendees);
 
     ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
         Height: =Parent.Height
@@ -611,7 +613,7 @@
                                 FontWeight: =FontWeight.Bold
                                 Height: =32
                                 PCFTeamsTheme: =TeamsTheme.Default
-                                Text: ="10"
+                                Text: =CountRows(Outcomes
                                 Width: =22
                                 X: =306
                                 Y: =28
@@ -1024,4 +1026,28 @@
         X: =0
         Y: =0
         ZIndex: =3
+
+    Btn_GetAssociatedMeetingData As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: =ClearCollect(ExistingOutComesForThisMeeting, Filter(Outcomes, Meeting.Meeting = AssociatedMeetingRecord.Meeting));
+        PCFTeamsTheme: =TeamsTheme.Default
+        Visible: =false
+        Width: =96
+        X: =20
+        Y: =20
+        ZIndex: =4
+
+    Label6_8 As Label:
+        Alignment: =Align.Justify
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =12
+        FontWeight: =FontWeight.Normal
+        Height: =32
+        Text: |-
+            ="Meeting Type: " & AssociatedMeetingRecord.'Meeting Type'.Name
+        Width: =320
+        X: =20
+        Y: =139
+        ZIndex: =5
 
