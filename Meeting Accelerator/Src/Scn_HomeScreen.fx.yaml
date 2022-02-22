@@ -701,7 +701,7 @@ Scn_HomeScreen As screen:
                     DisplayMode: =DisplayMode.Edit
                     FillColor: =
                     Height: =37
-                    Items: ='Meeting Types'.Name
+                    Items: ='Meeting Types'
                     OnChange: |-
                         =Patch(Meetings, 
                             LookUp(Meetings, Meeting = AssociatedMeetingRecord.Meeting)
@@ -711,6 +711,8 @@ Scn_HomeScreen As screen:
                             'Meeting Type': ComboBox1_1.Selected
                             
                             });
+                        
+                        Notify("Meeting Type Updated", NotificationType.Success, 5000);
                     PCFTeamsTheme: =TeamsTheme.Default
                     Width: =307
                     X: =34
