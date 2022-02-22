@@ -134,9 +134,9 @@
                     Height: =37
                     Items: =Meetings
                     PCFTeamsTheme: =TeamsTheme.Default
-                    Width: =291
+                    Width: =270
                     X: =10
-                    Y: =171
+                    Y: =173
                     ZIndex: =6
 
                     Subject1 As pcfDataField.textualColumn:
