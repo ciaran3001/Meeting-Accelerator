@@ -3613,7 +3613,14 @@
   "Button1_28": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
-      "Text",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Text",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
@@ -3935,7 +3942,14 @@
   "Button1_29": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
-      "Text",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Text",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,

@@ -1235,8 +1235,8 @@
             RadiusBottomRight: =3
             RadiusTopLeft: =3
             RadiusTopRight: =3
-            X: =235
-            Y: =70
+            X: =260
+            Y: =75
             ZIndex: =3
 
         Label10 As Label:
@@ -1275,9 +1275,9 @@
             RadiusTopLeft: =5
             RadiusTopRight: =5
             Size: =15
-            Text: ="Button"
+            Text: ="Add"
             X: =275
-            Y: =295
+            Y: =430
             ZIndex: =5
 
         Button1_29 As button:
@@ -1302,8 +1302,8 @@
             RadiusTopLeft: =5
             RadiusTopRight: =5
             Size: =15
-            Text: ="Button"
+            Text: ="Cancel"
             X: =471
-            Y: =295
+            Y: =430
             ZIndex: =6
 
