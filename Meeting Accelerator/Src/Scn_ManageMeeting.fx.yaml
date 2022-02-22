@@ -217,6 +217,7 @@
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplateSize: =100
+                        Transition: =Transition.Pop
                         ZIndex: =1
 
                         Button1_18 As button:
