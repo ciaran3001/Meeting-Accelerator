@@ -1704,8 +1704,8 @@
             RadiusTopRight: =5
             Size: =15
             Text: ="Add Outcome"
-            X: =477
-            Y: =77
+            X: =434
+            Y: =81
             ZIndex: =13
 
         Label12 As Label:
