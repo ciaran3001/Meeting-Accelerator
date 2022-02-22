@@ -679,6 +679,63 @@ Scn_HomeScreen As screen:
                     Y: =141
                     ZIndex: =10
 
+                Label2_5 As Label:
+                    Alignment: =Align.Right
+                    Color: =RGBA(146, 154, 157, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =13
+                    Height: =37
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: |-
+                        ="Accelerator ID: " & AssociatedMeetingRecord.'Meeting Accelerator ID'
+                    Width: =251
+                    X: =544
+                    Y: =45
+                    ZIndex: =11
+
+                "ComboBox1_1 As 'Combo box'.pcfdataset":
+                    AllowSearching: =true
+                    ChevronColor: =RGBA(238, 140, 29, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DefaultSelectedItems: =AssociatedMeetingRecord.'Meeting Type'
+                    DisplayMode: =DisplayMode.Edit
+                    FillColor: =
+                    Height: =37
+                    Items: ='Meeting Types'.Name
+                    OnChange: |-
+                        =Patch(Meetings, 
+                            LookUp(Meetings, Meeting = AssociatedMeetingRecord.Meeting)
+                            ,
+                            { 
+                            Subject : AssociatedMeetingRecord.Subject, 
+                            'Meeting Type': ComboBox1_1.Selected
+                            
+                            });
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Width: =307
+                    X: =34
+                    Y: =238
+                    ZIndex: =12
+
+                    Name1_1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="Name"
+                        FieldName: ="ciarank_name"
+                        FieldVariantName: ="textualColumn"
+                        Order: =1
+                        ZIndex: =1
+
+                Label2_6 As Label:
+                    Alignment: =Align.Justify
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =15
+                    Height: =31
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: ="Meeting Type"
+                    Width: =260
+                    X: =39
+                    Y: =202
+                    ZIndex: =13
+
             Cnt_NoMeetingSelected As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 LayoutAlignItems: =LayoutAlignItems.Center
@@ -805,51 +862,4 @@ Scn_HomeScreen As screen:
         X: =0
         Y: =736
         ZIndex: =6
-
-    Label2_5 As Label:
-        Alignment: =Align.Right
-        Color: =RGBA(146, 154, 157, 1)
-        DisplayMode: =DisplayMode.Edit
-        FontSize: =13
-        Height: =37
-        PCFTeamsTheme: =TeamsTheme.Default
-        Text: |-
-            ="Accelerator ID: " & AssociatedMeetingRecord.'Meeting Accelerator ID'
-        Width: =251
-        X: =1015
-        Y: =45
-        ZIndex: =7
-
-    "ComboBox1_1 As 'Combo box'.pcfdataset":
-        AllowSearching: =true
-        ChevronColor: =RGBA(238, 140, 29, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisplayMode: =DisplayMode.Edit
-        FillColor: =
-        Height: =37
-        Items: ='Meeting Types'.Name
-        PCFTeamsTheme: =TeamsTheme.Default
-        Width: =307
-        X: =515
-        Y: =246
-        ZIndex: =8
-
-        Name1_1 As pcfDataField.textualColumn:
-            FieldDisplayName: ="Name"
-            FieldName: ="ciarank_name"
-            FieldVariantName: ="textualColumn"
-            Order: =1
-            ZIndex: =1
-
-    Label2_6 As Label:
-        Alignment: =Align.Justify
-        DisplayMode: =DisplayMode.Edit
-        FontSize: =15
-        Height: =31
-        PCFTeamsTheme: =TeamsTheme.Default
-        Text: ="Meeting Type"
-        Width: =260
-        X: =520
-        Y: =210
-        ZIndex: =9
 
