@@ -7379,13 +7379,13 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Image6",
-    "ParentIndex": 4,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
         "Category": "Data",
         "PropertyName": "Image",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",
@@ -10746,7 +10746,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Title3_1",
-    "ParentIndex": 2,
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

@@ -924,7 +924,7 @@
                                 Text: =If(IsBlank(ThisItem.role), "Role Undefined", ThisItem.role)
                                 VerticalAlignment: =VerticalAlign.Top
                                 Width: =185
-                                X: =37
+                                X: =42
                                 Y: =22
                                 ZIndex: =4
 
