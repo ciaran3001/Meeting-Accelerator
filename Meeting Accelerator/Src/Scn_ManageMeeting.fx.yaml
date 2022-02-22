@@ -132,11 +132,82 @@
                 "ComboBox3 As 'Combo box'.pcfdataset":
                     DisplayMode: =DisplayMode.Edit
                     Height: =37
+                    Items: =Meetings
                     PCFTeamsTheme: =TeamsTheme.Default
                     Width: =291
                     X: =10
                     Y: =171
                     ZIndex: =6
+
+                    Subject1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="Subject"
+                        FieldName: ="ciarank_subject"
+                        FieldVariantName: ="textualColumn"
+                        Order: =1
+                        ZIndex: =22
+
+                    "'Agenda Detected1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="Agenda Detected"
+                        FieldName: ="ciarank_agendadetected"
+                        FieldVariantName: ="textualColumn"
+                        Order: =2
+                        ZIndex: =23
+
+                    "'End Time1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="End Time"
+                        FieldName: ="ciarank_endtime"
+                        FieldVariantName: ="textualColumn"
+                        Order: =4
+                        ZIndex: =24
+
+                    "'Outlook ID1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="Outlook ID"
+                        FieldName: ="ciarank_outlookid"
+                        FieldVariantName: ="textualColumn"
+                        Order: =5
+                        ZIndex: =25
+
+                    "'Start Time1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="Start Time"
+                        FieldName: ="ciarank_starttime"
+                        FieldVariantName: ="textualColumn"
+                        Order: =6
+                        ZIndex: =26
+
+                    "'TODO List ID1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="TODO List ID"
+                        FieldName: ="ciarank_todolistid"
+                        FieldVariantName: ="textualColumn"
+                        Order: =9
+                        ZIndex: =27
+
+                    "'Follow-up Meeting Calendar ID 1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="Follow-up Meeting Calendar ID "
+                        FieldName: ="ciarank_followupmeetingcalendarid"
+                        FieldVariantName: ="textualColumn"
+                        Order: =10
+                        ZIndex: =28
+
+                    "'Follow-up Meeting Outlook ID1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="Follow-up Meeting Outlook ID"
+                        FieldName: ="ciarank_followupmeetingoutlookid"
+                        FieldVariantName: ="textualColumn"
+                        Order: =11
+                        ZIndex: =29
+
+                    "'Organizer Email1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="Organizer Email"
+                        FieldName: ="ciarank_organizeremail"
+                        FieldVariantName: ="textualColumn"
+                        Order: =12
+                        ZIndex: =30
+
+                    "'Meeting Accelerator ID1' As pcfDataField.textualColumn":
+                        FieldDisplayName: ="Meeting Accelerator ID"
+                        FieldName: ="ciarank_meetingacceleratorid"
+                        FieldVariantName: ="textualColumn"
+                        Order: =13
+                        ZIndex: =31
 
                 Label6_8 As Label:
                     Alignment: =Align.Justify
