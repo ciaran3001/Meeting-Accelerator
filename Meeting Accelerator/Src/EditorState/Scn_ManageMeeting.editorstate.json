@@ -4793,7 +4793,14 @@
       "ChildTabPriority",
       "LayoutMode",
       "LayoutDirection",
-      "LayoutAlignItems",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "LayoutAlignItems",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "LayoutJustifyContent",
       "LayoutGap",
       "LayoutOverflowX",
@@ -8771,7 +8778,14 @@
         "NameMapSourceSchema": "?"
       },
       "LayoutAlignItems",
-      "LayoutJustifyContent",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "LayoutJustifyContent",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "LayoutGap",
       "LayoutOverflowX",
       "LayoutOverflowY",

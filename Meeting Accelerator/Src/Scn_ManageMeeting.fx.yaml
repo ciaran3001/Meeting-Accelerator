@@ -187,6 +187,7 @@
 
                 Container6 As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =2
+                    LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =640
@@ -194,7 +195,6 @@
                     ZIndex: =1
 
                     Label8_1 As Label:
-                        AlignInContainer: =AlignInContainer.Stretch
                         Alignment: =Align.Center
                         DisplayMode: =DisplayMode.Edit
                         FontSize: =15
@@ -208,7 +208,7 @@
                         ZIndex: =1
 
                     Gallery1 As gallery.galleryVertical:
-                        AlignInContainer: =AlignInContainer.Center
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(243, 242, 241, 1)
                         DelayItemLoading: =true
                         FocusedBorderColor: =RGBA(98, 100, 167, 1)
