@@ -1487,8 +1487,8 @@
         Height: =703
         Visible: =ShowAgendaItemModal
         Width: =1258
-        X: =61
-        Y: =32
+        X: =App.Width / 2 - (Cnt_ShowAgendaItem.Width / 2)
+        Y: =App.Height / 2 - (Cnt_ShowAgendaItem.Height / 2)
         ZIndex: =8
 
         Button1_31 As button:
@@ -1565,7 +1565,7 @@
 
         Inpt_AgendaItemDesc_1 As richTextEditor:
             BorderColor: =RGBA(208, 208, 208, 1)
-            Default: ="Enter some <strong>rich text</strong> here."
+            Default: =AgendaItemToshow.Description
             Height: =512
             Width: =387
             X: =17

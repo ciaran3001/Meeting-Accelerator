@@ -824,6 +824,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SidebarContainer1.Container11_1.ComboBox3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SidebarContainer1.Container11_1.ComboBox3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scn_ManageMeeting",
+                "type": "Scn_ManageMeeting.ScreenContainer1.SidebarContainer1.Container11_1.ComboBox3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SidebarContainer1.Container11.Button1_8.FocusedBorderThickness"
                 }
               ],
@@ -1928,36 +1958,6 @@
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
           "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SidebarContainer1.Container11_1.ComboBox3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SidebarContainer1.Container11_1.ComboBox3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.ScreenContainer1.SidebarContainer1.Container11_1.ComboBox3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
         },
         {
           "locations": [
