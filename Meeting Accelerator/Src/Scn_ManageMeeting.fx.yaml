@@ -116,10 +116,10 @@
                     OnSelect: |+
                         =Navigate(Scn_HomeScreen, ScreenTransition.Fade);
                         
-                    PaddingBottom: =3
+                    PaddingBottom: =7
                     PaddingLeft: =3
                     PaddingRight: =3
-                    PaddingTop: =3
+                    PaddingTop: =7
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
