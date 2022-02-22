@@ -183,7 +183,6 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                PaddingLeft: =10
                 ZIndex: =5
 
                 Container6 As groupContainer.verticalAutoLayoutContainer:
