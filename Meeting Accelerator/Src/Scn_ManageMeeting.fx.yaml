@@ -218,7 +218,9 @@
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
                         LayoutMinWidth: =320
-                        LoadingSpinner: =LoadingSpinner.Data
+                        LoadingSpinner: =LoadingSpinner.Controls
+                        LoadingSpinnerColor: |-
+                            =ColorValue("#EE8C1D")
                         TemplateSize: =90
                         Transition: =Transition.Pop
                         ZIndex: =1

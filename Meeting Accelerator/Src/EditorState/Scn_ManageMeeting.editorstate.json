@@ -2636,7 +2636,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_24",
-    "ParentIndex": 1,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -5183,12 +5183,12 @@
       {
         "Category": "Design",
         "PropertyName": "LoadingSpinner",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",
         "PropertyName": "LoadingSpinnerColor",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",
@@ -7592,7 +7592,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Image7",
-    "ParentIndex": 0,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -8559,7 +8559,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label6_7",
-    "ParentIndex": 2,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
