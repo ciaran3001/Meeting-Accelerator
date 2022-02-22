@@ -820,3 +820,36 @@ Scn_HomeScreen As screen:
         Y: =45
         ZIndex: =7
 
+    "ComboBox1_1 As 'Combo box'.pcfdataset":
+        AllowSearching: =true
+        ChevronColor: =RGBA(238, 140, 29, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =
+        Height: =37
+        Items: ='Meeting Types'.Name
+        PCFTeamsTheme: =TeamsTheme.Default
+        Width: =307
+        X: =932
+        Y: =143
+        ZIndex: =8
+
+        Name1_1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Name"
+            FieldName: ="ciarank_name"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =1
+
+    Label2_6 As Label:
+        Alignment: =Align.Justify
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =15
+        Height: =31
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="Meeting Type"
+        Width: =260
+        X: =937
+        Y: =112
+        ZIndex: =9
+
