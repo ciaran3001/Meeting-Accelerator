@@ -2234,7 +2234,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "ComboBox1_1",
-    "ParentIndex": 10,
+    "ParentIndex": 9,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -6417,7 +6417,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label2_3",
-    "ParentIndex": 9,
+    "ParentIndex": 10,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

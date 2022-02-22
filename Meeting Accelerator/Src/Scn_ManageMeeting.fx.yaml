@@ -212,6 +212,60 @@
                         Y: =0
                         ZIndex: =1
 
+                    Container8 As groupContainer.horizontalAutoLayoutContainer:
+                        Fill: =RGBA(238, 140, 29, 1)
+                        FillPortions: =0
+                        Height: =30
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =2
+
+                        Label9 As Label:
+                            AlignInContainer: =AlignInContainer.Center
+                            Alignment: =Align.Center
+                            Color: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Edit
+                            FontWeight: =FontWeight.Bold
+                            Height: =32
+                            LayoutMinHeight: =32
+                            LayoutMinWidth: =200
+                            Text: ="Review suggested agenda items for this meeting type"
+                            Width: =350
+                            X: =0
+                            Y: =0
+                            ZIndex: =1
+
+                        Button1_7 As button:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =
+                            BorderThickness: =0
+                            Color: =RGBA(93, 95, 98, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            FocusedBorderThickness: =0
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            Height: =20
+                            HoverBorderColor: =RGBA(238, 140, 29, 1)
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =
+                            PressedColor: =RGBA(0, 0, 0, 1)
+                            PressedFill: =
+                            RadiusBottomLeft: =5
+                            RadiusBottomRight: =5
+                            RadiusTopLeft: =5
+                            RadiusTopRight: =5
+                            Size: =10
+                            Text: ="Review"
+                            Width: =100
+                            X: =304
+                            Y: =276
+                            ZIndex: =2
+
                     Gallery1 As gallery.galleryVertical:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(243, 242, 241, 1)
@@ -231,7 +285,7 @@
                             =ColorValue("#EE8C1D")
                         TemplateSize: =90
                         Transition: =Transition.Pop
-                        ZIndex: =2
+                        ZIndex: =3
 
                         Button1_18 As button:
                             BorderColor: =
@@ -653,7 +707,7 @@
                         Width: =140
                         X: =108
                         Y: =276
-                        ZIndex: =3
+                        ZIndex: =4
 
                 Container10 As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
