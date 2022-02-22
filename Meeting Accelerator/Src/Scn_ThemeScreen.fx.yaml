@@ -13,7 +13,7 @@ Scn_ThemeScreen As screen:
         FocusedBorderThickness: =0
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =119
+        Height: =89
         HoverBorderColor: =RGBA(238, 140, 29, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: |-
@@ -28,8 +28,8 @@ Scn_ThemeScreen As screen:
         Size: =15
         Text: =""
         Width: =538
-        X: =49
-        Y: =450
+        X: =26
+        Y: =446
         ZIndex: =1
 
     Button1_13 As button:
