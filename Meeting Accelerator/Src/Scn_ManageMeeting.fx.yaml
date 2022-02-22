@@ -183,7 +183,7 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                PaddingLeft: =20
+                PaddingLeft: =10
                 ZIndex: =5
 
                 Container6 As groupContainer.verticalAutoLayoutContainer:
@@ -215,6 +215,8 @@
                         FocusedBorderThickness: =2
                         Items: =CustomGallerySample
                         Layout: =Layout.Vertical
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplateSize: =100
                         Transition: =Transition.Pop
@@ -665,7 +667,8 @@
                                 RadiusTopRight: =15
                                 Size: =15
                                 Text: =""
-                                Width: =400
+                                Width: =295
+                                X: =105
                                 ZIndex: =1
 
                             Group1 As group:
@@ -759,8 +762,7 @@
                                     ItemColorSet: |-
                                         =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
                                     Items: |-
-                                        =Table({Completed : 5},
-                                        {Completed : 2})
+                                        =Table({Completed : tick },{Completed : 30 - tick })
                                     LabelPosition: =LabelPosition.Inside
                                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                                     ShowLabels: =false
@@ -782,7 +784,7 @@
                                     PressedFill: =RGBA(98, 100, 167, 1)
                                     Width: =66
                                     X: =288
-                                    Y: =69
+                                    Y: =70
                                     ZIndex: =6
 
                                 Label6_4 As Label:
@@ -803,7 +805,7 @@
                                     FontSize: =15
                                     FontWeight: =FontWeight.Semibold
                                     Height: =37
-                                    Text: ="100"
+                                    Text: =30 - tick 
                                     Width: =47
                                     X: =298
                                     Y: =84
@@ -860,4 +862,43 @@
                         X: =108
                         Y: =276
                         ZIndex: =2
+
+    Timer1 As timer:
+        AutoStart: =true
+        BorderColor: =RGBA(98, 100, 167, 1)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(243, 242, 241, 1)
+        DisabledColor: =RGBA(200, 198, 196, 1)
+        DisabledFill: =RGBA(243, 242, 241, 1)
+        Duration: =1000
+        Fill: =RGBA(98, 100, 167, 1)
+        FocusedBorderThickness: =2
+        Font: =Font.'Segoe UI'
+        HoverBorderColor: =ColorFade(RGBA(98, 100, 167, 1), -10%)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(98, 100, 167, 1), -10%)
+        OnTimerEnd: |-
+            =If(tick >= 30,
+            UpdateContext({tick : 0});
+            ,
+            UpdateContext({tick : tick+1});
+            );
+        PressedBorderColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+        Repeat: =true
+        Size: =10.5
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+    Label9 As Label:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: =tick - 30 & " " & tick
+        Width: =320
+        X: =72
+        Y: =312
+        ZIndex: =3
 
