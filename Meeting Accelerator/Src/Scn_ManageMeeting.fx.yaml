@@ -1127,7 +1127,9 @@
     Btn_GetAssociatedMeetingData As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        OnSelect: =ClearCollect(ExistingOutComesForThisMeeting, Filter(Outcomes, Meeting.Meeting = AssociatedMeetingRecord.Meeting));
+        OnSelect: |-
+            =ClearCollect(AgendaItemsForThisMeeting, Filter('Agenda Items', Meeting.Meeting = AssociatedMeetingRecord.Meeting));
+            ClearCollect(ExistingOutComesForThisMeeting, Filter(Outcomes, Meeting.Meeting = AssociatedMeetingRecord.Meeting));
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: =false
         Width: =96
@@ -1278,7 +1280,9 @@
             OnSelect: |-
                 =Patch('Agenda Items', Defaults('Agenda Items'), 
                 { 
-                Name: Inpt_AgendaItemName.Text
+                Name: Inpt_AgendaItemName.Text,
+                Description: Inpt_AgendaItemDesc.HtmlText,
+                Meeting: AssociatedMeetingRecord
                 
                 });
                 

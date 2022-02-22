@@ -16,6 +16,8 @@
       "ciarank_agendaitem_PrincipalObjectAttributeAccesses": "Field Sharing",
       "ciarank_agendaitem_ProcessSession": "Process Sessions",
       "ciarank_agendaitemid": "Agenda Item",
+      "ciarank_description": "Description",
+      "ciarank_Meeting": "Meeting",
       "ciarank_name": "Name",
       "ciarank_Outcome_ciarank_AgendaItem_ciaran": "Outcomes",
       "createdby": "Created By",
