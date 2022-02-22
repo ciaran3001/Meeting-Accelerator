@@ -509,7 +509,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_18",
-    "ParentIndex": 1,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -845,7 +845,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_19",
-    "ParentIndex": 12,
+    "ParentIndex": 13,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -1188,7 +1188,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_20",
-    "ParentIndex": 3,
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -1531,7 +1531,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_21",
-    "ParentIndex": 4,
+    "ParentIndex": 5,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -1874,7 +1874,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_22",
-    "ParentIndex": 5,
+    "ParentIndex": 6,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -2210,7 +2210,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_23",
-    "ParentIndex": 2,
+    "ParentIndex": 3,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -5174,7 +5174,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "galleryTemplate2",
-    "ParentIndex": 0,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -5307,7 +5307,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Group3",
-    "ParentIndex": 17,
+    "ParentIndex": 18,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -5358,7 +5358,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Group4",
-    "ParentIndex": 18,
+    "ParentIndex": 19,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -5409,7 +5409,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Group5",
-    "ParentIndex": 19,
+    "ParentIndex": 20,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -5460,7 +5460,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Group8",
-    "ParentIndex": 20,
+    "ParentIndex": 21,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -5511,7 +5511,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Group9",
-    "ParentIndex": 21,
+    "ParentIndex": 22,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -5986,7 +5986,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Image3_5",
-    "ParentIndex": 6,
+    "ParentIndex": 7,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -6202,7 +6202,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Image3_6",
-    "ParentIndex": 15,
+    "ParentIndex": 16,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -6418,7 +6418,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Image3_7",
-    "ParentIndex": 7,
+    "ParentIndex": 8,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -6634,7 +6634,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Image3_8",
-    "ParentIndex": 8,
+    "ParentIndex": 9,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -6850,7 +6850,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Image3_9",
-    "ParentIndex": 9,
+    "ParentIndex": 10,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -7818,7 +7818,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label7_5",
-    "ParentIndex": 11,
+    "ParentIndex": 12,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -7933,7 +7933,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label7_6",
-    "ParentIndex": 16,
+    "ParentIndex": 17,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -8048,7 +8048,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label7_7",
-    "ParentIndex": 13,
+    "ParentIndex": 14,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -8163,7 +8163,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label7_8",
-    "ParentIndex": 14,
+    "ParentIndex": 15,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -8278,7 +8278,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label7_9",
-    "ParentIndex": 10,
+    "ParentIndex": 11,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -8334,6 +8334,107 @@
       {
         "Category": "Design",
         "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      }
+    ],
+    "StyleName": "",
+    "Type": "ControlInfo"
+  },
+  "Label8": {
+    "AllowAccessToGlobals": true,
+    "ControlPropertyState": [
+      "Height",
+      "PCFTeamsTheme",
+      "X",
+      "Y",
+      "Width",
+      "DisplayMode",
+      "OnSelect",
+      "ZIndex",
+      "Text",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "VerticalAlignment",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "FontWeight",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
+    ],
+    "HasDynamicProperties": false,
+    "IsAutoGenerated": false,
+    "IsComponentDefinition": false,
+    "IsDataControl": false,
+    "IsFromScreenLayout": false,
+    "IsGroupControl": false,
+    "IsLocked": false,
+    "LayoutName": "",
+    "MetaDataIDKey": "",
+    "Name": "Label8",
+    "ParentIndex": 0,
+    "PersistMetaDataIDKey": false,
+    "Properties": [
+      {
+        "Category": "Data",
+        "PropertyName": "Text",
+        "RuleProviderType": "User"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "VerticalAlignment",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "FontWeight",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Height",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PCFTeamsTheme",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "X",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Y",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Width",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "DisplayMode",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Behavior",
+        "PropertyName": "OnSelect",
         "RuleProviderType": "Unknown"
       }
     ],

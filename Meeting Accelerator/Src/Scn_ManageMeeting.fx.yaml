@@ -247,6 +247,19 @@
                             Width: =919
                             ZIndex: =1
 
+                        Label8 As Label:
+                            DisplayMode: =DisplayMode.Edit
+                            FontWeight: =FontWeight.Bold
+                            Height: =76
+                            OnSelect: =Select(Parent)
+                            PCFTeamsTheme: =TeamsTheme.Default
+                            Text: ="Agenda Item Title"
+                            VerticalAlignment: =VerticalAlign.Top
+                            Width: =237
+                            X: =12
+                            Y: =6
+                            ZIndex: =17
+
                         Group3 As group:
                             Height: =5
                             Width: =5
