@@ -56,7 +56,7 @@ Scn_ThemeScreen As screen:
         RadiusTopRight: =5
         Size: =15
         Text: =""
-        Width: =88
+        Width: =67
         X: =161
         Y: =472
         ZIndex: =2
@@ -85,7 +85,7 @@ Scn_ThemeScreen As screen:
         RadiusTopRight: =5
         Size: =15
         Text: =""
-        Width: =88
+        Width: =67
         X: =262
         Y: =471
         ZIndex: =3
@@ -114,7 +114,7 @@ Scn_ThemeScreen As screen:
         RadiusTopRight: =5
         Size: =15
         Text: =""
-        Width: =88
+        Width: =67
         X: =365
         Y: =471
         ZIndex: =4
@@ -143,7 +143,7 @@ Scn_ThemeScreen As screen:
         RadiusTopRight: =5
         Size: =15
         Text: =""
-        Width: =88
+        Width: =67
         X: =467
         Y: =472
         ZIndex: =5
@@ -172,7 +172,7 @@ Scn_ThemeScreen As screen:
         RadiusTopRight: =5
         Size: =15
         Text: =""
-        Width: =88
+        Width: =67
         X: =60
         Y: =472
         ZIndex: =6
@@ -279,7 +279,7 @@ Scn_ThemeScreen As screen:
         RadiusBottomRight: =3
         RadiusTopLeft: =3
         RadiusTopRight: =3
-        Width: =48
+        Width: =41
         X: =60
         Y: =474
         ZIndex: =11
@@ -300,7 +300,7 @@ Scn_ThemeScreen As screen:
         RadiusBottomRight: =3
         RadiusTopLeft: =3
         RadiusTopRight: =3
-        Width: =48
+        Width: =41
         X: =161
         Y: =474
         ZIndex: =12
@@ -321,7 +321,7 @@ Scn_ThemeScreen As screen:
         RadiusBottomRight: =3
         RadiusTopLeft: =3
         RadiusTopRight: =3
-        Width: =48
+        Width: =41
         X: =263
         Y: =473
         ZIndex: =13
@@ -342,7 +342,7 @@ Scn_ThemeScreen As screen:
         RadiusBottomRight: =3
         RadiusTopLeft: =3
         RadiusTopRight: =3
-        Width: =48
+        Width: =41
         X: =365
         Y: =473
         ZIndex: =14
@@ -363,8 +363,73 @@ Scn_ThemeScreen As screen:
         RadiusBottomRight: =3
         RadiusTopLeft: =3
         RadiusTopRight: =3
-        Width: =48
+        Width: =41
         X: =467
         Y: =474
         ZIndex: =15
+
+    Label7 As Label:
+        Alignment: =Align.Center
+        Color: =RGBA(8, 67, 171, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="10"
+        Width: =22
+        X: =101
+        Y: =476
+        ZIndex: =16
+
+    Label7_1 As Label:
+        Alignment: =Align.Center
+        Color: =RGBA(147, 1, 147, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="10"
+        Width: =22
+        X: =202
+        Y: =476
+        ZIndex: =17
+
+    Label7_2 As Label:
+        Alignment: =Align.Center
+        Color: =RGBA(93, 84, 1, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="10"
+        Width: =22
+        X: =304
+        Y: =475
+        ZIndex: =18
+
+    Label7_3 As Label:
+        Alignment: =Align.Center
+        Color: =RGBA(16, 120, 151, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="10"
+        Width: =22
+        X: =406
+        Y: =475
+        ZIndex: =19
+
+    Label7_4 As Label:
+        Alignment: =Align.Center
+        Color: =RGBA(24, 73, 18, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="10"
+        Width: =22
+        X: =508
+        Y: =475
+        ZIndex: =20
 
