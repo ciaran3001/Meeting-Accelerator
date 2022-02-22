@@ -190,7 +190,7 @@
                     FillPortions: =2
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
-                    LayoutMinWidth: =250
+                    LayoutMinWidth: =640
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =1
 
