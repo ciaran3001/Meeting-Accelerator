@@ -209,6 +209,7 @@
                         ZIndex: =1
 
                     Gallery1 As gallery.galleryVertical:
+                        AlignInContainer: =AlignInContainer.Center
                         BorderColor: =RGBA(243, 242, 241, 1)
                         DelayItemLoading: =true
                         FocusedBorderColor: =RGBA(98, 100, 167, 1)
@@ -617,12 +618,10 @@
                 Container10 As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
                     LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =10
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    Visible: |-
-                        =
-                        !AddingOutcome
                     Width: =300
                     ZIndex: =2
 
@@ -667,8 +666,8 @@
                                 RadiusTopRight: =15
                                 Size: =15
                                 Text: =""
-                                Width: =295
-                                X: =105
+                                Width: =292
+                                X: =8
                                 ZIndex: =1
 
                             Group1 As group:
@@ -699,7 +698,7 @@
                                     ShowLabels: =false
                                     Size: =15
                                     Width: =138
-                                    X: =105
+                                    X: =11
                                     Y: =34
                                     ZIndex: =2
 
@@ -714,7 +713,7 @@
                                     HoverFill: =RGBA(98, 100, 167, 1)
                                     PressedFill: =RGBA(98, 100, 167, 1)
                                     Width: =57
-                                    X: =146
+                                    X: =52
                                     Y: =75
                                     ZIndex: =3
 
@@ -726,7 +725,7 @@
                                     Height: =41
                                     Text: ="100%"
                                     Width: =49
-                                    X: =149
+                                    X: =55
                                     Y: =83
                                     ZIndex: =4
 
@@ -738,7 +737,7 @@
                                     Height: =68
                                     Text: ="Agenda Completed"
                                     Width: =138
-                                    X: =105
+                                    X: =11
                                     Y: =0
                                     ZIndex: =9
 
@@ -768,7 +767,7 @@
                                     ShowLabels: =false
                                     Size: =15
                                     Width: =157
-                                    X: =243
+                                    X: =143
                                     Y: =25
                                     ZIndex: =5
 
@@ -783,7 +782,7 @@
                                     HoverFill: =RGBA(98, 100, 167, 1)
                                     PressedFill: =RGBA(98, 100, 167, 1)
                                     Width: =66
-                                    X: =288
+                                    X: =188
                                     Y: =70
                                     ZIndex: =6
 
@@ -795,7 +794,7 @@
                                     Height: =55
                                     Text: ="Time Left (Min)"
                                     Width: =157
-                                    X: =243
+                                    X: =143
                                     Y: =0
                                     ZIndex: =7
 
@@ -807,61 +806,59 @@
                                     Height: =37
                                     Text: =30 - tick 
                                     Width: =47
-                                    X: =298
+                                    X: =198
                                     Y: =84
                                     ZIndex: =8
 
-                Container10_1 As groupContainer.verticalAutoLayoutContainer:
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    Visible: =AddingOutcome
-                    ZIndex: =3
-
-                    Label8_2 As Label:
-                        AlignInContainer: =AlignInContainer.Stretch
-                        Alignment: =Align.Center
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =32
-                        LayoutMinHeight: =32
-                        LayoutMinWidth: =320
-                        Text: |-
-                            ="Add Outcome
-                            "
-                        Width: =320
-                        X: =0
-                        Y: =0
-                        ZIndex: =1
-
-                    Button1_6 As button:
-                        BorderColor: =
-                        BorderThickness: =0
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(238, 140, 29, 1)
-                        FocusedBorderThickness: =0
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        HoverBorderColor: =RGBA(238, 140, 29, 1)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: |-
-                            =ColorFade(ColorValue("#EE8C1D"), -20%)
-                        OnSelect: |-
-                            =UpdateContext({AddingOutcome : false});
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: |-
-                            =ColorFade(ColorValue("#EE8C1D"), -20%)
-                        RadiusBottomLeft: =5
-                        RadiusBottomRight: =5
-                        RadiusTopLeft: =5
-                        RadiusTopRight: =5
-                        Size: =15
-                        Text: ="Finish"
-                        X: =108
-                        Y: =276
+                    Container13_1 As groupContainer.manualLayoutContainer:
+                        FillPortions: =0
+                        Height: =500
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        Width: =400
                         ZIndex: =2
+
+                        Button1_24 As button:
+                            BorderColor: =
+                            BorderThickness: =0
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(255, 255, 255, 1)
+                            DisabledFill: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            Fill: =RGBA(238, 140, 29, 1)
+                            FocusedBorderThickness: =0
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            Height: =500
+                            HoverBorderColor: =RGBA(238, 140, 29, 1)
+                            HoverColor: =RGBA(255, 255, 255, 1)
+                            HoverFill: |-
+                                =ColorFade(ColorValue("#EE8C1D"), -20%)
+                            OnSelect: =
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: |-
+                                =ColorFade(ColorValue("#EE8C1D"), -20%)
+                            RadiusBottomLeft: =15
+                            RadiusBottomRight: =15
+                            RadiusTopLeft: =15
+                            RadiusTopRight: =15
+                            Size: =15
+                            Text: =""
+                            Width: =295
+                            X: =5
+                            ZIndex: =1
+
+                        Label6_7 As Label:
+                            Alignment: =Align.Center
+                            DisplayMode: =DisplayMode.Edit
+                            FontSize: =15
+                            FontWeight: =FontWeight.Semibold
+                            Height: =38
+                            Text: ="Personas"
+                            Width: =157
+                            X: =74
+                            Y: =0
+                            ZIndex: =2
 
     Timer1 As timer:
         AutoStart: =true
@@ -888,6 +885,7 @@
         PressedFill: =ColorFade(RGBA(98, 100, 167, 1), -30%)
         Repeat: =true
         Size: =10.5
+        Visible: =false
         X: =40
         Y: =40
         ZIndex: =2
