@@ -915,7 +915,7 @@
 
                             Title3_1 As Label:
                                 DisplayMode: =DisplayMode.Edit
-                                FontSize: =8
+                                FontSize: =9
                                 FontWeight: =FontWeight.Lighter
                                 Height: =24
                                 OnSelect: =Select(Parent)
