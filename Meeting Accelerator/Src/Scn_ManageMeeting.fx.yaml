@@ -1289,6 +1289,8 @@
                     })
                 );
                 
+                Reset(Inpt_AgendaItemDesc);
+                Reset(Inpt_AgendaItemName);
                 
                 UpdateContext({ShowAddAgendaItemModal : false});
             PressedColor: =RGBA(255, 255, 255, 1)
