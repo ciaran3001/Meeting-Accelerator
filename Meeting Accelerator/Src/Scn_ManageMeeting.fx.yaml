@@ -30,6 +30,7 @@
 
             Container11_1 As groupContainer.manualLayoutContainer:
                 FillPortions: =0
+                Height: =230
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 PaddingLeft: =10
@@ -73,7 +74,7 @@
                     Text: ="Organised by " & Lower(SelectedMeeting.organizer)
                     Width: =320
                     X: =10
-                    Y: =84
+                    Y: =78
                     ZIndex: =2
 
                 Label6_2 As Label:
@@ -86,7 +87,7 @@
                         =Text(DateTimeValue(SelectedMeeting.start), "hh:mm") & " to " & Text(DateTimeValue(SelectedMeeting.end), "hh:mm") & " ("& DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " mins)"
                     Width: =320
                     X: =10
-                    Y: =50
+                    Y: =46
                     ZIndex: =3
 
                 Label6 As Label:
@@ -127,6 +128,41 @@
                     X: =275
                     Y: =5
                     ZIndex: =5
+
+                "ComboBox3 As 'Combo box'.pcfdataset":
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =37
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Width: =291
+                    X: =10
+                    Y: =171
+                    ZIndex: =6
+
+                Label6_8 As Label:
+                    Alignment: =Align.Justify
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =12
+                    FontWeight: =FontWeight.Normal
+                    Height: =32
+                    Text: |-
+                        ="Meeting Type: " & AssociatedMeetingRecord.'Meeting Type'.Name
+                    Width: =320
+                    X: =10
+                    Y: =110
+                    ZIndex: =7
+
+                Label6_9 As Label:
+                    Alignment: =Align.Justify
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =12
+                    FontWeight: =FontWeight.Normal
+                    Height: =31
+                    Text: |-
+                        ="Followup Meeting:"
+                    Width: =320
+                    X: =10
+                    Y: =142
+                    ZIndex: =8
 
             Container11 As groupContainer.manualLayoutContainer:
                 LayoutMinHeight: =100
@@ -1140,19 +1176,6 @@
         X: =20
         Y: =20
         ZIndex: =4
-
-    Label6_8 As Label:
-        Alignment: =Align.Justify
-        DisplayMode: =DisplayMode.Edit
-        FontSize: =12
-        FontWeight: =FontWeight.Normal
-        Height: =32
-        Text: |-
-            ="Meeting Type: " & AssociatedMeetingRecord.'Meeting Type'.Name
-        Width: =320
-        X: =20
-        Y: =139
-        ZIndex: =5
 
     Greyout As label:
         BorderColor: =RGBA(0, 18, 107, 1)
