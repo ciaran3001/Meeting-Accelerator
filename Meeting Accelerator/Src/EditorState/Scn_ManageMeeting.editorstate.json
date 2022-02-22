@@ -15274,6 +15274,14 @@
         "InvariantPropertyName": "Alignment",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "FontSize",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
     "HasDynamicProperties": false,
@@ -15302,6 +15310,11 @@
       {
         "Category": "Data",
         "PropertyName": "Alignment",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "FontSize",
         "RuleProviderType": "Unknown"
       },
       {

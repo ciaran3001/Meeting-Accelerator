@@ -1756,12 +1756,13 @@
         Label12_4 As Label:
             Alignment: =Align.Center
             DisplayMode: =DisplayMode.Edit
+            FontSize: =15
             FontWeight: =FontWeight.Bold
-            Height: =32
+            Height: =44
             PCFTeamsTheme: =TeamsTheme.Default
             Text: ="Description"
-            Width: =203
-            X: =109
-            Y: =93
+            Width: =279
+            X: =71
+            Y: =113
             ZIndex: =18
 
