@@ -1708,11 +1708,46 @@
 
         Label12 As Label:
             DisplayMode: =DisplayMode.Edit
+            FontWeight: =FontWeight.Bold
             Height: =32
             PCFTeamsTheme: =TeamsTheme.Default
             Text: ="Outcome Details"
             Width: =203
-            X: =493
+            X: =434
             Y: =125
             ZIndex: =14
+
+        Label12_1 As Label:
+            DisplayMode: =DisplayMode.Edit
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Type"
+            Width: =123
+            X: =700
+            Y: =125
+            ZIndex: =15
+
+        Label12_2 As Label:
+            DisplayMode: =DisplayMode.Edit
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Due Date"
+            Width: =150
+            X: =869
+            Y: =125
+            ZIndex: =16
+
+        Label12_3 As Label:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Copy to 'To Do'"
+            Width: =112
+            X: =1109
+            Y: =121
+            ZIndex: =17
 
