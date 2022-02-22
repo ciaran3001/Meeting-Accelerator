@@ -703,7 +703,7 @@ Scn_HomeScreen As screen:
                     FillColor: =
                     Height: =37
                     Items: ='Meeting Types'
-                    OnChange: |-
+                    OnChange: |
                         =Patch(Meetings, 
                             LookUp(Meetings, Meeting = AssociatedMeetingRecord.Meeting)
                             ,
