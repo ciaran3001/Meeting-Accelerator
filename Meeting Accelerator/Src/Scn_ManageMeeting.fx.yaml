@@ -698,6 +698,8 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        OnSelect: |-
+                            =UpdateContext({ShowAddAgendaItemModal : true});
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: |-
                             =ColorFade(ColorValue("#EE8C1D"), -20%)
@@ -1048,6 +1050,8 @@
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverFill: =RGBA(0, 0, 0, 0)
                             Image: =Cog
+                            OnSelect: |-
+                                =UpdateContext({ShowPersonaManagerModal : true});
                             PressedBorderColor: =RGBA(0, 0, 0, 0)
                             PressedFill: =RGBA(0, 0, 0, 0)
                             RadiusBottomLeft: =3
@@ -1152,11 +1156,13 @@
         Height: =App.Height
         Size: =13
         Text: =""
+        Visible: =ShowAddAgendaItemModal
         Width: =App.Width
         ZIndex: =6
 
     Cnt_AddAgendaItem As groupContainer.manualLayoutContainer:
         Height: =511
+        Visible: =ShowAddAgendaItemModal
         Width: =937
         X: =App.Width / 2 - (Cnt_AddAgendaItem.Width / 2)
         Y: =App.Height / 2 - (Cnt_AddAgendaItem.Height / 2)
@@ -1226,6 +1232,7 @@
             BorderThickness: =2
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
+            Height: =121
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =undraw_add_notes_re_ln36
@@ -1235,8 +1242,9 @@
             RadiusBottomRight: =3
             RadiusTopLeft: =3
             RadiusTopRight: =3
-            X: =260
-            Y: =75
+            Width: =121
+            X: =10
+            Y: =389
             ZIndex: =3
 
         Label10 As Label:
@@ -1294,6 +1302,8 @@
             HoverBorderColor: =RGBA(77, 45, 8, 1)
             HoverColor: =RGBA(77, 45, 8, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
+            OnSelect: |-
+                =UpdateContext({ShowAddAgendaItemModal : false});
             PressedBorderColor: =RGBA(77, 45, 8, 1)
             PressedColor: =RGBA(77, 45, 8, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -1306,4 +1316,55 @@
             X: =471
             Y: =430
             ZIndex: =6
+
+        TextInput1 As text:
+            BorderColor: =RGBA(238, 140, 29, 1)
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            Default: ="Text input"
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =2
+            RadiusBottomRight: =2
+            RadiusTopLeft: =2
+            RadiusTopRight: =2
+            Size: =12
+            X: =206
+            Y: =100
+            ZIndex: =7
+
+        Label11 As Label:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Agenda Item Subject"
+            Width: =320
+            X: =206
+            Y: =68
+            ZIndex: =8
+
+        Label11_1 As Label:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Agenda Item Description"
+            Width: =320
+            X: =206
+            Y: =148
+            ZIndex: =9
+
+        RichTextEditor1 As richTextEditor:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Default: ="Enter some <strong>rich text</strong> here."
+            Height: =237
+            Width: =572
+            X: =206
+            Y: =176
+            ZIndex: =10
 
