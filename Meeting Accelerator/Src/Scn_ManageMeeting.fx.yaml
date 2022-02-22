@@ -248,13 +248,14 @@
                             ZIndex: =1
 
                         Label8 As Label:
+                            Alignment: =Align.Center
                             DisplayMode: =DisplayMode.Edit
                             FontWeight: =FontWeight.Bold
                             Height: =76
                             OnSelect: =Select(Parent)
                             PCFTeamsTheme: =TeamsTheme.Default
                             Text: ="Agenda Item Title"
-                            VerticalAlignment: =VerticalAlign.Top
+                            VerticalAlignment: =VerticalAlign.Middle
                             Width: =237
                             X: =12
                             Y: =6
