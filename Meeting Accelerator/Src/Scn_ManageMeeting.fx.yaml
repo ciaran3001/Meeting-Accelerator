@@ -1232,7 +1232,7 @@
             BorderThickness: =2
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
-            Height: =121
+            Height: =69
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =undraw_add_notes_re_ln36
@@ -1242,9 +1242,9 @@
             RadiusBottomRight: =3
             RadiusTopLeft: =3
             RadiusTopRight: =3
-            Width: =121
-            X: =10
-            Y: =389
+            Width: =69
+            X: =709
+            Y: =107
             ZIndex: =3
 
         Label10 As Label:
