@@ -1158,8 +1158,8 @@
     Cnt_AddAgendaItem As groupContainer.manualLayoutContainer:
         Height: =511
         Width: =937
-        X: =221
-        Y: =96
+        X: =App.Width / 2 - (Cnt_AddAgendaItem.Width / 2)
+        Y: =App.Height / 2 - (Cnt_AddAgendaItem.Height / 2)
         ZIndex: =7
 
         Button1_26 As button:

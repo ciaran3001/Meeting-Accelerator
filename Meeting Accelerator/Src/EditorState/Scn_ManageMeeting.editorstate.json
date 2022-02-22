@@ -6158,12 +6158,12 @@
       {
         "Category": "Design",
         "PropertyName": "Y",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",
         "PropertyName": "X",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",
