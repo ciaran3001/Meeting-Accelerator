@@ -1,6 +1,7 @@
 "Scn_ManageMeeting As screen.'tabletAutoLayout_Sidebar_ver1.0'":
     Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+    OnVisible: =Select(Btn_ProcessAttendees);
 
     ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
         Height: =Parent.Height
@@ -1016,6 +1017,7 @@
             
             
         PCFTeamsTheme: =TeamsTheme.Default
+        Visible: =false
         Width: =96
         X: =0
         Y: =0
