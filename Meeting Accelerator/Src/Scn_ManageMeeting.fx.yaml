@@ -885,10 +885,33 @@
                                 TabIndex: =-1
                                 Text: =ThisItem.email
                                 VerticalAlignment: =VerticalAlign.Top
-                                Width: =Parent.TemplateWidth - 24
-                                X: =12
+                                Width: =185
+                                X: =37
                                 Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2) - 2
                                 ZIndex: =2
+
+                            Image6 As image:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =2
+                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                DisabledFill: =RGBA(0, 0, 0, 0)
+                                Height: =24
+                                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                HoverFill: =RGBA(0, 0, 0, 0)
+                                Image: =LeaderIcon
+                                PaddingTop: =7
+                                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                PressedFill: =RGBA(0, 0, 0, 0)
+                                RadiusBottomLeft: =3
+                                RadiusBottomRight: =3
+                                RadiusTopLeft: =3
+                                RadiusTopRight: =3
+                                Visible: =ThisItem.organizer
+                                Width: =25
+                                X: =12
+                                Y: =2
+                                ZIndex: =3
 
                         Label6_7 As Label:
                             Alignment: =Align.Center
