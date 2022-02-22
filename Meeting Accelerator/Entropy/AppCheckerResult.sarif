@@ -1574,19 +1574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_AddAgendaItem.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_AddAgendaItem.Inpt_AgendaItemName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_AddAgendaItem.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_AddAgendaItem.Inpt_AgendaItemName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_AddAgendaItem.TextInput1"
+                "type": "Scn_ManageMeeting.Cnt_AddAgendaItem.Inpt_AgendaItemName"
               }
             }
           ],
@@ -1604,19 +1604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_AddAgendaItem.RichTextEditor1.AccessibleLabel"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_AddAgendaItem.Inpt_AgendaItemDesc.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_AddAgendaItem.RichTextEditor1.AccessibleLabel",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_AddAgendaItem.Inpt_AgendaItemDesc.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_AddAgendaItem.RichTextEditor1"
+                "type": "Scn_ManageMeeting.Cnt_AddAgendaItem.Inpt_AgendaItemDesc"
               }
             }
           ],
