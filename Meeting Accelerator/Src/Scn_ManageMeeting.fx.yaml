@@ -192,6 +192,7 @@
                     FillPortions: =2
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =5
                     LayoutMinHeight: =100
                     LayoutMinWidth: =640
                     LayoutMode: =LayoutMode.Auto
@@ -213,6 +214,7 @@
                         ZIndex: =1
 
                     Container8 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
                         Fill: =RGBA(238, 140, 29, 1)
                         FillPortions: =0
                         Height: =30
@@ -220,6 +222,7 @@
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
+                        Width: =630
                         ZIndex: =2
 
                         Label9 As Label:
