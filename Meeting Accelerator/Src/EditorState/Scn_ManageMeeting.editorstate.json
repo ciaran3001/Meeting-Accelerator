@@ -10429,7 +10429,7 @@
       {
         "Category": "Data",
         "PropertyName": "FontWeight",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Data",

@@ -878,7 +878,7 @@
                             Title3 As Label:
                                 DisplayMode: =DisplayMode.Edit
                                 FontSize: =10.5
-                                FontWeight: =FontWeight.Normal
+                                FontWeight: =If(ThisItem.organizer = true, FontWeight.Bold, FontWeight.Normal)
                                 Height: =24
                                 OnSelect: =Select(Parent)
                                 PCFTeamsTheme: =TeamsTheme.Default
@@ -935,26 +935,27 @@
     Btn_ProcessAttendees As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        OnSelect: |
+        OnSelect: |+
             =Clear(CurrentMeetingAttendees);
             ClearCollect(_RawRequiredAttendees, Split(SelectedMeeting.requiredAttendees, ";"));
             ClearCollect(_RawOptionalAttendees, Split(SelectedMeeting.optionalAttendees, ";"));
             
+            Collect(CurrentMeetingAttendees, { email : SelectedMeeting.organizer, organizer : true, role: Blank() } );
             
-            ForAll(_RawOptionalAttendees,
-                If(!IsEmpty(ThisRecord.Result),
+            ForAll(_RawRequiredAttendees,
+                If(!IsBlank(ThisRecord.Result),
                     Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank() } );
                 );
             );
             
             ForAll(_RawOptionalAttendees,
-                If(!IsEmpty(ThisRecord.Result),
+                If(!IsBlank(ThisRecord.Result),
                     Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank() } );
                 );
             );
             
             
-            Collect(CurrentMeetingAttendees, { email : SelectedMeeting.organizer, organizer : false, role: Blank() } );
+            
         PCFTeamsTheme: =TeamsTheme.Default
         Width: =96
         X: =0

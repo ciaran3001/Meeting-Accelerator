@@ -145,7 +145,7 @@
     "Tmr_MeetingTimerLoop": 138
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "02/22/2022 17:42:29",
+  "HeaderLastSavedDateTimeUTC": "02/22/2022 17:46:38",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -175,8 +175,8 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "_RawOptionalAttendees": 32,
-    "_RawRequiredAttendees": 30,
+    "_RawOptionalAttendees": 31,
+    "_RawRequiredAttendees": 32,
     "Agenda Item Definitions": 22,
     "Agenda Item Definitions\\ciarank_agendaitemdefinition_statecode": 3,
     "Agenda Item Definitions\\ciarank_agendaitemdefinition_statuscode": 4,
@@ -186,7 +186,7 @@
     "Agenda Items\\ciarank_agendaitem_statuscode": 7,
     "Agenda Items\\ciarank_ciarank_agendaitem_addressed": 5,
     "Agenda Items\\default.cds_ciarank_agendaitem_views": 17,
-    "CurrentMeetingAttendees": 31,
+    "CurrentMeetingAttendees": 30,
     "CustomGallerySample": 21,
     "LegendSample": 28,
     "Meeting Types": 24,
