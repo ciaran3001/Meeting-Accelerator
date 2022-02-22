@@ -1318,7 +1318,7 @@
             ZIndex: =6
 
         TextInput1 As text:
-            BorderColor: =RGBA(238, 140, 29, 1)
+            BorderColor: =RGBA(208, 208, 208, 1)
             BorderThickness: =2
             Color: =RGBA(0, 0, 0, 1)
             Default: ="Text input"
@@ -1327,7 +1327,7 @@
             DisabledFill: =RGBA(244, 244, 244, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverBorderColor: =RGBA(208, 208, 208, 1)
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
             RadiusBottomLeft: =2
@@ -1360,7 +1360,7 @@
             ZIndex: =9
 
         RichTextEditor1 As richTextEditor:
-            BorderColor: =RGBA(238, 140, 29, 1)
+            BorderColor: =RGBA(208, 208, 208, 1)
             Default: ="Enter some <strong>rich text</strong> here."
             Height: =237
             Width: =572
