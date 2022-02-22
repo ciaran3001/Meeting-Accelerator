@@ -847,6 +847,49 @@
                             X: =5
                             ZIndex: =1
 
+                        Gallery2 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
+                            BorderColor: =RGBA(243, 242, 241, 1)
+                            DelayItemLoading: =true
+                            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                            FocusedBorderThickness: =2
+                            Height: =462
+                            Items: =CurrentMeetingAttendees
+                            Layout: =Layout.Vertical
+                            LoadingSpinner: =LoadingSpinner.Data
+                            TemplatePadding: =0
+                            TemplateSize: =32
+                            Width: =300
+                            Y: =38
+                            ZIndex: =1
+
+                            Rectangle4 As rectangle:
+                                BorderColor: =RGBA(243, 242, 241, 1)
+                                DisabledFill: =RGBA(0,0,0,0)
+                                Fill: =RGBA(0,0,0,0)
+                                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                                Height: =Parent.TemplateHeight
+                                HoverFill: =RGBA(0,0,0,0)
+                                OnSelect: =Select(Parent)
+                                PressedFill: =RGBA(0,0,0,0)
+                                TabIndex: =0
+                                Width: =Parent.TemplateWidth
+                                ZIndex: =1
+
+                            Title3 As Label:
+                                DisplayMode: =DisplayMode.Edit
+                                FontSize: =10.5
+                                FontWeight: =FontWeight.Normal
+                                Height: =24
+                                OnSelect: =Select(Parent)
+                                PCFTeamsTheme: =TeamsTheme.Default
+                                TabIndex: =-1
+                                Text: =ThisItem.email
+                                VerticalAlignment: =VerticalAlign.Top
+                                Width: =Parent.TemplateWidth - 24
+                                X: =12
+                                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2) - 2
+                                ZIndex: =2
+
                         Label6_7 As Label:
                             Alignment: =Align.Center
                             DisplayMode: =DisplayMode.Edit
@@ -859,7 +902,7 @@
                             Y: =0
                             ZIndex: =2
 
-    Timer1 As timer:
+    Tmr_MeetingTimerLoop As timer:
         AutoStart: =true
         BorderColor: =RGBA(98, 100, 167, 1)
         BorderStyle: =BorderStyle.None
@@ -888,4 +931,33 @@
         X: =40
         Y: =40
         ZIndex: =2
+
+    Btn_ProcessAttendees As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |
+            =Clear(CurrentMeetingAttendees);
+            ClearCollect(_RawRequiredAttendees, Split(SelectedMeeting.requiredAttendees, ";"));
+            ClearCollect(_RawOptionalAttendees, Split(SelectedMeeting.optionalAttendees, ";"));
+            
+            
+            ForAll(_RawOptionalAttendees,
+                If(!IsEmpty(ThisRecord.Result),
+                    Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank() } );
+                );
+            );
+            
+            ForAll(_RawOptionalAttendees,
+                If(!IsEmpty(ThisRecord.Result),
+                    Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank() } );
+                );
+            );
+            
+            
+            Collect(CurrentMeetingAttendees, { email : SelectedMeeting.organizer, organizer : false, role: Blank() } );
+        PCFTeamsTheme: =TeamsTheme.Default
+        Width: =96
+        X: =0
+        Y: =0
+        ZIndex: =3
 
