@@ -68,7 +68,7 @@ Scn_ThemeScreen As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: =DisplayMode.View
-        Fill: =RGBA(231, 239, 255, 1)
+        Fill: =RGBA(253, 246, 215, 1)
         FocusedBorderThickness: =0
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
@@ -97,7 +97,7 @@ Scn_ThemeScreen As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: =DisplayMode.View
-        Fill: =RGBA(231, 239, 255, 1)
+        Fill: =RGBA(223, 245, 245, 1)
         FocusedBorderThickness: =0
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
@@ -126,7 +126,7 @@ Scn_ThemeScreen As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: =DisplayMode.View
-        Fill: =RGBA(231, 239, 255, 1)
+        Fill: =RGBA(233, 245, 238, 1)
         FocusedBorderThickness: =0
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
@@ -311,6 +311,7 @@ Scn_ThemeScreen As screen:
         BorderThickness: =2
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =RGBA(0, 0, 0, 0)
+        Height: =37
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
         Image: =Escalation
@@ -320,8 +321,9 @@ Scn_ThemeScreen As screen:
         RadiusBottomRight: =3
         RadiusTopLeft: =3
         RadiusTopRight: =3
-        X: =405
-        Y: =350
+        Width: =48
+        X: =263
+        Y: =473
         ZIndex: =13
 
     Image3_3 As image:
@@ -330,6 +332,7 @@ Scn_ThemeScreen As screen:
         BorderThickness: =2
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =RGBA(0, 0, 0, 0)
+        Height: =37
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
         Image: ='Follow-up'
@@ -339,8 +342,9 @@ Scn_ThemeScreen As screen:
         RadiusBottomRight: =3
         RadiusTopLeft: =3
         RadiusTopRight: =3
-        X: =569
-        Y: =350
+        Width: =48
+        X: =365
+        Y: =473
         ZIndex: =14
 
     Image3_4 As image:
@@ -349,6 +353,7 @@ Scn_ThemeScreen As screen:
         BorderThickness: =2
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =RGBA(0, 0, 0, 0)
+        Height: =37
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
         Image: =Statement
@@ -358,7 +363,8 @@ Scn_ThemeScreen As screen:
         RadiusBottomRight: =3
         RadiusTopLeft: =3
         RadiusTopRight: =3
-        X: =717
-        Y: =350
+        Width: =48
+        X: =467
+        Y: =474
         ZIndex: =15
 
