@@ -6106,7 +6106,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Cnt_AddAgendaItem",
-    "ParentIndex": 5,
+    "ParentIndex": 6,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -7756,7 +7756,15 @@
       "Width",
       "Height",
       "ZIndex",
-      "FocusedBorderThickness"
+      "FocusedBorderThickness",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "ShowScrollbar",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
     "DynamicProperties": [
       {
@@ -7952,6 +7960,11 @@
       {
         "Category": "Design",
         "PropertyName": "FocusedBorderThickness",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ShowScrollbar",
         "RuleProviderType": "Unknown"
       }
     ],
@@ -12540,7 +12553,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label6_8",
-    "ParentIndex": 6,
+    "ParentIndex": 5,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

@@ -235,7 +235,7 @@
                             LayoutMinHeight: =32
                             LayoutMinWidth: =200
                             Text: ="Review suggested agenda items for this meeting type"
-                            Width: =350
+                            Width: =370
                             X: =0
                             Y: =0
                             ZIndex: =1
@@ -279,13 +279,14 @@
                         Height: |-
                             =//575
                             97 * CountRows(Gallery1.AllItems)
-                        Items: =CustomGallerySample
+                        Items: =AgendaItemsForThisMeeting
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Controls
                         LoadingSpinnerColor: |-
                             =ColorValue("#EE8C1D")
+                        ShowScrollbar: =false
                         TemplateSize: =90
                         Transition: =Transition.Pop
                         ZIndex: =3
@@ -325,7 +326,7 @@
                             Height: =76
                             OnSelect: =Select(Parent)
                             PCFTeamsTheme: =TeamsTheme.Default
-                            Text: ="Agenda Item Title"
+                            Text: =ThisItem.Name
                             VerticalAlignment: =VerticalAlign.Middle
                             Width: =237
                             X: =12
@@ -1278,13 +1279,15 @@
             HoverFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
             OnSelect: |-
-                =Patch('Agenda Items', Defaults('Agenda Items'), 
-                { 
-                Name: Inpt_AgendaItemName.Text,
-                Description: Inpt_AgendaItemDesc.HtmlText,
-                Meeting: AssociatedMeetingRecord
+                =Collect(AgendaItemsForThisMeeting,
+                    Patch('Agenda Items', Defaults('Agenda Items'), 
+                    { 
+                    Name: Inpt_AgendaItemName.Text,
+                    Description: Inpt_AgendaItemDesc.HtmlText,
+                    Meeting: AssociatedMeetingRecord
                 
-                });
+                    })
+                );
                 
                 
                 UpdateContext({ShowAddAgendaItemModal : false});
