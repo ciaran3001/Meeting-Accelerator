@@ -1472,10 +1472,10 @@
         Inpt_AgendaItemDesc_1 As richTextEditor:
             BorderColor: =RGBA(208, 208, 208, 1)
             Default: ="Enter some <strong>rich text</strong> here."
-            Height: =562
+            Height: =512
             Width: =387
             X: =17
-            Y: =107
+            Y: =157
             ZIndex: =10
 
         Gallery1_1 As gallery.galleryVertical:
