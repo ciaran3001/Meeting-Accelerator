@@ -13941,7 +13941,14 @@
       "Width",
       "Height",
       "DisplayMode",
-      "BorderColor",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "BorderColor",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "ZIndex"
     ],
     "HasDynamicProperties": false,

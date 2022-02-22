@@ -1152,7 +1152,7 @@
         BorderColor: =RGBA(0, 18, 107, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(77, 45, 8, 0.31)
+        Fill: =RGBA(41, 23, 2, 0.45)
         Height: =App.Height
         Size: =13
         Text: =""
@@ -1360,7 +1360,7 @@
             ZIndex: =9
 
         RichTextEditor1 As richTextEditor:
-            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderColor: =RGBA(238, 140, 29, 1)
             Default: ="Enter some <strong>rich text</strong> here."
             Height: =237
             Width: =572
