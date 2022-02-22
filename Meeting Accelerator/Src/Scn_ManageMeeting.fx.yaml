@@ -940,6 +940,27 @@
                             Y: =0
                             ZIndex: =2
 
+                        Image7 As image:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            Height: =46
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Image: =Cog
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            RadiusBottomLeft: =3
+                            RadiusBottomRight: =3
+                            RadiusTopLeft: =3
+                            RadiusTopRight: =3
+                            Width: =46
+                            X: =249
+                            Y: =5
+                            ZIndex: =3
+
     Tmr_MeetingTimerLoop As timer:
         AutoStart: =true
         BorderColor: =RGBA(98, 100, 167, 1)
