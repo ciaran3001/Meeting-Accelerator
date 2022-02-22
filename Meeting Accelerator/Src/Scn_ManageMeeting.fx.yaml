@@ -1753,6 +1753,7 @@
                 =2
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
+            Height: =30
             HoverBorderColor: =RGBA(77, 45, 8, 1)
             HoverColor: =RGBA(77, 45, 8, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
@@ -1765,10 +1766,11 @@
             RadiusBottomRight: =5
             RadiusTopLeft: =5
             RadiusTopRight: =5
-            Size: =15
+            Size: =12
             Text: ="Close"
-            X: =1085
-            Y: =7
+            Width: =120
+            X: =1110
+            Y: =12
             ZIndex: =12
 
         Button1_33 As button:
@@ -1781,6 +1783,7 @@
             FocusedBorderThickness: =0
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
+            Height: =30
             HoverBorderColor: =RGBA(238, 140, 29, 1)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: |-
@@ -1796,10 +1799,9 @@
             RadiusBottomRight: =5
             RadiusTopLeft: =5
             RadiusTopRight: =5
-            Size: =15
             Text: ="Add Outcome"
             X: =434
-            Y: =81
+            Y: =91
             ZIndex: =13
 
         Label12 As Label:

@@ -5170,7 +5170,14 @@
       "X",
       "Y",
       "Width",
-      "Height",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Height",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "ZIndex",
       {
         "AFDDataSourceName": "",
@@ -5220,7 +5227,14 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "Size",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Size",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "Italic",
       "Underline",
       "Strikethrough",
@@ -5525,8 +5539,22 @@
       "VerticalAlign",
       "X",
       "Y",
-      "Width",
-      "Height",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Width",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Height",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "ZIndex",
       {
         "AFDDataSourceName": "",
@@ -5576,7 +5604,14 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "Size",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Size",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "Italic",
       "Underline",
       "Strikethrough",
@@ -8250,7 +8285,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "ComboBox3",
-    "ParentIndex": 6,
+    "ParentIndex": 7,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -15893,7 +15928,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label6_1",
-    "ParentIndex": 5,
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -16002,7 +16037,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label6_2",
-    "ParentIndex": 4,
+    "ParentIndex": 3,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -16656,7 +16691,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label6_8",
-    "ParentIndex": 3,
+    "ParentIndex": 5,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -16765,7 +16800,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label6_9",
-    "ParentIndex": 7,
+    "ParentIndex": 6,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
