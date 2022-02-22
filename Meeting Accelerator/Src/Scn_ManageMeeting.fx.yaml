@@ -229,7 +229,7 @@
                     FontWeight: =FontWeight.Normal
                     Height: =31
                     Text: |-
-                        ="Followup Meeting:"
+                        ="Follow up Meeting:"
                     Width: =320
                     X: =10
                     Y: =142
