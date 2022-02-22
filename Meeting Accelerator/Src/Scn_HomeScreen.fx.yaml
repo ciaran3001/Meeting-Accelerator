@@ -626,7 +626,7 @@ Scn_HomeScreen As screen:
                     HtmlText: =SelectedMeeting.body
                     Width: =731
                     X: =34
-                    Y: =226
+                    Y: =289
                     ZIndex: =9
 
                 Button1_4 As button:
@@ -830,8 +830,8 @@ Scn_HomeScreen As screen:
         Items: ='Meeting Types'.Name
         PCFTeamsTheme: =TeamsTheme.Default
         Width: =307
-        X: =932
-        Y: =143
+        X: =515
+        Y: =246
         ZIndex: =8
 
         Name1_1 As pcfDataField.textualColumn:
@@ -849,7 +849,7 @@ Scn_HomeScreen As screen:
         PCFTeamsTheme: =TeamsTheme.Default
         Text: ="Meeting Type"
         Width: =260
-        X: =937
-        Y: =112
+        X: =520
+        Y: =210
         ZIndex: =9
 
