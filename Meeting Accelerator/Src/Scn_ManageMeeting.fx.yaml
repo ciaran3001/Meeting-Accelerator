@@ -637,7 +637,7 @@
                             FillPortions: =0
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
-                            Width: =400
+                            Width: =300
                             ZIndex: =1
 
                             Button1_10 As button:
@@ -889,14 +889,4 @@
         X: =40
         Y: =40
         ZIndex: =2
-
-    Label9 As Label:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        PCFTeamsTheme: =TeamsTheme.Default
-        Text: =tick - 30 & " " & tick
-        Width: =320
-        X: =72
-        Y: =312
-        ZIndex: =3
 
