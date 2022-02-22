@@ -212,40 +212,16 @@
                         Y: =0
                         ZIndex: =1
 
-                    Button1_6 As button:
-                        AlignInContainer: =AlignInContainer.End
-                        BorderColor: =
-                        BorderThickness: =0
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(238, 140, 29, 1)
-                        FocusedBorderThickness: =0
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        HoverBorderColor: =RGBA(238, 140, 29, 1)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: |-
-                            =ColorFade(ColorValue("#EE8C1D"), -20%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: |-
-                            =ColorFade(ColorValue("#EE8C1D"), -20%)
-                        RadiusBottomLeft: =5
-                        RadiusBottomRight: =5
-                        RadiusTopLeft: =5
-                        RadiusTopRight: =5
-                        Size: =15
-                        Text: ="Add Item"
-                        X: =108
-                        Y: =276
-                        ZIndex: =2
-
                     Gallery1 As gallery.galleryVertical:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(243, 242, 241, 1)
                         DelayItemLoading: =true
+                        FillPortions: =0
                         FocusedBorderColor: =RGBA(98, 100, 167, 1)
                         FocusedBorderThickness: =2
+                        Height: |-
+                            =//575
+                            97 * CountRows(Gallery1.AllItems)
                         Items: =CustomGallerySample
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
@@ -255,7 +231,7 @@
                             =ColorValue("#EE8C1D")
                         TemplateSize: =90
                         Transition: =Transition.Pop
-                        ZIndex: =3
+                        ZIndex: =2
 
                         Button1_18 As button:
                             BorderColor: =
@@ -648,6 +624,36 @@
                                 X: =306
                                 Y: =28
                                 ZIndex: =12
+
+                    Button1_6 As button:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =
+                        BorderThickness: =0
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(238, 140, 29, 1)
+                        FocusedBorderThickness: =0
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =35
+                        HoverBorderColor: =RGBA(238, 140, 29, 1)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
+                        Size: =12
+                        Text: ="Add Item"
+                        Width: =140
+                        X: =108
+                        Y: =276
+                        ZIndex: =3
 
                 Container10 As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
