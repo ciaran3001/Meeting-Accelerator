@@ -218,7 +218,7 @@
                         LayoutMinHeight: =287
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
-                        TemplateSize: =100
+                        TemplateSize: =90
                         Transition: =Transition.Pop
                         ZIndex: =1
 
