@@ -216,7 +216,7 @@
                         Items: =CustomGallerySample
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
-                        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+                        TemplateSize: =100
                         ZIndex: =1
 
                         Button1_18 As button:
@@ -247,320 +247,355 @@
                             Width: =919
                             ZIndex: =1
 
-                        Button1_19 As button:
-                            BorderColor: =
-                            BorderThickness: =0
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =DisplayMode.View
-                            Fill: =RGBA(250, 242, 250, 1)
-                            FocusedBorderThickness: =0
-                            Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Semibold
-                            HoverBorderColor: =RGBA(238, 140, 29, 1)
-                            HoverColor: =RGBA(255, 255, 255, 1)
-                            HoverFill: |-
-                                =ColorFade(ColorValue("#EE8C1D"), -20%)
-                            PressedColor: =RGBA(255, 255, 255, 1)
-                            PressedFill: |-
-                                =ColorFade(ColorValue("#EE8C1D"), -20%)
-                            RadiusBottomLeft: =5
-                            RadiusBottomRight: =5
-                            RadiusTopLeft: =5
-                            RadiusTopRight: =5
-                            Size: =15
-                            Text: =""
-                            Width: =67
-                            X: =215
-                            Y: =41
-                            ZIndex: =2
+                        Group3 As group:
+                            Height: =5
+                            Width: =5
+                            X: =60
+                            Y: =60
+                            ZIndex: =17
 
-                        Button1_20 As button:
-                            BorderColor: =
-                            BorderThickness: =0
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =DisplayMode.View
-                            Fill: =RGBA(253, 246, 215, 1)
-                            FocusedBorderThickness: =0
-                            Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Semibold
-                            HoverBorderColor: =RGBA(238, 140, 29, 1)
-                            HoverColor: =RGBA(255, 255, 255, 1)
-                            HoverFill: |-
-                                =ColorFade(ColorValue("#EE8C1D"), -20%)
-                            PressedColor: =RGBA(255, 255, 255, 1)
-                            PressedFill: |-
-                                =ColorFade(ColorValue("#EE8C1D"), -20%)
-                            RadiusBottomLeft: =5
-                            RadiusBottomRight: =5
-                            RadiusTopLeft: =5
-                            RadiusTopRight: =5
-                            Size: =15
-                            Text: =""
-                            Width: =67
-                            X: =316
+                            Button1_22 As button:
+                                BorderColor: =
+                                BorderThickness: =0
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(233, 245, 238, 1)
+                                FocusedBorderThickness: =0
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Semibold
+                                HoverBorderColor: =RGBA(238, 140, 29, 1)
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                PressedColor: =RGBA(255, 255, 255, 1)
+                                PressedFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                RadiusBottomLeft: =5
+                                RadiusBottomRight: =5
+                                RadiusTopLeft: =5
+                                RadiusTopRight: =5
+                                Size: =15
+                                Text: =""
+                                Width: =67
+                                X: =551
+                                Y: =24
+                                ZIndex: =5
+
+                            Image3_9 As image:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =2
+                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                DisabledFill: =RGBA(0, 0, 0, 0)
+                                Height: =37
+                                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                HoverFill: =RGBA(0, 0, 0, 0)
+                                Image: =Statement
+                                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                PressedFill: =RGBA(0, 0, 0, 0)
+                                RadiusBottomLeft: =3
+                                RadiusBottomRight: =3
+                                RadiusTopLeft: =3
+                                RadiusTopRight: =3
+                                Width: =41
+                                X: =551
+                                Y: =26
+                                ZIndex: =11
+
+                            Label7_9 As Label:
+                                Alignment: =Align.Center
+                                Color: =RGBA(24, 73, 18, 1)
+                                DisplayMode: =DisplayMode.Edit
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                PCFTeamsTheme: =TeamsTheme.Default
+                                Text: ="10"
+                                Width: =22
+                                X: =592
+                                Y: =27
+                                ZIndex: =16
+
+                        Group4 As group:
+                            Height: =5
+                            Width: =5
+                            X: =60
+                            Y: =60
+                            ZIndex: =17
+
+                            Button1_21 As button:
+                                BorderColor: =
+                                BorderThickness: =0
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(223, 245, 245, 1)
+                                FocusedBorderThickness: =0
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Semibold
+                                HoverBorderColor: =RGBA(238, 140, 29, 1)
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                PressedColor: =RGBA(255, 255, 255, 1)
+                                PressedFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                RadiusBottomLeft: =5
+                                RadiusBottomRight: =5
+                                RadiusTopLeft: =5
+                                RadiusTopRight: =5
+                                Size: =15
+                                Text: =""
+                                Width: =67
+                                X: =479
+                                Y: =24
+                                ZIndex: =4
+
+                            Image3_8 As image:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =2
+                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                DisabledFill: =RGBA(0, 0, 0, 0)
+                                Height: =37
+                                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                HoverFill: =RGBA(0, 0, 0, 0)
+                                Image: ='Follow-up'
+                                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                PressedFill: =RGBA(0, 0, 0, 0)
+                                RadiusBottomLeft: =3
+                                RadiusBottomRight: =3
+                                RadiusTopLeft: =3
+                                RadiusTopRight: =3
+                                Width: =41
+                                X: =479
+                                Y: =26
+                                ZIndex: =10
+
+                            Label7_8 As Label:
+                                Alignment: =Align.Center
+                                Color: =RGBA(16, 120, 151, 1)
+                                DisplayMode: =DisplayMode.Edit
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                PCFTeamsTheme: =TeamsTheme.Default
+                                Text: ="10"
+                                Width: =22
+                                X: =520
+                                Y: =28
+                                ZIndex: =15
+
+                        Group5 As group:
+                            Height: =5
+                            Width: =5
+                            X: =60
+                            Y: =60
+                            ZIndex: =17
+
+                            Button1_20 As button:
+                                BorderColor: =
+                                BorderThickness: =0
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(253, 246, 215, 1)
+                                FocusedBorderThickness: =0
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Semibold
+                                HoverBorderColor: =RGBA(238, 140, 29, 1)
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                PressedColor: =RGBA(255, 255, 255, 1)
+                                PressedFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                RadiusBottomLeft: =5
+                                RadiusBottomRight: =5
+                                RadiusTopLeft: =5
+                                RadiusTopRight: =5
+                                Size: =15
+                                Text: =""
+                                Width: =67
+                                X: =407
+                                Y: =24
+                                ZIndex: =3
+
+                            Image3_7 As image:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =2
+                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                DisabledFill: =RGBA(0, 0, 0, 0)
+                                Height: =37
+                                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                HoverFill: =RGBA(0, 0, 0, 0)
+                                Image: =Escalation
+                                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                PressedFill: =RGBA(0, 0, 0, 0)
+                                RadiusBottomLeft: =3
+                                RadiusBottomRight: =3
+                                RadiusTopLeft: =3
+                                RadiusTopRight: =3
+                                Width: =41
+                                X: =408
+                                Y: =26
+                                ZIndex: =9
+
+                            Label7_7 As Label:
+                                Alignment: =Align.Center
+                                Color: =RGBA(93, 84, 1, 1)
+                                DisplayMode: =DisplayMode.Edit
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                PCFTeamsTheme: =TeamsTheme.Default
+                                Text: ="10"
+                                Width: =22
+                                X: =449
+                                Y: =28
+                                ZIndex: =14
+
+                        Group8 As group:
+                            Height: =5
+                            Width: =5
+                            X: =40
                             Y: =40
-                            ZIndex: =3
+                            ZIndex: =17
 
-                        Button1_21 As button:
-                            BorderColor: =
-                            BorderThickness: =0
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =DisplayMode.View
-                            Fill: =RGBA(223, 245, 245, 1)
-                            FocusedBorderThickness: =0
-                            Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Semibold
-                            HoverBorderColor: =RGBA(238, 140, 29, 1)
-                            HoverColor: =RGBA(255, 255, 255, 1)
-                            HoverFill: |-
-                                =ColorFade(ColorValue("#EE8C1D"), -20%)
-                            PressedColor: =RGBA(255, 255, 255, 1)
-                            PressedFill: |-
-                                =ColorFade(ColorValue("#EE8C1D"), -20%)
-                            RadiusBottomLeft: =5
-                            RadiusBottomRight: =5
-                            RadiusTopLeft: =5
-                            RadiusTopRight: =5
-                            Size: =15
-                            Text: =""
-                            Width: =67
-                            X: =419
+                            Button1_19 As button:
+                                BorderColor: =
+                                BorderThickness: =0
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(250, 242, 250, 1)
+                                FocusedBorderThickness: =0
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Semibold
+                                HoverBorderColor: =RGBA(238, 140, 29, 1)
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                PressedColor: =RGBA(255, 255, 255, 1)
+                                PressedFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                RadiusBottomLeft: =5
+                                RadiusBottomRight: =5
+                                RadiusTopLeft: =5
+                                RadiusTopRight: =5
+                                Size: =15
+                                Text: =""
+                                Width: =67
+                                X: =336
+                                Y: =24
+                                ZIndex: =2
+
+                            Image3_6 As image:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =2
+                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                DisabledFill: =RGBA(0, 0, 0, 0)
+                                Height: =35
+                                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                HoverFill: =RGBA(0, 0, 0, 0)
+                                Image: =Decision
+                                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                PressedFill: =RGBA(0, 0, 0, 0)
+                                RadiusBottomLeft: =3
+                                RadiusBottomRight: =3
+                                RadiusTopLeft: =3
+                                RadiusTopRight: =3
+                                Width: =41
+                                X: =336
+                                Y: =26
+                                ZIndex: =8
+
+                            Label7_6 As Label:
+                                Alignment: =Align.Center
+                                Color: =RGBA(147, 1, 147, 1)
+                                DisplayMode: =DisplayMode.Edit
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                PCFTeamsTheme: =TeamsTheme.Default
+                                Text: ="10"
+                                Width: =22
+                                X: =377
+                                Y: =28
+                                ZIndex: =13
+
+                        Group9 As group:
+                            Height: =5
+                            Width: =5
+                            X: =40
                             Y: =40
-                            ZIndex: =4
+                            ZIndex: =17
 
-                        Button1_22 As button:
-                            BorderColor: =
-                            BorderThickness: =0
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =DisplayMode.View
-                            Fill: =RGBA(233, 245, 238, 1)
-                            FocusedBorderThickness: =0
-                            Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Semibold
-                            HoverBorderColor: =RGBA(238, 140, 29, 1)
-                            HoverColor: =RGBA(255, 255, 255, 1)
-                            HoverFill: |-
-                                =ColorFade(ColorValue("#EE8C1D"), -20%)
-                            PressedColor: =RGBA(255, 255, 255, 1)
-                            PressedFill: |-
-                                =ColorFade(ColorValue("#EE8C1D"), -20%)
-                            RadiusBottomLeft: =5
-                            RadiusBottomRight: =5
-                            RadiusTopLeft: =5
-                            RadiusTopRight: =5
-                            Size: =15
-                            Text: =""
-                            Width: =67
-                            X: =521
-                            Y: =41
-                            ZIndex: =5
+                            Button1_23 As button:
+                                BorderColor: =
+                                BorderThickness: =0
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(231, 239, 255, 1)
+                                FocusedBorderThickness: =0
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Semibold
+                                HoverBorderColor: =RGBA(238, 140, 29, 1)
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                PressedColor: =RGBA(255, 255, 255, 1)
+                                PressedFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                RadiusBottomLeft: =5
+                                RadiusBottomRight: =5
+                                RadiusTopLeft: =5
+                                RadiusTopRight: =5
+                                Size: =15
+                                Text: =""
+                                Width: =67
+                                X: =265
+                                Y: =24
+                                ZIndex: =6
 
-                        Button1_23 As button:
-                            BorderColor: =
-                            BorderThickness: =0
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =DisplayMode.View
-                            Fill: =RGBA(231, 239, 255, 1)
-                            FocusedBorderThickness: =0
-                            Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Semibold
-                            HoverBorderColor: =RGBA(238, 140, 29, 1)
-                            HoverColor: =RGBA(255, 255, 255, 1)
-                            HoverFill: |-
-                                =ColorFade(ColorValue("#EE8C1D"), -20%)
-                            PressedColor: =RGBA(255, 255, 255, 1)
-                            PressedFill: |-
-                                =ColorFade(ColorValue("#EE8C1D"), -20%)
-                            RadiusBottomLeft: =5
-                            RadiusBottomRight: =5
-                            RadiusTopLeft: =5
-                            RadiusTopRight: =5
-                            Size: =15
-                            Text: =""
-                            Width: =67
-                            X: =114
-                            Y: =41
-                            ZIndex: =6
+                            Image3_5 As image:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =2
+                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                DisabledFill: =RGBA(0, 0, 0, 0)
+                                Height: =35
+                                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                HoverFill: =RGBA(0, 0, 0, 0)
+                                Image: =Task
+                                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                PressedFill: =RGBA(0, 0, 0, 0)
+                                RadiusBottomLeft: =3
+                                RadiusBottomRight: =3
+                                RadiusTopLeft: =3
+                                RadiusTopRight: =3
+                                Width: =41
+                                X: =265
+                                Y: =26
+                                ZIndex: =7
 
-                        Image3_5 As image:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            BorderStyle: =BorderStyle.None
-                            BorderThickness: =2
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledFill: =RGBA(0, 0, 0, 0)
-                            Height: =35
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            Image: =Task
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedFill: =RGBA(0, 0, 0, 0)
-                            RadiusBottomLeft: =3
-                            RadiusBottomRight: =3
-                            RadiusTopLeft: =3
-                            RadiusTopRight: =3
-                            Width: =41
-                            X: =114
-                            Y: =43
-                            ZIndex: =7
-
-                        Image3_6 As image:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            BorderStyle: =BorderStyle.None
-                            BorderThickness: =2
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledFill: =RGBA(0, 0, 0, 0)
-                            Height: =35
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            Image: =Decision
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedFill: =RGBA(0, 0, 0, 0)
-                            RadiusBottomLeft: =3
-                            RadiusBottomRight: =3
-                            RadiusTopLeft: =3
-                            RadiusTopRight: =3
-                            Width: =41
-                            X: =215
-                            Y: =43
-                            ZIndex: =8
-
-                        Image3_7 As image:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            BorderStyle: =BorderStyle.None
-                            BorderThickness: =2
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledFill: =RGBA(0, 0, 0, 0)
-                            Height: =37
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            Image: =Escalation
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedFill: =RGBA(0, 0, 0, 0)
-                            RadiusBottomLeft: =3
-                            RadiusBottomRight: =3
-                            RadiusTopLeft: =3
-                            RadiusTopRight: =3
-                            Width: =41
-                            X: =317
-                            Y: =42
-                            ZIndex: =9
-
-                        Image3_8 As image:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            BorderStyle: =BorderStyle.None
-                            BorderThickness: =2
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledFill: =RGBA(0, 0, 0, 0)
-                            Height: =37
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            Image: ='Follow-up'
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedFill: =RGBA(0, 0, 0, 0)
-                            RadiusBottomLeft: =3
-                            RadiusBottomRight: =3
-                            RadiusTopLeft: =3
-                            RadiusTopRight: =3
-                            Width: =41
-                            X: =419
-                            Y: =42
-                            ZIndex: =10
-
-                        Image3_9 As image:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            BorderStyle: =BorderStyle.None
-                            BorderThickness: =2
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledFill: =RGBA(0, 0, 0, 0)
-                            Height: =37
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            Image: =Statement
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedFill: =RGBA(0, 0, 0, 0)
-                            RadiusBottomLeft: =3
-                            RadiusBottomRight: =3
-                            RadiusTopLeft: =3
-                            RadiusTopRight: =3
-                            Width: =41
-                            X: =521
-                            Y: =43
-                            ZIndex: =11
-
-                        Label7_5 As Label:
-                            Alignment: =Align.Center
-                            Color: =RGBA(8, 67, 171, 1)
-                            DisplayMode: =DisplayMode.Edit
-                            FontWeight: =FontWeight.Bold
-                            Height: =32
-                            PCFTeamsTheme: =TeamsTheme.Default
-                            Text: ="10"
-                            Width: =22
-                            X: =155
-                            Y: =45
-                            ZIndex: =12
-
-                        Label7_6 As Label:
-                            Alignment: =Align.Center
-                            Color: =RGBA(147, 1, 147, 1)
-                            DisplayMode: =DisplayMode.Edit
-                            FontWeight: =FontWeight.Bold
-                            Height: =32
-                            PCFTeamsTheme: =TeamsTheme.Default
-                            Text: ="10"
-                            Width: =22
-                            X: =256
-                            Y: =45
-                            ZIndex: =13
-
-                        Label7_7 As Label:
-                            Alignment: =Align.Center
-                            Color: =RGBA(93, 84, 1, 1)
-                            DisplayMode: =DisplayMode.Edit
-                            FontWeight: =FontWeight.Bold
-                            Height: =32
-                            PCFTeamsTheme: =TeamsTheme.Default
-                            Text: ="10"
-                            Width: =22
-                            X: =358
-                            Y: =44
-                            ZIndex: =14
-
-                        Label7_8 As Label:
-                            Alignment: =Align.Center
-                            Color: =RGBA(16, 120, 151, 1)
-                            DisplayMode: =DisplayMode.Edit
-                            FontWeight: =FontWeight.Bold
-                            Height: =32
-                            PCFTeamsTheme: =TeamsTheme.Default
-                            Text: ="10"
-                            Width: =22
-                            X: =460
-                            Y: =44
-                            ZIndex: =15
-
-                        Label7_9 As Label:
-                            Alignment: =Align.Center
-                            Color: =RGBA(24, 73, 18, 1)
-                            DisplayMode: =DisplayMode.Edit
-                            FontWeight: =FontWeight.Bold
-                            Height: =32
-                            PCFTeamsTheme: =TeamsTheme.Default
-                            Text: ="10"
-                            Width: =22
-                            X: =562
-                            Y: =44
-                            ZIndex: =16
+                            Label7_5 As Label:
+                                Alignment: =Align.Center
+                                Color: =RGBA(8, 67, 171, 1)
+                                DisplayMode: =DisplayMode.Edit
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                PCFTeamsTheme: =TeamsTheme.Default
+                                Text: ="10"
+                                Width: =22
+                                X: =306
+                                Y: =28
+                                ZIndex: =12
 
                 Container10 As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
