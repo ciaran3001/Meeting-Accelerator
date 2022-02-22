@@ -1753,3 +1753,15 @@
             Y: =121
             ZIndex: =17
 
+        Label12_4 As Label:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Description"
+            Width: =203
+            X: =109
+            Y: =93
+            ZIndex: =18
+
