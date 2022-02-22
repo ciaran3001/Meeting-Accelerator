@@ -857,7 +857,7 @@
                             Layout: =Layout.Vertical
                             LoadingSpinner: =LoadingSpinner.Data
                             TemplatePadding: =0
-                            TemplateSize: =32
+                            TemplateSize: =68
                             Width: =300
                             Y: =38
                             ZIndex: =1
@@ -887,7 +887,7 @@
                                 VerticalAlignment: =VerticalAlign.Top
                                 Width: =185
                                 X: =37
-                                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2) - 2
+                                Y: =2
                                 ZIndex: =2
 
                             Image6 As image:
@@ -912,6 +912,21 @@
                                 X: =12
                                 Y: =2
                                 ZIndex: =3
+
+                            Title3_1 As Label:
+                                DisplayMode: =DisplayMode.Edit
+                                FontSize: =8
+                                FontWeight: =FontWeight.Lighter
+                                Height: =24
+                                OnSelect: =Select(Parent)
+                                PCFTeamsTheme: =TeamsTheme.Default
+                                TabIndex: =-1
+                                Text: =If(IsBlank(ThisItem.role), "Role Undefined", ThisItem.role)
+                                VerticalAlignment: =VerticalAlign.Top
+                                Width: =185
+                                X: =37
+                                Y: =22
+                                ZIndex: =4
 
                         Label6_7 As Label:
                             Alignment: =Align.Center
