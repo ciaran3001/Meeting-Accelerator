@@ -22,7 +22,7 @@
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
-            Width: =400
+            Width: =350
             ZIndex: =2
 
             Container11_1 As groupContainer.manualLayoutContainer:
@@ -69,8 +69,8 @@
                     Height: =32
                     Text: ="Organised by " & Lower(SelectedMeeting.organizer)
                     Width: =320
-                    X: =20
-                    Y: =82
+                    X: =10
+                    Y: =84
                     ZIndex: =2
 
                 Label6_2 As Label:
@@ -82,7 +82,7 @@
                     Text: |-
                         =Text(DateTimeValue(SelectedMeeting.start), "hh:mm") & " to " & Text(DateTimeValue(SelectedMeeting.end), "hh:mm") & " ("& DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " mins)"
                     Width: =320
-                    X: =20
+                    X: =10
                     Y: =50
                     ZIndex: =3
 
@@ -91,11 +91,11 @@
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =15
                     FontWeight: =FontWeight.Semibold
-                    Height: =32
+                    Height: =41
                     Text: =SelectedMeeting.subject
-                    Width: =320
-                    X: =30
-                    Y: =0
+                    Width: =275
+                    X: =5
+                    Y: =9
                     ZIndex: =4
 
                 Icon3 As icon.Add:
@@ -121,8 +121,8 @@
                     PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Width: =50
-                    X: =315
-                    Y: =10
+                    X: =275
+                    Y: =5
                     ZIndex: =5
 
             Container11 As groupContainer.manualLayoutContainer:
@@ -141,7 +141,7 @@
                     FocusedBorderThickness: =0
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
-                    Height: =536
+                    Height: =518
                     HoverBorderColor: =RGBA(238, 140, 29, 1)
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: |-
@@ -156,7 +156,7 @@
                     RadiusTopRight: =15
                     Size: =15
                     Text: =""
-                    Width: =384
+                    Width: =330
                     ZIndex: =1
 
                 HtmlText2 As htmlViewer:
@@ -167,7 +167,7 @@
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Width: =384
+                    Width: =330
                     ZIndex: =2
 
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
