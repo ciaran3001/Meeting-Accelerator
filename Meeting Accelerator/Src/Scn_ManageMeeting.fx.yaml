@@ -1144,3 +1144,21 @@
         Y: =139
         ZIndex: =5
 
+    Greyout As label:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(238, 140, 29, 0.27)
+        Height: =App.Height
+        Size: =13
+        Text: ="Text"
+        Width: =App.Width
+        ZIndex: =6
+
+    Cnt_AddAgendaItem As groupContainer.manualLayoutContainer:
+        Height: =511
+        Width: =937
+        X: =221
+        Y: =96
+        ZIndex: =7
+

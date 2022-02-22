@@ -274,6 +274,20 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
+  "label": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/label",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "label",
+    "OverridableProperties": {},
+    "Version": "2.4.0"
+  },
   "Label": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
