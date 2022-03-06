@@ -135,7 +135,7 @@
                     Height: =37
                     Items: =Meetings
                     OnChange: |-
-                        =Patch(Meetings, LookUp(Meetings, Meeting = AssociatedMeetingRecord.Meeting), { 'Follow 'Follow up Meeting Record':  } );
+                        =Patch(Meetings, LookUp(Meetings, Meeting = AssociatedMeetingRecord.Meeting), {  'Follow up Meeting Record': ComboBox3.Selected } );
                     PCFTeamsTheme: =TeamsTheme.Default
                     Width: =295
                     X: =10
