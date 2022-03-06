@@ -58,6 +58,7 @@
       "reliableconcurrent": true,
       "rtlinstudiopreview": false,
       "rtlsupport": false,
+      "searchtool": false,
       "usedisplaynamemetadata": true,
       "useenforcesavedatalimits": true,
       "useexperimentalcdsconnector": true,

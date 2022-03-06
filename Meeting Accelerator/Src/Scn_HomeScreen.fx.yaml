@@ -492,6 +492,7 @@ Scn_HomeScreen As screen:
 
         Container2_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =App.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100
