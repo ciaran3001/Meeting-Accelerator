@@ -34,6 +34,13 @@
       "Values": {
         "Information": "63e65c65-fe3e-4eb0-b5d1-8303dbedf8b9"
       }
+    },
+    {
+      "Kind": "default.cds_ciarank_outcometodocopy_forms",
+      "Namespace": "Outcome To Do Copies (Forms)",
+      "Values": {
+        "Information": "e7cf68c8-c192-4028-8e42-8a9c9c0f38a2"
+      }
     }
   ]
 }

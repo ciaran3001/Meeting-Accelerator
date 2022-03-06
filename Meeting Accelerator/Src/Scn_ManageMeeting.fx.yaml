@@ -134,6 +134,7 @@
                     DisplayMode: =DisplayMode.Edit
                     Height: =37
                     Items: =Meetings
+                    OnChange: =Patch(Meetings, 
                     PCFTeamsTheme: =TeamsTheme.Default
                     Width: =295
                     X: =10

@@ -1,0 +1,95 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ciarank_outcometodocopies",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ciarank_outcometodocopy",
+    "Name": "Outcome To Do Copies",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "ciarank_CopiedOutcome": "Copied Outcome",
+      "ciarank_outcomename": "Outcome Name",
+      "ciarank_outcometodocopy_AsyncOperations": "System Jobs",
+      "ciarank_outcometodocopy_BulkDeleteFailures": "Bulk Delete Failures",
+      "ciarank_outcometodocopy_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ciarank_outcometodocopy_ProcessSession": "Process Sessions",
+      "ciarank_outcometodocopyid": "Outcome To Do Copy",
+      "ciarank_todoid": "To Do ID",
+      "ciarank_todolistid": "To Do List ID",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Outcome To Do Copies",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Outcome To Do Copies (Views)",
+    "Name": "_ciarank_outcometodocopy_views",
+    "RelatedEntityName": "Outcome To Do Copies",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "06d36cf4-d469-4368-8693-70c530bf30e7": "Outcome To Do Copy Advanced Find View",
+      "cb30768b-f807-46f2-bf21-5a9e3c018d07": "Outcome To Do Copy Associated View",
+      "d863b3a5-6858-489b-8901-7a4ef8c2f1bb": "Inactive Outcome To Do Copies",
+      "d934b8be-2fce-4648-b1fc-331f2c9e0b49": "Outcome To Do Copy Lookup View",
+      "ff79ea7d-059f-4a41-be94-4d16f3d5478a": "Active Outcome To Do Copies"
+    }
+  },
+  {
+    "DisplayName": "Status (Outcome To Do Copies)",
+    "Name": "ciarank_outcometodocopy_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Outcome To Do Copies"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Outcome To Do Copies",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Outcome To Do Copies)",
+    "Name": "ciarank_outcometodocopy_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Outcome To Do Copies"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Outcome To Do Copies",
+    "Type": "OptionSetInfo"
+  }
+]
