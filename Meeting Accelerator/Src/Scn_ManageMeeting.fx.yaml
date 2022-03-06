@@ -400,7 +400,6 @@
                         OnSelect: |-
                             =Set(AgendaItemToshow, ThisItem);
                             UpdateContext({ShowAgendaItemModal : true});
-                            
                             ClearCollect(OutcomesForThisAgenda, Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item'));
                         ShowScrollbar: =false
                         TemplateSize: =90
@@ -1638,7 +1637,7 @@
 
         Inpt_AgendaItemDesc_1 As richTextEditor:
             BorderColor: =RGBA(208, 208, 208, 1)
-            Default: =AgendaItemToshow.Description
+            Default: =AgendaItemToshow.ciarank_description
             Height: =512
             Width: =387
             X: =17
@@ -1950,10 +1949,10 @@
             HoverFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
             OnSelect: |-
-                =If(AgendaItemToshow.Addressed,
-                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item'), {Addressed : false } );
+                =If(AgendaItemToshow.ciarank_addressed,
+                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.ciarank_AgendaItem.'Agenda Item'), {Addressed : false } );
                     ,
-                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item'), {Addressed : true } );
+                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.ciarank_AgendaItem.'Agenda Item'), {Addressed : true } );
                 );
                 
                 Select(Btn_GetAssociatedMeetingData);
