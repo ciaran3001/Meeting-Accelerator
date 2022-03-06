@@ -134,7 +134,7 @@
                     DisplayMode: =DisplayMode.Edit
                     Height: =37
                     Items: =Meetings
-                    OnChange: =Patch(Meetings, 
+                    OnChange: =Patch(Meetings, LookUp(Meetings, Meeting = AssociatedMeetingRecord.Meeting), { } );
                     PCFTeamsTheme: =TeamsTheme.Default
                     Width: =295
                     X: =10
