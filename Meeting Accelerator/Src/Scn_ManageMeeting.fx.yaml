@@ -378,7 +378,6 @@
                             ZIndex: =2
 
                     Gallery1 As gallery.galleryVertical:
-                        AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(243, 242, 241, 1)
                         DelayItemLoading: =true
                         FillPortions: =0
@@ -427,7 +426,7 @@
                             RadiusTopRight: =5
                             Size: =15
                             Text: =""
-                            Width: =919
+                            Width: =Gallery1.Width - 10
                             ZIndex: =1
 
                         Label8 As Label:
