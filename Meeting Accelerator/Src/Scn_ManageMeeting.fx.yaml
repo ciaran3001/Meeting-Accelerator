@@ -1913,12 +1913,13 @@
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
             OnSelect: |-
                 =If(AgendaItemToshow.Addressed,
-                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item'), {Addressed : true } );
-                    ,
                     Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item'), {Addressed : false } );
+                    ,
+                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item'), {Addressed : true } );
                 );
                 
                 Select(Btn_GetAssociatedMeetingData);
+                UpdateContext({ShowAgendaItemModal : false});
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
