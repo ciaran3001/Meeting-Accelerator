@@ -1629,7 +1629,7 @@
             FontWeight: =FontWeight.Bold
             Height: =55
             PCFTeamsTheme: =TeamsTheme.Default
-            Text: =AgendaItemToshow.Name
+            Text: =AgendaItemToshow.ciarank_name
             Width: =1258
             X: =0
             Y: =0
@@ -1966,7 +1966,7 @@
             RadiusTopRight: =5
             Size: =11
             Text: |-
-                =If(AgendaItemToshow.Addressed,
+                =If(AgendaItemToshow.ciarank_addressed,
                 "Re-open Agenda Item",
                 "Complete Agenda Item"
                 )
