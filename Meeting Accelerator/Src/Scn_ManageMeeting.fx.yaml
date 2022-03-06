@@ -1802,7 +1802,7 @@
             RadiusTopLeft: =5
             RadiusTopRight: =5
             Size: =12
-            Text: ="Close"
+            Text: ="Save & Close"
             Width: =120
             X: =1110
             Y: =12
