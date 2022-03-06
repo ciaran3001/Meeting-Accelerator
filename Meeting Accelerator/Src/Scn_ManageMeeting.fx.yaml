@@ -1614,7 +1614,7 @@
             DelayItemLoading: =true
             FocusedBorderColor: =RGBA(98, 100, 167, 1)
             FocusedBorderThickness: =2
-            Height: =512
+            Height: =487
             Items: =AgendaItemsForThisMeeting
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Controls
@@ -1628,7 +1628,7 @@
             Transition: =Transition.Pop
             Width: =815
             X: =415
-            Y: =157
+            Y: =182
             ZIndex: =11
 
             Button1_35 As button:
@@ -1836,8 +1836,8 @@
             RadiusTopLeft: =5
             RadiusTopRight: =5
             Text: ="Add Outcome"
-            X: =434
-            Y: =91
+            X: =415
+            Y: =120
             ZIndex: =13
 
         Label12 As Label:
@@ -1848,7 +1848,7 @@
             Text: ="Outcome Details"
             Width: =203
             X: =434
-            Y: =125
+            Y: =150
             ZIndex: =14
 
         Label12_1 As Label:
@@ -1859,7 +1859,7 @@
             Text: ="Type"
             Width: =123
             X: =700
-            Y: =125
+            Y: =150
             ZIndex: =15
 
         Label12_2 As Label:
@@ -1870,7 +1870,7 @@
             Text: ="Due Date"
             Width: =150
             X: =869
-            Y: =125
+            Y: =150
             ZIndex: =16
 
         Label12_3 As Label:
@@ -1882,7 +1882,7 @@
             Text: ="Copy to 'To Do'"
             Width: =112
             X: =1109
-            Y: =121
+            Y: =146
             ZIndex: =17
 
         Label12_4 As Label:
@@ -1897,4 +1897,68 @@
             X: =71
             Y: =113
             ZIndex: =18
+
+        Button1_38 As button:
+            BorderColor: =
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(39, 85, 84, 1)
+            FocusedBorderThickness: =0
+            Font: =Font.'Segoe UI'
+            Height: =30
+            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            OnSelect: |-
+                =
+                
+                UpdateContext({ShowAddAgendaItemModal : false});
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =11
+            Text: ="Complete Agenda Item"
+            Width: =161
+            X: =17
+            Y: =66
+            ZIndex: =19
+
+        Button1_39 As button:
+            BorderColor: =
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(151, 0, 0, 1)
+            FocusedBorderThickness: =0
+            Font: =Font.'Segoe UI'
+            Height: =30
+            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            OnSelect: |-
+                =
+                
+                UpdateContext({ShowAddAgendaItemModal : false});
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =11
+            Text: ="Remove Agenda Item"
+            Width: =166
+            X: =184
+            Y: =66
+            ZIndex: =20
 
