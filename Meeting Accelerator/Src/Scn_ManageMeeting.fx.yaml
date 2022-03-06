@@ -582,7 +582,7 @@
                                     PCFTeamsTheme: =TeamsTheme.Default
                                     Text: =CountRows(Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item' And 'Outcome Type' = 'Outcome Type Choices'.Task) )
                                     Width: =22
-                                    X: =78
+                                    X: =68
                                     Y: =31
                                     ZIndex: =11
 
@@ -653,7 +653,7 @@
                                     Text: =CountRows(Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item' And 'Outcome Type' = 'Outcome Type Choices'.Decision) )
                                     Width: =22
                                     X: =139
-                                    Y: =31
+                                    Y: =32
                                     ZIndex: =12
 
                             Group5 As group:
@@ -722,7 +722,7 @@
                                     PCFTeamsTheme: =TeamsTheme.Default
                                     Text: =CountRows(Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item' And 'Outcome Type' = 'Outcome Type Choices'.Escalation) )
                                     Width: =22
-                                    X: =211
+                                    X: =210
                                     Y: =31
                                     ZIndex: =13
 
@@ -793,7 +793,7 @@
                                     Text: =CountRows(Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item' And 'Outcome Type' = 'Outcome Type Choices'.'Follow-up') )
                                     Width: =22
                                     X: =282
-                                    Y: =31
+                                    Y: =32
                                     ZIndex: =14
 
                             Group3 As group:
@@ -863,7 +863,7 @@
                                     Text: =CountRows(Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item' And 'Outcome Type' = 'Outcome Type Choices'.Statement) )
                                     Width: =22
                                     X: =354
-                                    Y: =30
+                                    Y: =32
                                     ZIndex: =15
 
                     Button1_6 As button:
