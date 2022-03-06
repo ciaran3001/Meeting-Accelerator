@@ -1236,8 +1236,6 @@
         Repeat: =true
         Size: =10.5
         Visible: =false
-        X: =40
-        Y: =40
         ZIndex: =2
 
     Btn_ProcessAttendees As Button:
