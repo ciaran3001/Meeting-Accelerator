@@ -2,6 +2,36 @@ Scn_ThemeScreen As screen:
     Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
 
+    Button1_37 As button:
+        BorderColor: =
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =0
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =95
+        HoverBorderColor: =RGBA(238, 140, 29, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: |-
+            =ColorFade(ColorValue("#EE8C1D"), -20%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: |-
+            =ColorFade(ColorValue("#EE8C1D"), -20%)
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =893
+        X: =72
+        Y: =129
+        ZIndex: =1
+
     Button1_25 As button:
         BorderColor: =
         BorderThickness: =0
@@ -30,7 +60,7 @@ Scn_ThemeScreen As screen:
         Width: =448
         X: =508
         Y: =256
-        ZIndex: =1
+        ZIndex: =2
 
     Button1_17 As button:
         BorderColor: =
@@ -60,7 +90,7 @@ Scn_ThemeScreen As screen:
         Width: =538
         X: =26
         Y: =446
-        ZIndex: =2
+        ZIndex: =3
 
     Button1_13 As button:
         BorderColor: =
@@ -89,7 +119,7 @@ Scn_ThemeScreen As screen:
         Width: =67
         X: =161
         Y: =472
-        ZIndex: =3
+        ZIndex: =4
 
     Button1_14 As button:
         BorderColor: =
@@ -118,7 +148,7 @@ Scn_ThemeScreen As screen:
         Width: =67
         X: =262
         Y: =471
-        ZIndex: =4
+        ZIndex: =5
 
     Button1_15 As button:
         BorderColor: =
@@ -147,7 +177,7 @@ Scn_ThemeScreen As screen:
         Width: =67
         X: =365
         Y: =471
-        ZIndex: =5
+        ZIndex: =6
 
     Button1_16 As button:
         BorderColor: =
@@ -176,7 +206,7 @@ Scn_ThemeScreen As screen:
         Width: =67
         X: =467
         Y: =472
-        ZIndex: =6
+        ZIndex: =7
 
     Button1_12 As button:
         BorderColor: =
@@ -205,7 +235,7 @@ Scn_ThemeScreen As screen:
         Width: =67
         X: =60
         Y: =472
-        ZIndex: =7
+        ZIndex: =8
 
     Image2 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -224,7 +254,7 @@ Scn_ThemeScreen As screen:
         RadiusTopRight: =3
         X: =108
         Y: =136
-        ZIndex: =8
+        ZIndex: =9
 
     Label1 As Label:
         Color: =RGBA(238, 140, 29, 1)
@@ -238,7 +268,7 @@ Scn_ThemeScreen As screen:
         Width: =320
         X: =224
         Y: =156
-        ZIndex: =9
+        ZIndex: =10
 
     Button1_1 As button:
         BorderColor: =
@@ -265,7 +295,7 @@ Scn_ThemeScreen As screen:
         Text: ="Button"
         X: =108
         Y: =276
-        ZIndex: =10
+        ZIndex: =11
 
     Button1_2 As button:
         BorderColor: =
@@ -291,7 +321,7 @@ Scn_ThemeScreen As screen:
         Text: ="Button"
         X: =304
         Y: =276
-        ZIndex: =11
+        ZIndex: =12
 
     Image3 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -312,7 +342,7 @@ Scn_ThemeScreen As screen:
         Width: =41
         X: =60
         Y: =474
-        ZIndex: =12
+        ZIndex: =13
 
     Image3_1 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -333,7 +363,7 @@ Scn_ThemeScreen As screen:
         Width: =41
         X: =161
         Y: =474
-        ZIndex: =13
+        ZIndex: =14
 
     Image3_2 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -354,7 +384,7 @@ Scn_ThemeScreen As screen:
         Width: =41
         X: =263
         Y: =473
-        ZIndex: =14
+        ZIndex: =15
 
     Image3_3 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -375,7 +405,7 @@ Scn_ThemeScreen As screen:
         Width: =41
         X: =365
         Y: =473
-        ZIndex: =15
+        ZIndex: =16
 
     Image3_4 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -396,7 +426,7 @@ Scn_ThemeScreen As screen:
         Width: =41
         X: =467
         Y: =474
-        ZIndex: =16
+        ZIndex: =17
 
     Label7 As Label:
         Alignment: =Align.Center
@@ -409,7 +439,7 @@ Scn_ThemeScreen As screen:
         Width: =22
         X: =101
         Y: =476
-        ZIndex: =17
+        ZIndex: =18
 
     Label7_1 As Label:
         Alignment: =Align.Center
@@ -422,7 +452,7 @@ Scn_ThemeScreen As screen:
         Width: =22
         X: =202
         Y: =476
-        ZIndex: =18
+        ZIndex: =19
 
     Label7_2 As Label:
         Alignment: =Align.Center
@@ -435,7 +465,7 @@ Scn_ThemeScreen As screen:
         Width: =22
         X: =304
         Y: =475
-        ZIndex: =19
+        ZIndex: =20
 
     Label7_3 As Label:
         Alignment: =Align.Center
@@ -448,7 +478,7 @@ Scn_ThemeScreen As screen:
         Width: =22
         X: =406
         Y: =475
-        ZIndex: =20
+        ZIndex: =21
 
     Label7_4 As Label:
         Alignment: =Align.Center
@@ -461,7 +491,7 @@ Scn_ThemeScreen As screen:
         Width: =22
         X: =508
         Y: =475
-        ZIndex: =21
+        ZIndex: =22
 
     "ComboBox1 As 'Combo box'.pcfdataset":
         AllowSearching: =true
@@ -475,7 +505,7 @@ Scn_ThemeScreen As screen:
         Width: =320
         X: =572
         Y: =276
-        ZIndex: =22
+        ZIndex: =23
 
         Name1 As pcfDataField.textualColumn:
             FieldDisplayName: ="Name"
@@ -509,5 +539,47 @@ Scn_ThemeScreen As screen:
         Text: ="Button"
         X: =304
         Y: =336
-        ZIndex: =23
+        ZIndex: =24
+
+    Label1_2 As Label:
+        Color: =RGBA(39, 85, 84, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =20
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: |-
+            ="#275554"
+        Width: =127
+        X: =359
+        Y: =156
+        ZIndex: =25
+
+    Label1_3 As Label:
+        Color: =RGBA(241, 242, 241, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =20
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: |-
+            ="#F1F2F1"
+        Width: =127
+        X: =486
+        Y: =156
+        ZIndex: =26
+
+    Label1_4 As Label:
+        Color: =RGBA(145, 17, 143, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =20
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: |-
+            ="#91118F"
+        Width: =127
+        X: =613
+        Y: =156
+        ZIndex: =27
 
