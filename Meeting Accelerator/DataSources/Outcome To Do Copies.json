@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "ciarank_outcometodocopy",
+    "MaxGetRowsCount": 500,
     "Name": "Outcome To Do Copies",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
