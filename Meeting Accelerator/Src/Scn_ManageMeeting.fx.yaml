@@ -803,9 +803,9 @@
                             Fill: |-
                                 =
                                 If(ThisItem.Addressed,
-                                    ColorValue("#")
+                                    ColorValue("#275554")
                                     ,
-                                    ColorValue("#")
+                                    ColorValue("#EE8C1D")
                                 )
                             FocusedBorderThickness: =0
                             Font: =Font.'Segoe UI'
