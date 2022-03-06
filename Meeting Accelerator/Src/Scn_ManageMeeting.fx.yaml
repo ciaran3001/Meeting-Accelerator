@@ -135,7 +135,7 @@
                     Height: =37
                     Items: =Meetings
                     PCFTeamsTheme: =TeamsTheme.Default
-                    Width: =270
+                    Width: =295
                     X: =10
                     Y: =173
                     ZIndex: =6
@@ -1912,9 +1912,13 @@
             HoverFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
             OnSelect: |-
-                =
+                =If(AgendaItemToshow.Addressed,
+                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item'), {Addressed : true } );
+                    ,
+                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item'), {Addressed : false } );
+                );
                 
-                UpdateContext({ShowAddAgendaItemModal : false});
+                Select(Btn_GetAssociatedMeetingData);
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
