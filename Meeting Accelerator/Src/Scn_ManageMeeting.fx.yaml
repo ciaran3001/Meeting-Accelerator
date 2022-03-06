@@ -136,6 +136,8 @@
                     Items: =Meetings
                     OnChange: |-
                         =Patch(Meetings, LookUp(Meetings, Meeting = AssociatedMeetingRecord.Meeting), {  'Follow up Meeting Record': ComboBox3.Selected } );
+                        Notify("Follow-up meeting set", NotificationType.Success, 5000);
+                        Select(Btn_GetAssociatedMeetingData);
                     PCFTeamsTheme: =TeamsTheme.Default
                     Width: =295
                     X: =10
