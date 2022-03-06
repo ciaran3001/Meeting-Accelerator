@@ -650,7 +650,7 @@ Scn_HomeScreen As screen:
                             Set(AssociatedMeetingRecord,
                                 Patch(Meetings, Defaults(Meetings), 
                                 { 
-                                Subject: SelectedMeeting.subject,
+                                Subject: Text(DateTimeValue(SelectedMeeting.start), "dd") & " " &Left(Text(DateTimeValue(SelectedMeeting.start), "mmmm"),3) & " - " & SelectedMeeting.subject,
                                 'Outlook ID': SelectedMeeting.iCalUId,
                                 'Agenda Detected': AgendaFound,
                                 'Start Time': DateTimeValue(SelectedMeeting.start),

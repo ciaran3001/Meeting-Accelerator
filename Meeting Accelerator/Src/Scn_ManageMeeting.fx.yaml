@@ -130,6 +130,7 @@
                     ZIndex: =5
 
                 "ComboBox3 As 'Combo box'.pcfdataset":
+                    AllowSearching: =true
                     DisplayMode: =DisplayMode.Edit
                     Height: =37
                     Items: =Meetings
