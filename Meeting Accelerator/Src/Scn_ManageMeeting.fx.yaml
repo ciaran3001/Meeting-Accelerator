@@ -827,8 +827,33 @@
                             RadiusTopRight: =0
                             Size: =12
                             Text: =""
-                            Width: =12
+                            Width: =23
                             ZIndex: =18
+
+                        Icon1 As icon.Add:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            Color: =RGBA(255, 255, 255, 1)
+                            DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            Height: =32
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: |-
+                                =
+                                If(ThisItem.Addressed, Icon.Lock, Icon.Unlock)
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =3
+                            PaddingLeft: =3
+                            PaddingRight: =3
+                            PaddingTop: =3
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Width: =23
+                            Y: =29
+                            ZIndex: =19
 
                     Button1_6 As button:
                         AlignInContainer: =AlignInContainer.Center
