@@ -576,9 +576,9 @@
                                     FontWeight: =FontWeight.Bold
                                     Height: =32
                                     PCFTeamsTheme: =TeamsTheme.Default
-                                    Text: =CountRows(ExistingOutComesForThisMeeting)
+                                    Text: =CountRows(Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item' And 'Outcome Type' = 'Outcome Type Choices'.Task) )
                                     Width: =22
-                                    X: =68
+                                    X: =78
                                     Y: =31
                                     ZIndex: =11
 
@@ -646,7 +646,7 @@
                                     FontWeight: =FontWeight.Bold
                                     Height: =32
                                     PCFTeamsTheme: =TeamsTheme.Default
-                                    Text: ="10"
+                                    Text: =CountRows(Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item' And 'Outcome Type' = 'Outcome Type Choices'.Decision) )
                                     Width: =22
                                     X: =139
                                     Y: =31
@@ -716,7 +716,7 @@
                                     FontWeight: =FontWeight.Bold
                                     Height: =32
                                     PCFTeamsTheme: =TeamsTheme.Default
-                                    Text: ="10"
+                                    Text: =CountRows(Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item' And 'Outcome Type' = 'Outcome Type Choices'.Escalation) )
                                     Width: =22
                                     X: =211
                                     Y: =31
@@ -786,7 +786,7 @@
                                     FontWeight: =FontWeight.Bold
                                     Height: =32
                                     PCFTeamsTheme: =TeamsTheme.Default
-                                    Text: ="10"
+                                    Text: =CountRows(Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item' And 'Outcome Type' = 'Outcome Type Choices'.'Follow-up') )
                                     Width: =22
                                     X: =282
                                     Y: =31
@@ -856,7 +856,7 @@
                                     FontWeight: =FontWeight.Bold
                                     Height: =32
                                     PCFTeamsTheme: =TeamsTheme.Default
-                                    Text: ="10"
+                                    Text: =CountRows(Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item' And 'Outcome Type' = 'Outcome Type Choices'.Statement) )
                                     Width: =22
                                     X: =354
                                     Y: =30
