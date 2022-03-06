@@ -131,11 +131,12 @@
 
                 "ComboBox3 As 'Combo box'.pcfdataset":
                     AllowSearching: =true
+                    DefaultSelectedItems: =AssociatedMeetingRecord.'Follow up Meeting Record'
                     DisplayMode: =DisplayMode.Edit
                     Height: =37
                     Items: =Meetings
                     OnChange: |-
-                        =Patch(Meetings, LookUp(Meetings, Meeting = AssociatedMeetingRecord.Meeting), {  'Follow up Meeting Record': ComboBox3.Selected } );
+                        =Set(AssociatedMeetingRecord, Patch(Meetings, LookUp(Meetings, Meeting = AssociatedMeetingRecord.Meeting), {  'Follow up Meeting Record': ComboBox3.Selected } ));
                         Notify("Follow-up meeting set", NotificationType.Success, 5000);
                         Select(Btn_GetAssociatedMeetingData);
                     PCFTeamsTheme: =TeamsTheme.Default
