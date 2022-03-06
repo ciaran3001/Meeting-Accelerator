@@ -16,6 +16,17 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
+            Label13 As Label:
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =320
+                Text: =ComboBox4.Selected.Value
+                Width: =320
+                X: =0
+                Y: =0
+                ZIndex: =1
+
         RightSideContainer2 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =7
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -39,4 +50,99 @@
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =5
+
+                Gallery3 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    DelayItemLoading: =true
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    FocusedBorderThickness: =2
+                    Items: =Filter(Meetings,ComboBox4.Selected.Value)
+                    Layout: =Layout.Vertical
+                    LayoutMinHeight: =287
+                    LayoutMinWidth: =320
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =48
+                    ZIndex: =1
+
+                    Rectangle2 As rectangle:
+                        BorderColor: =RGBA(243, 242, 241, 1)
+                        DisabledFill: =RGBA(0,0,0,0)
+                        Fill: =RGBA(0,0,0,0)
+                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                        Height: =Parent.TemplateHeight
+                        HoverFill: =RGBA(0,0,0,0)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(0,0,0,0)
+                        TabIndex: =0
+                        Width: =Parent.TemplateWidth
+                        ZIndex: =1
+
+                    Image8 As image:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        Height: =28
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        OnSelect: =Select(Parent)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        RadiusBottomLeft: =3
+                        RadiusBottomRight: =3
+                        RadiusTopLeft: =3
+                        RadiusTopRight: =3
+                        Width: =28
+                        X: =12
+                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                        ZIndex: =2
+
+                    Title2 As Label:
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =10.5
+                        FontWeight: =FontWeight.Semibold
+                        Height: =24
+                        OnSelect: =Select(Parent)
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        TabIndex: =-1
+                        Text: =ThisItem.'Created On'
+                        VerticalAlignment: =VerticalAlign.Top
+                        Width: =Parent.TemplateWidth - Self.X - 8
+                        X: =Image8.X + Image8.Width + 12
+                        Y: =((Parent.TemplateHeight - 36) / 2) - 4
+                        ZIndex: =3
+
+                    Subtitle2 As Label:
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        FontWeight: =FontWeight.Normal
+                        Height: =24
+                        OnSelect: =Select(Parent)
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        TabIndex: =-1
+                        Text: =ThisItem.Subject
+                        VerticalAlignment: =VerticalAlign.Top
+                        Width: =Title2.Width
+                        X: =Title2.X
+                        Y: =Title2.Y + Title2.Height - 6
+                        ZIndex: =4
+
+    "ComboBox4 As 'Combo box'.pcfdataset":
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Items: =Choices('Meetings (Views)')
+        PCFTeamsTheme: =TeamsTheme.Default
+        Width: =320
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+        Value2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Value"
+            FieldName: ="Value"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =6
 
