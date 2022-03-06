@@ -1800,8 +1800,8 @@
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
                 Width: =43
-                X: =712
-                Y: =19
+                X: =697
+                Y: =16
                 ZIndex: =5
 
             "DatePicker1 As 'Date picker'":
