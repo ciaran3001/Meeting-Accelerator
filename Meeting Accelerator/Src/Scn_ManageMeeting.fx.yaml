@@ -400,6 +400,8 @@
                         OnSelect: |-
                             =Set(AgendaItemToshow, ThisItem);
                             UpdateContext({ShowAgendaItemModal : true});
+                            
+                            ClearCollect(OutcomesForThisAgenda, (ExistingOutComesForThisMeeting));
                         ShowScrollbar: =false
                         TemplateSize: =90
                         Transition: =Transition.Pop
@@ -1650,7 +1652,7 @@
             FocusedBorderColor: =RGBA(98, 100, 167, 1)
             FocusedBorderThickness: =2
             Height: =487
-            Items: =AgendaItemsForThisMeeting
+            Items: =//OutComesForThisAgendaItem
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Controls
             LoadingSpinnerColor: |-
