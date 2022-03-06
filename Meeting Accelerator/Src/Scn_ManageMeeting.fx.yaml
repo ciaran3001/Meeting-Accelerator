@@ -401,7 +401,7 @@
                             =Set(AgendaItemToshow, ThisItem);
                             UpdateContext({ShowAgendaItemModal : true});
                             
-                            ClearCollect(OutcomesForThisAgenda, (ExistingOutComesForThisMeeting));
+                            ClearCollect(OutcomesForThisAgenda, Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item'));
                         ShowScrollbar: =false
                         TemplateSize: =90
                         Transition: =Transition.Pop
@@ -1652,7 +1652,7 @@
             FocusedBorderColor: =RGBA(98, 100, 167, 1)
             FocusedBorderThickness: =2
             Height: =487
-            Items: =//OutComesForThisAgendaItem
+            Items: =OutcomesForThisAgenda
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Controls
             LoadingSpinnerColor: |-
