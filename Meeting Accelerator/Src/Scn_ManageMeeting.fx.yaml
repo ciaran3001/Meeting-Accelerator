@@ -1928,7 +1928,11 @@
             RadiusTopLeft: =5
             RadiusTopRight: =5
             Size: =11
-            Text: ="Complete Agenda Item"
+            Text: |-
+                =If(AgendaItemToshow.Addressed,
+                "Re-open Agenda Item",
+                "Complete Agenda Item"
+                )
             Width: =161
             X: =17
             Y: =66
