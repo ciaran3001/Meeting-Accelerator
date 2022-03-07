@@ -1994,19 +1994,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.AccessibleLabel"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.AccessibleLabel",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1"
+                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes"
               }
             }
           ],
@@ -2024,19 +2024,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.TabIndex"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.TabIndex",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1"
+                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes"
               }
             }
           ],
@@ -2054,19 +2054,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.Button1_35.FocusedBorderThickness"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Button1_35.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.Button1_35.FocusedBorderThickness",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Button1_35.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.Button1_35"
+                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Button1_35"
               }
             }
           ],
@@ -2084,19 +2084,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.Inpt_AgendaItemName_1.AccessibleLabel"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Inpt_AgendaItemName_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.Inpt_AgendaItemName_1.AccessibleLabel",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Inpt_AgendaItemName_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.Inpt_AgendaItemName_1"
+                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Inpt_AgendaItemName_1"
               }
             }
           ],
@@ -2114,19 +2114,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.ComboBox2.AccessibleLabel"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.ComboBox2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.ComboBox2.AccessibleLabel",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.ComboBox2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.ComboBox2"
+                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.ComboBox2"
               }
             }
           ],
@@ -2144,19 +2144,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.DatePicker1.AccessibleLabel"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.DatePicker1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.DatePicker1.AccessibleLabel",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.DatePicker1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gallery1_1.DatePicker1"
+                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.DatePicker1"
               }
             }
           ],

@@ -1646,7 +1646,7 @@
             Y: =157
             ZIndex: =10
 
-        Gallery1_1 As gallery.galleryVertical:
+        Gal_Outcomes As gallery.galleryVertical:
             BorderColor: =RGBA(243, 242, 241, 1)
             BorderThickness: =2
             DelayItemLoading: =true
@@ -1911,8 +1911,8 @@
             RadiusTopLeft: =5
             RadiusTopRight: =5
             Text: ="Add Outcome"
-            X: =415
-            Y: =120
+            X: =1070
+            Y: =111
             ZIndex: =13
 
         Label12 As Label:
@@ -2056,6 +2056,18 @@
             X: =431
             Y: =150
             ZIndex: =21
+
+        Lbl_NoOutcomesInGallery As Label:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="There are no captured outcomes yet"
+            Visible: =If(CountRows(Gal_Outcomes.AllItems) > 0, false ,true)
+            Width: =320
+            X: =662
+            Y: =407
+            ZIndex: =22
 
     Btn_GetMyCopiedOutcomes As Button:
         DisplayMode: =DisplayMode.Edit
