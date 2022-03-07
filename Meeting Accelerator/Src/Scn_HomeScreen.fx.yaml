@@ -803,7 +803,7 @@ Scn_HomeScreen As screen:
     Btn_LoadData As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        OnSelect: |
+        OnSelect: |-
             =Set(
                 DefaultCalendar,
                 LookUp(
@@ -861,6 +861,10 @@ Scn_HomeScreen As screen:
             
             
             Set(PersonalConfigurationRecord, LookUp('Personal Configurations', 'Owning User'.'Primary Email' = User().Email));
+            
+            If(IsBlank(PersonalConfigurationRecord), 
+                Set(PersonalConfigurationRecord, Patch('Personal Configurations', Defaults('Personal Configurations'), { Name : User().Email}));
+            );
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: |
             =false
