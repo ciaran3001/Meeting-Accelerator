@@ -2067,3 +2067,13 @@
             Y: =150
             ZIndex: =21
 
+    Btn_GetMyCopiedOutcomes As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: =ClearCollect(MyCopiedOutcomes, Filter('Outcome To Do Copies', 'Copied Outcome'.Meeting.Meeting = AssociatedMeetingRecord.Meeting And 'Created By'.'Primary Email' = User().Email));
+        PCFTeamsTheme: =TeamsTheme.Default
+        Width: =96
+        X: =0
+        Y: =0
+        ZIndex: =9
+
