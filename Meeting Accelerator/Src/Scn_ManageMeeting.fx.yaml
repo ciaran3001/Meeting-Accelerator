@@ -1010,7 +1010,7 @@
                                     FontSize: =15
                                     FontWeight: =FontWeight.Semibold
                                     Height: =41
-                                    Text: ="100%"
+                                    Text: =AgendaPercentCompleted & "%"
                                     Width: =49
                                     X: =55
                                     Y: =83
@@ -1316,6 +1316,8 @@
         OnSelect: |-
             =ClearCollect(AgendaItemsForThisMeeting, Filter('Agenda Items', Meeting.Meeting = AssociatedMeetingRecord.Meeting));
             ClearCollect(ExistingOutComesForThisMeeting, Filter(Outcomes, Meeting.Meeting = AssociatedMeetingRecord.Meeting));
+            
+            UpdateContext({AgendaPercentCompleted : (CountRows(Filter(AgendaItemsForThisMeeting, Addressed = 'Addressed (Agenda Items)'.Yes)) / CountRows(AgendaItemsForThisMeeting) ) * 100 });
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: =false
         Width: =96
