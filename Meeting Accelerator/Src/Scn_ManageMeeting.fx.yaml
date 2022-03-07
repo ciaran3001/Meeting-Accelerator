@@ -1660,7 +1660,7 @@
             LoadingSpinnerColor: |-
                 =ColorValue("#EE8C1D")
             OnSelect: |+
-                =//UpdateIf(Outcomes, Outcome = ThisItem.Outcome, {Name : ThisItem.
+                =UpdateIf(Outcomes, Outcome = ThisItem.Outcome, {Name : ThisItem
                 //Notify("Outcome Updated", NotificationType.Information, 100);
                 
             ShowScrollbar: =false
