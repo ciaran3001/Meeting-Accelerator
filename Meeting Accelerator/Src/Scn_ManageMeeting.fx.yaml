@@ -1932,7 +1932,8 @@
                     {
                     Name: "Default Text",
                     'Agenda Item': AgendaItemToshow,
-                    Meeting: AssociatedMeetingRecord
+                    Meeting: AssociatedMeetingRecord,
+                    'Outcome Type': 'Outcome Type Choices'.Task
                     }
                 );
                 
