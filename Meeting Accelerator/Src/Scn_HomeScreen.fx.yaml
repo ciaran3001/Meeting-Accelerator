@@ -691,7 +691,7 @@ Scn_HomeScreen As screen:
                     Text: |-
                         ="Accelerator ID: " & AssociatedMeetingRecord.'Meeting Accelerator ID'
                     Width: =251
-                    X: =544
+                    X: =532
                     Y: =45
                     ZIndex: =11
 
