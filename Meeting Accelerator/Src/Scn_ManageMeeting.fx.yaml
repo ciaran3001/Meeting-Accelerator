@@ -1048,7 +1048,7 @@
                                     ItemColorSet: |-
                                         =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
                                     Items: |-
-                                        =Table({Completed : TotalMeetingLength  - MinutesElapsed  },{Completed : MinutesElapsed  })
+                                        =Table({Completed : MinutesElapsed  },{Completed : TotalMeetingLength  - MinutesElapsed  })
                                     LabelPosition: =LabelPosition.Inside
                                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                                     ShowLabels: =false
