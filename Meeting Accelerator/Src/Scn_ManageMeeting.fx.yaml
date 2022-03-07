@@ -1733,11 +1733,11 @@
                     
                         Patch('Outcome To Do Copies', Defaults('Outcome To Do Copies'), 
                             {
-                            'Outcome Name': "Copied to To Do", 
-                            'Copied Outcome': ThisItem,
-                            Meeting: AssociatedMeetingRecord,
-                            'To Do ID': CreatedTask.id,
-                            'To Do List ID': MyToDoList.id
+                                'Outcome Name': "Copied to To Do", 
+                                'Copied Outcome': ThisItem,
+                                Meeting: AssociatedMeetingRecord,
+                                'To Do ID': CreatedTask.id,
+                                'To Do List ID': MyToDoList.id
                             });
                     )
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
