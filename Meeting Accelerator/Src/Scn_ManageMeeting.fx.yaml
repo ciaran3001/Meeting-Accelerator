@@ -1048,7 +1048,7 @@
                                     ItemColorSet: |-
                                         =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
                                     Items: |-
-                                        =Table({Completed : tick },{Completed : 30 - tick })
+                                        =Table({Completed : TotalMeetingLength  - MinutesElapsed  },{Completed : MinutesElapsed  })
                                     LabelPosition: =LabelPosition.Inside
                                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                                     ShowLabels: =false
@@ -1091,7 +1091,7 @@
                                     FontSize: =15
                                     FontWeight: =FontWeight.Semibold
                                     Height: =37
-                                    Text: =30 - tick 
+                                    Text: =RemainingTime
                                     Width: =47
                                     X: =198
                                     Y: =84
@@ -1276,7 +1276,8 @@
             
             UpdateContext({ 
                 TotalMeetingLength : DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes),
-                MinutesElapsed : DateDiff(SelectedMeeting.start, Now(), Minutes)
+                MinutesElapsed : DateDiff(SelectedMeeting.start, Now(), Minutes),
+                RemainingTime : If(TotalMeetingLength - DateDiff(SelectedMeeting.start, Now(), Minutes) < 0 , 0, TotalMeetingLength - DateDiff(SelectedMeeting.start, Now(), Minutes) )
             });
         PressedBorderColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)

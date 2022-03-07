@@ -2623,36 +2623,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.MinutesElapsed"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.MinutesElapsed",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "MinutesElapsed",
-                "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Scn_ManageMeeting.ShowPersonaManagerModal"
                 }
               ],
@@ -2664,36 +2634,6 @@
               },
               "properties": {
                 "member": "ShowPersonaManagerModal",
-                "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scn_ManageMeeting.TotalMeetingLength"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.TotalMeetingLength",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TotalMeetingLength",
                 "module": "Scn_ManageMeeting",
                 "type": "Scn_ManageMeeting"
               }
