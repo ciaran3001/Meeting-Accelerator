@@ -1663,7 +1663,7 @@
             Transition: =Transition.Pop
             Width: =815
             X: =415
-            Y: =182
+            Y: =180
             ZIndex: =11
 
             Button1_35 As button:
@@ -1851,8 +1851,8 @@
                 PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =32
-                X: =770
-                Y: =22
+                X: =773
+                Y: =31
                 ZIndex: =8
 
         Button1_34 As button:
