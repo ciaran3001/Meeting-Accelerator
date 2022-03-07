@@ -16,7 +16,6 @@
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =5
-            PaddingRight: =5
             PaddingTop: =10
             ZIndex: =2
 
@@ -27,25 +26,6 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 ZIndex: =1
-
-                Image1_2 As image:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledFill: =RGBA(0, 0, 0, 0)
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: =undraw_online_test_gba7
-                    PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedFill: =RGBA(0, 0, 0, 0)
-                    RadiusBottomLeft: =3
-                    RadiusBottomRight: =3
-                    RadiusTopLeft: =3
-                    RadiusTopRight: =3
-                    X: =6
-                    Y: =25
-                    ZIndex: =1
 
                 Title1_3 As Label:
                     Alignment: =Align.Center
@@ -88,8 +68,8 @@
                     Size: =12
                     Text: ="Back"
                     Width: =118
-                    X: =116
-                    Y: =55
+                    X: =23
+                    Y: =48
                     ZIndex: =3
 
                 Img_Cog_1 As image:
@@ -116,7 +96,28 @@
                     Y: =83
                     ZIndex: =4
 
+            Image1_2 As image:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =undraw_online_test_gba7
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                X: =141
+                Y: =18
+                ZIndex: =2
+
             Gallery4 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
+                AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(243, 242, 241, 1)
                 DelayItemLoading: =true
                 FocusedBorderColor: =RGBA(98, 100, 167, 1)
@@ -129,7 +130,8 @@
                 OnSelect: |-
                     =UpdateContext({SettingToDisplay : ThisItem.label});
                 TemplateSize: =50
-                ZIndex: =2
+                Width: =Parent.Width
+                ZIndex: =3
 
                 Rectangle7 As rectangle:
                     BorderColor: =RGBA(243, 242, 241, 1)
