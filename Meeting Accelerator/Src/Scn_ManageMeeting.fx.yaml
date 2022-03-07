@@ -382,7 +382,7 @@
                             Y: =276
                             ZIndex: =2
 
-                    Gallery1 As gallery.galleryVertical:
+                    Gal_AgendaItems As gallery.galleryVertical:
                         BorderColor: =RGBA(243, 242, 241, 1)
                         DelayItemLoading: =true
                         FillPortions: =0
@@ -390,7 +390,7 @@
                         FocusedBorderThickness: =2
                         Height: |-
                             =//575
-                            97 * CountRows(Gallery1.AllItems)
+                            97 * CountRows(Gal_AgendaItems.AllItems)
                         Items: =AgendaItemsForThisMeeting
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
@@ -432,7 +432,7 @@
                             RadiusTopRight: =5
                             Size: =15
                             Text: =""
-                            Width: =Gallery1.Width - 10
+                            Width: =Gal_AgendaItems.Width - 10
                             ZIndex: =1
 
                         Label8 As Label:
@@ -515,7 +515,7 @@
                         Container14 As groupContainer.manualLayoutContainer:
                             Height: =90
                             Width: =387
-                            X: =Gallery1.Width - 400
+                            X: =Gal_AgendaItems.Width - 400
                             ZIndex: =20
 
                             Group9 As group:
@@ -1657,9 +1657,7 @@
             LoadingSpinner: =LoadingSpinner.Controls
             LoadingSpinnerColor: |-
                 =ColorValue("#EE8C1D")
-            OnSelect: |-
-                =Set(AgendaItemToshow, ThisItem);
-                UpdateContext({ShowAgendaItemModal : true});
+            OnSelect: =
             ShowScrollbar: =false
             TemplateSize: =90
             Transition: =Transition.Pop
@@ -1747,7 +1745,7 @@
                 Items: =Choices('Outcome Type Choices')
                 PCFTeamsTheme: =TeamsTheme.Default
                 Width: =136
-                X: =285
+                X: =379
                 Y: =31
                 ZIndex: =3
 
@@ -1774,14 +1772,15 @@
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 Mode: =TextMode.MultiLine
+                OnChange: =Notify("Changed", NotificationType.Information, 100)
                 RadiusBottomLeft: =2
                 RadiusBottomRight: =2
                 RadiusTopLeft: =2
                 RadiusTopRight: =2
                 Size: =12
                 Width: =256
-                X: =12
-                Y: =4
+                X: =89
+                Y: =3
                 ZIndex: =4
 
             Image5 As image:
@@ -1810,8 +1809,8 @@
                 Height: =32
                 OnSelect: =Select(Parent)
                 PCFTeamsTheme: =TeamsTheme.Default
-                Width: =182
-                X: =449
+                Width: =118
+                X: =532
                 Y: =31
                 ZIndex: =6
 
@@ -1861,10 +1860,39 @@
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
-            OnSelect: |-
-                =
+            OnSelect: |
+                =Patch(
+                    Outcomes,
+                    Defaults(Outcomes),
+                    {
+                    Name: "Default Text",
+                    'Agenda Item': AgendaItemToshow,
+                    Meeting: AssociatedMeetingRecord
+                    }
+                );
                 
-                UpdateContext({ShowAddAgendaItemModal : false});
+                Patch(
+                    ExistingOutComesForThisMeeting,
+                    Defaults(ExistingOutComesForThisMeeting),
+                    {
+                    Name: "Default Text",
+                    'Agenda Item': AgendaItemToshow,
+                    Meeting: AssociatedMeetingRecord
+                    }
+                );
+                
+                Patch(
+                    OutcomesForThisAgenda,
+                    Defaults(OutcomesForThisAgenda),
+                    {
+                    Name: "Default Text",
+                    'Agenda Item': AgendaItemToshow,
+                    Meeting: AssociatedMeetingRecord
+                    }
+                );
+                
+                
+                UpdateContext({ShowAddAgendaItemModal: false});
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
@@ -1884,8 +1912,8 @@
             PCFTeamsTheme: =TeamsTheme.Default
             Text: ="Outcome Details"
             Width: =203
-            X: =434
-            Y: =150
+            X: =511
+            Y: =148
             ZIndex: =14
 
         Label12_1 As Label:
@@ -1895,7 +1923,7 @@
             PCFTeamsTheme: =TeamsTheme.Default
             Text: ="Type"
             Width: =123
-            X: =700
+            X: =799
             Y: =150
             ZIndex: =15
 
@@ -1906,7 +1934,7 @@
             PCFTeamsTheme: =TeamsTheme.Default
             Text: ="Due Date"
             Width: =150
-            X: =869
+            X: =959
             Y: =150
             ZIndex: =16
 
@@ -1951,9 +1979,9 @@
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
             OnSelect: |-
                 =If(AgendaItemToshow.ciarank_addressed,
-                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.ciarank_AgendaItem.'Agenda Item'), {Addressed : false } );
+                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item'), {Addressed : false } );
                     ,
-                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.ciarank_AgendaItem.'Agenda Item'), {Addressed : true } );
+                    Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item'), {Addressed : true } );
                 );
                 
                 Select(Btn_GetAssociatedMeetingData);
