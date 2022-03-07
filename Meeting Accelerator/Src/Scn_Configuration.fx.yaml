@@ -9,7 +9,6 @@
         ZIndex: =1
 
         SidebarContainer2 As groupContainer.verticalAutoLayoutContainer:
-            FillPortions: =3
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -26,6 +25,46 @@
                 X: =0
                 Y: =0
                 ZIndex: =1
+
+            Gallery4 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                DelayItemLoading: =true
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                FocusedBorderThickness: =2
+                Layout: =Layout.Vertical
+                LayoutMinWidth: =50
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =32
+                ZIndex: =1
+
+                Rectangle7 As rectangle:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    DisabledFill: =RGBA(0,0,0,0)
+                    Fill: =RGBA(0,0,0,0)
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    Height: =Parent.TemplateHeight
+                    HoverFill: =RGBA(0,0,0,0)
+                    OnSelect: =Select(Parent)
+                    PressedFill: =RGBA(0,0,0,0)
+                    TabIndex: =0
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =1
+
+                Title6 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =10.5
+                    FontWeight: =FontWeight.Normal
+                    Height: =24
+                    OnSelect: =Select(Parent)
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    TabIndex: =-1
+                    Text: =ThisItem.SampleHeading
+                    VerticalAlignment: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 24
+                    X: =12
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2) - 2
+                    ZIndex: =2
 
         RightSideContainer2 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =7
@@ -135,8 +174,8 @@
         Items: =Choices('Meetings (Views)')
         PCFTeamsTheme: =TeamsTheme.Default
         Width: =320
-        X: =40
-        Y: =40
+        X: =245
+        Y: =600
         ZIndex: =2
 
         Value2 As pcfDataField.textualColumn:
