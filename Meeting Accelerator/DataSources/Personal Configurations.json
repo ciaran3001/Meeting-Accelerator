@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "ciarank_personalconfiguration",
+    "MaxGetRowsCount": 500,
     "Name": "Personal Configurations",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

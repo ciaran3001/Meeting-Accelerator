@@ -11,6 +11,7 @@
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
       "ciarank_CopiedOutcome": "Copied Outcome",
+      "ciarank_Meeting": "Meeting",
       "ciarank_outcomename": "Outcome Name",
       "ciarank_outcometodocopy_AsyncOperations": "System Jobs",
       "ciarank_outcometodocopy_BulkDeleteFailures": "Bulk Delete Failures",
