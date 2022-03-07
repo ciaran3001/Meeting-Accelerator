@@ -1659,7 +1659,10 @@
             LoadingSpinner: =LoadingSpinner.Controls
             LoadingSpinnerColor: |-
                 =ColorValue("#EE8C1D")
-            OnSelect: =Notify("Changed", NotificationType.Information, 100)
+            OnSelect: |+
+                =//UpdateIf(Outcomes, Outcome = ThisItem.Outcome, {Name : ThisItem.
+                //Notify("Outcome Updated", NotificationType.Information, 100);
+                
             ShowScrollbar: =false
             TemplateSize: =90
             Transition: =Transition.Pop
@@ -1801,7 +1804,7 @@
                     Order: =1
                     ZIndex: =21
 
-            Inpt_AgendaItemName_1 As text:
+            Inpt_OutcomeName As text:
                 BorderColor: =RGBA(208, 208, 208, 1)
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)

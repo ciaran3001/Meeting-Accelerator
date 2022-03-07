@@ -2203,19 +2203,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Inpt_AgendaItemName_1.AccessibleLabel"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Inpt_OutcomeName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Inpt_AgendaItemName_1.AccessibleLabel",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Inpt_OutcomeName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Inpt_AgendaItemName_1"
+                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Inpt_OutcomeName"
               }
             }
           ],
