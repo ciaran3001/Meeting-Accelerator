@@ -1,4 +1,5 @@
 "Scn_Configuration As screen.'tabletAutoLayout_Sidebar_ver1.0'":
+    Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
 
     ScreenContainer2 As groupContainer.horizontalAutoLayoutContainer:
@@ -15,34 +16,121 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
-            Label13 As Label:
-                DisplayMode: =DisplayMode.Edit
-                Height: =32
-                LayoutMinHeight: =32
-                LayoutMinWidth: =320
-                Text: =ComboBox4.Selected.Value
-                Width: =320
-                X: =0
-                Y: =0
+            Cnt_Title_1 As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =0
+                Height: =125
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
                 ZIndex: =1
+
+                Image1_2 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =undraw_online_test_gba7
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    X: =6
+                    Y: =25
+                    ZIndex: =1
+
+                Title1_3 As Label:
+                    Alignment: =Align.Center
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =14
+                    FontWeight: =FontWeight.Semibold
+                    Height: =43
+                    OnSelect: =false
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    TabIndex: =-1
+                    Text: ="Settings"
+                    VerticalAlignment: =VerticalAlign.Middle
+                    Width: =118
+                    X: =60
+                    Y: =5
+                    ZIndex: =2
+
+                Button1_40 As button:
+                    BorderColor: =
+                    BorderThickness: =0
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(238, 140, 29, 1)
+                    FocusedBorderThickness: =0
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    HoverBorderColor: =RGBA(238, 140, 29, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    OnSelect: =Back();
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: |-
+                        =ColorFade(ColorValue("#EE8C1D"), -20%)
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
+                    Size: =12
+                    Text: ="Back"
+                    Width: =118
+                    X: =116
+                    Y: =55
+                    ZIndex: =3
+
+                Img_Cog_1 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Height: =35
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =Cog
+                    OnSelect: |+
+                        =Navigate(Scn_Configuration, ScreenTransition.Fade);
+                        
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Width: =35
+                    X: =345
+                    Y: =83
+                    ZIndex: =4
 
             Gallery4 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
                 BorderColor: =RGBA(243, 242, 241, 1)
                 DelayItemLoading: =true
                 FocusedBorderColor: =RGBA(98, 100, 167, 1)
                 FocusedBorderThickness: =2
+                Items: =SettingNavigationItems
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =287
                 LayoutMinWidth: =50
                 LoadingSpinner: =LoadingSpinner.Data
-                TemplatePadding: =0
-                TemplateSize: =32
-                ZIndex: =1
+                OnSelect: |-
+                    =UpdateContext({SettingToDisplay : ThisItem.label});
+                TemplateSize: =50
+                ZIndex: =2
 
                 Rectangle7 As rectangle:
                     BorderColor: =RGBA(243, 242, 241, 1)
                     DisabledFill: =RGBA(0,0,0,0)
-                    Fill: =RGBA(0,0,0,0)
+                    Fill: =RGBA(255, 255, 255, 1)
                     FocusedBorderColor: =RGBA(98, 100, 167, 1)
                     Height: =Parent.TemplateHeight
                     HoverFill: =RGBA(0,0,0,0)
@@ -60,12 +148,29 @@
                     OnSelect: =Select(Parent)
                     PCFTeamsTheme: =TeamsTheme.Default
                     TabIndex: =-1
-                    Text: =ThisItem.SampleHeading
+                    Text: =ThisItem.label
                     VerticalAlignment: =VerticalAlign.Top
                     Width: =Parent.TemplateWidth - 24
                     X: =12
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2) - 2
+                    Y: =13
                     ZIndex: =2
+
+                Rectangle3_4 As rectangle:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =RGBA(238, 140, 29, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Fill: =RGBA(238, 140, 29, 1)
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    Height: =50
+                    HoverFill: =RGBA(98, 100, 167, 1)
+                    OnSelect: =
+                    PressedFill: =RGBA(98, 100, 167, 1)
+                    Visible: =If(SettingToDisplay = ThisItem.label, true,false)
+                    Width: =12
+                    X: =238
+                    ZIndex: =3
 
         RightSideContainer2 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =7
@@ -84,105 +189,25 @@
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =4
 
+                Label13 As Label:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Alignment: =Align.Center
+                    DisplayMode: =DisplayMode.Edit
+                    FillPortions: =1
+                    FontSize: =20
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    Text: =SettingToDisplay
+                    Width: =320
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
             MainSectionContainer2 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =5
-
-                Gallery3 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
-                    BorderColor: =RGBA(243, 242, 241, 1)
-                    DelayItemLoading: =true
-                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                    FocusedBorderThickness: =2
-                    Items: =Filter(Meetings,ComboBox4.Selected.Value)
-                    Layout: =Layout.Vertical
-                    LayoutMinHeight: =287
-                    LayoutMinWidth: =320
-                    LoadingSpinner: =LoadingSpinner.Data
-                    TemplatePadding: =0
-                    TemplateSize: =48
-                    ZIndex: =1
-
-                    Rectangle2 As rectangle:
-                        BorderColor: =RGBA(243, 242, 241, 1)
-                        DisabledFill: =RGBA(0,0,0,0)
-                        Fill: =RGBA(0,0,0,0)
-                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                        Height: =Parent.TemplateHeight
-                        HoverFill: =RGBA(0,0,0,0)
-                        OnSelect: =Select(Parent)
-                        PressedFill: =RGBA(0,0,0,0)
-                        TabIndex: =0
-                        Width: =Parent.TemplateWidth
-                        ZIndex: =1
-
-                    Image8 As image:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        Height: =28
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        OnSelect: =Select(Parent)
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        RadiusBottomLeft: =3
-                        RadiusBottomRight: =3
-                        RadiusTopLeft: =3
-                        RadiusTopRight: =3
-                        Width: =28
-                        X: =12
-                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                        ZIndex: =2
-
-                    Title2 As Label:
-                        DisplayMode: =DisplayMode.Edit
-                        FontSize: =10.5
-                        FontWeight: =FontWeight.Semibold
-                        Height: =24
-                        OnSelect: =Select(Parent)
-                        PCFTeamsTheme: =TeamsTheme.Default
-                        TabIndex: =-1
-                        Text: =ThisItem.'Created On'
-                        VerticalAlignment: =VerticalAlign.Top
-                        Width: =Parent.TemplateWidth - Self.X - 8
-                        X: =Image8.X + Image8.Width + 12
-                        Y: =((Parent.TemplateHeight - 36) / 2) - 4
-                        ZIndex: =3
-
-                    Subtitle2 As Label:
-                        DisplayMode: =DisplayMode.Edit
-                        FontSize: =9
-                        FontWeight: =FontWeight.Normal
-                        Height: =24
-                        OnSelect: =Select(Parent)
-                        PCFTeamsTheme: =TeamsTheme.Default
-                        TabIndex: =-1
-                        Text: =ThisItem.Subject
-                        VerticalAlignment: =VerticalAlign.Top
-                        Width: =Title2.Width
-                        X: =Title2.X
-                        Y: =Title2.Y + Title2.Height - 6
-                        ZIndex: =4
-
-    "ComboBox4 As 'Combo box'.pcfdataset":
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Items: =Choices('Meetings (Views)')
-        PCFTeamsTheme: =TeamsTheme.Default
-        Width: =320
-        X: =245
-        Y: =600
-        ZIndex: =2
-
-        Value2 As pcfDataField.textualColumn:
-            FieldDisplayName: ="Value"
-            FieldName: ="Value"
-            FieldVariantName: ="textualColumn"
-            Order: =1
-            ZIndex: =6
 
