@@ -97,6 +97,7 @@
                     FontSize: =15
                     FontWeight: =FontWeight.Semibold
                     Height: =41
+                    NoWrap: =true
                     Text: =SelectedMeeting.subject
                     Width: =275
                     X: =5
