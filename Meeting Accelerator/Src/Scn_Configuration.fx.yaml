@@ -70,7 +70,6 @@
                 ZIndex: =2
 
             Gallery4 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
-                AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(243, 242, 241, 1)
                 DelayItemLoading: =true
                 FocusedBorderColor: =RGBA(98, 100, 167, 1)
@@ -128,7 +127,7 @@
                     PressedFill: =RGBA(98, 100, 167, 1)
                     Visible: =If(SettingToDisplay = ThisItem.label, true,false)
                     Width: =12
-                    X: =238
+                    X: =Parent.Width - 20
                     ZIndex: =3
 
         RightSideContainer2 As groupContainer.verticalAutoLayoutContainer:
@@ -242,6 +241,7 @@
                     LayoutMinWidth: =320
                     OnChange: |-
                         =Patch('Personal Configurations', LookUp('Personal Configurations','Personal Configuration' =  PersonalConfigurationRecord.'Personal Configuration'), { 'To Do List ID': Inpt_ToDoList.Selected.id, 'To Do List Name': Inpt_ToDoList.Selected.displayName } );
+                        Notify("Preference Updated", NotificationType.Success, 3000);
                     PCFTeamsTheme: =TeamsTheme.Default
                     Width: =320
                     X: =0
