@@ -9376,7 +9376,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "ComboBox2",
-    "ParentIndex": 5,
+    "ParentIndex": 6,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -11196,7 +11196,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "DatePicker1",
-    "ParentIndex": 6,
+    "ParentIndex": 7,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -13552,7 +13552,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Icon4",
-    "ParentIndex": 7,
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -17388,7 +17388,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label12_5",
-    "ParentIndex": 4,
+    "ParentIndex": 5,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
