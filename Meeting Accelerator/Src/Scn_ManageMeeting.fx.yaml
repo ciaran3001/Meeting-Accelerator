@@ -4,6 +4,7 @@
     OnVisible: |-
         =Select(Btn_GetAssociatedMeetingData);
         Select(Btn_ProcessAttendees);
+        Select(Btn_GetMyCopiedOutcomes);
 
     ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
         Height: =Parent.Height
@@ -2072,6 +2073,7 @@
         Height: =32
         OnSelect: =ClearCollect(MyCopiedOutcomes, Filter('Outcome To Do Copies', 'Copied Outcome'.Meeting.Meeting = AssociatedMeetingRecord.Meeting And 'Created By'.'Primary Email' = User().Email));
         PCFTeamsTheme: =TeamsTheme.Default
+        Visible: =false
         Width: =96
         X: =0
         Y: =0
