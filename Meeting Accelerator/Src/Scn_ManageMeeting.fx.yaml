@@ -1652,7 +1652,7 @@
             FocusedBorderColor: =RGBA(98, 100, 167, 1)
             FocusedBorderThickness: =2
             Height: =487
-            Items: =OutcomesForThisAgenda
+            Items: =Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = AgendaItemToshow.'Agenda Item')
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Controls
             LoadingSpinnerColor: |-
@@ -1716,6 +1716,8 @@
                 ZIndex: =2
 
             "ComboBox2 As 'Combo box'.pcfdataset":
+                DefaultSelectedItems: |
+                    =LookUp(Choices('Outcome Type Choices'), Value =  ThisItem.'Outcome Type')
                 DisplayMode: =DisplayMode.Edit
                 FillColor: |-
                     =//E7EFFF blue 
@@ -1742,7 +1744,8 @@
                     
                     )
                 Height: =32
-                Items: =Choices('Outcome Type Choices')
+                Items: |
+                    =Choices('Outcome Type Choices')
                 PCFTeamsTheme: =TeamsTheme.Default
                 Width: =136
                 X: =379
@@ -1872,7 +1875,7 @@
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
-            OnSelect: |
+            OnSelect: |-
                 =Patch(
                     Outcomes,
                     Defaults(Outcomes),
@@ -1883,28 +1886,7 @@
                     }
                 );
                 
-                Patch(
-                    ExistingOutComesForThisMeeting,
-                    Defaults(ExistingOutComesForThisMeeting),
-                    {
-                    Name: "Default Text",
-                    'Agenda Item': AgendaItemToshow,
-                    Meeting: AssociatedMeetingRecord
-                    }
-                );
-                
-                Patch(
-                    OutcomesForThisAgenda,
-                    Defaults(OutcomesForThisAgenda),
-                    {
-                    Name: "Default Text",
-                    'Agenda Item': AgendaItemToshow,
-                    Meeting: AssociatedMeetingRecord
-                    }
-                );
-                
-                
-                UpdateContext({ShowAddAgendaItemModal: false});
+                Select(Btn_GetAssociatedMeetingData);
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
