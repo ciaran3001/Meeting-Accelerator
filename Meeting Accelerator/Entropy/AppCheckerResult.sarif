@@ -2234,6 +2234,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Icon4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Icon4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scn_ManageMeeting",
+                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Icon4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Icon4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Icon4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Scn_ManageMeeting",
+                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Icon4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.undraw_calendar_re_ki49"
                 }
               ],

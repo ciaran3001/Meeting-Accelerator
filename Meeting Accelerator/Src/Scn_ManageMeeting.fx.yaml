@@ -1757,6 +1757,7 @@
                 Height: =32
                 Items: |
                     =Choices('Outcome Type Choices')
+                OnChange: =Select(Parent)
                 PCFTeamsTheme: =TeamsTheme.Default
                 Width: =136
                 X: =379
@@ -1833,6 +1834,9 @@
                 HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Trash
+                OnSelect: |-
+                    =RemoveIf(Outcomes, Outcome = ThisItem.Outcome);
+                    Select(Btn_GetAssociatedMeetingData);
                 PaddingBottom: =3
                 PaddingLeft: =3
                 PaddingRight: =3
