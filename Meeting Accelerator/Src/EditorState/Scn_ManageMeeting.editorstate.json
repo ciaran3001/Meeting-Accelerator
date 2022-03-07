@@ -97,7 +97,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Btn_GetAssociatedMeetingData",
-    "ParentIndex": 7,
+    "ParentIndex": 5,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -172,7 +172,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Btn_GetMyCopiedOutcomes",
-    "ParentIndex": 6,
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -9118,7 +9118,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Cnt_AddAgendaItem",
-    "ParentIndex": 4,
+    "ParentIndex": 7,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -9247,7 +9247,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Cnt_ShowAgendaItem",
-    "ParentIndex": 5,
+    "ParentIndex": 6,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

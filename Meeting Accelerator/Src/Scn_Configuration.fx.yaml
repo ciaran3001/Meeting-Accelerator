@@ -234,12 +234,14 @@
                     Y: =180
                     ZIndex: =1
 
-                "ComboBox4_1 As 'Combo box'.pcfdataset":
+                "Inpt_ToDoList As 'Combo box'.pcfdataset":
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Items: ='MicrosoftTo-Do(Business)'.GetAllTodoListsV2()
                     LayoutMinHeight: =32
                     LayoutMinWidth: =320
+                    OnChange: |-
+                        =Patch('Personal Configurations', LookUp('Personal Configurations','Personal Configuration' =  PersonalConfigurationRecord.'Personal Configuration'), { 'To Do List ID': Inpt_ToDoList.Selected.id, 'To Do List Name': Inpt_ToDoList.Selected.displayName } );
                     PCFTeamsTheme: =TeamsTheme.Default
                     Width: =320
                     X: =0
