@@ -1660,7 +1660,7 @@
             LoadingSpinnerColor: |-
                 =ColorValue("#EE8C1D")
             OnSelect: |+
-                =UpdateIf(Outcomes, Outcome = ThisItem.Outcome, {Name : ThisRecord.Inpt_OutcomeName.Value});
+                =UpdateIf(Outcomes, Outcome = ThisItem.Outcome, {Name :  "" });
                 //Notify("Outcome Updated", NotificationType.Information, 100);
                 
             ShowScrollbar: =false
