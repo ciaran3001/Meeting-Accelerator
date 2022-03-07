@@ -15,6 +15,9 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =10
             ZIndex: =2
 
             Cnt_Title_1 As groupContainer.manualLayoutContainer:
