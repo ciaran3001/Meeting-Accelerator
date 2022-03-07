@@ -1701,7 +1701,7 @@
                 BorderThickness: =2
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
-                Height: =46
+                Height: =39
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Image: |-
@@ -1721,9 +1721,9 @@
                 RadiusBottomRight: =3
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
-                Width: =46
-                X: =699
-                Y: =24
+                Width: =39
+                X: =703
+                Y: =27
                 ZIndex: =2
 
             "ComboBox2 As 'Combo box'.pcfdataset":
@@ -1846,7 +1846,7 @@
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =32
                 X: =773
-                Y: =31
+                Y: =28
                 ZIndex: =8
 
         Button1_34 As button:
