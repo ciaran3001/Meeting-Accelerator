@@ -1741,6 +1741,9 @@
                             });
                             
                             Select(Btn_GetAssociatedMeetingData);
+                            Notify("Outcome copied to 'To Do'", NotificationType.Success, 3000);
+                        ,
+                        Notify("Outcome has already been copied to 'To Do'", NotificationType.Error, 3000);
                     );
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
