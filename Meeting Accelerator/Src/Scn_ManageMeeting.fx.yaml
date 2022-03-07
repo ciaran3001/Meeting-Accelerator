@@ -1739,7 +1739,9 @@
                                 'To Do ID': CreatedTask.id,
                                 'To Do List ID': MyToDoList.id
                             });
-                    )
+                            
+                            Select(Btn_GetAssociatedMeetingData);
+                    );
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 RadiusBottomLeft: =3
