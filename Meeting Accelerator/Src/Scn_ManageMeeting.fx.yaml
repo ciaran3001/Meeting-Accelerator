@@ -2103,7 +2103,7 @@
     Btn_GetMyCopiedOutcomes As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        OnSelect: =ClearCollect(MyCopiedOutcomes, Filter('Outcome To Do Copies', 'Copied Outcome'.Meeting.Meeting = AssociatedMeetingRecord.Meeting And 'Created By'.'Primary Email' = User().Email));
+        OnSelect: =ClearCollect(MyCopiedOutcomes, Filter('Outcome To Do Copies', Meeting.Meeting = AssociatedMeetingRecord.Meeting And 'Created By'.'Primary Email' = User().Email));
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: =false
         Width: =96
