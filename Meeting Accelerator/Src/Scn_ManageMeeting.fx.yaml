@@ -100,7 +100,7 @@
                     NoWrap: =true
                     Text: =SelectedMeeting.subject
                     Width: =275
-                    X: =5
+                    X: =10
                     Y: =9
                     ZIndex: =4
 
