@@ -1654,7 +1654,7 @@
             FocusedBorderColor: =RGBA(98, 100, 167, 1)
             FocusedBorderThickness: =2
             Height: =487
-            Items: =Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.ciarank_agendaitemid = AgendaItemToshow.ciarank_agendaitemid)
+            Items: =Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = AgendaItemToshow.'Agenda Item')
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Controls
             LoadingSpinnerColor: |-
