@@ -978,8 +978,8 @@
                                     ItemColorSet: |-
                                         =[ColorValue("#EE8C1D"),ColorValue("#FFFFFF")]
                                     Items: |-
-                                        =Table({Completed : 5},
-                                        {Completed : 2})
+                                        =Table(
+                                        {Completed : AgendaPercentCompleted},{Completed : 100 - AgendaPercentCompleted})
                                     LabelPosition: =LabelPosition.Inside
                                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                                     ShowLabels: =false
