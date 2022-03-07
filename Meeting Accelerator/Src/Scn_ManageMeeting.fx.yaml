@@ -1657,7 +1657,7 @@
             LoadingSpinner: =LoadingSpinner.Controls
             LoadingSpinnerColor: |-
                 =ColorValue("#EE8C1D")
-            OnSelect: =
+            OnSelect: =Notify("Changed", NotificationType.Information, 100)
             ShowScrollbar: =false
             TemplateSize: =90
             Transition: =Transition.Pop
@@ -1711,7 +1711,7 @@
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
                 Width: =46
-                X: =724
+                X: =709
                 Y: =16
                 ZIndex: =2
 
@@ -1803,14 +1803,15 @@
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
                 Width: =43
-                X: =697
+                X: =682
                 Y: =16
                 ZIndex: =5
 
             "DatePicker1 As 'Date picker'":
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
-                OnSelect: =Select(Parent)
+                OnChange: =Select(Parent)
+                OnSelect: =
                 PCFTeamsTheme: =TeamsTheme.Default
                 Width: =118
                 X: =532
@@ -1830,6 +1831,29 @@
                 X: =10
                 Y: =31
                 ZIndex: =7
+
+            Icon4 As icon.Add:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Height: =32
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Trash
+                PaddingBottom: =3
+                PaddingLeft: =3
+                PaddingRight: =3
+                PaddingTop: =3
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =32
+                X: =770
+                Y: =22
+                ZIndex: =8
 
         Button1_34 As button:
             BorderColor: =RGBA(238, 140, 29, 1)
@@ -1942,7 +1966,7 @@
             PCFTeamsTheme: =TeamsTheme.Default
             Text: ="Copy to 'To Do'"
             Width: =112
-            X: =1109
+            X: =1084
             Y: =146
             ZIndex: =17
 
