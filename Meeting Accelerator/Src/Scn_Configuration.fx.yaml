@@ -19,83 +19,6 @@
             PaddingTop: =10
             ZIndex: =2
 
-            Cnt_Title_1 As groupContainer.manualLayoutContainer:
-                Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =0
-                Height: =125
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                ZIndex: =1
-
-                Title1_3 As Label:
-                    Alignment: =Align.Center
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =14
-                    FontWeight: =FontWeight.Semibold
-                    Height: =43
-                    OnSelect: =false
-                    PCFTeamsTheme: =TeamsTheme.Default
-                    TabIndex: =-1
-                    Text: ="Settings"
-                    VerticalAlignment: =VerticalAlign.Middle
-                    Width: =118
-                    X: =60
-                    Y: =5
-                    ZIndex: =2
-
-                Button1_40 As button:
-                    BorderColor: =
-                    BorderThickness: =0
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Fill: =RGBA(238, 140, 29, 1)
-                    FocusedBorderThickness: =0
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Semibold
-                    HoverBorderColor: =RGBA(238, 140, 29, 1)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: |-
-                        =ColorFade(ColorValue("#EE8C1D"), -20%)
-                    OnSelect: =Back();
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: |-
-                        =ColorFade(ColorValue("#EE8C1D"), -20%)
-                    RadiusBottomLeft: =5
-                    RadiusBottomRight: =5
-                    RadiusTopLeft: =5
-                    RadiusTopRight: =5
-                    Size: =12
-                    Text: ="Back"
-                    Width: =118
-                    X: =23
-                    Y: =48
-                    ZIndex: =3
-
-                Img_Cog_1 As image:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledFill: =RGBA(0, 0, 0, 0)
-                    Height: =35
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: =Cog
-                    OnSelect: |+
-                        =Navigate(Scn_Configuration, ScreenTransition.Fade);
-                        
-                    PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedFill: =RGBA(0, 0, 0, 0)
-                    RadiusBottomLeft: =3
-                    RadiusBottomRight: =3
-                    RadiusTopLeft: =3
-                    RadiusTopRight: =3
-                    Width: =35
-                    X: =345
-                    Y: =83
-                    ZIndex: =4
-
             Image1_2 As image:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -114,6 +37,36 @@
                 RadiusTopRight: =3
                 X: =141
                 Y: =18
+                ZIndex: =1
+
+            Button1_40 As button:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(238, 140, 29, 1)
+                FocusedBorderThickness: =0
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                HoverBorderColor: =RGBA(238, 140, 29, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: |-
+                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                OnSelect: =Back();
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: |-
+                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Size: =12
+                Text: ="Back"
+                Width: =118
+                X: =60
+                Y: =48
                 ZIndex: =2
 
             Gallery4 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
@@ -131,7 +84,7 @@
                     =UpdateContext({SettingToDisplay : ThisItem.label});
                 TemplateSize: =50
                 Width: =Parent.Width
-                ZIndex: =3
+                ZIndex: =4
 
                 Rectangle7 As rectangle:
                     BorderColor: =RGBA(243, 242, 241, 1)
