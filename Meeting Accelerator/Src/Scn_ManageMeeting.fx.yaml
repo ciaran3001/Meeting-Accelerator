@@ -1271,6 +1271,13 @@
             ,
             UpdateContext({tick : tick+1});
             );
+            
+            
+            
+            UpdateContext({ 
+                TotalMeetingLength : DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes),
+                MinutesElapsed : DateDiff(SelectedMeeting.start, Now(), Minutes)
+            });
         PressedBorderColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(98, 100, 167, 1), -30%)
