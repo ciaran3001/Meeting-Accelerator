@@ -175,6 +175,7 @@
                 PaddingLeft: =10
                 PaddingRight: =10
                 PaddingTop: =10
+                Visible: =If(SettingToDisplay = "Personas", true,false)
                 ZIndex: =5
 
                 Label14 As Label:
@@ -202,6 +203,94 @@
                     ZIndex: =2
 
                     displayName1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="displayName"
+                        FieldName: ="displayName"
+                        FieldVariantName: ="textualColumn"
+                        Order: =1
+                        ZIndex: =6
+
+            Cnt_Settings_Personas As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                Visible: =If(SettingToDisplay = "Preferences", true,false)
+                ZIndex: =6
+
+                Label14_1 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: ="'To Do' list to copy outcomes to"
+                    Width: =320
+                    X: =280
+                    Y: =180
+                    ZIndex: =1
+
+                "ComboBox4_1 As 'Combo box'.pcfdataset":
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Items: ='MicrosoftTo-Do(Business)'.GetAllTodoListsV2()
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Width: =320
+                    X: =0
+                    Y: =0
+                    ZIndex: =2
+
+                    displayName1_1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="displayName"
+                        FieldName: ="displayName"
+                        FieldVariantName: ="textualColumn"
+                        Order: =1
+                        ZIndex: =6
+
+            Cnt_Settings_MeetingTypes As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                Visible: =If(SettingToDisplay = "Meeting Types", true,false)
+                ZIndex: =7
+
+                Label14_2 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: ="'To Do' list to copy outcomes to"
+                    Width: =320
+                    X: =280
+                    Y: =180
+                    ZIndex: =1
+
+                "ComboBox4_2 As 'Combo box'.pcfdataset":
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Items: ='MicrosoftTo-Do(Business)'.GetAllTodoListsV2()
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Width: =320
+                    X: =0
+                    Y: =0
+                    ZIndex: =2
+
+                    displayName1_2 As pcfDataField.textualColumn:
                         FieldDisplayName: ="displayName"
                         FieldName: ="displayName"
                         FieldVariantName: ="textualColumn"
