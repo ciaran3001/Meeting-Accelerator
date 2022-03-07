@@ -404,7 +404,7 @@
                             ClearCollect(OutcomesForThisAgenda, Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item'));
                         ShowScrollbar: =false
                         TemplateSize: =90
-                        Transition: =Transition.Pop
+                        Transition: =Transition.Push
                         ZIndex: =3
 
                         Button1_18 As button:
