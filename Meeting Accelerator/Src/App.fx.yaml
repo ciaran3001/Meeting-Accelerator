@@ -1,7 +1,9 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |
+    OnStart: |-
         =Set(SelectedMeetingTab, "Today");
+        
+        ClearCollect(SettingNavigationItems, {label: "Preferences"}, {label : "Personas"}, {label : "Meeting Types"});
 
     Teams As hostControl.TeamsHostControlVariant:
         OnCancel: =false

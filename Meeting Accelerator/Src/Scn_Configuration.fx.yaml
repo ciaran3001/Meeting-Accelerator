@@ -32,6 +32,7 @@
                 FocusedBorderColor: =RGBA(98, 100, 167, 1)
                 FocusedBorderThickness: =2
                 Layout: =Layout.Vertical
+                LayoutMinHeight: =287
                 LayoutMinWidth: =50
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
