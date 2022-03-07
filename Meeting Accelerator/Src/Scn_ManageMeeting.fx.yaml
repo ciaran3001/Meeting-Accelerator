@@ -1826,9 +1826,9 @@
                 Height: =32
                 PCFTeamsTheme: =TeamsTheme.Default
                 Text: =ThisItem.'Reference Number'
-                Width: =89
-                X: =0
-                Y: =30
+                Width: =71
+                X: =10
+                Y: =31
                 ZIndex: =7
 
         Button1_34 As button:
@@ -2039,7 +2039,7 @@
         PCFTeamsTheme: =TeamsTheme.Default
         Text: ="Ref"
         Width: =73
-        X: =474
+        X: =479
         Y: =183
         ZIndex: =9
 
