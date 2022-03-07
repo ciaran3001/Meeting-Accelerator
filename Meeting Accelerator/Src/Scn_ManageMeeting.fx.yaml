@@ -1814,6 +1814,18 @@
                 Y: =31
                 ZIndex: =6
 
+            Label12_5 As Label:
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =10
+                FontWeight: =FontWeight.Bold
+                Height: =32
+                PCFTeamsTheme: =TeamsTheme.Default
+                Text: =ThisItem.'Reference Number'
+                Width: =89
+                X: =0
+                Y: =30
+                ZIndex: =7
+
         Button1_34 As button:
             BorderColor: =RGBA(238, 140, 29, 1)
             Color: =RGBA(238, 140, 29, 1)
