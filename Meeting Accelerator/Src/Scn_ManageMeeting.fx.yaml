@@ -1818,7 +1818,7 @@
                 ZIndex: =6
 
             Label12_5 As Label:
-                Alignment: =Align.Center
+                Alignment: =Align.Justify
                 Color: =RGBA(128, 128, 128, 1)
                 DisplayMode: =DisplayMode.Edit
                 FontSize: =10
