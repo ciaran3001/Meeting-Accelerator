@@ -1716,6 +1716,19 @@
                         'To_Do Not Enabled',
                         To_Do
                     )
+                OnSelect: |-
+                    =If(
+                        IsBlank(
+                            LookUp(
+                                MyCopiedOutcomes,
+                                'Copied Outcome'.Outcome = ThisItem.Outcome
+                            )
+                        ),
+                        'MicrosoftTo-Do(Business)'.CreateToDoV3(
+                        //'MicrosoftTo-Do(Business)'.CreateToDo(ThisItem.Name, {DueDateTime : ThisItem.'Time due' });
+                    
+                        Patch('Outcome To Do Copies', Defaults('Outcome To Do Copies'), {'Outcome Name': "Copied to To Do", 'Copied Outcome': ThisItem});
+                    )
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 RadiusBottomLeft: =3
