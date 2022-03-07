@@ -1,0 +1,94 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ciarank_personalconfigurations",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ciarank_personalconfiguration",
+    "Name": "Personal Configurations",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "ciarank_name": "Name",
+      "ciarank_personalconfiguration_AsyncOperations": "System Jobs",
+      "ciarank_personalconfiguration_BulkDeleteFailures": "Bulk Delete Failures",
+      "ciarank_personalconfiguration_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ciarank_personalconfiguration_ProcessSession": "Process Sessions",
+      "ciarank_personalconfigurationid": "Personal Configuration",
+      "ciarank_todolistid": "To Do List ID",
+      "ciarank_todolistname": "To Do List Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Personal Configurations",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Personal Configurations (Views)",
+    "Name": "_ciarank_personalconfiguration_views",
+    "RelatedEntityName": "Personal Configurations",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0709962c-41c8-48e6-9613-65ee53daff3d": "Active Personal Configurations",
+      "087d37b1-e5d0-408c-8f03-5575ee9c9eb9": "Personal Configuration Advanced Find View",
+      "6b84e908-ca64-40f7-b032-79b425fe4ca8": "Personal Configuration Lookup View",
+      "dad117af-3fc2-4be7-bfc9-c26c1b1e1afa": "Inactive Personal Configurations",
+      "ef43f0a8-93cf-4dd7-b8fa-91747e58b652": "Personal Configuration Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Personal Configurations)",
+    "Name": "ciarank_personalconfiguration_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Personal Configurations"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Personal Configurations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Personal Configurations)",
+    "Name": "ciarank_personalconfiguration_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Personal Configurations"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Personal Configurations",
+    "Type": "OptionSetInfo"
+  }
+]

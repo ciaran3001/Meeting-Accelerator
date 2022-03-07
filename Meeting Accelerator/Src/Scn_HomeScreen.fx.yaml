@@ -857,8 +857,10 @@ Scn_HomeScreen As screen:
                         );
                     );
                 );
-                
             );
+            
+            
+            Set(PersonalConfigurationRecord, LookUp('Personal Configurations', 'Owning User'.'Primary Email' = User().Email);
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: |
             =false

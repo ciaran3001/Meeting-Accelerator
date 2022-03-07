@@ -51,6 +51,13 @@
         "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
         "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
       }
+    },
+    {
+      "Kind": "default.cds_ciarank_personalconfiguration_forms",
+      "Namespace": "Personal Configurations (Forms)",
+      "Values": {
+        "Information": "c53b9034-079f-40ce-81cb-813fa01807e6"
+      }
     }
   ]
 }
