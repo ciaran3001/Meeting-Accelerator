@@ -1,6 +1,7 @@
 Scn_Analyse As screen:
     Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+    OnVisible: =Select(Btn_LoadAnalyticsData);
 
     Container17 As groupContainer.horizontalAutoLayoutContainer:
         Height: =App.Height
@@ -624,7 +625,72 @@ Scn_Analyse As screen:
         ZIndex: =5
 
     Cnt_LoadingAnalytics As groupContainer.manualLayoutContainer:
-        X: =445
-        Y: =270
+        Height: =300
+        Visible: =LoadingAnalytics
+        X: =App.Width /2 - Cnt_LoadingAnalytics.Width/2
+        Y: =App.Height /2 - Cnt_LoadingAnalytics.Height/2
         ZIndex: =6
+
+        Button1_47 As button:
+            BorderColor: =
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =0
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =300
+            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =15
+            Text: =""
+            Width: =500
+            ZIndex: =1
+
+        Label1_1 As Label:
+            Alignment: =Align.Center
+            Color: =RGBA(238, 140, 29, 1)
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =15
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Analysing your data... hold tight!"
+            Width: =320
+            X: =90
+            Y: =167
+            ZIndex: =2
+
+        Image12_1 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Height: =77
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='1476'
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =3
+            RadiusBottomRight: =3
+            RadiusTopLeft: =3
+            RadiusTopRight: =3
+            Width: =68
+            X: =216
+            Y: =90
+            ZIndex: =3
 
