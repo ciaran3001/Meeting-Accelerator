@@ -119,7 +119,7 @@ Scn_Analyse As screen:
                 Y: =15
                 ZIndex: =1
 
-            Container16 As groupContainer.horizontalAutoLayoutContainer:
+            Cnt_KPIBar As groupContainer.horizontalAutoLayoutContainer:
                 FillPortions: =0
                 Height: =100
                 LayoutGap: =10
@@ -129,7 +129,7 @@ Scn_Analyse As screen:
                 ZIndex: =2
 
                 Container20 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.Center
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =100
                     LayoutMinHeight: =100
@@ -195,7 +195,7 @@ Scn_Analyse As screen:
                         ZIndex: =3
 
                 Container20_1 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.Center
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =100
                     LayoutMinHeight: =100
@@ -261,7 +261,7 @@ Scn_Analyse As screen:
                         ZIndex: =3
 
                 Container20_2 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.Center
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =100
                     LayoutMinHeight: =100
@@ -344,6 +344,65 @@ Scn_Analyse As screen:
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =4
+
+                CompositeLineChart1 As group:
+                    Height: =5
+                    LayoutMinHeight: =5
+                    LayoutMinWidth: =5
+                    Width: =5
+                    X: =40
+                    Y: =40
+                    ZIndex: =1
+
+                    Title2 As label:
+                        Align: =Align.Center
+                        AlignInContainer: =AlignInContainer.Center
+                        Color: =RGBA(37, 36, 35, 1)
+                        DisabledColor: =RGBA(200, 198, 196, 1)
+                        Font: =Font.'Segoe UI'
+                        Height: =25
+                        Text: ="Chart Title"
+                        Width: =400
+                        X: =40
+                        Y: =40
+                        ZIndex: =2
+
+                    LineChart1 As lineChart:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(37, 36, 35, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Segoe UI'
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48, 166, 103, 1), RGBA(94, 193, 108, 1), RGBA(246, 199, 144, 1), RGBA(247, 199, 114, 1), RGBA(247, 180, 91, 1), RGBA(246, 143, 100, 1), RGBA(212, 96, 104, 1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+                        Items: =LineChartSample
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        Size: =15
+                        X: =40
+                        Y: =70
+                        ZIndex: =3
+
+                    Legend1 As legend:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(37, 36, 35, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(200, 198, 196, 1)
+                        DisabledFill: =RGBA(220, 220, 220, 1)
+                        Font: =Font.'Segoe UI'
+                        Height: =80
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        ItemColorSet: =LineChart1.ItemColorSet
+                        Items: =LineChart1.SeriesLabels
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        Width: =320
+                        X: =80
+                        Y: =480
+                        ZIndex: =4
 
             Label15_1 As Label:
                 DisplayMode: =DisplayMode.Edit
