@@ -511,6 +511,74 @@
                         Y: =198
                         ZIndex: =8
 
+                    Gallery5 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+                        BorderColor: =RGBA(243, 242, 241, 1)
+                        DelayItemLoading: =true
+                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                        FocusedBorderThickness: =2
+                        Height: =183
+                        Items: =Filter(local_AgendaItemDefinitions, 'Meeting Type'.'Meeting Type'  = ThisItem.'Meeting Type')
+                        Layout: =Layout.Vertical
+                        LoadingSpinner: =LoadingSpinner.Data
+                        ShowNavigation: =true
+                        ShowScrollbar: =false
+                        TemplatePadding: =0
+                        TemplateSize: =40
+                        Width: =227
+                        X: =8
+                        Y: =67
+                        ZIndex: =9
+
+                        Rectangle6 As rectangle:
+                            BorderColor: =RGBA(243, 242, 241, 1)
+                            DisabledFill: =RGBA(0,0,0,0)
+                            Fill: =RGBA(0,0,0,0)
+                            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                            Height: =Parent.TemplateHeight
+                            HoverFill: =RGBA(0,0,0,0)
+                            OnSelect: =Select(Parent)
+                            PressedFill: =RGBA(0,0,0,0)
+                            TabIndex: =0
+                            Width: =Parent.TemplateWidth
+                            ZIndex: =1
+
+                        Image11 As image:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            Height: =48
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Image: =LeaderIcon
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =13
+                            PaddingTop: =13
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            RadiusBottomLeft: =3
+                            RadiusBottomRight: =3
+                            RadiusTopLeft: =3
+                            RadiusTopRight: =3
+                            Width: =48
+                            ZIndex: =2
+
+                        Title8 As Label:
+                            DisplayMode: =DisplayMode.Edit
+                            FontSize: =10
+                            FontWeight: =FontWeight.Semibold
+                            Height: =48
+                            OnSelect: =Select(Parent)
+                            PCFTeamsTheme: =TeamsTheme.Default
+                            TabIndex: =-1
+                            Text: =ThisItem.Name
+                            VerticalAlignment: =VerticalAlign.Middle
+                            Width: =177
+                            X: =38
+                            Y: =0
+                            ZIndex: =3
+
     Btn_RetreiveConfigurationRecord As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
@@ -529,6 +597,8 @@
         OnSelect: |-
             =ClearCollect(local_MeetingTypes, AddColumns('Meeting Types', "DummyRecord", false));
             Collect(local_MeetingTypes, { DummyRecord : true});
+            
+            ClearCollect(local_AgendaItemDefinitions,'Agenda Item Definitions');
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: =false
         Width: =96
