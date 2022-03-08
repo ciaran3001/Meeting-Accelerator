@@ -367,14 +367,14 @@
                         DisabledFill: =RGBA(0,0,0,0)
                         Fill: =RGBA(0,0,0,0)
                         FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                        Height: =183
+                        Height: =200
                         HoverFill: =RGBA(0,0,0,0)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(0,0,0,0)
                         TabIndex: =0
-                        Width: =229
-                        X: =7
-                        Y: =67
+                        Width: =227
+                        X: =8
+                        Y: =50
                         ZIndex: =2
 
                     Image9 As image:
