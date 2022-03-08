@@ -485,49 +485,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_Analyse.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "Scn_Analyse.Container17.Container18.Gallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_Analyse.Gallery1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scn_Analyse",
-                "type": "Scn_Analyse.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scn_Analyse.Gallery1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_Analyse.Gallery1.TabIndex",
+                  "fullyQualifiedName": "Scn_Analyse.Container17.Container18.Gallery1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Scn_Analyse",
-                "type": "Scn_Analyse.Gallery1"
+                "type": "Scn_Analyse.Container17.Container18.Gallery1"
               }
             }
           ],
@@ -545,19 +515,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_Analyse.Gallery1.Rectangle5.AccessibleLabel"
+                  "fullyQualifiedName": "Scn_Analyse.Container17.Container18.Gallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_Analyse.Gallery1.Rectangle5.AccessibleLabel",
+                  "fullyQualifiedName": "Scn_Analyse.Container17.Container18.Gallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scn_Analyse",
-                "type": "Scn_Analyse.Gallery1.Rectangle5"
+                "type": "Scn_Analyse.Container17.Container18.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_Analyse.Container17.Container18.Gallery1.Rectangle5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_Analyse.Container17.Container18.Gallery1.Rectangle5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scn_Analyse",
+                "type": "Scn_Analyse.Container17.Container18.Gallery1.Rectangle5"
               }
             }
           ],

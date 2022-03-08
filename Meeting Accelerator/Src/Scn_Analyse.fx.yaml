@@ -1,60 +1,6 @@
 Scn_Analyse As screen:
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
 
-    Gallery1 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
-        BorderColor: =RGBA(243, 242, 241, 1)
-        DelayItemLoading: =true
-        FocusedBorderColor: =RGBA(98, 100, 167, 1)
-        FocusedBorderThickness: =2
-        Height: =563
-        Items: =AgendaItemsForThisMeeting
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =48
-        X: =10
-        Y: =136
-        ZIndex: =1
-
-        Rectangle5 As rectangle:
-            BorderColor: =RGBA(243, 242, 241, 1)
-            DisabledFill: =RGBA(0,0,0,0)
-            Fill: =RGBA(0,0,0,0)
-            FocusedBorderColor: =RGBA(98, 100, 167, 1)
-            Height: =48
-            HoverFill: =RGBA(0,0,0,0)
-            OnSelect: =Select(Parent)
-            PressedFill: =RGBA(0,0,0,0)
-            TabIndex: =0
-            Width: =Parent.TemplateWidth
-            ZIndex: =1
-
-        Title4 As Label:
-            DisplayMode: =DisplayMode.Edit
-            FontSize: =10.5
-            FontWeight: =FontWeight.Semibold
-            Height: =24
-            OnSelect: =Select(Parent)
-            PCFTeamsTheme: =TeamsTheme.Default
-            TabIndex: =-1
-            Text: =ThisItem.Name
-            VerticalAlignment: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Self.X - 8
-            X: = 12
-            Y: =((Parent.TemplateHeight - 36) / 2) - 4
-            ZIndex: =3
-
-    Label15 As Label:
-        DisplayMode: =DisplayMode.Edit
-        FontSize: =20
-        Height: =46
-        PCFTeamsTheme: =TeamsTheme.Default
-        Text: =AssociatedMeetingRecord.Subject
-        Width: =320
-        X: =10
-        Y: =15
-        ZIndex: =2
-
     Container17 As groupContainer.horizontalAutoLayoutContainer:
         Height: =App.Height
         LayoutMode: =LayoutMode.Auto
@@ -143,5 +89,70 @@ Scn_Analyse As screen:
                     Width: =59
                     X: =7
                     Y: =43
+                    ZIndex: =3
+
+        Container18 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            Label15 As Label:
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =20
+                Height: =46
+                LayoutMinHeight: =32
+                LayoutMinWidth: =320
+                PCFTeamsTheme: =TeamsTheme.Default
+                Text: =AssociatedMeetingRecord.Subject
+                Width: =320
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Gallery1 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                DelayItemLoading: =true
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                FocusedBorderThickness: =2
+                Height: =563
+                Items: =AgendaItemsForThisMeeting
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =48
+                X: =10
+                Y: =121
+                ZIndex: =2
+
+                Rectangle5 As rectangle:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    DisabledFill: =RGBA(0,0,0,0)
+                    Fill: =RGBA(0,0,0,0)
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    Height: =48
+                    HoverFill: =RGBA(0,0,0,0)
+                    OnSelect: =Select(Parent)
+                    PressedFill: =RGBA(0,0,0,0)
+                    TabIndex: =0
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =1
+
+                Title4 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =10.5
+                    FontWeight: =FontWeight.Semibold
+                    Height: =24
+                    OnSelect: =Select(Parent)
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    TabIndex: =-1
+                    Text: =ThisItem.Name
+                    VerticalAlignment: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - Self.X - 8
+                    X: = 12
+                    Y: =((Parent.TemplateHeight - 36) / 2) - 4
                     ZIndex: =3
 
