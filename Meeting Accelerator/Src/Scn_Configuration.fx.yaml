@@ -357,8 +357,8 @@
                         RadiusTopRight: =5
                         Size: =12
                         Text: =""
-                        Width: =229
-                        X: =7
+                        Width: =228.7
+                        X: =7.3
                         ZIndex: =1
 
                     Rectangle5 As rectangle:

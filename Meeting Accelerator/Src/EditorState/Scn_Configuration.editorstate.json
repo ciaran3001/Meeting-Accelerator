@@ -554,9 +554,23 @@
       "FontWeight",
       "Align",
       "VerticalAlign",
-      "X",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "X",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "Y",
-      "Width",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Width",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "Height",
       "ZIndex",
       {
@@ -637,7 +651,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Button1_45",
-    "ParentIndex": 3,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -2075,7 +2089,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "galleryTemplate5",
-    "ParentIndex": 2,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -2376,7 +2390,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Icon5",
-    "ParentIndex": 0,
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -2579,7 +2593,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Icon5_1",
-    "ParentIndex": 1,
+    "ParentIndex": 3,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -3232,7 +3246,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "%TemplateBrowseGalleryImage.ID%",
     "Name": "Image9",
-    "ParentIndex": 4,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
