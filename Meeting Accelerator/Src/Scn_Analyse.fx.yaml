@@ -189,7 +189,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =57
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="6"
+                        Text: =CountRows(MeetingsIAttended)
                         Width: =146
                         X: =77
                         Y: =4
@@ -321,7 +321,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =57
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="56"
+                        Text: =CountRows(OutComesFromMyMeetings)
                         Width: =146
                         X: =77
                         Y: =4
@@ -373,7 +373,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =32
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="Outcomes copied to 'To Do'"
+                        Text: ="Outcomes copied to 'To Do"
                         Width: =300
                         X: =0
                         Y: =49
@@ -387,7 +387,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =57
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="20"
+                        Text: =CountRows(ToDoTasksCopiedThisMonth)
                         Width: =146
                         X: =77
                         Y: =4
