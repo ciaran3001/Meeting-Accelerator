@@ -414,20 +414,53 @@
                         Y: =67
                         ZIndex: =4
 
-                    Subtitle3 As Label:
-                        DisplayMode: =DisplayMode.Edit
-                        FontSize: =9
-                        FontWeight: =FontWeight.Normal
-                        Height: =24
+                    Icon5 As icon.Add:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        Height: =32
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Trash
                         OnSelect: =Select(Parent)
-                        PCFTeamsTheme: =TeamsTheme.Default
-                        TabIndex: =-1
-                        Text: =ThisItem.'Created On'
-                        VerticalAlignment: =VerticalAlign.Top
-                        Width: =Title5.Width
-                        X: =0
-                        Y: =113
+                        PaddingBottom: =3
+                        PaddingLeft: =3
+                        PaddingRight: =3
+                        PaddingTop: =3
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =32
+                        X: =204
+                        Y: =35
                         ZIndex: =5
+
+                    Icon5_1 As icon.Add:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        Height: =32
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Edit
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =3
+                        PaddingLeft: =3
+                        PaddingRight: =3
+                        PaddingTop: =3
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =32
+                        X: =204
+                        Y: =3
+                        ZIndex: =6
 
     Btn_RetreiveConfigurationRecord As Button:
         DisplayMode: =DisplayMode.Edit
