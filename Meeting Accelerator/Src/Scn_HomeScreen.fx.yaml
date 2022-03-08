@@ -747,34 +747,32 @@ Scn_HomeScreen As screen:
                             );
                         
                                 //Process Attendee's
-                                Clear(CurrentMeetingAttendees);
+                                Clear(_CurrentMeetingAttendees);
                                 ClearCollect(_RawRequiredAttendees, Split(SelectedMeeting.requiredAttendees, ";"));
                                 ClearCollect(_RawOptionalAttendees, Split(SelectedMeeting.optionalAttendees, ";"));
                         
-                                Collect(CurrentMeetingAttendees, { email : SelectedMeeting.organizer, organizer : true, role: Blank(), Optional : false } );
+                                Collect(_CurrentMeetingAttendees, { email : SelectedMeeting.organizer, organizer : true, role: Blank(), Optional : 'Optional Attendee (Attendances)'.No  } );
                         
                                 ForAll(_RawRequiredAttendees,
                                     If(!IsBlank(ThisRecord.Result),
-                                        Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank(), Optional : false } );
+                                        Collect(_CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank(), Optional : 'Optional Attendee (Attendances)'.No  } );
                                     );
                                 );
                         
                                 ForAll(_RawOptionalAttendees,
                                     If(!IsBlank(ThisRecord.Result),
-                                        Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank(), Optional : true } );
+                                        Collect(_CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank(), Optional : 'Optional Attendee (Attendances)'.Yes } );
                                     );
                                 );
                         
-                            ForAll(CurrentMeetingAttendees,
-                                Collect(AttendanceRecordsForThisMeeting, 
-                                    Patch(Attendances, 
-                                        Defaults(Attendances),
-                                        {
-                                            Meeting: AssociatedMeetingRecord,
-                                            'Attendee Email': ThisRecord.Email,
-                                            'Optional Attendee' : ThisRecord.Optional
-                                        }
-                                    );
+                            ForAll(_CurrentMeetingAttendees,
+                                Patch(Attendances, 
+                                Defaults(Attendances),
+                                {
+                                    'Attendee Email': ThisRecord.email,
+                                    'Optional Attendee': ThisRecord.Optional,
+                                     Meeting: AssociatedMeetingRecord
+                                }
                                 );
                             );
                         

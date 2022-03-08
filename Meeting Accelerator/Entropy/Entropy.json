@@ -302,7 +302,7 @@
     "Value1": 116
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/08/2022 20:59:07",
+  "HeaderLastSavedDateTimeUTC": "03/08/2022 21:01:53",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -361,6 +361,7 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
+    "_CurrentMeetingAttendees": 80,
     "_RawOptionalAttendees": 72,
     "_RawRequiredAttendees": 73,
     "Agenda Item Definitions": 57,
@@ -373,7 +374,6 @@
     "Agenda Items\\ciarank_ciarank_agendaitem_addressed": 5,
     "Agenda Items\\default.cds_ciarank_agendaitem_views": 45,
     "AgendaItemsForThisMeeting": 68,
-    "AttendanceRecordsForThisMeeting": 80,
     "Attendances": 67,
     "Attendances\\ciarank_attendance_ciarank_optionalattendee": 43,
     "Attendances\\ciarank_attendance_statecode": 40,
@@ -864,6 +864,6 @@
       "timer": 1
     },
     "DeserializationLoadTime": 5.1893047,
-    "ErrorCount": 3
+    "ErrorCount": 0
   }
 }

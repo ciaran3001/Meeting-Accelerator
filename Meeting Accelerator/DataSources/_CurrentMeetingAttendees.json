@@ -3,7 +3,7 @@
     "IsComponentScoped": false,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "AttendanceRecordsForThisMeeting",
+    "Name": "_CurrentMeetingAttendees",
     "Type": "CollectionDataSourceInfo"
   }
 ]
