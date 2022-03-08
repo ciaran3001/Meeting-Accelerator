@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 1687,
+                  "charOffset": 1714,
                   "snippet": {
                     "text": ".Email"
                   }
@@ -60,10 +60,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 238,
+                  "charLength": 287,
                   "charOffset": 1531,
                   "snippet": {
-                    "text": "Patch(Attendances, Defaults(Attendances),\r\n\r\n            {\r\n                 Meeting: AssociatedMeetingRecord,\r\n                'Attendee Email': ThisRecord.Email,\r\n                'Optional Attendee' : ThisRecord.Optional\r\n            })"
+                    "text": "Patch(Attendances, \r\n                Defaults(Attendances),\r\n                {\r\n                    Meeting: AssociatedMeetingRecord,\r\n                    'Attendee Email': ThisRecord.Email,\r\n                    'Optional Attendee' : ThisRecord.Optional\r\n                }\r\n            )"
                   }
                 }
               },
@@ -100,10 +100,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 180,
-                  "charOffset": 1588,
+                  "charLength": 195,
+                  "charOffset": 1608,
                   "snippet": {
-                    "text": "{\r\n                 Meeting: AssociatedMeetingRecord,\r\n                'Attendee Email': ThisRecord.Email,\r\n                'Optional Attendee' : ThisRecord.Optional\r\n            }"
+                    "text": "{\r\n                    Meeting: AssociatedMeetingRecord,\r\n                    'Attendee Email': ThisRecord.Email,\r\n                    'Optional Attendee' : ThisRecord.Optional\r\n                }"
                   }
                 }
               },
