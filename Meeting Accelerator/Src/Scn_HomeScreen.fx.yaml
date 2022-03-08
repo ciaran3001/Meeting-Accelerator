@@ -18,7 +18,7 @@ Scn_HomeScreen As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            Width: =50
+            Width: =75
             ZIndex: =1
 
         Container2 As groupContainer.verticalAutoLayoutContainer:
