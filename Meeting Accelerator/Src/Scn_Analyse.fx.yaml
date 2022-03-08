@@ -55,3 +55,93 @@ Scn_Analyse As screen:
         Y: =15
         ZIndex: =2
 
+    Container17 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =App.Height
+        LayoutMode: =LayoutMode.Auto
+        Width: =App.Width
+        ZIndex: =3
+
+        SideBar_2 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingTop: =40
+            Width: =75
+            ZIndex: =1
+
+            Gal_SideNav_2 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =RGBA(243, 242, 241, 1)
+                DelayItemLoading: =true
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                FocusedBorderThickness: =2
+                Items: =SideNavItems
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =70
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =Set(SelectedSideNavItem, ThisItem);
+                    Navigate(ThisItem.Screen,ScreenTransition.Fade);
+                TemplatePadding: =0
+                TemplateSize: =75
+                Width: =Parent.Width
+                ZIndex: =1
+
+                Rectangle8_2 As rectangle:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    DisabledFill: =RGBA(0,0,0,0)
+                    Fill: |-
+                        =If(SelectedSideNavItem.Name = ThisItem.Name, ColorValue("#EE8C1D") , ColorValue("#FFFFFF"))
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    Height: =Parent.TemplateHeight
+                    HoverFill: =RGBA(0,0,0,0)
+                    OnSelect: =Select(Parent)
+                    PressedFill: =RGBA(0,0,0,0)
+                    TabIndex: =0
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =1
+
+                Image8_2 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Height: =28
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =If(SelectedSideNavItem.Name = ThisItem.Name,ThisItem.SelectedIcon, ThisItem.UnselectedIcon)
+                    OnSelect: =Select(Parent)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Width: =28
+                    X: =23
+                    Y: =15
+                    ZIndex: =2
+
+                Title7_2 As Label:
+                    Alignment: =Align.Center
+                    Color: |-
+                        =If(SelectedSideNavItem.Name = ThisItem.Name,  ColorValue("#FFFFFF"), Black)
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =10.5
+                    FontWeight: =FontWeight.Semibold
+                    Height: =32
+                    OnSelect: =Select(Parent)
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    TabIndex: =-1
+                    Text: =ThisItem.Name
+                    VerticalAlignment: =VerticalAlign.Top
+                    Width: =59
+                    X: =7
+                    Y: =43
+                    ZIndex: =3
+

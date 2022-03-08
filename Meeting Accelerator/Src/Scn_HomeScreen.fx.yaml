@@ -33,7 +33,9 @@ Scn_HomeScreen As screen:
                 LayoutMinHeight: =287
                 LayoutMinWidth: =70
                 LoadingSpinner: =LoadingSpinner.Data
-                OnSelect: =Set(SelectedSideNavItem, ThisItem);
+                OnSelect: |-
+                    =Set(SelectedSideNavItem, ThisItem);
+                    Navigate(ThisItem.Screen,ScreenTransition.Fade);
                 TemplatePadding: =0
                 TemplateSize: =75
                 Width: =Parent.Width
