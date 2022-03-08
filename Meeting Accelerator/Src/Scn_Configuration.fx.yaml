@@ -227,6 +227,19 @@
                 Visible: =If(SettingToDisplay = "Personas", true,false)
                 ZIndex: =6
 
+                Label14_1 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: |-
+                        ="Roles to assign to people:"
+                    Width: =320
+                    X: =280
+                    Y: =180
+                    ZIndex: =1
+
                 Gallery3 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
                     BorderColor: =RGBA(243, 242, 241, 1)
                     DelayItemLoading: =true
@@ -268,19 +281,6 @@
                         X: =12
                         Y: =0
                         ZIndex: =2
-
-                Label14_1 As Label:
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =32
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =320
-                    PCFTeamsTheme: =TeamsTheme.Default
-                    Text: |-
-                        ="Roles to assign to people:"
-                    Width: =320
-                    X: =280
-                    Y: =180
-                    ZIndex: =1
 
             Cnt_Settings_MeetingTypes As groupContainer.verticalAutoLayoutContainer:
                 Fill: =RGBA(255, 255, 255, 1)

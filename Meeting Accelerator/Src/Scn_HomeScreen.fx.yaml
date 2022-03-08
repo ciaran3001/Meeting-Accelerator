@@ -11,15 +11,82 @@ Scn_HomeScreen As screen:
         Width: =App.Width
         ZIndex: =5
 
-        Container15 As groupContainer.verticalAutoLayoutContainer:
+        SideBar As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            PaddingTop: =100
             Width: =75
             ZIndex: =1
+
+            Gal_SideNav As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =RGBA(243, 242, 241, 1)
+                DelayItemLoading: =true
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                FocusedBorderThickness: =2
+                Items: =CustomGallerySample
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =70
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =75
+                Width: =Parent.Width
+                ZIndex: =1
+
+                Rectangle8 As rectangle:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    DisabledFill: =RGBA(0,0,0,0)
+                    Fill: =RGBA(0,0,0,0)
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    Height: =Parent.TemplateHeight
+                    HoverFill: =RGBA(0,0,0,0)
+                    OnSelect: =Select(Parent)
+                    PressedFill: =RGBA(0,0,0,0)
+                    TabIndex: =0
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =1
+
+                Image8 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Height: =28
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    OnSelect: =Select(Parent)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Width: =28
+                    X: =23
+                    Y: =15
+                    ZIndex: =2
+
+                Title7 As Label:
+                    Alignment: =Align.Center
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =10.5
+                    FontWeight: =FontWeight.Semibold
+                    Height: =23
+                    OnSelect: =Select(Parent)
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    TabIndex: =-1
+                    Text: =ThisItem.SampleHeading
+                    VerticalAlignment: =VerticalAlign.Top
+                    Width: =43
+                    X: =16
+                    Y: =43
+                    ZIndex: =3
 
         Container2 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =0

@@ -4,6 +4,10 @@ App As appinfo:
         =Set(SelectedMeetingTab, "Today");
         
         ClearCollect(SettingNavigationItems, {label: "Preferences"}, {label : "Personas"}, {label : "Meeting Types"});
+        
+        ClearCollect(SideNavItems, 
+        {Name: "Home", UnselectedIcon : Cog, SelectedIcon }
+        );
 
     Teams As hostControl.TeamsHostControlVariant:
         OnCancel: =false

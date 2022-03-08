@@ -1497,7 +1497,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Gallery3",
-    "ParentIndex": 0,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -2787,7 +2787,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Label14_1",
-    "ParentIndex": 1,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -3144,7 +3144,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "%TemplateBrowseGalleryRectangle1.ID%",
     "Name": "Rectangle6",
-    "ParentIndex": 2,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -4044,7 +4044,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
     "Name": "Title5",
-    "ParentIndex": 1,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
