@@ -2963,6 +2963,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Scn_Analyse.Container17.Container18.Cnt_KPIBar.Container20_3.Button1_44.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_Analyse.Container17.Container18.Cnt_KPIBar.Container20_3.Button1_44.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Scn_Analyse",
+                "type": "Scn_Analyse.Container17.Container18.Cnt_KPIBar.Container20_3.Button1_44"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.undraw_calendar_re_ki49"
                 }
               ],

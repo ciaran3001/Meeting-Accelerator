@@ -326,6 +326,72 @@ Scn_Analyse As screen:
                         Y: =4
                         ZIndex: =3
 
+                Container20_3 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =100
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    Width: =300
+                    ZIndex: =4
+
+                    Button1_44 As button:
+                        BorderColor: =
+                        BorderThickness: =0
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =DisplayMode.View
+                        Fill: =RGBA(105, 229, 246, 1)
+                        FocusedBorderThickness: =0
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =96
+                        HoverBorderColor: =RGBA(238, 140, 29, 1)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
+                        Size: =15
+                        Text: =""
+                        Width: =300
+                        Y: =4
+                        ZIndex: =1
+
+                    Label16_3 As Label:
+                        Alignment: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =13
+                        FontWeight: =FontWeight.Semibold
+                        Height: =32
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        Text: ="Items copied to 'To Do'"
+                        Width: =300
+                        X: =0
+                        Y: =49
+                        ZIndex: =2
+
+                    Label17_3 As Label:
+                        Alignment: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =30
+                        FontWeight: =FontWeight.Bold
+                        Height: =57
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        Text: ="20"
+                        Width: =146
+                        X: =77
+                        Y: =4
+                        ZIndex: =3
+
             Container21 As groupContainer.horizontalAutoLayoutContainer:
                 LayoutGap: =10
                 LayoutMinHeight: =100
