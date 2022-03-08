@@ -326,100 +326,108 @@ Scn_Analyse As screen:
                         Y: =4
                         ZIndex: =3
 
-            Label15_2 As Label:
-                DisplayMode: =DisplayMode.Edit
-                FontSize: =20
-                Height: =46
-                LayoutMinHeight: =32
-                LayoutMinWidth: =320
-                PCFTeamsTheme: =TeamsTheme.Default
-                Text: ="Meeting Quality"
-                Width: =320
-                X: =10
-                Y: =15
-                ZIndex: =3
-
-            Container15 As groupContainer.horizontalAutoLayoutContainer:
+            Container21 As groupContainer.horizontalAutoLayoutContainer:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =4
+                ZIndex: =7
 
-                CompositeLineChart1 As group:
-                    Height: =5
-                    LayoutMinHeight: =5
-                    LayoutMinWidth: =5
-                    Width: =5
-                    X: =40
-                    Y: =40
-                    ZIndex: =1
+                Container15 As groupContainer.horizontalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =2
 
-                    Title2 As label:
-                        Align: =Align.Center
-                        AlignInContainer: =AlignInContainer.Center
-                        Color: =RGBA(37, 36, 35, 1)
-                        DisabledColor: =RGBA(200, 198, 196, 1)
-                        Font: =Font.'Segoe UI'
-                        Height: =25
-                        Text: ="Chart Title"
-                        Width: =400
+                    Label15_1 As Label:
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =20
+                        Height: =46
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =320
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        Text: ="Agenda Completed by Meeting"
+                        Width: =600
+                        X: =10
+                        Y: =15
+                        ZIndex: =1
+
+                    CompositeLineChart1 As group:
+                        Height: =5
+                        LayoutMinHeight: =5
+                        LayoutMinWidth: =5
+                        Width: =5
                         X: =40
                         Y: =40
-                        ZIndex: =2
+                        ZIndex: =1
 
-                    LineChart1 As lineChart:
-                        AlignInContainer: =AlignInContainer.Stretch
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(37, 36, 35, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        Font: =Font.'Segoe UI'
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48, 166, 103, 1), RGBA(94, 193, 108, 1), RGBA(246, 199, 144, 1), RGBA(247, 199, 114, 1), RGBA(247, 180, 91, 1), RGBA(246, 143, 100, 1), RGBA(212, 96, 104, 1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
-                        Items: =LineChartSample
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        Size: =15
-                        X: =40
-                        Y: =70
-                        ZIndex: =3
+                        Title2 As label:
+                            Align: =Align.Center
+                            AlignInContainer: =AlignInContainer.Center
+                            Color: =RGBA(37, 36, 35, 1)
+                            DisabledColor: =RGBA(200, 198, 196, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =25
+                            Text: ="Chart Title"
+                            Width: =400
+                            X: =40
+                            Y: =40
+                            ZIndex: =2
 
-                    Legend1 As legend:
-                        AlignInContainer: =AlignInContainer.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(37, 36, 35, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(200, 198, 196, 1)
-                        DisabledFill: =RGBA(220, 220, 220, 1)
-                        Font: =Font.'Segoe UI'
-                        Height: =80
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        ItemColorSet: =LineChart1.ItemColorSet
-                        Items: =LineChart1.SeriesLabels
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        LineChart1 As lineChart:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(37, 36, 35, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48, 166, 103, 1), RGBA(94, 193, 108, 1), RGBA(246, 199, 144, 1), RGBA(247, 199, 114, 1), RGBA(247, 180, 91, 1), RGBA(246, 143, 100, 1), RGBA(212, 96, 104, 1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+                            Items: =LineChartSample
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            Size: =15
+                            X: =40
+                            Y: =70
+                            ZIndex: =3
+
+                        Legend1 As legend:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(37, 36, 35, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(200, 198, 196, 1)
+                            DisabledFill: =RGBA(220, 220, 220, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =80
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            ItemColorSet: =LineChart1.ItemColorSet
+                            Items: =LineChart1.SeriesLabels
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            Width: =320
+                            X: =80
+                            Y: =480
+                            ZIndex: =4
+
+                Container19 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0.4
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =3
+
+                    Label15_2 As Label:
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =20
+                        Height: =46
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =320
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        Text: ="Worked with you"
                         Width: =320
-                        X: =80
-                        Y: =480
-                        ZIndex: =4
-
-            Label15_1 As Label:
-                DisplayMode: =DisplayMode.Edit
-                FontSize: =20
-                Height: =46
-                LayoutMinHeight: =32
-                LayoutMinWidth: =320
-                PCFTeamsTheme: =TeamsTheme.Default
-                Text: ="Worked with you"
-                Width: =320
-                X: =10
-                Y: =15
-                ZIndex: =5
-
-            Container19 As groupContainer.horizontalAutoLayoutContainer:
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                ZIndex: =6
+                        X: =10
+                        Y: =15
+                        ZIndex: =1
 
