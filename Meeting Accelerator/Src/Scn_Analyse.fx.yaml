@@ -94,6 +94,7 @@ Scn_Analyse As screen:
 
         Container18 As groupContainer.verticalAutoLayoutContainer:
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =5
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -125,7 +126,7 @@ Scn_Analyse As screen:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =3
+                ZIndex: =2
 
                 Container20 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.Center
@@ -325,15 +326,41 @@ Scn_Analyse As screen:
                         Y: =4
                         ZIndex: =3
 
+            Label15_2 As Label:
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =20
+                Height: =46
+                LayoutMinHeight: =32
+                LayoutMinWidth: =320
+                PCFTeamsTheme: =TeamsTheme.Default
+                Text: ="Meeting Quality"
+                Width: =320
+                X: =10
+                Y: =15
+                ZIndex: =3
+
             Container15 As groupContainer.horizontalAutoLayoutContainer:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =4
 
+            Label15_1 As Label:
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =20
+                Height: =46
+                LayoutMinHeight: =32
+                LayoutMinWidth: =320
+                PCFTeamsTheme: =TeamsTheme.Default
+                Text: ="Worked with you"
+                Width: =320
+                X: =10
+                Y: =15
+                ZIndex: =5
+
             Container19 As groupContainer.horizontalAutoLayoutContainer:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                ZIndex: =5
+                ZIndex: =6
 
