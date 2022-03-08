@@ -276,6 +276,7 @@
                     ZIndex: =1
 
                 "Inpt_ToDoList As 'Combo box'.pcfdataset":
+                    DefaultSelectedItems: =LookUp('MicrosoftTo-Do(Business)'.GetAllTodoListsV2(), id = PersonalConfigurationRecord.'To Do List ID')
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Items: ='MicrosoftTo-Do(Business)'.GetAllTodoListsV2()
