@@ -110,13 +110,29 @@ Scn_Analyse As screen:
                 LayoutMinHeight: =32
                 LayoutMinWidth: =320
                 PCFTeamsTheme: =TeamsTheme.Default
-                Text: =AssociatedMeetingRecord.Subject
+                Text: |-
+                    =
+                    "Your Meetings Overview"
                 Width: =320
                 X: =10
                 Y: =15
                 ZIndex: =1
 
-            PowerBI2 As powerbi:
-                BorderColor: =RGBA(243, 242, 241, 1)
-                ZIndex: =2
+            Container16 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+            Container15 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =4
+
+            Container19 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =5
 
