@@ -323,8 +323,8 @@
                     LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
-                    TemplateSize: =250
-                    WrapCount: =Cnt_Settings_MeetingTypes.Width / 248
+                    TemplateSize: =270
+                    WrapCount: =RoundDown(Cnt_Settings_MeetingTypes.Width / 248, 0)
                     ZIndex: =1
 
                     Button1_45 As button:
