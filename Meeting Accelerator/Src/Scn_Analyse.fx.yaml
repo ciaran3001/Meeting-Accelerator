@@ -1,4 +1,5 @@
 Scn_Analyse As screen:
+    Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
 
     Container17 As groupContainer.horizontalAutoLayoutContainer:
