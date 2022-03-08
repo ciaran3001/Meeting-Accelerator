@@ -3793,7 +3793,7 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Data",
@@ -3921,7 +3921,7 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Data",
@@ -4177,7 +4177,7 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Data",
@@ -4305,7 +4305,7 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Data",
@@ -4568,9 +4568,30 @@
       "ItemColorSet",
       "GridStyle",
       "DisabledBorderColor",
-      "PressedBorderColor",
-      "HoverBorderColor",
-      "Color",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PressedBorderColor",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "HoverBorderColor",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Color",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "BorderColor",
       "BorderStyle",
       "X",
@@ -4578,7 +4599,14 @@
       "Font",
       "Width",
       "Height",
-      "DisplayMode",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "DisplayMode",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "ZIndex",
       "Size",
       "BorderThickness"
@@ -4650,7 +4678,7 @@
       {
         "Category": "Design",
         "PropertyName": "ItemColorSet",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",

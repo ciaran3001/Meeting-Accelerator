@@ -113,7 +113,7 @@ Scn_Analyse As screen:
                 PCFTeamsTheme: =TeamsTheme.Default
                 Text: |-
                     =
-                    "Your Meetings Overview"
+                    "Your Months Overview"
                 Width: =320
                 X: =10
                 Y: =15
@@ -240,7 +240,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =32
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="Meetings Tracked this month"
+                        Text: ="People worked with"
                         Width: =300
                         X: =0
                         Y: =49
@@ -254,7 +254,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =57
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="6"
+                        Text: ="15"
                         Width: =146
                         X: =77
                         Y: =4
@@ -306,7 +306,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =32
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="Meetings Tracked this month"
+                        Text: ="Outcomes Generated"
                         Width: =300
                         X: =0
                         Y: =49
@@ -320,7 +320,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =57
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="6"
+                        Text: ="56"
                         Width: =146
                         X: =77
                         Y: =4
@@ -379,13 +379,15 @@ Scn_Analyse As screen:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             BorderStyle: =BorderStyle.None
                             BorderThickness: =2
-                            Color: =RGBA(37, 36, 35, 1)
+                            Color: =RGBA(128, 128, 128, 1)
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisplayMode: =DisplayMode.View
                             Font: =Font.'Segoe UI'
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48, 166, 103, 1), RGBA(94, 193, 108, 1), RGBA(246, 199, 144, 1), RGBA(247, 199, 114, 1), RGBA(247, 180, 91, 1), RGBA(246, 143, 100, 1), RGBA(212, 96, 104, 1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+                            HoverBorderColor: =RGBA(99, 139, 44, 1)
+                            ItemColorSet: |-
+                                =[ColorValue("#EE8C1D")]
                             Items: =LineChartSample
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedBorderColor: =RGBA(255, 191, 0, 1)
                             Size: =15
                             X: =40
                             Y: =70
