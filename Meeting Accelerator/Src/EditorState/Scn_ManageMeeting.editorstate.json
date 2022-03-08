@@ -21379,7 +21379,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "%RightSideContainer.ID%",
     "Name": "RightSideContainer1",
-    "ParentIndex": 1,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -21804,7 +21804,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "SideBar_3",
-    "ParentIndex": 2,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -22029,7 +22029,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "%SidebarContainer.ID%",
     "Name": "SidebarContainer1",
-    "ParentIndex": 0,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

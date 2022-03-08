@@ -395,7 +395,7 @@ Scn_HomeScreen As screen:
                 LoadingSpinner: =LoadingSpinner.Controls
                 LoadingSpinnerColor: |-
                     =ColorValue("#EE8C1D")
-                OnSelect: |-
+                OnSelect: |
                     =Set(SelectedMeeting, ThisItem);
                     
                     
@@ -747,6 +747,12 @@ Scn_HomeScreen As screen:
                             );
                         
                                 //Process Attendee's
+                        
+                                /*
+                                AttendancesForThisMeeting - The attendance / people records that are displayed on the people Manager. Roles are associated to these records. 
+                                _CurrentMeetingAttendees  - This is a collection used to sort the raw attendee's into, a single Table. 
+                                _RawOptionalAttendees     - This is the collection of people taken from the meeting's attendee semi-colon deliminated lists. 
+                                */
                                 Clear(_CurrentMeetingAttendees);
                                 ClearCollect(_RawRequiredAttendees, Split(SelectedMeeting.requiredAttendees, ";"));
                                 ClearCollect(_RawOptionalAttendees, Split(SelectedMeeting.optionalAttendees, ";"));
@@ -766,13 +772,15 @@ Scn_HomeScreen As screen:
                                 );
                         
                             ForAll(_CurrentMeetingAttendees,
-                                Patch(Attendances, 
-                                Defaults(Attendances),
-                                {
-                                    'Attendee Email': ThisRecord.email,
-                                    'Optional Attendee': ThisRecord.Optional,
-                                     Meeting: AssociatedMeetingRecord
-                                }
+                                Collect(AttendancesForThisMeeting, 
+                                    Patch(Attendances, 
+                                    Defaults(Attendances),
+                                    {
+                                        'Attendee Email': ThisRecord.email,
+                                        'Optional Attendee': ThisRecord.Optional,
+                                        Meeting: AssociatedMeetingRecord
+                                    }
+                                    );
                                 );
                             );
                         
