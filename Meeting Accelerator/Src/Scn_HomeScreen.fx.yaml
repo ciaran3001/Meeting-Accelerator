@@ -11,6 +11,16 @@ Scn_HomeScreen As screen:
         Width: =App.Width
         ZIndex: =5
 
+        Container15 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =50
+            ZIndex: =1
+
         Container2 As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =0
             Height: =App.Height
@@ -24,7 +34,7 @@ Scn_HomeScreen As screen:
             PaddingRight: =30
             PaddingTop: =40
             Width: =450
-            ZIndex: =1
+            ZIndex: =2
 
             Cnt_Title As groupContainer.manualLayoutContainer:
                 Fill: =RGBA(255, 255, 255, 1)
@@ -503,7 +513,7 @@ Scn_HomeScreen As screen:
             PaddingLeft: =30
             PaddingRight: =30
             Width: =App.Width
-            ZIndex: =2
+            ZIndex: =3
 
             Container4 As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
