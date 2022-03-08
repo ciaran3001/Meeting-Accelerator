@@ -302,7 +302,7 @@
     "Value1": 116
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/08/2022 20:50:01",
+  "HeaderLastSavedDateTimeUTC": "03/08/2022 20:53:45",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -373,6 +373,7 @@
     "Agenda Items\\ciarank_ciarank_agendaitem_addressed": 5,
     "Agenda Items\\default.cds_ciarank_agendaitem_views": 43,
     "AgendaItemsForThisMeeting": 66,
+    "AttendanceRecordsForThisMeeting": 78,
     "Attendances": 65,
     "Attendances\\ciarank_attendance_statecode": 40,
     "Attendances\\ciarank_attendance_statuscode": 41,
