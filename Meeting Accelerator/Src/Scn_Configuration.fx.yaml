@@ -490,7 +490,7 @@
                         Visible: =ThisItem.DummyRecord
                         Width: =112
                         X: =65
-                        Y: =98
+                        Y: =68
                         ZIndex: =7
 
                     Title5_1 As Label:
@@ -508,7 +508,7 @@
                         Visible: =ThisItem.DummyRecord
                         Width: =134
                         X: =54
-                        Y: =198
+                        Y: =168
                         ZIndex: =8
 
                     Gallery5 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
