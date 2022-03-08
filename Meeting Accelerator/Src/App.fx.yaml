@@ -6,10 +6,13 @@ App As appinfo:
         ClearCollect(SettingNavigationItems, {label: "Preferences"}, {label : "Personas"}, {label : "Meeting Types"});
         
         ClearCollect(SideNavItems, 
-        {Name: "Home", UnselectedIcon : Home, SelectedIcon : 'Home-white' },
-        {Name: "Analyse", UnselectedIcon : Analyse, SelectedIcon : 'Analyse-White' },
-        {Name: "Settings", UnselectedIcon : Cog, SelectedIcon : 'Cog-White' }
+        {Name: "Home", UnselectedIcon : Home, SelectedIcon : 'Home-white', Screen : Scn_HomeScreen },
+        {Name: "Analyse", UnselectedIcon : Analyse, SelectedIcon : 'Analyse-White', Screen : Scn_Analyse },
+        {Name: "Settings", UnselectedIcon : Cog, SelectedIcon : 'Cog-White', Screen: Scn_Configuration }
         );
+        
+        
+        Set(SelectedSideNavItem, First(SideNavItems));
 
     Teams As hostControl.TeamsHostControlVariant:
         OnCancel: =false

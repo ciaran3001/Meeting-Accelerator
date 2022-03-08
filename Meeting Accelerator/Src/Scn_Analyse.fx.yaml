@@ -1,4 +1,4 @@
-Screen1 As screen:
+Scn_Analyse As screen:
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
 
     Gallery1 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
