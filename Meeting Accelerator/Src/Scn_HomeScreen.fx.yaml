@@ -745,6 +745,31 @@ Scn_HomeScreen As screen:
                                 });
                         
                             );
+                        
+                                //Process Attendee's
+                                Clear(CurrentMeetingAttendees);
+                                ClearCollect(_RawRequiredAttendees, Split(SelectedMeeting.requiredAttendees, ";"));
+                                ClearCollect(_RawOptionalAttendees, Split(SelectedMeeting.optionalAttendees, ";"));
+                        
+                                Collect(CurrentMeetingAttendees, { email : SelectedMeeting.organizer, organizer : true, role: Blank() } );
+                        
+                                ForAll(_RawRequiredAttendees,
+                                    If(!IsBlank(ThisRecord.Result),
+                                        Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank() } );
+                                    );
+                                );
+                        
+                                ForAll(_RawOptionalAttendees,
+                                    If(!IsBlank(ThisRecord.Result),
+                                        Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank() } );
+                                    );
+                                );
+                        
+                            ForAll(CurrentMeetingAttendees,
+                                Patch(At
+                            );
+                        
+                        
                         ,
                             Navigate(Scn_ManageMeeting, ScreenTransition.Fade);
                         );
