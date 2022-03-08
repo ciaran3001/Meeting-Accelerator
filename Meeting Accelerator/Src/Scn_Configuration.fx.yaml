@@ -503,7 +503,7 @@
                         OnSelect: =Select(Parent)
                         PCFTeamsTheme: =TeamsTheme.Default
                         TabIndex: =-1
-                        Text: ="Add Meeting Type"
+                        Text: =ThisItem.Name
                         VerticalAlignment: =VerticalAlign.Top
                         Visible: =ThisItem.DummyRecord
                         Width: =134
