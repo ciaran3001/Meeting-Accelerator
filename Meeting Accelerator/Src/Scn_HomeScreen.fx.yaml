@@ -751,17 +751,17 @@ Scn_HomeScreen As screen:
                                 ClearCollect(_RawRequiredAttendees, Split(SelectedMeeting.requiredAttendees, ";"));
                                 ClearCollect(_RawOptionalAttendees, Split(SelectedMeeting.optionalAttendees, ";"));
                         
-                                Collect(CurrentMeetingAttendees, { email : SelectedMeeting.organizer, organizer : true, role: Blank() } );
+                                Collect(CurrentMeetingAttendees, { email : SelectedMeeting.organizer, organizer : true, role: Blank(), Optional : false } );
                         
                                 ForAll(_RawRequiredAttendees,
                                     If(!IsBlank(ThisRecord.Result),
-                                        Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank() } );
+                                        Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank(), Optional : false } );
                                     );
                                 );
                         
                                 ForAll(_RawOptionalAttendees,
                                     If(!IsBlank(ThisRecord.Result),
-                                        Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank() } );
+                                        Collect(CurrentMeetingAttendees, { email : ThisRecord.Result, organizer : false, role: Blank(), Optional : true } );
                                     );
                                 );
                         
@@ -770,8 +770,9 @@ Scn_HomeScreen As screen:
                                     Patch(Attendances, Defaults(Attendances),
                         
                                     {
-                                        Meeting: AssociatedMeetingRecord,
-                                        'Attendee Email': ThisRecord.email
+                                         Meeting: AssociatedMeetingRecord,
+                                        'Attendee Email': ThisRecord.Email,
+                                        'Optional Attendee' : ThisRecord.Optional
                                     });
                                 );
                             );

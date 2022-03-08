@@ -15,9 +15,11 @@
       "ciarank_attendance_PrincipalObjectAttributeAccesses": "Field Sharing",
       "ciarank_attendance_ProcessSession": "Process Sessions",
       "ciarank_attendanceid": "Attendance",
+      "ciarank_attended": "Attended",
       "ciarank_Attendee": "Attendee",
       "ciarank_Meeting": "Meeting",
       "ciarank_name": "Attendee Email",
+      "ciarank_optionalattendee": "Optional Attendee",
       "ciarank_role": "Role",
       "createdby": "Created By",
       "createdon": "Created On",
@@ -52,6 +54,26 @@
       "a58b77ad-1bfc-4c59-acc7-9230ce5dc936": "Attendance Associated View",
       "dbdc9aeb-c114-4ee0-a73c-405214101ec1": "Attendance Lookup View"
     }
+  },
+  {
+    "DisplayName": "Optional Attendee (Attendances)",
+    "Name": "ciarank_attendance_ciarank_optionalattendee",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ciarank_optionalattendee",
+        "OptionSetReferenceEntityName": "Attendances"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ciarank_optionalattendee",
+    "RelatedEntityName": "Attendances",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Attendances)",
@@ -90,6 +112,26 @@
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Attendances",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Attended (Attendances)",
+    "Name": "ciarank_ciarank_attendance_attended",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ciarank_attended",
+        "OptionSetReferenceEntityName": "Attendances"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ciarank_attended",
     "RelatedEntityName": "Attendances",
     "Type": "OptionSetInfo"
   },
