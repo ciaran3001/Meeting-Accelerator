@@ -255,7 +255,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =57
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="60"
+                        Text: =AverageMeetingDurationInMins
                         Width: =186
                         X: =57
                         Y: =4
@@ -652,6 +652,13 @@ Scn_Analyse As screen:
                 );
             );
             
+            
+            
+            ForAll(MeetingsIAttended,
+                Collect(Durations, { duration : DateDiff(ThisRecord.'Start Time', ThisRecord.'End Time',Minutes) } );
+            );
+            
+            UpdateContext({AverageMeetingDurationInMins : Average(Durations, duration)});
             UpdateContext({LoadingAnalytics : false});
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: =false

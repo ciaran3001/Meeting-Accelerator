@@ -314,7 +314,7 @@
     "Value1": 116
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/08/2022 21:54:23",
+  "HeaderLastSavedDateTimeUTC": "03/08/2022 21:57:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -403,6 +403,7 @@
     "Attendees\\default.cds_ciarank_attendee_views": 52,
     "CurrentMeetingAttendees": 69,
     "CustomGallerySample": 54,
+    "Durations": 89,
     "ExistingOutComesForThisMeeting": 70,
     "LegendSample": 55,
     "LineChartSample": 65,
