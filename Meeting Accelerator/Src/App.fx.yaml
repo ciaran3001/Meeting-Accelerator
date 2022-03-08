@@ -6,7 +6,9 @@ App As appinfo:
         ClearCollect(SettingNavigationItems, {label: "Preferences"}, {label : "Personas"}, {label : "Meeting Types"});
         
         ClearCollect(SideNavItems, 
-        {Name: "Home", UnselectedIcon : Cog, SelectedIcon }
+        {Name: "Home", UnselectedIcon : Home, SelectedIcon : 'Home-white' },
+        {Name: "Analyse", UnselectedIcon : Analyse, SelectedIcon : 'Analyse-White' },
+        {Name: "Settings", UnselectedIcon : Cog, SelectedIcon : 'Cog-White' }
         );
 
     Teams As hostControl.TeamsHostControlVariant:

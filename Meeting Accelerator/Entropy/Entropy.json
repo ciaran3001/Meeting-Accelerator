@@ -253,14 +253,19 @@
     "Value1": 229
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/08/2022 18:53:58",
+  "HeaderLastSavedDateTimeUTC": "03/08/2022 19:01:29",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
+    "Analyse": "c360a0a2-edee-4b8a-a0a1-33701280f6a4.svg",
+    "Analyse-White": "630e8d6f-daa7-4654-9625-79d2b6d3b2c6.svg",
     "Cog": "0001.svg",
+    "Cog-White": "e8497fcd-6155-44de-a29b-a4fc6dd91212.svg",
     "Decision": "0002.svg",
     "Escalation": "0003.svg",
     "Follow-up": "0004.svg",
+    "Home": "004f2e8a-15bc-46a2-9df2-4c28b03b04c7.svg",
+    "Home-white": "dc6ca3ec-241c-4d69-8777-f4c3ca69a231.svg",
     "LeaderIcon": "0005.svg",
     "Meeting Icon": "0006.svg",
     "Statement": "0007.svg",
@@ -275,10 +280,15 @@
     "undraw_subscriptions_re_k7jj": "0aeab08f-01c8-4149-bb9e-6e9690c075ed.svg"
   },
   "LocalResourceRootPaths": {
+    "Analyse": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/c9f0b249-587b-462f-9d10-c4daf4814d53.svg?sv=2017-04-17&sr=b&sig=exHdBMUSMAJ0ivbfe5LdZwcMOdtqyv5Bdr2ofSzo0a4%3D&spr=https&se=2022-03-09T19%3A12%3A56Z&sp=r",
+    "Analyse-White": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/8537fc9f-67db-4f78-819a-14c824563240.svg?sv=2017-04-17&sr=b&sig=cp8tL3UWN6GlaqiuLSZhcaH4%2FJc4MlmwGVrPkBvkGv4%3D&spr=https&se=2022-03-09T19%3A12%3A56Z&sp=r",
     "Cog": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/Assets0Images00001.svg?sv=2017-04-17&sr=b&sig=08V3MROlwdSq4ejuIMnhI9VZFhIPzVG0gRNMETKwrrU%3D&spr=https&se=2022-03-09T18%3A38%3A51Z&sp=r",
+    "Cog-White": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/bf2e72bf-e924-400c-8cf2-cead38919935.svg?sv=2017-04-17&sr=b&sig=zarkUOd5VTecr7uEcdRehhlweE%2FT8lz1I6jma5ps0Xw%3D&spr=https&se=2022-03-09T19%3A12%3A57Z&sp=r",
     "Decision": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/Assets0Images00002.svg?sv=2017-04-17&sr=b&sig=69fI%2FoPropgmQ0AJF9mTKHun40GAcEll6LfRltieSCU%3D&spr=https&se=2022-03-09T18%3A38%3A51Z&sp=r",
     "Escalation": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/Assets0Images00003.svg?sv=2017-04-17&sr=b&sig=9CHe65iWQEbrlsfy4ey4467gI3CnOHjEFtXkMfAla7s%3D&spr=https&se=2022-03-09T18%3A38%3A51Z&sp=r",
     "Follow-up": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/Assets0Images00004.svg?sv=2017-04-17&sr=b&sig=ghn2%2BxiohQE3NmC8MWrszJs82et7%2FfFv5dZfZlmq3gg%3D&spr=https&se=2022-03-09T18%3A38%3A51Z&sp=r",
+    "Home": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/f115148d-1a3b-444c-8c06-52b0b9712aa1.svg?sv=2017-04-17&sr=b&sig=P6RQh3lWYOli7OFOZKM5qBMOQ88Q%2B1p4pZzIebII624%3D&spr=https&se=2022-03-09T19%3A12%3A57Z&sp=r",
+    "Home-white": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/c559fa83-45d0-4857-a03e-0434d555e2bd.svg?sv=2017-04-17&sr=b&sig=aqbMOEgkEphg4rOdrX7aVQ%2FLacJhQN84%2FckrzEmhkcg%3D&spr=https&se=2022-03-09T19%3A12%3A56Z&sp=r",
     "LeaderIcon": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/Assets0Images00005.svg?sv=2017-04-17&sr=b&sig=uCRwSBIYtdqSf86dt%2BMWFxi7Yy39bEvX%2BjDsqzImfN0%3D&spr=https&se=2022-03-09T18%3A38%3A51Z&sp=r",
     "Meeting Icon": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/Assets0Images00006.svg?sv=2017-04-17&sr=b&sig=tX%2FUl6Dmo1X%2FlpmOtzgj%2F4U7L%2BR%2Bel9Bha3qZB8NOLA%3D&spr=https&se=2022-03-09T18%3A38%3A51Z&sp=r",
     "Statement": "https://docserverpwaprodneu.blob.core.windows.net/cf694075-20fd-44df-9918-54b578b18860-1/resource/Assets0Images00007.svg?sv=2017-04-17&sr=b&sig=YdajFMdVdpVo1bRiB6Jy6ked1lleSCipTzosEyM3iw0%3D&spr=https&se=2022-03-09T18%3A38%3A51Z&sp=r",
@@ -342,6 +352,7 @@
     "Personal Configurations\\default.cds_ciarank_personalconfiguration_views": 44,
     "PieChartSample": 47,
     "SettingNavigationItems": 64,
+    "SideNavItems": 65,
     "Users": 54,
     "Users\\default.cds_systemuser_views": 43,
     "Users\\systemuser_accessmode": 34,
@@ -671,10 +682,15 @@
     "Value1": 197
   },
   "ResourcesJsonIndices": {
+    "Image-Analyse": 18,
+    "Image-Analyse-White": 17,
     "Image-Cog": 1,
+    "Image-Cog-White": 21,
     "Image-Decision": 2,
     "Image-Escalation": 3,
     "Image-Follow-up": 4,
+    "Image-Home": 20,
+    "Image-Home-white": 19,
     "Image-LeaderIcon": 5,
     "Image-Meeting Icon": 6,
     "Image-SampleImage": 0,
@@ -717,6 +733,6 @@
       "timer": 1
     },
     "DeserializationLoadTime": 4.3615458,
-    "ErrorCount": 6
+    "ErrorCount": 3
   }
 }
