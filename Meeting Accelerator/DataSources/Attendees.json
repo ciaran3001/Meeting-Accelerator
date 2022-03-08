@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "ciarank_attendee",
+    "MaxGetRowsCount": 500,
     "Name": "Attendees",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
