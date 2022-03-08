@@ -5360,7 +5360,7 @@
       {
         "Category": "Data",
         "PropertyName": "Image",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",
