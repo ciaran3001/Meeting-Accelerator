@@ -476,7 +476,7 @@
                         BorderThickness: =2
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
-                        Height: =139
+                        Height: =104
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: =AddItem
@@ -488,10 +488,28 @@
                         RadiusTopLeft: =3
                         RadiusTopRight: =3
                         Visible: =ThisItem.DummyRecord
-                        Width: =169
-                        X: =37
-                        Y: =67
+                        Width: =112
+                        X: =65
+                        Y: =98
                         ZIndex: =7
+
+                    Title5_1 As Label:
+                        Alignment: =Align.Center
+                        Color: =RGBA(238, 140, 29, 1)
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =10.5
+                        FontWeight: =FontWeight.Bold
+                        Height: =47
+                        OnSelect: =Select(Parent)
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        TabIndex: =-1
+                        Text: ="Add Meeting Type"
+                        VerticalAlignment: =VerticalAlign.Top
+                        Visible: =ThisItem.DummyRecord
+                        Width: =134
+                        X: =54
+                        Y: =198
+                        ZIndex: =8
 
     Btn_RetreiveConfigurationRecord As Button:
         DisplayMode: =DisplayMode.Edit
