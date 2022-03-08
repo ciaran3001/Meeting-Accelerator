@@ -372,7 +372,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =32
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="Items copied to 'To Do'"
+                        Text: ="Outcomes copied to 'To Do'"
                         Width: =300
                         X: =0
                         Y: =49
