@@ -1289,7 +1289,14 @@
     "ControlPropertyState": [
       "BorderColor",
       "BorderStyle",
-      "Fill",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Fill",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "X",
       "Y",
       "Width",
@@ -1311,7 +1318,31 @@
       "LayoutOverflowX",
       "LayoutOverflowY",
       "LayoutWrap",
-      "ZIndex"
+      "ZIndex",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingLeft",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingRight",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingTop",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
     "DynamicProperties": [
       {
@@ -1452,6 +1483,21 @@
       {
         "Category": "Design",
         "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingLeft",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingRight",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingTop",
         "RuleProviderType": "Unknown"
       }
     ],
@@ -1832,7 +1878,14 @@
     "ControlPropertyState": [
       "BorderColor",
       "BorderStyle",
-      "Fill",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Fill",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "X",
       "Y",
       "Width",
@@ -1847,7 +1900,31 @@
       "LayoutOverflowX",
       "LayoutOverflowY",
       "LayoutWrap",
-      "ZIndex"
+      "ZIndex",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingTop",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingLeft",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingRight",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
     "DynamicProperties": [
       {
@@ -1995,6 +2072,21 @@
       {
         "Category": "Design",
         "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingTop",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingLeft",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingRight",
         "RuleProviderType": "Unknown"
       }
     ],
@@ -2591,7 +2683,14 @@
       },
       "LayoutAlignItems",
       "LayoutJustifyContent",
-      "LayoutGap",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "LayoutGap",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "LayoutOverflowX",
       "LayoutOverflowY",
       "LayoutWrap",

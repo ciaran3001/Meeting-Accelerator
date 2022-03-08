@@ -94,7 +94,7 @@ Scn_Analyse As screen:
 
         Container18 As groupContainer.verticalAutoLayoutContainer:
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =5
+            LayoutGap: =10
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -327,16 +327,21 @@ Scn_Analyse As screen:
                         ZIndex: =3
 
             Container21 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutGap: =10
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =7
 
                 Container15 As groupContainer.horizontalAutoLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    PaddingTop: =10
                     ZIndex: =2
 
                     Label15_1 As Label:
@@ -414,10 +419,14 @@ Scn_Analyse As screen:
                             ZIndex: =4
 
                 Container19 As groupContainer.horizontalAutoLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0.4
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    PaddingTop: =10
                     ZIndex: =3
 
                     Label15_2 As Label:
