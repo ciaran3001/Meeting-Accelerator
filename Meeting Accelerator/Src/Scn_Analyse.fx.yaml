@@ -166,9 +166,13 @@ Scn_Analyse As screen:
 
                     Label16 As Label:
                         Alignment: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =DisplayMode.Edit
+                        FontSize: =13
+                        FontWeight: =FontWeight.Semibold
                         Height: =32
                         PCFTeamsTheme: =TeamsTheme.Default
+                        Text: ="Meetings Tracked this month"
                         Width: =300
                         X: =0
                         Y: =49
