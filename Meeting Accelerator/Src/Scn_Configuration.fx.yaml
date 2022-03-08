@@ -507,8 +507,8 @@
                         VerticalAlignment: =VerticalAlign.Top
                         Visible: =ThisItem.DummyRecord
                         Width: =134
-                        X: =48
-                        Y: =172
+                        X: =54
+                        Y: =186
                         ZIndex: =8
 
                     Gallery5 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
