@@ -346,6 +346,20 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
+  "powerbi": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powerBI",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "powerbi",
+    "OverridableProperties": {},
+    "Version": "2.4.0"
+  },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,

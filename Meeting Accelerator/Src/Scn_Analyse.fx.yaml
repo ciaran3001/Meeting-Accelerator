@@ -97,6 +97,10 @@ Scn_Analyse As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =20
+            PaddingLeft: =20
+            PaddingRight: =20
+            PaddingTop: =20
             ZIndex: =2
 
             Label15 As Label:
@@ -112,48 +116,7 @@ Scn_Analyse As screen:
                 Y: =15
                 ZIndex: =1
 
-            Gallery1 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+            PowerBI2 As powerbi:
                 BorderColor: =RGBA(243, 242, 241, 1)
-                DelayItemLoading: =true
-                FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                FocusedBorderThickness: =2
-                Height: =563
-                Items: =AgendaItemsForThisMeeting
-                Layout: =Layout.Vertical
-                LayoutMinHeight: =287
-                LayoutMinWidth: =320
-                LoadingSpinner: =LoadingSpinner.Data
-                TemplatePadding: =0
-                TemplateSize: =48
-                X: =10
-                Y: =121
                 ZIndex: =2
-
-                Rectangle5 As rectangle:
-                    BorderColor: =RGBA(243, 242, 241, 1)
-                    DisabledFill: =RGBA(0,0,0,0)
-                    Fill: =RGBA(0,0,0,0)
-                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                    Height: =48
-                    HoverFill: =RGBA(0,0,0,0)
-                    OnSelect: =Select(Parent)
-                    PressedFill: =RGBA(0,0,0,0)
-                    TabIndex: =0
-                    Width: =Parent.TemplateWidth
-                    ZIndex: =1
-
-                Title4 As Label:
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =10.5
-                    FontWeight: =FontWeight.Semibold
-                    Height: =24
-                    OnSelect: =Select(Parent)
-                    PCFTeamsTheme: =TeamsTheme.Default
-                    TabIndex: =-1
-                    Text: =ThisItem.Name
-                    VerticalAlignment: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth - Self.X - 8
-                    X: = 12
-                    Y: =((Parent.TemplateHeight - 36) / 2) - 4
-                    ZIndex: =3
 
