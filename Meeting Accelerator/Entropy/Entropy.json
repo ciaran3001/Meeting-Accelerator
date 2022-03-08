@@ -150,6 +150,7 @@
     "Image1_2": 241,
     "Image10": 328,
     "Image11": 334,
+    "Image12": 343,
     "Image2": 205,
     "Image2_1": 179,
     "Image3": 224,
@@ -307,10 +308,11 @@
     "Value1": 116
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/08/2022 21:17:24",
+  "HeaderLastSavedDateTimeUTC": "03/08/2022 21:20:14",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
+    "1476": "08fe71af-3dee-4e71-be68-e2c3c9a421cb.gif",
     "AddItem": "21c39aac-1deb-472f-97bf-0837f1e5eec7.svg",
     "Analyse": "c360a0a2-edee-4b8a-a0a1-33701280f6a4.svg",
     "Analyse-White": "630e8d6f-daa7-4654-9625-79d2b6d3b2c6.svg",
@@ -337,6 +339,7 @@
     "undraw_subscriptions_re_k7jj": "0aeab08f-01c8-4149-bb9e-6e9690c075ed.svg"
   },
   "LocalResourceRootPaths": {
+    "1476": "https://docserverpwaprodneu.blob.core.windows.net/de041ea1-1f2d-4c21-bd7c-1b0e427b3782-1/resource/8d4654cd-2104-493b-9dbd-cf788776900d.gif?sv=2017-04-17&sr=b&sig=gXIxrhdVZPfM5WSyGpgdpRSwUx8XmEmHcoEeAN7HPq8%3D&spr=https&se=2022-03-09T21%3A35%3A03Z&sp=r",
     "AddItem": "https://docserverpwaprodneu.blob.core.windows.net/de041ea1-1f2d-4c21-bd7c-1b0e427b3782-1/resource/32fc1a63-f6cc-46ad-a97e-acb260e1ae57.svg?sv=2017-04-17&sr=b&sig=LRJp%2FiOiC4WsOVkaB%2BvrV0nvwvA1zEABopJqVtqfKP0%3D&spr=https&se=2022-03-09T20%3A47%3A39Z&sp=r",
     "Analyse": "https://docserverpwaprodneu.blob.core.windows.net/de041ea1-1f2d-4c21-bd7c-1b0e427b3782-1/resource/Assets0Images0c360a0a2-edee-4b8a-a0a1-33701280f6a4.svg?sv=2017-04-17&sr=b&sig=geh7aCtjPhjgfPdBMhG%2F2q5zaNyzsVMt5JS3BfVic6c%3D&spr=https&se=2022-03-09T19%3A57%3A20Z&sp=r",
     "Analyse-White": "https://docserverpwaprodneu.blob.core.windows.net/de041ea1-1f2d-4c21-bd7c-1b0e427b3782-1/resource/Assets0Images0630e8d6f-daa7-4654-9625-79d2b6d3b2c6.svg?sv=2017-04-17&sr=b&sig=mq5NcV%2FQI35WhdYsQVVGmF8vLczIxXpX5lt90R3HpYE%3D&spr=https&se=2022-03-09T19%3A57%3A20Z&sp=r",
@@ -662,6 +665,7 @@
     "Image1_2": 225,
     "Image10": 253,
     "Image11": 251,
+    "Image12": 0,
     "Image2": 59,
     "Image2_1": 34,
     "Image3": 78,
@@ -819,6 +823,7 @@
     "Value1": 203
   },
   "ResourcesJsonIndices": {
+    "Image-1476": 25,
     "Image-AddItem": 24,
     "Image-Analyse": 18,
     "Image-Analyse-White": 17,
