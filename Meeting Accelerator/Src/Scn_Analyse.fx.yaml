@@ -625,8 +625,9 @@ Scn_Analyse As screen:
         ZIndex: =5
 
     Cnt_LoadingAnalytics As groupContainer.manualLayoutContainer:
-        Height: =300
+        Height: =600
         Visible: =LoadingAnalytics
+        Width: =800
         X: =App.Width /2 - Cnt_LoadingAnalytics.Width/2
         Y: =App.Height /2 - Cnt_LoadingAnalytics.Height/2
         ZIndex: =6
@@ -642,7 +643,7 @@ Scn_Analyse As screen:
             FocusedBorderThickness: =0
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =300
+            Height: =600
             HoverBorderColor: =RGBA(238, 140, 29, 1)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: |-
@@ -656,7 +657,7 @@ Scn_Analyse As screen:
             RadiusTopRight: =15
             Size: =15
             Text: =""
-            Width: =500
+            Width: =800
             ZIndex: =1
 
         Label1_1 As Label:
@@ -664,13 +665,13 @@ Scn_Analyse As screen:
             Color: =RGBA(238, 140, 29, 1)
             DisplayMode: =DisplayMode.Edit
             FontSize: =15
-            FontWeight: =FontWeight.Semibold
+            FontWeight: =FontWeight.Bold
             Height: =42
             PCFTeamsTheme: =TeamsTheme.Default
             Text: ="Analysing your data... hold tight!"
             Width: =320
-            X: =90
-            Y: =167
+            X: =240
+            Y: =317
             ZIndex: =2
 
         Image12_1 As image:
@@ -690,7 +691,7 @@ Scn_Analyse As screen:
             RadiusTopLeft: =3
             RadiusTopRight: =3
             Width: =68
-            X: =216
-            Y: =90
+            X: =366
+            Y: =240
             ZIndex: =3
 
