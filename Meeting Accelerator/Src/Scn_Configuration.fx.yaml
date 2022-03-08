@@ -501,14 +501,15 @@
                         FontWeight: =FontWeight.Bold
                         Height: =47
                         OnSelect: =Select(Parent)
+                        Overflow: ='''Microsoft.CoreControls.Label.Overflow'''.Hidden
                         PCFTeamsTheme: =TeamsTheme.Default
                         TabIndex: =-1
-                        Text: =ThisItem.Name
+                        Text: ="Add Meeting Type"
                         VerticalAlignment: =VerticalAlign.Top
                         Visible: =ThisItem.DummyRecord
                         Width: =134
                         X: =54
-                        Y: =186
+                        Y: =172
                         ZIndex: =8
 
                     Gallery5 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
