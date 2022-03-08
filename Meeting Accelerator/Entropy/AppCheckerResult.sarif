@@ -2504,36 +2504,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.SidebarContainer2.Button1_40.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.SidebarContainer2.Button1_40.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Scn_Configuration",
-                "type": "Scn_Configuration.ScreenContainer2.SidebarContainer2.Button1_40"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.SidebarContainer2.Gallery4.AccessibleLabel"
                 }
               ],
