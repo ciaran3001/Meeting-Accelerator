@@ -3,7 +3,11 @@ App As appinfo:
     OnStart: |-
         =Set(SelectedMeetingTab, "Today");
         
-        ClearCollect(SettingNavigationItems, {label: "Preferences"}, {label : "Personas"}, {label : "Meeting Types"});
+        ClearCollect(SettingNavigationItems, 
+            {label: "Preferences"},
+          //{label : "Personas"}, 
+            {label : "Meeting Types"}
+         );
         
         ClearCollect(SideNavItems, 
         {Name: "Home", UnselectedIcon : Home, SelectedIcon : 'Home-white', Screen : Scn_HomeScreen },
