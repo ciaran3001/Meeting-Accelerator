@@ -617,12 +617,19 @@ Scn_Analyse As screen:
         Height: =32
         OnSelect: |-
             =UpdateContext({LoadingAnalytics : true});
+            
             Set(CurrentMonthStartDay, Date(  Year(Now()) , Month(Now()), 1));
+            
             ClearCollect(ToDoTasksCopiedThisMonth, Filter('Outcome To Do Copies', 'Created By'.'Primary Email' = User().Email And 'Created On' >= CurrentMonthStartDay));
             ClearCollect(MeetingsForThisMonth, Filter(Meetings, 'Created On' >= CurrentMonthStartDay));
             ClearCollect(MyOutcomesForThisMonthm, Filter(Outcomes, 'Created On' >= CurrentMonthStartDay));
             ClearCollect(AttendancesForThisMonth, Filter(Attendances, 'Created On' >= CurrentMonthStartDay));
             
+            ForAll(AttendancesForThisMonth,
+                If(ThisRecord.'Attendee Email' = User().Email And ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting,
+                    Collect(MeetingsIAttended, ThisRecord.Meeting);
+                );
+            );
             UpdateContext({LoadingAnalytics : false});
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: =false

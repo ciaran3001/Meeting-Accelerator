@@ -314,7 +314,7 @@
     "Value1": 116
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/08/2022 21:41:29",
+  "HeaderLastSavedDateTimeUTC": "03/08/2022 21:44:02",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -418,6 +418,7 @@
     "Meetings\\ciarank_meeting_statuscode": 12,
     "Meetings\\default.cds_ciarank_meeting_views": 47,
     "MeetingsForThisMonth": 83,
+    "MeetingsIAttended": 86,
     "MicrosoftTo-Do(Business)": 0,
     "MyCopiedOutcomes": 75,
     "MyMeetings": 71,
