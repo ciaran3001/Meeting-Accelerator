@@ -5,7 +5,6 @@ App As appinfo:
         
         ClearCollect(SettingNavigationItems, 
             {label: "Preferences"},
-          //{label : "Personas"}, 
             {label : "Meeting Types"}
          );
         
