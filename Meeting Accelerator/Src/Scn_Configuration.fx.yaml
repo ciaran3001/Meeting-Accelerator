@@ -176,54 +176,10 @@
                 PaddingLeft: =10
                 PaddingRight: =10
                 PaddingTop: =10
-                Visible: =If(SettingToDisplay = "Personas", true,false)
+                Visible: =If(SettingToDisplay = "Preferences", true,false)
                 ZIndex: =5
 
                 Label14 As Label:
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =32
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =320
-                    PCFTeamsTheme: =TeamsTheme.Default
-                    Text: ="'To Do' list to copy outcomes to"
-                    Width: =320
-                    X: =280
-                    Y: =180
-                    ZIndex: =1
-
-                "ComboBox4 As 'Combo box'.pcfdataset":
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =32
-                    Items: ='MicrosoftTo-Do(Business)'.GetAllTodoListsV2()
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =320
-                    PCFTeamsTheme: =TeamsTheme.Default
-                    Width: =320
-                    X: =0
-                    Y: =0
-                    ZIndex: =2
-
-                    displayName1 As pcfDataField.textualColumn:
-                        FieldDisplayName: ="displayName"
-                        FieldName: ="displayName"
-                        FieldVariantName: ="textualColumn"
-                        Order: =1
-                        ZIndex: =6
-
-            Cnt_Settings_Personas As groupContainer.verticalAutoLayoutContainer:
-                Fill: =RGBA(255, 255, 255, 1)
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =10
-                PaddingLeft: =10
-                PaddingRight: =10
-                PaddingTop: =10
-                Visible: =If(SettingToDisplay = "Preferences", true,false)
-                ZIndex: =6
-
-                Label14_1 As Label:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     LayoutMinHeight: =32
@@ -251,12 +207,80 @@
                     Y: =0
                     ZIndex: =2
 
-                    displayName1_1 As pcfDataField.textualColumn:
+                    displayName1 As pcfDataField.textualColumn:
                         FieldDisplayName: ="displayName"
                         FieldName: ="displayName"
                         FieldVariantName: ="textualColumn"
                         Order: =1
                         ZIndex: =6
+
+            Cnt_Settings_Personas As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                Visible: =If(SettingToDisplay = "Personas", true,false)
+                ZIndex: =6
+
+                Gallery3 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    DelayItemLoading: =true
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    FocusedBorderThickness: =2
+                    Items: =Roles
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =100
+                    WrapCount: =5
+                    ZIndex: =1
+
+                    Rectangle6 As rectangle:
+                        BorderColor: =RGBA(243, 242, 241, 1)
+                        DisabledFill: =RGBA(0,0,0,0)
+                        Fill: =RGBA(0,0,0,0)
+                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                        Height: =Parent.TemplateHeight
+                        HoverFill: =RGBA(0,0,0,0)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(0,0,0,0)
+                        TabIndex: =0
+                        Width: =Parent.TemplateWidth
+                        ZIndex: =1
+
+                    Title5 As Label:
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =10.5
+                        FontWeight: =FontWeight.Bold
+                        Height: =24
+                        OnSelect: =Select(Parent)
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        TabIndex: =-1
+                        Text: =ThisItem.SampleHeading
+                        VerticalAlignment: =VerticalAlign.Top
+                        Width: =Parent.TemplateWidth - 24
+                        X: =12
+                        Y: =0
+                        ZIndex: =2
+
+                Label14_1 As Label:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: |-
+                        ="Roles to assign to people:"
+                    Width: =320
+                    X: =280
+                    Y: =180
+                    ZIndex: =1
 
             Cnt_Settings_MeetingTypes As groupContainer.verticalAutoLayoutContainer:
                 Fill: =RGBA(255, 255, 255, 1)
