@@ -620,11 +620,13 @@ Scn_Analyse As screen:
             
             Clear(MeetingsIAttended);
             Clear(PeopleWorkedWith);
+            Clear(OutComesFromMyMeetings);
+            
             Set(CurrentMonthStartDay, Date(  Year(Now()) , Month(Now()), 1));
             
             ClearCollect(ToDoTasksCopiedThisMonth, Filter('Outcome To Do Copies', 'Created By'.'Primary Email' = User().Email And 'Created On' >= CurrentMonthStartDay));
             ClearCollect(MeetingsForThisMonth, Filter(Meetings, 'Created On' >= CurrentMonthStartDay));
-            ClearCollect(MyOutcomesForThisMonthm, Filter(Outcomes, 'Created On' >= CurrentMonthStartDay));
+            ClearCollect(OutcomesForThisMonth, Filter(Outcomes, 'Created On' >= CurrentMonthStartDay));
             ClearCollect(AttendancesForThisMonth, Filter(Attendances, 'Created On' >= CurrentMonthStartDay));
             
             //Get Meetings that I attended
@@ -642,6 +644,12 @@ Scn_Analyse As screen:
                 );
             );
             
+            //Get all outcomes from meetings I attended
+            ForAll(OutcomesForThisMonth,
+                If(ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting,
+                    Collect(OutComesFromMyMeetings, ThisRecord);
+                );
+            );
             
             UpdateContext({LoadingAnalytics : false});
         PCFTeamsTheme: =TeamsTheme.Default
