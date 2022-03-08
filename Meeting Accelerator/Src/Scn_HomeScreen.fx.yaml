@@ -201,6 +201,7 @@ Scn_HomeScreen As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Visible: =false
                     Width: =35
                     X: =345
                     Y: =83
