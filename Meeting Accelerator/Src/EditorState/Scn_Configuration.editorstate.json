@@ -2373,9 +2373,23 @@
       "FocusedBorderColor",
       "OnSelect",
       "ZIndex",
-      "PaddingTop",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingTop",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "PaddingRight",
-      "PaddingBottom",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingBottom",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "PaddingLeft",
       "BorderThickness",
       "FocusedBorderThickness"
@@ -2576,9 +2590,23 @@
       "FocusedBorderColor",
       "OnSelect",
       "ZIndex",
-      "PaddingTop",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingTop",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "PaddingRight",
-      "PaddingBottom",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingBottom",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "PaddingLeft",
       "BorderThickness",
       "FocusedBorderThickness"
@@ -5211,6 +5239,14 @@
         "InvariantPropertyName": "Alignment",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Color",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
     "HasDynamicProperties": false,
@@ -5249,6 +5285,11 @@
       {
         "Category": "Data",
         "PropertyName": "Alignment",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "Color",
         "RuleProviderType": "Unknown"
       },
       {

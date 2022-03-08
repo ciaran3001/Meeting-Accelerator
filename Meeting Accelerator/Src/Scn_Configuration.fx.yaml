@@ -383,7 +383,7 @@
                         BorderThickness: =2
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
-                        Height: =67
+                        Height: =35
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: ='MeetingType-White'
@@ -394,24 +394,25 @@
                         RadiusBottomRight: =3
                         RadiusTopLeft: =3
                         RadiusTopRight: =3
-                        Width: =75
-                        X: =86
+                        Width: =40
+                        X: =8
                         ZIndex: =3
 
                     Title5 As Label:
                         Alignment: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =DisplayMode.Edit
                         FontSize: =10.5
                         FontWeight: =FontWeight.Semibold
-                        Height: =42
+                        Height: =67
                         OnSelect: =Select(Parent)
                         PCFTeamsTheme: =TeamsTheme.Default
                         TabIndex: =-1
                         Text: =ThisItem.Name
                         VerticalAlignment: =VerticalAlign.Top
-                        Width: =229
-                        X: =7
-                        Y: =67
+                        Width: =134
+                        X: =48
+                        Y: =0
                         ZIndex: =4
 
                     Icon5 As icon.Add:
@@ -426,10 +427,10 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
                         OnSelect: =Select(Parent)
-                        PaddingBottom: =3
+                        PaddingBottom: =5
                         PaddingLeft: =3
                         PaddingRight: =3
-                        PaddingTop: =3
+                        PaddingTop: =5
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
@@ -450,10 +451,10 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Edit
                         OnSelect: =Select(Parent)
-                        PaddingBottom: =3
+                        PaddingBottom: =5
                         PaddingLeft: =3
                         PaddingRight: =3
-                        PaddingTop: =3
+                        PaddingTop: =5
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
