@@ -776,8 +776,8 @@ Scn_HomeScreen As screen:
                     Text: |-
                         ="Accelerator ID: " & AssociatedMeetingRecord.'Meeting Accelerator ID'
                     Width: =251
-                    X: =532
-                    Y: =45
+                    X: =527
+                    Y: =50
                     ZIndex: =11
 
                 "ComboBox1_1 As 'Combo box'.pcfdataset":
