@@ -524,6 +524,7 @@
                         ShowScrollbar: =false
                         TemplatePadding: =0
                         TemplateSize: =40
+                        Visible: =!ThisItem.DummyRecord
                         Width: =227
                         X: =8
                         Y: =67
