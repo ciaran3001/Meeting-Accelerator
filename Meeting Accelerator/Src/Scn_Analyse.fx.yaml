@@ -240,7 +240,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =32
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="People worked with"
+                        Text: ="Average Meeting Length (Min)"
                         Width: =300
                         X: =0
                         Y: =49
@@ -254,9 +254,9 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =57
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="15"
-                        Width: =146
-                        X: =77
+                        Text: ="60"
+                        Width: =186
+                        X: =57
                         Y: =4
                         ZIndex: =3
 
