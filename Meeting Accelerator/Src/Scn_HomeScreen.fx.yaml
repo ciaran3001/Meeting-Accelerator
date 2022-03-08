@@ -749,6 +749,7 @@ Scn_HomeScreen As screen:
                                 //Process Attendee's
                         
                                 /*
+                                VARIABLE EXPLANATIONS
                                 
                                 AttendancesForThisMeeting - The attendance / people records that are displayed on the people Manager. Roles are associated to these records. 
                                 _CurrentMeetingAttendees  - This is a collection used to sort the raw attendee's into, a single Table. 
