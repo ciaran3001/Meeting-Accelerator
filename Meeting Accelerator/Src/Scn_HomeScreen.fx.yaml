@@ -77,6 +77,8 @@ Scn_HomeScreen As screen:
 
                 Title7 As Label:
                     Alignment: =Align.Center
+                    Color: |-
+                        =If(SelectedSideNavItem.Name = ThisItem.Name,  ColorValue("#FFFFFF"), Black)
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =10.5
                     FontWeight: =FontWeight.Semibold
