@@ -312,36 +312,116 @@
                 Visible: =If(SettingToDisplay = "Meeting Types", true,false)
                 ZIndex: =7
 
-                Label14_2 As Label:
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =32
-                    LayoutMinHeight: =32
+                Gallery3 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    DelayItemLoading: =true
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    FocusedBorderThickness: =2
+                    Items: =CustomGallerySample
+                    Layout: =Layout.Vertical
+                    LayoutMinHeight: =287
                     LayoutMinWidth: =320
-                    PCFTeamsTheme: =TeamsTheme.Default
-                    Text: ="'To Do' list to copy outcomes to"
-                    Width: =320
-                    X: =280
-                    Y: =180
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =250
+                    WrapCount: =Cnt_Settings_MeetingTypes.Width / 248
                     ZIndex: =1
 
-                "ComboBox4_2 As 'Combo box'.pcfdataset":
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =32
-                    Items: ='MicrosoftTo-Do(Business)'.GetAllTodoListsV2()
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =320
-                    PCFTeamsTheme: =TeamsTheme.Default
-                    Width: =320
-                    X: =0
-                    Y: =0
-                    ZIndex: =2
+                    Button1_45 As button:
+                        BorderColor: =
+                        BorderThickness: =0
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =DisplayMode.View
+                        Fill: =RGBA(238, 140, 29, 1)
+                        FocusedBorderThickness: =0
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =67
+                        HoverBorderColor: =RGBA(238, 140, 29, 1)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        OnSelect: |-
+                            =
+                            false
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
+                        Size: =12
+                        Text: =""
+                        Width: =229
+                        X: =7
+                        ZIndex: =1
 
-                    displayName1_2 As pcfDataField.textualColumn:
-                        FieldDisplayName: ="displayName"
-                        FieldName: ="displayName"
-                        FieldVariantName: ="textualColumn"
-                        Order: =1
-                        ZIndex: =6
+                    Rectangle5 As rectangle:
+                        BorderColor: =RGBA(243, 242, 241, 1)
+                        DisabledFill: =RGBA(0,0,0,0)
+                        Fill: =RGBA(0,0,0,0)
+                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                        Height: =Parent.TemplateHeight
+                        HoverFill: =RGBA(0,0,0,0)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(0,0,0,0)
+                        TabIndex: =0
+                        Width: =Parent.TemplateWidth
+                        ZIndex: =2
+
+                    Image9 As image:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        Height: =67
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Image: ='MeetingType-White'
+                        OnSelect: =Select(Parent)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        RadiusBottomLeft: =3
+                        RadiusBottomRight: =3
+                        RadiusTopLeft: =3
+                        RadiusTopRight: =3
+                        Width: =75
+                        X: =86
+                        ZIndex: =3
+
+                    Title5 As Label:
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =10.5
+                        FontWeight: =FontWeight.Semibold
+                        Height: =42
+                        OnSelect: =Select(Parent)
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        TabIndex: =-1
+                        Text: =ThisItem.SampleHeading
+                        VerticalAlignment: =VerticalAlign.Top
+                        Width: =248
+                        X: =0
+                        Y: =71
+                        ZIndex: =4
+
+                    Subtitle3 As Label:
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        FontWeight: =FontWeight.Normal
+                        Height: =24
+                        OnSelect: =Select(Parent)
+                        PCFTeamsTheme: =TeamsTheme.Default
+                        TabIndex: =-1
+                        Text: =ThisItem.SampleText
+                        VerticalAlignment: =VerticalAlign.Top
+                        Width: =Title5.Width
+                        X: =0
+                        Y: =113
+                        ZIndex: =5
 
     Btn_RetreiveConfigurationRecord As Button:
         DisplayMode: =DisplayMode.Edit
