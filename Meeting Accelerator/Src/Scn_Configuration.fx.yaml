@@ -317,7 +317,7 @@
                     DelayItemLoading: =true
                     FocusedBorderColor: =RGBA(98, 100, 167, 1)
                     FocusedBorderThickness: =2
-                    Items: =CustomGallerySample
+                    Items: ='Meeting Types'
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
@@ -407,7 +407,7 @@
                         OnSelect: =Select(Parent)
                         PCFTeamsTheme: =TeamsTheme.Default
                         TabIndex: =-1
-                        Text: =ThisItem.SampleHeading
+                        Text: =ThisItem.Name
                         VerticalAlignment: =VerticalAlign.Top
                         Width: =229
                         X: =7
@@ -422,7 +422,7 @@
                         OnSelect: =Select(Parent)
                         PCFTeamsTheme: =TeamsTheme.Default
                         TabIndex: =-1
-                        Text: =ThisItem.SampleText
+                        Text: =ThisItem.'Created On'
                         VerticalAlignment: =VerticalAlign.Top
                         Width: =Title5.Width
                         X: =0
