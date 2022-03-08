@@ -314,7 +314,7 @@
     "Value1": 116
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/08/2022 21:46:14",
+  "HeaderLastSavedDateTimeUTC": "03/08/2022 21:47:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -435,6 +435,7 @@
     "Outcomes\\ciarank_outcometype": 13,
     "Outcomes\\default.cds_ciarank_outcome_views": 48,
     "OutcomesForThisAgenda": 74,
+    "PeopleWorkedWith": 87,
     "Personal Configurations": 64,
     "Personal Configurations\\ciarank_personalconfiguration_statecode": 35,
     "Personal Configurations\\ciarank_personalconfiguration_statuscode": 36,
@@ -897,6 +898,6 @@
       "timer": 1
     },
     "DeserializationLoadTime": 5.1893047,
-    "ErrorCount": 4
+    "ErrorCount": 0
   }
 }

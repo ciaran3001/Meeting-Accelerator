@@ -629,18 +629,20 @@ Scn_Analyse As screen:
             
             //Get Meetings that I attended
             ForAll(AttendancesForThisMonth,
-                If(ThisRecord.'Attendee Email' = User().Email And !ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting,
+                If(ThisRecord.'Attendee Email' = User().Email And !(ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting),
                     Collect(MeetingsIAttended, ThisRecord.Meeting);
                 );
             );
             
-            
+            //Get all of the people I've worked With.
             ForAll(AttendancesForThisMonth,
             
-                If(ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting And !ThisRecord.'Attendee Email' = User().Email,
-                    false
+                If(ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting And !(ThisRecord.'Attendee Email' = User().Email),
+                    Collect(PeopleWorkedWith, ThisRecord);
                 );
             );
+            
+            
             UpdateContext({LoadingAnalytics : false});
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: =false
