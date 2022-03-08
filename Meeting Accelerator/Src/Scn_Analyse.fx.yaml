@@ -629,7 +629,7 @@ Scn_Analyse As screen:
             
             //Get Meetings that I attended
             ForAll(AttendancesForThisMonth,
-                If(ThisRecord.'Attendee Email' = User().Email And ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting,
+                If(ThisRecord.'Attendee Email' = User().Email And !ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting,
                     Collect(MeetingsIAttended, ThisRecord.Meeting);
                 );
             );
