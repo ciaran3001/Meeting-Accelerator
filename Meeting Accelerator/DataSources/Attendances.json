@@ -1,0 +1,121 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ciarank_attendances",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ciarank_attendance",
+    "MaxGetRowsCount": 500,
+    "Name": "Attendances",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "ciarank_attendance_AsyncOperations": "System Jobs",
+      "ciarank_attendance_BulkDeleteFailures": "Bulk Delete Failures",
+      "ciarank_attendance_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ciarank_attendance_ProcessSession": "Process Sessions",
+      "ciarank_attendanceid": "Attendance",
+      "ciarank_Attendee": "Attendee",
+      "ciarank_Meeting": "Meeting",
+      "ciarank_name": "Attendee Email",
+      "ciarank_role": "Role",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Attendances",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Attendances (Views)",
+    "Name": "_ciarank_attendance_views",
+    "RelatedEntityName": "Attendances",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "07012fa7-190d-4cd5-bfa2-b43b59b34544": "Attendance Advanced Find View",
+      "758d699a-9131-44c5-948a-2043b71aa67b": "Active Attendances",
+      "7e1cb4f1-ab18-4195-8bb9-559fd508633c": "Inactive Attendances",
+      "a58b77ad-1bfc-4c59-acc7-9230ce5dc936": "Attendance Associated View",
+      "dbdc9aeb-c114-4ee0-a73c-405214101ec1": "Attendance Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Attendances)",
+    "Name": "ciarank_attendance_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Attendances"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Attendances",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Attendances)",
+    "Name": "ciarank_attendance_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Attendances"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Attendances",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Meeting Role",
+    "Name": "ciarank_role",
+    "OptionSetInfoNameMapping": {
+      "491910000": "Facilitator",
+      "491910001": "Customer",
+      "491910002": "Undefined",
+      "491910003": "Peer",
+      "491910004": "Stakeholder",
+      "491910005": "Trainee",
+      "491910006": "Trainer"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ciarank_role",
+        "OptionSetReferenceEntityName": "Attendances"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ciarank_role",
+    "RelatedEntityName": "Attendances",
+    "Type": "OptionSetInfo"
+  }
+]

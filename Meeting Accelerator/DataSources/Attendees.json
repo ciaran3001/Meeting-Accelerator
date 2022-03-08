@@ -1,0 +1,93 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ciarank_attendees",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ciarank_attendee",
+    "Name": "Attendees",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "ciarank_Attendance_ciarank_Attendee_ciara": "Attendances",
+      "ciarank_attendee_AsyncOperations": "System Jobs",
+      "ciarank_attendee_BulkDeleteFailures": "Bulk Delete Failures",
+      "ciarank_attendee_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ciarank_attendee_ProcessSession": "Process Sessions",
+      "ciarank_attendeeid": "Attendee",
+      "ciarank_name": "Attendee Email",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Attendees",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Attendees (Views)",
+    "Name": "_ciarank_attendee_views",
+    "RelatedEntityName": "Attendees",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "35799cc8-af5f-4f7a-9e9b-0923ef9acc0b": "Active Attendees",
+      "90a99b8c-9962-43c0-a177-00bf9bb96a3b": "Inactive Attendees",
+      "af44fd4a-e16e-4e14-b0cc-0e2d7d421fab": "Attendee Advanced Find View",
+      "dd41a4a2-5426-423b-aad4-a660558aef24": "Attendee Lookup View",
+      "fbd5000c-7edd-437a-be59-824af656b1ff": "Attendee Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Attendees)",
+    "Name": "ciarank_attendee_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Attendees"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Attendees",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Attendees)",
+    "Name": "ciarank_attendee_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Attendees"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Attendees",
+    "Type": "OptionSetInfo"
+  }
+]

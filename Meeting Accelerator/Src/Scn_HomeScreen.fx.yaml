@@ -766,7 +766,12 @@ Scn_HomeScreen As screen:
                                 );
                         
                             ForAll(CurrentMeetingAttendees,
-                                Patch(At
+                                Patch(Attendances, Defaults(Attendances),
+                        
+                                {
+                                    Meeting: AssociatedMeetingRecord,
+                                    'Attendee Email': ThisRecord.email
+                                });
                             );
                         
                         

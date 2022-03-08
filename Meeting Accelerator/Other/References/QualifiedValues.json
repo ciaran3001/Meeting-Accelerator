@@ -58,6 +58,20 @@
       "Values": {
         "Information": "c53b9034-079f-40ce-81cb-813fa01807e6"
       }
+    },
+    {
+      "Kind": "default.cds_ciarank_attendee_forms",
+      "Namespace": "Attendees (Forms)",
+      "Values": {
+        "Information": "6c8269c8-7fce-4e7b-a156-fdfa513156d6"
+      }
+    },
+    {
+      "Kind": "default.cds_ciarank_attendance_forms",
+      "Namespace": "Attendances (Forms)",
+      "Values": {
+        "Information": "eb0048f7-c3ee-49dd-a3b8-a85d2ac9366d"
+      }
     }
   ]
 }

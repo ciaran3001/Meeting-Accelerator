@@ -517,7 +517,7 @@
                         FocusedBorderColor: =RGBA(98, 100, 167, 1)
                         FocusedBorderThickness: =2
                         Height: =183
-                        Items: =Filter(local_AgendaItemDefinitions, 'Meeting Type'.'Meeting Type'  = ThisItem.'Meeting Type')
+                        Items: =Filter(local_AgendaItemDefinitions, ciarank_MeetingType.'Meeting Type'  = ThisItem.'Meeting Type')
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
                         ShowNavigation: =true
