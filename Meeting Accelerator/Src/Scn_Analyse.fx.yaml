@@ -658,7 +658,7 @@ Scn_Analyse As screen:
                 Collect(Durations, { duration : DateDiff(ThisRecord.'Start Time', ThisRecord.'End Time',Minutes) } );
             );
             
-            UpdateContext({AverageMeetingDurationInMins : Average(Durations, duration)});
+            UpdateContext({AverageMeetingDurationInMins : RoundUp(Average(Durations, duration),0)});
             UpdateContext({LoadingAnalytics : false});
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: =false
