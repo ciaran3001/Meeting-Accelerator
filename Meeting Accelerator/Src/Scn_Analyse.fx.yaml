@@ -599,3 +599,32 @@ Scn_Analyse As screen:
                             Y: =5
                             ZIndex: =4
 
+    Greyout_1 As label:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(41, 23, 2, 0.45)
+        Height: =App.Height
+        Size: =13
+        Text: =""
+        Visible: =LoadingAnalytics
+        Width: =App.Width
+        ZIndex: =4
+
+    Btn_LoadAnalyticsData As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |-
+            =UpdateContext({LoadingAnalytics : true});
+        PCFTeamsTheme: =TeamsTheme.Default
+        Visible: =false
+        Width: =96
+        X: =0
+        Y: =0
+        ZIndex: =5
+
+    Cnt_LoadingAnalytics As groupContainer.manualLayoutContainer:
+        X: =445
+        Y: =270
+        ZIndex: =6
+

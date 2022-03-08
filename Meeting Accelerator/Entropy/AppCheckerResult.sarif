@@ -2504,6 +2504,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Scn_Analyse.Btn_LoadAnalyticsData.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_Analyse.Btn_LoadAnalyticsData.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scn_Analyse",
+                "type": "Scn_Analyse.Btn_LoadAnalyticsData"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.SidebarContainer2.Gallery4.AccessibleLabel"
                 }
               ],
