@@ -349,8 +349,10 @@
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: |-
                             =ColorFade(ColorValue("#EE8C1D"), -20%)
-                        RadiusBottomLeft: =5
-                        RadiusBottomRight: =5
+                        RadiusBottomLeft: |
+                            =0
+                        RadiusBottomRight: |
+                            =0
                         RadiusTopLeft: =5
                         RadiusTopRight: =5
                         Size: =12
@@ -360,16 +362,19 @@
                         ZIndex: =1
 
                     Rectangle5 As rectangle:
-                        BorderColor: =RGBA(243, 242, 241, 1)
+                        BorderColor: =RGBA(238, 140, 29, 1)
+                        BorderThickness: =2
                         DisabledFill: =RGBA(0,0,0,0)
                         Fill: =RGBA(0,0,0,0)
                         FocusedBorderColor: =RGBA(98, 100, 167, 1)
-                        Height: =Parent.TemplateHeight
+                        Height: =183
                         HoverFill: =RGBA(0,0,0,0)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(0,0,0,0)
                         TabIndex: =0
-                        Width: =Parent.TemplateWidth
+                        Width: =229
+                        X: =7
+                        Y: =67
                         ZIndex: =2
 
                     Image9 As image:
@@ -394,6 +399,7 @@
                         ZIndex: =3
 
                     Title5 As Label:
+                        Alignment: =Align.Center
                         DisplayMode: =DisplayMode.Edit
                         FontSize: =10.5
                         FontWeight: =FontWeight.Semibold
@@ -403,9 +409,9 @@
                         TabIndex: =-1
                         Text: =ThisItem.SampleHeading
                         VerticalAlignment: =VerticalAlign.Top
-                        Width: =248
-                        X: =0
-                        Y: =71
+                        Width: =229
+                        X: =7
+                        Y: =67
                         ZIndex: =4
 
                     Subtitle3 As Label:
