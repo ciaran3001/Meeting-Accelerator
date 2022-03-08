@@ -1,6 +1,8 @@
 "Scn_Configuration As screen.'tabletAutoLayout_Sidebar_ver1.0'":
     Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+    OnVisible: |-
+        =UpdateContext({SettingToDisplay : "Preferences"});
 
     ScreenContainer2 As groupContainer.horizontalAutoLayoutContainer:
         Height: =Parent.Height
@@ -241,6 +243,7 @@
                     LayoutMinWidth: =320
                     OnChange: |-
                         =Patch('Personal Configurations', LookUp('Personal Configurations','Personal Configuration' =  PersonalConfigurationRecord.'Personal Configuration'), { 'To Do List ID': Inpt_ToDoList.Selected.id, 'To Do List Name': Inpt_ToDoList.Selected.displayName } );
+                        Select(Btn_RetreiveConfigurationRecord);
                         Notify("Preference Updated", NotificationType.Success, 3000);
                     PCFTeamsTheme: =TeamsTheme.Default
                     Width: =320
@@ -298,4 +301,15 @@
                         FieldVariantName: ="textualColumn"
                         Order: =1
                         ZIndex: =6
+
+    Btn_RetreiveConfigurationRecord As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |
+            =Set(PersonalConfigurationRecord, LookUp('Personal Configurations', 'Owning User'.'Primary Email' = User().Email));
+        PCFTeamsTheme: =TeamsTheme.Default
+        Width: =96
+        X: =0
+        Y: =0
+        ZIndex: =2
 
