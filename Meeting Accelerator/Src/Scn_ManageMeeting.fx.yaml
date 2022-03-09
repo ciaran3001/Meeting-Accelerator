@@ -1753,7 +1753,7 @@
             LoadingSpinnerColor: |-
                 =ColorValue("#EE8C1D")
             OnSelect: |+
-                =UpdateIf(Outcomes, Outcome = ThisItem.Outcome, {Name :  "" });
+                =UpdateIf(Outcomes, Outcome = ThisItem.Outcome, {Name :  " " });
                 //Notify("Outcome Updated", NotificationType.Information, 100);
                 
             ShowScrollbar: =false
@@ -1836,8 +1836,10 @@
                                 'To Do List ID': MyToDoList.id
                             });
                             
-                            Select(Btn_GetAssociatedMeetingData);
+                            //Select(Btn_GetAssociatedMeetingData);
+                            Select(Btn_GetMyCopiedOutcomes);
                             Notify("Outcome copied to 'To Do'", NotificationType.Success, 3000);
+                    
                         ,
                         Notify("Outcome has already been copied to 'To Do'", NotificationType.Error, 3000);
                     );
@@ -1883,7 +1885,10 @@
                 Height: =32
                 Items: |
                     =Choices('Outcome Type Choices')
-                OnChange: =Select(Parent)
+                OnChange: |-
+                    =
+                    Patch(Outcomes, LookUp(Outcomes, Outcome = ThisItem.Outcome), {'Outcome Type' : Self.Selected.Value });
+                    Notify("Updated outcome Type", NotificationType.Information, 100);
                 PCFTeamsTheme: =TeamsTheme.Default
                 Width: =136
                 X: =379
@@ -1913,7 +1918,10 @@
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 Mode: =TextMode.MultiLine
-                OnChange: =Notify("Changed", NotificationType.Information, 100)
+                OnChange: |-
+                    =
+                    Patch(Outcomes, LookUp(Outcomes, Outcome = ThisItem.Outcome), {Name : Self.Text });
+                    Notify("Updated outcome text", NotificationType.Information, 100);
                 RadiusBottomLeft: =2
                 RadiusBottomRight: =2
                 RadiusTopLeft: =2

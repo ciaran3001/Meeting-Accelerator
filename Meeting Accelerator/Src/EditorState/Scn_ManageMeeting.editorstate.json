@@ -15287,7 +15287,7 @@
       {
         "Category": "Data",
         "PropertyName": "Image",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",
@@ -16905,7 +16905,7 @@
       {
         "Category": "Behavior",
         "PropertyName": "OnChange",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "defaultTextStyle",
