@@ -573,7 +573,7 @@ Scn_Analyse As screen:
                             Height: =28
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverFill: =RGBA(0, 0, 0, 0)
-                            Image: =Office365Users.UserPhotoV2(ThisItem.'Attendee Email')
+                            Image: =LeaderIcon
                             OnSelect: =Select(Parent)
                             PressedBorderColor: =RGBA(0, 0, 0, 0)
                             PressedFill: =RGBA(0, 0, 0, 0)
