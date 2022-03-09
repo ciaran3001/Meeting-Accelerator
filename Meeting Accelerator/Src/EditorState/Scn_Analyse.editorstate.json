@@ -2904,7 +2904,14 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "LayoutOverflowX",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "LayoutOverflowX",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "LayoutOverflowY",
       "LayoutWrap",
       "ZIndex",

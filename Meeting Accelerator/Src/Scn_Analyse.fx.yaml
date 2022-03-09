@@ -99,6 +99,7 @@ Scn_Analyse As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
             PaddingBottom: =20
             PaddingLeft: =20
             PaddingRight: =20
