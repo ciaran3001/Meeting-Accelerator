@@ -6554,6 +6554,14 @@
         "InvariantPropertyName": "Alignment",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "NoWrap",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
     "HasDynamicProperties": false,
@@ -6582,6 +6590,11 @@
       {
         "Category": "Data",
         "PropertyName": "Alignment",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "NoWrap",
         "RuleProviderType": "Unknown"
       },
       {

@@ -651,6 +651,7 @@ Scn_HomeScreen As screen:
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =20
                     Height: =46
+                    NoWrap: =true
                     PCFTeamsTheme: =TeamsTheme.Default
                     Text: =SelectedMeeting.subject
                     Width: =520
@@ -816,17 +817,17 @@ Scn_HomeScreen As screen:
                     ZIndex: =10
 
                 Label2_5 As Label:
-                    Alignment: =Align.Right
+                    Alignment: =Align.Justify
                     Color: =RGBA(146, 154, 157, 1)
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =13
                     Height: =37
                     PCFTeamsTheme: =TeamsTheme.Default
                     Text: |-
-                        ="Accelerator ID: " & AssociatedMeetingRecord.'Meeting Accelerator ID'
+                        ="Ref: " & AssociatedMeetingRecord.'Meeting Accelerator ID'
                     Width: =251
-                    X: =527
-                    Y: =50
+                    X: =514
+                    Y: =95
                     ZIndex: =11
 
                 "ComboBox1_1 As 'Combo box'.pcfdataset":
