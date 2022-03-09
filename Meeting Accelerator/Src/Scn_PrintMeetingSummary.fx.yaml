@@ -196,12 +196,12 @@ Scn_PrintMeetingSummary As screen:
         DisplayMode: =DisplayMode.Edit
         FontSize: =10
         FontWeight: =FontWeight.Bold
-        Height: =36
+        Height: =38
         PCFTeamsTheme: =TeamsTheme.Default
         Text: ="Outcome"
         Width: =376
         X: =430
-        Y: =138
+        Y: =136
         ZIndex: =6
 
     Label18_3 As Label:
@@ -215,4 +215,28 @@ Scn_PrintMeetingSummary As screen:
         X: =893
         Y: =138
         ZIndex: =7
+
+    Label18_4 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =10
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="Email"
+        Width: =53
+        X: =1022
+        Y: =139
+        ZIndex: =8
+
+    Label18_5 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =10
+        FontWeight: =FontWeight.Bold
+        Height: =38
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="Attended"
+        Width: =68
+        X: =1292
+        Y: =137
+        ZIndex: =9
 
