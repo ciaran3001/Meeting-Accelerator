@@ -7299,7 +7299,7 @@
     "Properties": [
       {
         "Category": "Data",
-        "NameMap": "{\"Labels\":\"ciarank_subject\",\"Series1\":\"ciarank_agendacompleted\",\"Series2\":\"ciarank_agendacompleted\",\"Series3\":\"ciarank_agendacompleted\",\"Series4\":\"ciarank_agendacompleted\",\"Series5\":\"versionnumber\",\"Series6\":\"versionnumber\",\"Series7\":\"versionnumber\",\"Series8\":\"versionnumber\",\"Series9\":\"versionnumber\"}",
+        "NameMap": "{\"Labels\":\"Subject\",\"Series1\":\"Completed\",\"Series2\":\"Completed\",\"Series3\":\"Completed\",\"Series4\":\"Completed\",\"Series5\":\"Completed\",\"Series6\":\"Completed\",\"Series7\":\"Completed\",\"Series8\":\"Completed\",\"Series9\":\"Completed\"}",
         "PropertyName": "Items",
         "RuleProviderType": "Unknown"
       },
