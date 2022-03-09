@@ -17,7 +17,7 @@ Scn_PrintMeetingSummary As screen:
         BorderStyle: =BorderStyle.Solid
         BorderThickness: =2
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =561
+        Height: =541
         HtmlText: =SelectedMeeting.body
         PaddingBottom: =10
         PaddingLeft: =10
@@ -33,7 +33,7 @@ Scn_PrintMeetingSummary As screen:
         DelayItemLoading: =true
         FocusedBorderColor: =RGBA(98, 100, 167, 1)
         FocusedBorderThickness: =2
-        Height: =561
+        Height: =541
         Items: =ExistingOutComesForThisMeeting
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -110,7 +110,7 @@ Scn_PrintMeetingSummary As screen:
         DelayItemLoading: =true
         FocusedBorderColor: =RGBA(98, 100, 167, 1)
         FocusedBorderThickness: =2
-        Height: =561
+        Height: =541
         Items: =AttendancesForThisMeeting
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
