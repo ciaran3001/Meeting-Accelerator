@@ -2219,7 +2219,7 @@
             DelayItemLoading: =true
             FocusedBorderColor: =RGBA(98, 100, 167, 1)
             FocusedBorderThickness: =2
-            Height: =294
+            Height: =398
             Items: =Filter('Agenda Item Definitions', 'Meeting Type'.'Meeting Type' = AssociatedMeetingRecord.'Meeting Type'.'Meeting Type')
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
@@ -2234,6 +2234,7 @@
 
             Rectangle10 As rectangle:
                 BorderColor: =RGBA(243, 242, 241, 1)
+                BorderThickness: =1
                 DisabledFill: =RGBA(0,0,0,0)
                 Fill: =RGBA(0,0,0,0)
                 FocusedBorderColor: =RGBA(98, 100, 167, 1)
