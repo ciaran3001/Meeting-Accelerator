@@ -2276,6 +2276,16 @@
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: |-
                     =ColorFade(ColorValue("#EE8C1D"), -20%)
+                OnSelect: |
+                    =Collect(AgendaItemsForThisMeeting,
+                        Patch('Agenda Items', Defaults('Agenda Items'), 
+                        { 
+                        Name: Inpt_AgendaItemName.Text,
+                        Description: Inpt_AgendaItemDesc.HtmlText,
+                        Meeting: AssociatedMeetingRecord
+                    
+                        })
+                    );
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: |-
                     =ColorFade(ColorValue("#EE8C1D"), -20%)
