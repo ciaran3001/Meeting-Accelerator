@@ -420,7 +420,7 @@ Scn_Analyse As screen:
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: ="Agenda Completed by Meeting"
+                        Text: ="Agenda Completion % by Meeting"
                         Width: =600
                         X: =10
                         Y: =15
