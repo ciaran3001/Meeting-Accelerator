@@ -1355,7 +1355,7 @@
             =ClearCollect(AgendaItemsForThisMeeting, Filter('Agenda Items', Meeting.Meeting = AssociatedMeetingRecord.Meeting));
             ClearCollect(ExistingOutComesForThisMeeting, Filter(Outcomes, Meeting.Meeting = AssociatedMeetingRecord.Meeting));
             
-            UpdateContext({AgendaPercentCompleted : RoundUp((CountRows(Filter(AgendaItemsForThisMeeting, Addressed = 'Addressed (Agenda Items)'.Yes)) / CountRows(AgendaItemsForThisMeeting) ) * 100, 0) });
+            UpdateContext({AgendaPercentCompleted : If(CountRows(AgendaItemsForThisMeeting) = 0, 0 ,RoundUp((CountRows(Filter(AgendaItemsForThisMeeting, Addressed = 'Addressed (Agenda Items)'.Yes)) / CountRows(AgendaItemsForThisMeeting) ) * 100, 0))});
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: =false
         Width: =96
