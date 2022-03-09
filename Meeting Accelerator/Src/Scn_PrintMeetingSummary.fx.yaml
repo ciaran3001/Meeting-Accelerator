@@ -1,8 +1,11 @@
 Scn_PrintMeetingSummary As screen:
-    Height: =900
+    Height: |
+        =800
+    LoadingSpinner: =LoadingSpinner.Controls
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
     OnVisible: =
-    Width: =1500
+    Width: |
+        =1400
 
     Label18 As Label:
         DisplayMode: =DisplayMode.Edit
