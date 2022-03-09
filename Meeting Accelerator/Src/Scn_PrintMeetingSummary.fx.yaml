@@ -44,6 +44,7 @@ Scn_PrintMeetingSummary As screen:
 
         Rectangle11 As rectangle:
             BorderColor: =RGBA(243, 242, 241, 1)
+            BorderThickness: =2
             DisabledFill: =RGBA(0,0,0,0)
             Fill: =RGBA(0,0,0,0)
             FocusedBorderColor: =RGBA(98, 100, 167, 1)
@@ -120,6 +121,7 @@ Scn_PrintMeetingSummary As screen:
 
         Rectangle11_1 As rectangle:
             BorderColor: =RGBA(243, 242, 241, 1)
+            BorderThickness: =2
             DisabledFill: =RGBA(0,0,0,0)
             Fill: =RGBA(0,0,0,0)
             FocusedBorderColor: =RGBA(98, 100, 167, 1)

@@ -745,7 +745,14 @@
       "OnSelect",
       "ZIndex",
       "FocusedBorderThickness",
-      "BorderThickness",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "BorderThickness",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "TabIndex"
     ],
     "HasDynamicProperties": false,
@@ -868,7 +875,14 @@
       "OnSelect",
       "ZIndex",
       "FocusedBorderThickness",
-      "BorderThickness",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "BorderThickness",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "TabIndex"
     ],
     "HasDynamicProperties": false,
