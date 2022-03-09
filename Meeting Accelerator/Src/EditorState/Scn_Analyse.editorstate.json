@@ -7229,7 +7229,8 @@
       },
       "ZIndex",
       "Size",
-      "BorderThickness"
+      "BorderThickness",
+      "XLabelAngle"
     ],
     "DynamicProperties": [
       {
@@ -7244,7 +7245,7 @@
         "Property": {
           "Category": "Design",
           "PropertyName": "FillPortions",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         "PropertyName": "FillPortions"
       },
@@ -7310,7 +7311,7 @@
       {
         "Category": "Design",
         "PropertyName": "GridStyle",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       },
       {
         "Category": "Design",
@@ -7386,6 +7387,11 @@
         "Category": "Design",
         "PropertyName": "BorderThickness",
         "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "XLabelAngle",
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "defaultLineChartStyle",

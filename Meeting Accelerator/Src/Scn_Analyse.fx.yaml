@@ -443,6 +443,7 @@ Scn_Analyse As screen:
                         PressedBorderColor: =RGBA(255, 191, 0, 1)
                         Size: =15
                         X: =40
+                        XLabelAngle: =50
                         Y: =70
                         ZIndex: =3
 
