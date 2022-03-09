@@ -97,7 +97,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Btn_GetAssociatedMeetingData",
-    "ParentIndex": 6,
+    "ParentIndex": 5,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -11018,7 +11018,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Cnt_ShowAgendaItem",
-    "ParentIndex": 5,
+    "ParentIndex": 6,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -11292,7 +11292,8 @@
       "LayoutOverflowX",
       "LayoutOverflowY",
       "LayoutWrap",
-      "ZIndex"
+      "ZIndex",
+      "Visible"
     ],
     "DynamicProperties": [
       {
@@ -11356,7 +11357,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Cnt_SuggestedAgendaItemsBanner",
-    "ParentIndex": 1,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -11448,6 +11449,11 @@
         "Category": "Design",
         "PropertyName": "Fill",
         "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Visible",
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "",
@@ -13569,7 +13575,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Gal_AgendaItems",
-    "ParentIndex": 2,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

@@ -336,6 +336,19 @@
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
+                        Visible: |-
+                            =If(
+                                !IsBlank(AssociatedMeetingRecord.'Meeting Type') And CountRows(
+                                    Filter(
+                                        'Agenda Item Definitions',
+                                        'Meeting Type'.'Meeting Type' = AssociatedMeetingRecord.'Meeting Type'.'Meeting Type'
+                                        And
+                                        !(Name in AgendaItemsForThisMeeting.Name)
+                                    )
+                                ),
+                                true,
+                                false
+                            )
                         Width: =630
                         ZIndex: =2
 
