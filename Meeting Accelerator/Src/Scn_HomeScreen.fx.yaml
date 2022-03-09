@@ -395,7 +395,7 @@ Scn_HomeScreen As screen:
                 LoadingSpinner: =LoadingSpinner.Controls
                 LoadingSpinnerColor: |-
                     =ColorValue("#EE8C1D")
-                OnSelect: |
+                OnSelect: |-
                     =Set(SelectedMeeting, ThisItem);
                     
                     
@@ -408,6 +408,11 @@ Scn_HomeScreen As screen:
                     
                     
                     Set(AssociatedMeetingRecord, LookUp(Meetings, 'Outlook ID' = ThisItem.iCalUId));
+                    
+                    
+                    If(!IsBlank(AssociatedMeetingRecord),
+                        ClearCollect(AttendancesForThisMeeting, Filter(Attendances, Meeting.Meeting = AssociatedMeetingRecord.Meeting));
+                    );
                 ShowNavigation: =true
                 ShowScrollbar: =false
                 TemplatePadding: =0
@@ -777,12 +782,12 @@ Scn_HomeScreen As screen:
                             ForAll(_CurrentMeetingAttendees,
                                 Collect(AttendancesForThisMeeting, 
                                     Patch(Attendances, 
-                                    Defaults(Attendances),
-                                    {
-                                        'Attendee Email': ThisRecord.email,
-                                        'Optional Attendee': ThisRecord.Optional,
-                                        Meeting: AssociatedMeetingRecord
-                                    }
+                                        Defaults(Attendances),
+                                        {
+                                            'Attendee Email': ThisRecord.email,
+                                            'Optional Attendee': ThisRecord.Optional,
+                                            Meeting: AssociatedMeetingRecord
+                                        }
                                     );
                                 );
                             );
