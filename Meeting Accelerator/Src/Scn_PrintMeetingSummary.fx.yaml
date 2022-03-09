@@ -9,7 +9,7 @@ Scn_PrintMeetingSummary As screen:
         Text: =AssociatedMeetingRecord.Subject
         Width: =1278
         X: =40
-        Y: =29
+        Y: =17
         ZIndex: =1
 
     HtmlText2_1 As htmlViewer:
@@ -265,4 +265,43 @@ Scn_PrintMeetingSummary As screen:
         X: =1043
         Y: =93
         ZIndex: =11
+
+    Label6_10 As Label:
+        Alignment: =Align.Justify
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =13
+        FontWeight: =FontWeight.Normal
+        Height: =32
+        Text: |-
+            =Text(DateTimeValue(SelectedMeeting.start), "hh:mm") & " to " & Text(DateTimeValue(SelectedMeeting.end), "hh:mm") & " ("& DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " mins)"
+        Width: =320
+        X: =40
+        Y: =78
+        ZIndex: =12
+
+    Label6_11 As Label:
+        Alignment: =Align.Justify
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =12
+        FontWeight: =FontWeight.Normal
+        Height: =32
+        Text: |-
+            ="Meeting Type: " & AssociatedMeetingRecord.'Meeting Type'.Name
+        Width: =320
+        X: =39
+        Y: =106
+        ZIndex: =13
+
+    Label6_12 As Label:
+        Alignment: =Align.Justify
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =12
+        FontWeight: =FontWeight.Normal
+        Height: =31
+        Text: |-
+            ="Follow up Meeting:" & If(AssociatedMeetingRecord.'Follow up Meeting Record'
+        Width: =320
+        X: =40
+        Y: =130
+        ZIndex: =14
 
