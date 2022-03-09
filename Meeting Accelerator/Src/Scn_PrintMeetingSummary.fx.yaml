@@ -1,3 +1,104 @@
 Scn_PrintMeetingSummary As screen:
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
 
+    Label18 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =15
+        Height: =64
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: =AssociatedMeetingRecord.Subject
+        Width: =1278
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    HtmlText2_1 As htmlViewer:
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =2
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =561
+        HtmlText: =SelectedMeeting.body
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =330
+        X: =24
+        Y: =174
+        ZIndex: =2
+
+    Gallery7 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+        BorderThickness: =2
+        DelayItemLoading: =true
+        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+        FocusedBorderThickness: =2
+        Height: =561
+        Items: =ExistingOutComesForThisMeeting
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =48
+        X: =359
+        Y: =174
+        ZIndex: =3
+
+        Rectangle11 As rectangle:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            DisabledFill: =RGBA(0,0,0,0)
+            Fill: =RGBA(0,0,0,0)
+            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+            Height: =Parent.TemplateHeight
+            HoverFill: =RGBA(0,0,0,0)
+            OnSelect: =Select(Parent)
+            PressedFill: =RGBA(0,0,0,0)
+            TabIndex: =0
+            Width: =Parent.TemplateWidth
+            ZIndex: =1
+
+        Title11 As Label:
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =10
+            FontWeight: =FontWeight.Semibold
+            Height: =48
+            OnSelect: =Select(Parent)
+            PCFTeamsTheme: =TeamsTheme.Default
+            TabIndex: =-1
+            Text: =ThisItem.Name
+            VerticalAlignment: =VerticalAlign.Middle
+            Width: =411
+            X: =72
+            Y: =0
+            ZIndex: =3
+
+        Subtitle3 As Label:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =10
+            FontWeight: =FontWeight.Semibold
+            Height: =48
+            OnSelect: =Select(Parent)
+            PCFTeamsTheme: =TeamsTheme.Default
+            TabIndex: =-1
+            Text: =Text(ThisItem.'Time due', "dd/mm/yyyy")
+            VerticalAlignment: =VerticalAlign.Middle
+            Width: =143
+            X: =495
+            Y: =0
+            ZIndex: =4
+
+        Title11_1 As Label:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =10
+            FontWeight: =FontWeight.Semibold
+            Height: =48
+            OnSelect: =Select(Parent)
+            PCFTeamsTheme: =TeamsTheme.Default
+            TabIndex: =-1
+            Text: =ThisItem.'Outcome Type'
+            VerticalAlignment: =VerticalAlign.Middle
+            Width: =72
+            X: =0
+            Y: =0
+            ZIndex: =5
+
