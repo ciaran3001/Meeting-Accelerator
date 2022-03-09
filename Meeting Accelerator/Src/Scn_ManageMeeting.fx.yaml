@@ -370,6 +370,8 @@
                             HoverBorderColor: =RGBA(238, 140, 29, 1)
                             HoverColor: =RGBA(0, 0, 0, 1)
                             HoverFill: =
+                            OnSelect: |-
+                                =UpdateContext({ShowSuggestedAgendaItems : true});
                             PressedColor: =RGBA(0, 0, 0, 1)
                             PressedFill: =
                             RadiusBottomLeft: =5
