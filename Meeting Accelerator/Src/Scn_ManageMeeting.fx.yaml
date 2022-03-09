@@ -10,6 +10,7 @@
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
         PaddingRight: =10
         Width: =Parent.Width
         ZIndex: =1
