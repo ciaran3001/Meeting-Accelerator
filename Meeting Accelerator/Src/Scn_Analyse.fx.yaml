@@ -192,7 +192,7 @@ Scn_Analyse As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =57
                         PCFTeamsTheme: =TeamsTheme.Default
-                        Text: =CountRows(MeetingsIAttended)
+                        Text: =CountRows(MeetingsIAttendedFullRecord)
                         Width: =146
                         X: =77
                         Y: =4
