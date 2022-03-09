@@ -7580,7 +7580,7 @@
     "Properties": [
       {
         "Category": "Data",
-        "NameMap": "{\"Labels\":\"ciarank_subject\",\"Series1\":\"ciarank_subject\",\"Series2\":\"ciarank_agendacompleted\",\"Series3\":\"ciarank_agendacompleted\",\"Series4\":\"ciarank_agendacompleted\",\"Series5\":\"versionnumber\",\"Series6\":\"versionnumber\",\"Series7\":\"versionnumber\",\"Series8\":\"versionnumber\",\"Series9\":\"versionnumber\"}",
+        "NameMap": "{\"Labels\":\"ciarank_subject\",\"Series1\":\"ciarank_agendacompleted\",\"Series2\":\"ciarank_agendacompleted\",\"Series3\":\"ciarank_agendacompleted\",\"Series4\":\"ciarank_agendacompleted\",\"Series5\":\"versionnumber\",\"Series6\":\"versionnumber\",\"Series7\":\"versionnumber\",\"Series8\":\"versionnumber\",\"Series9\":\"versionnumber\"}",
         "PropertyName": "Items",
         "RuleProviderType": "Unknown"
       },
