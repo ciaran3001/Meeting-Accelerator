@@ -9,7 +9,7 @@ Scn_PrintMeetingSummary As screen:
         Text: =AssociatedMeetingRecord.Subject
         Width: =1278
         X: =40
-        Y: =40
+        Y: =29
         ZIndex: =1
 
     HtmlText2_1 As htmlViewer:
