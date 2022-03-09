@@ -961,7 +961,9 @@
             FontWeight: =FontWeight.Bold
             Height: =55
             PCFTeamsTheme: =TeamsTheme.Default
-            Text: ="Suggested Agenda Itemse"
+            Text: |-
+                =
+                If(AddEditMeetingType, "Add Meeting Type", "Add Agenda Item")
             Width: =760
             X: =0
             Y: =0
@@ -981,8 +983,8 @@
             HoverBorderColor: =RGBA(77, 45, 8, 1)
             HoverColor: =RGBA(77, 45, 8, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
-            OnSelect: |-
-                =UpdateContext({ShowSuggestedAgendaItems : false});
+            OnSelect: |
+                =UpdateContext({AddEditMeetingType : false, AddEditAgendaItemDefinition : false});
             PressedBorderColor: =RGBA(77, 45, 8, 1)
             PressedColor: =RGBA(77, 45, 8, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
