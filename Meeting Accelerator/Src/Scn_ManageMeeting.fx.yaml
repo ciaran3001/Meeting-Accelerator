@@ -1647,7 +1647,7 @@
             LoadingSpinnerColor: |-
                 =ColorValue("#EE8C1D")
             OnSelect: |+
-                =UpdateIf(Outcomes, Outcome = ThisItem.Outcome, {Name :  " " });
+                =//UpdateIf(Outcomes, Outcome = ThisItem.Outcome, {Name :  " " });
                 //Notify("Outcome Updated", NotificationType.Information, 100);
                 
             ShowScrollbar: =false
@@ -1829,7 +1829,10 @@
             "DatePicker1 As 'Date picker'":
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
-                OnChange: =Select(Parent)
+                OnChange: |-
+                    =
+                    Patch(Outcomes, LookUp(Outcomes, Outcome = ThisItem.Outcome), {'Time due' : Self.Value });
+                    Notify("Updated outcome due date", NotificationType.Information, 100);
                 OnSelect: =
                 PCFTeamsTheme: =TeamsTheme.Default
                 Width: =118
