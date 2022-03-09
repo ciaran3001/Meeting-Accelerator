@@ -180,3 +180,39 @@ Scn_PrintMeetingSummary As screen:
             Y: =0
             ZIndex: =5
 
+    Label18_1 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =10
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="Type"
+        Width: =53
+        X: =377
+        Y: =136
+        ZIndex: =5
+
+    Label18_2 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =10
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="Outcome"
+        Width: =376
+        X: =430
+        Y: =138
+        ZIndex: =6
+
+    Label18_3 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =10
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="Due Date"
+        Width: =106
+        X: =893
+        Y: =138
+        ZIndex: =7
+
