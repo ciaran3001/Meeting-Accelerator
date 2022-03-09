@@ -18992,6 +18992,14 @@
         "InvariantPropertyName": "Text",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Alignment",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
     "HasDynamicProperties": false,
@@ -19011,6 +19019,11 @@
         "Category": "Data",
         "PropertyName": "Text",
         "RuleProviderType": "User"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "Alignment",
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",

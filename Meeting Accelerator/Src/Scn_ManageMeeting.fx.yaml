@@ -2362,13 +2362,14 @@
             ZIndex: =6
 
         Label11_2 As Label:
+            Alignment: =Align.Center
             DisplayMode: =DisplayMode.Edit
             Height: =28
             PCFTeamsTheme: =TeamsTheme.Default
             Text: |-
                 ="Based of the type of meeting, we suggest the following agenda items:"
             Width: =613
-            X: =206
-            Y: =68
+            X: =258
+            Y: =55
             ZIndex: =8
 
