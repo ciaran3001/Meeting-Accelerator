@@ -240,3 +240,29 @@ Scn_PrintMeetingSummary As screen:
         Y: =137
         ZIndex: =9
 
+    Label18_6 As Label:
+        Alignment: =Align.Center
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =15
+        FontWeight: =FontWeight.Bold
+        Height: =69
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="Outcomes"
+        Width: =275
+        X: =541
+        Y: =93
+        ZIndex: =10
+
+    Label18_7 As Label:
+        Alignment: =Align.Center
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =15
+        FontWeight: =FontWeight.Bold
+        Height: =69
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="Attendance"
+        Width: =275
+        X: =1043
+        Y: =93
+        ZIndex: =11
+
