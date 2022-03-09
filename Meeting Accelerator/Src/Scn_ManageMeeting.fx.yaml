@@ -1176,7 +1176,7 @@
                                 Text: =ThisItem.'Attendee Email'
                                 VerticalAlignment: =VerticalAlign.Top
                                 Width: =185
-                                X: =37
+                                X: =17
                                 Y: =2
                                 ZIndex: =2
 
@@ -1218,8 +1218,8 @@
                                     
                                     Notify("Role updated for " & ThisItem.'Attendee Email', NotificationType.Information, 1000);
                                 PCFTeamsTheme: =TeamsTheme.Default
-                                Width: =185
-                                X: =37
+                                Width: =173
+                                X: =17
                                 Y: =26
                                 ZIndex: =5
 
@@ -1229,6 +1229,37 @@
                                     FieldVariantName: ="textualColumn"
                                     Order: =1
                                     ZIndex: =32
+
+                            Button1_40 As button:
+                                BorderColor: =
+                                BorderThickness: =0
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Fill: =RGBA(238, 140, 29, 1)
+                                FocusedBorderThickness: =0
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Semibold
+                                Height: =25
+                                HoverBorderColor: =RGBA(238, 140, 29, 1)
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                OnSelect: |-
+                                    =UpdateContext({ShowAddAgendaItemModal : true});
+                                PressedColor: =RGBA(255, 255, 255, 1)
+                                PressedFill: |-
+                                    =ColorFade(ColorValue("#EE8C1D"), -20%)
+                                RadiusBottomLeft: =5
+                                RadiusBottomRight: =5
+                                RadiusTopLeft: =5
+                                RadiusTopRight: =5
+                                Size: =10
+                                Text: =If(ThisItem.Attended, "Attended", "Absent")
+                                Width: =84
+                                X: =202
+                                Y: =28
+                                ZIndex: =6
 
                         Label6_7 As Label:
                             Alignment: =Align.Center
