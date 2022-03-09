@@ -327,7 +327,7 @@
                         Y: =0
                         ZIndex: =1
 
-                    Container8 As groupContainer.horizontalAutoLayoutContainer:
+                    Cnt_SuggestedAgendaItemsBanner As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.Center
                         Fill: =RGBA(238, 140, 29, 1)
                         FillPortions: =0
@@ -340,7 +340,6 @@
                         ZIndex: =2
 
                         Label9 As Label:
-                            AlignInContainer: =AlignInContainer.Center
                             Alignment: =Align.Center
                             Color: =RGBA(255, 255, 255, 1)
                             DisplayMode: =DisplayMode.Edit
@@ -355,7 +354,6 @@
                             ZIndex: =1
 
                         Button1_7 As button:
-                            AlignInContainer: =AlignInContainer.Center
                             BorderColor: =
                             BorderThickness: =0
                             Color: =RGBA(93, 95, 98, 1)

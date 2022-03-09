@@ -974,19 +974,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.Container8.Button1_7.FocusedBorderThickness"
+                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.Cnt_SuggestedAgendaItemsBanner.Button1_7.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.Container8.Button1_7.FocusedBorderThickness",
+                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.Cnt_SuggestedAgendaItemsBanner.Button1_7.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.Container8.Button1_7"
+                "type": "Scn_ManageMeeting.ScreenContainer1.RightSideContainer1.MainSectionContainer1.Container6.Cnt_SuggestedAgendaItemsBanner.Button1_7"
               }
             }
           ],
