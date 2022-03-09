@@ -1141,7 +1141,9 @@
                             FocusedBorderColor: =RGBA(98, 100, 167, 1)
                             FocusedBorderThickness: =2
                             Height: =462
-                            Items: =CurrentMeetingAttendees
+                            Items: |-
+                                =//CurrentMeetingAttendees
+                                AttendancesForThisMeeting
                             Layout: =Layout.Vertical
                             LoadingSpinner: =LoadingSpinner.Data
                             TemplatePadding: =0
@@ -1166,12 +1168,12 @@
                             Title3 As Label:
                                 DisplayMode: =DisplayMode.Edit
                                 FontSize: =10.5
-                                FontWeight: =If(ThisItem.organizer = true, FontWeight.Bold, FontWeight.Normal)
+                                FontWeight: =If(SelectedMeeting.organizer = ThisItem.'Attendee Email', FontWeight.Bold, FontWeight.Normal)
                                 Height: =24
                                 OnSelect: =Select(Parent)
                                 PCFTeamsTheme: =TeamsTheme.Default
                                 TabIndex: =-1
-                                Text: =ThisItem.email
+                                Text: =ThisItem.'Attendee Email'
                                 VerticalAlignment: =VerticalAlign.Top
                                 Width: =185
                                 X: =37
@@ -1195,26 +1197,28 @@
                                 RadiusBottomRight: =3
                                 RadiusTopLeft: =3
                                 RadiusTopRight: =3
-                                Visible: =ThisItem.organizer
+                                Visible: =If(SelectedMeeting.organizer = ThisItem.'Attendee Email', true, false)
                                 Width: =25
                                 X: =12
                                 Y: =2
                                 ZIndex: =3
 
-                            Title3_1 As Label:
+                            "ComboBox4 As 'Combo box'.pcfdataset":
                                 DisplayMode: =DisplayMode.Edit
-                                FontSize: =9
-                                FontWeight: =FontWeight.Lighter
-                                Height: =24
-                                OnSelect: =Select(Parent)
+                                Height: =29
+                                Items: =Choices('Meeting Role')
                                 PCFTeamsTheme: =TeamsTheme.Default
-                                TabIndex: =-1
-                                Text: =If(IsBlank(ThisItem.role), "Role Undefined", ThisItem.role)
-                                VerticalAlignment: =VerticalAlign.Top
                                 Width: =185
-                                X: =42
-                                Y: =22
-                                ZIndex: =4
+                                X: =37
+                                Y: =26
+                                ZIndex: =5
+
+                                Value2 As pcfDataField.textualColumn:
+                                    FieldDisplayName: ="Value"
+                                    FieldName: ="Value"
+                                    FieldVariantName: ="textualColumn"
+                                    Order: =1
+                                    ZIndex: =32
 
                         Label6_7 As Label:
                             Alignment: =Align.Center
