@@ -618,7 +618,8 @@ Scn_Analyse As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |-
-            =UpdateContext({LoadingAnalytics : true});
+            =UpdateContext({ShowLoadingModal : true});
+            UpdateContext({LoadingAnalytics : true});
             
             Clear(MeetingsIAttended);
             Clear(PeopleWorkedWith);
