@@ -485,6 +485,7 @@
                             =ColorValue("#EE8C1D")
                         OnSelect: |-
                             =Set(AgendaItemToshow, ThisItem);
+                            Select(Btn_GetAssociatedMeetingData);
                             UpdateContext({ShowAgendaItemModal : true});
                             ClearCollect(OutcomesForThisAgenda, Filter(ExistingOutComesForThisMeeting, 'Agenda Item'.'Agenda Item' = ThisItem.'Agenda Item'));
                         ShowScrollbar: =false
