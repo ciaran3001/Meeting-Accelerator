@@ -884,7 +884,7 @@
                                     Y: =32
                                     ZIndex: =15
 
-                        Button1_53 As button:
+                        Btn_ClickCatcher As button:
                             BorderColor: =
                             BorderThickness: =0
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
