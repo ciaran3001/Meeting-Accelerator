@@ -460,7 +460,7 @@ Scn_Analyse As screen:
                             HoverBorderColor: =RGBA(99, 139, 44, 1)
                             ItemColorSet: |-
                                 =[ColorValue("#EE8C1D")]
-                            Items: =MeetingsIAttended
+                            Items: =Meetings
                             PressedBorderColor: =RGBA(255, 191, 0, 1)
                             Size: =15
                             X: =40
