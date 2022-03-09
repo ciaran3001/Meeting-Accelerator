@@ -1763,10 +1763,11 @@
             BorderColor: =RGBA(208, 208, 208, 1)
             Default: =AgendaItemToshow.ciarank_description
             Height: =512
-            OnChange: |
+            OnChange: |-
                 =Patch('Agenda Items', LookUp('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item'), {Description : Self.HtmlText } );
                 
                 Select(Btn_GetAssociatedMeetingData);
+                Notify("Agenda Item Description Updated", NotificationType.Success, 1000);
             Width: =387
             X: =17
             Y: =157
