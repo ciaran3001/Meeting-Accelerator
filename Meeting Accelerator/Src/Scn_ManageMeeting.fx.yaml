@@ -2248,14 +2248,14 @@
 
             Title10 As Label:
                 DisplayMode: =DisplayMode.Edit
-                FontSize: =10.5
+                FontSize: =13
                 FontWeight: =FontWeight.Normal
                 Height: =45
                 OnSelect: =Select(Parent)
                 PCFTeamsTheme: =TeamsTheme.Default
                 TabIndex: =-1
                 Text: =ThisItem.Name
-                VerticalAlignment: =VerticalAlign.Top
+                VerticalAlignment: =VerticalAlign.Middle
                 Width: =548
                 X: =12
                 Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2) - 2
@@ -2347,7 +2347,7 @@
             HoverColor: =RGBA(77, 45, 8, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
             OnSelect: |-
-                =UpdateContext({ShowAddAgendaItemModal : false});
+                =UpdateContext({ShowSuggestedAgendaItems : false});
             PressedBorderColor: =RGBA(77, 45, 8, 1)
             PressedColor: =RGBA(77, 45, 8, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
