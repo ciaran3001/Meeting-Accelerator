@@ -1,7 +1,9 @@
 Scn_Analyse As screen:
     Fill: =RGBA(240, 242, 245, 1)
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
-    OnVisible: =Select(Btn_LoadAnalyticsData);
+    OnVisible: |-
+        =UpdateContext({ShowLoadingModal : true});
+        Select(Btn_LoadAnalyticsData);
 
     Container17 As groupContainer.horizontalAutoLayoutContainer:
         Height: =App.Height
@@ -610,7 +612,7 @@ Scn_Analyse As screen:
         Height: =App.Height
         Size: =13
         Text: =""
-        Visible: =LoadingAnalytics
+        Visible: =ShowLoadingModal
         Width: =App.Width
         ZIndex: =4
 
@@ -618,8 +620,7 @@ Scn_Analyse As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |-
-            =UpdateContext({ShowLoadingModal : true});
-            UpdateContext({LoadingAnalytics : true});
+            =UpdateContext({LoadingAnalytics : true});
             
             Clear(MeetingsIAttended);
             Clear(PeopleWorkedWith);
@@ -671,7 +672,7 @@ Scn_Analyse As screen:
 
     Cnt_LoadingAnalytics As groupContainer.manualLayoutContainer:
         Height: =600
-        Visible: =LoadingAnalytics
+        Visible: =ShowLoadingModal
         Width: =800
         X: =App.Width /2 - Cnt_LoadingAnalytics.Width/2
         Y: =App.Height /2 - Cnt_LoadingAnalytics.Height/2
@@ -765,7 +766,6 @@ Scn_Analyse As screen:
         Repeat: =true
         Size: =10.5
         Start: =true
-        X: =40
-        Y: =40
+        Visible: =false
         ZIndex: =7
 
