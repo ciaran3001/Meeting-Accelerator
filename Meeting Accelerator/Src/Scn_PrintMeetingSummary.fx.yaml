@@ -102,3 +102,79 @@ Scn_PrintMeetingSummary As screen:
             Y: =0
             ZIndex: =5
 
+    Gallery7_1 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+        BorderThickness: =2
+        DelayItemLoading: =true
+        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+        FocusedBorderThickness: =2
+        Height: =561
+        Items: =AttendancesForThisMeeting
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =48
+        Width: =350
+        X: =1011
+        Y: =174
+        ZIndex: =4
+
+        Rectangle11_1 As rectangle:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            DisabledFill: =RGBA(0,0,0,0)
+            Fill: =RGBA(0,0,0,0)
+            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+            Height: =Parent.TemplateHeight
+            HoverFill: =RGBA(0,0,0,0)
+            OnSelect: =Select(Parent)
+            PressedFill: =RGBA(0,0,0,0)
+            TabIndex: =0
+            Width: =Parent.TemplateWidth
+            ZIndex: =1
+
+        Title11_3 As Label:
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =10
+            FontWeight: =FontWeight.Semibold
+            Height: =48
+            OnSelect: =Select(Parent)
+            PCFTeamsTheme: =TeamsTheme.Default
+            TabIndex: =-1
+            Text: =ThisItem.'Attendee Email'
+            VerticalAlignment: =VerticalAlign.Middle
+            Width: =224
+            X: =12
+            Y: =0
+            ZIndex: =3
+
+        Subtitle3_1 As Label:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =10
+            FontWeight: =FontWeight.Semibold
+            Height: =48
+            OnSelect: =Select(Parent)
+            PCFTeamsTheme: =TeamsTheme.Default
+            TabIndex: =-1
+            Text: =ThisItem.'Attendee Email'
+            VerticalAlignment: =VerticalAlign.Middle
+            Width: =143
+            X: =495
+            Y: =0
+            ZIndex: =4
+
+        Title11_2 As Label:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =10
+            FontWeight: =FontWeight.Semibold
+            Height: =48
+            OnSelect: =Select(Parent)
+            PCFTeamsTheme: =TeamsTheme.Default
+            TabIndex: =-1
+            Text: =ThisItem.Attended
+            VerticalAlignment: =VerticalAlign.Middle
+            Width: =72
+            X: =272
+            Y: =0
+            ZIndex: =5
+
