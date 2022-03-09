@@ -610,21 +610,21 @@ Scn_Analyse As screen:
             //Get all of the people I've worked With.
             ForAll(AttendancesForThisMonth,
             
-                If(ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting And !(ThisRecord.'Attendee Email' = User().Email),
+                If(ThisRecord.Meeting.Meeting in MeetingsIAttendedReferences.Meeting And !(ThisRecord.'Attendee Email' = User().Email),
                     Collect(PeopleWorkedWith, ThisRecord);
                 );
             );
             
             //Get all outcomes from meetings I attended
             ForAll(OutcomesForThisMonth,
-                If(ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting,
+                If(ThisRecord.Meeting.Meeting in MeetingsIAttendedReferences.Meeting,
                     Collect(OutComesFromMyMeetings, ThisRecord);
                 );
             );
             
             
             
-            ForAll(MeetingsIAttended,
+            ForAll(MeetingsIAttendedFullRecord,
                 Collect(Durations, { duration : DateDiff(ThisRecord.'Start Time', ThisRecord.'End Time',Minutes) } );
             );
             
