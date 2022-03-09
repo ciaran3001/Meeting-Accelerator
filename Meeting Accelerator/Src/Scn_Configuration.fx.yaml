@@ -425,8 +425,9 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Edit
-                        OnSelect: =Select(Parent)
+                        Icon: =Icon.Add
+                        OnSelect: |-
+                            =UpdateContext({AddEditMeetingType : true});
                         PaddingBottom: =5
                         PaddingLeft: =3
                         PaddingRight: =3
@@ -436,8 +437,8 @@
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Visible: =!ThisItem.DummyRecord
                         Width: =32
-                        X: =204
-                        Y: =3
+                        X: =150
+                        Y: =36
                         ZIndex: =6
 
                     Image10 As image:
@@ -551,6 +552,32 @@
                             Y: =0
                             ZIndex: =3
 
+                    Icon5_2 As icon.Add:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        Height: =32
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Edit
+                        OnSelect: |-
+                            =UpdateContext({AddEditMeetingType : true});
+                        PaddingBottom: =5
+                        PaddingLeft: =3
+                        PaddingRight: =3
+                        PaddingTop: =5
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: =!ThisItem.DummyRecord
+                        Width: =32
+                        X: =177
+                        Y: =35
+                        ZIndex: =10
+
     Btn_RetreiveConfigurationRecord As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
@@ -577,4 +604,239 @@
         X: =20
         Y: =20
         ZIndex: =3
+
+    Greyout_2 As label:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(41, 23, 2, 0.45)
+        Height: =App.Height
+        Size: =13
+        Text: =""
+        Visible: =AddEditMeetingType Or AddEditAgendaItemDefinition
+        Width: =App.Width
+        ZIndex: =4
+
+    Cnt_AddAgendaItem_1 As groupContainer.manualLayoutContainer:
+        Height: =511
+        Visible: =ShowAddAgendaItemModal
+        Width: =937
+        X: =433
+        Y: =270
+        ZIndex: =5
+
+        Button1_53 As button:
+            BorderColor: =
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(238, 140, 29, 1)
+            FocusedBorderThickness: =0
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            OnSelect: =
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =15
+            Text: =""
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Button1_54 As button:
+            BorderColor: =
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            DisabledFill: =RGBA(238, 140, 29, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(238, 140, 29, 1)
+            FocusedBorderThickness: =0
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =55
+            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            OnSelect: =
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =15
+            Text: =""
+            Width: =Parent.Width
+            ZIndex: =2
+
+        Image4_1 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Height: =69
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =undraw_add_notes_re_ln36
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =3
+            RadiusBottomRight: =3
+            RadiusTopLeft: =3
+            RadiusTopRight: =3
+            Width: =69
+            X: =709
+            Y: =107
+            ZIndex: =3
+
+        Label10_3 As Label:
+            Alignment: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =18
+            FontWeight: =FontWeight.Bold
+            Height: =55
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Add Agenda Item"
+            Width: =937
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        Button1_55 As button:
+            BorderColor: =
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(238, 140, 29, 1)
+            FocusedBorderThickness: =0
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            OnSelect: |-
+                =Collect(AgendaItemsForThisMeeting,
+                    Patch('Agenda Items', Defaults('Agenda Items'), 
+                    { 
+                    Name: Inpt_AgendaItemName_1.Text,
+                    Description: Inpt_AgendaItemDesc_2.HtmlText,
+                    Meeting: AssociatedMeetingRecord
+                
+                    })
+                );
+                
+                Reset(Inpt_AgendaItemDesc_2);
+                Reset(Inpt_AgendaItemName_1);
+                
+                UpdateContext({ShowAddAgendaItemModal : false});
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =15
+            Text: ="Add"
+            X: =275
+            Y: =430
+            ZIndex: =5
+
+        Button1_56 As button:
+            BorderColor: =RGBA(238, 140, 29, 1)
+            Color: =RGBA(238, 140, 29, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: |
+                =2
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(77, 45, 8, 1)
+            HoverColor: =RGBA(77, 45, 8, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            OnSelect: |-
+                =UpdateContext({ShowAddAgendaItemModal : false});
+            PressedBorderColor: =RGBA(77, 45, 8, 1)
+            PressedColor: =RGBA(77, 45, 8, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =15
+            Text: ="Cancel"
+            X: =471
+            Y: =430
+            ZIndex: =6
+
+        Inpt_AgendaItemName_1 As text:
+            BorderColor: =RGBA(208, 208, 208, 1)
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            Default: ="Text input"
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =RGBA(208, 208, 208, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =2
+            RadiusBottomRight: =2
+            RadiusTopLeft: =2
+            RadiusTopRight: =2
+            Size: =12
+            X: =206
+            Y: =100
+            ZIndex: =7
+
+        Label11_3 As Label:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Agenda Item Subject"
+            Width: =320
+            X: =206
+            Y: =68
+            ZIndex: =8
+
+        Label11_4 As Label:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Agenda Item Description"
+            Width: =320
+            X: =206
+            Y: =148
+            ZIndex: =9
+
+        Inpt_AgendaItemDesc_2 As richTextEditor:
+            BorderColor: =RGBA(208, 208, 208, 1)
+            Default: ="Enter some <strong>rich text</strong> here."
+            Height: =237
+            Width: =572
+            X: =206
+            Y: =176
+            ZIndex: =10
 
