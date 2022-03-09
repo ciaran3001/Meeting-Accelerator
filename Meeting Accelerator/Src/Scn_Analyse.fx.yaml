@@ -739,3 +739,32 @@ Scn_Analyse As screen:
             Y: =227
             ZIndex: =3
 
+    Tmr_CheckDataAnalysed As timer:
+        AutoStart: =true
+        BorderColor: =RGBA(98, 100, 167, 1)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(243, 242, 241, 1)
+        DisabledColor: =RGBA(200, 198, 196, 1)
+        DisabledFill: =RGBA(243, 242, 241, 1)
+        Duration: |
+            =3000
+        Fill: =RGBA(98, 100, 167, 1)
+        FocusedBorderThickness: =2
+        Font: =Font.'Segoe UI'
+        HoverBorderColor: =ColorFade(RGBA(98, 100, 167, 1), -10%)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(98, 100, 167, 1), -10%)
+        OnTimerEnd: |-
+            =If(LoadingAnalytics = false,
+                UpdateContext({ShowLoadingModal : false});
+            );
+        PressedBorderColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+        Repeat: =true
+        Size: =10.5
+        Start: =true
+        X: =40
+        Y: =40
+        ZIndex: =7
+
