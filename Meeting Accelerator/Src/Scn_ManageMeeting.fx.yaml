@@ -2288,6 +2288,90 @@
             Width: =Parent.Width
             ZIndex: =1
 
+        Button1_49 As button:
+            BorderColor: =
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            DisabledFill: =RGBA(238, 140, 29, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(238, 140, 29, 1)
+            FocusedBorderThickness: =0
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =55
+            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            OnSelect: =
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =15
+            Text: =""
+            Width: =Parent.Width
+            ZIndex: =2
+
+        Label10_2 As Label:
+            Alignment: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =18
+            FontWeight: =FontWeight.Bold
+            Height: =55
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: ="Suggested Agenda Itemse"
+            Width: =1130
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        Button1_51 As button:
+            BorderColor: =RGBA(238, 140, 29, 1)
+            Color: =RGBA(238, 140, 29, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: |
+                =2
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(77, 45, 8, 1)
+            HoverColor: =RGBA(77, 45, 8, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            OnSelect: |-
+                =UpdateContext({ShowSuggestedAgendaItems : false});
+            PressedBorderColor: =RGBA(77, 45, 8, 1)
+            PressedColor: =RGBA(77, 45, 8, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =15
+            Text: ="Close"
+            X: =485
+            Y: =567
+            ZIndex: =4
+
+        Label11_2 As Label:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =28
+            PCFTeamsTheme: =TeamsTheme.Default
+            Text: |-
+                ="Based of the type of meeting, we suggest the following agenda items:"
+            Width: =613
+            X: =258
+            Y: =79
+            ZIndex: =5
+
         Gallery6 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
             BorderColor: =RGBA(243, 242, 241, 1)
             DelayItemLoading: =true
@@ -2304,7 +2388,7 @@
             Width: =750
             X: =190
             Y: =127
-            ZIndex: =1
+            ZIndex: =6
 
             Rectangle10 As rectangle:
                 BorderColor: =RGBA(243, 242, 241, 1)
@@ -2372,88 +2456,4 @@
                 X: =560
                 Y: =12
                 ZIndex: =3
-
-        Button1_49 As button:
-            BorderColor: =
-            BorderThickness: =0
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(255, 255, 255, 1)
-            DisabledFill: =RGBA(238, 140, 29, 1)
-            DisplayMode: =DisplayMode.Disabled
-            Fill: =RGBA(238, 140, 29, 1)
-            FocusedBorderThickness: =0
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =55
-            HoverBorderColor: =RGBA(238, 140, 29, 1)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: |-
-                =ColorFade(ColorValue("#EE8C1D"), -20%)
-            OnSelect: =
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: |-
-                =ColorFade(ColorValue("#EE8C1D"), -20%)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =15
-            RadiusTopRight: =15
-            Size: =15
-            Text: =""
-            Width: =Parent.Width
-            ZIndex: =2
-
-        Label10_2 As Label:
-            Alignment: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            DisplayMode: =DisplayMode.Edit
-            FontSize: =18
-            FontWeight: =FontWeight.Bold
-            Height: =55
-            PCFTeamsTheme: =TeamsTheme.Default
-            Text: ="Suggested Agenda Itemse"
-            Width: =1130
-            X: =0
-            Y: =0
-            ZIndex: =4
-
-        Button1_51 As button:
-            BorderColor: =RGBA(238, 140, 29, 1)
-            Color: =RGBA(238, 140, 29, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            FocusedBorderThickness: |
-                =2
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            HoverBorderColor: =RGBA(77, 45, 8, 1)
-            HoverColor: =RGBA(77, 45, 8, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
-            OnSelect: |-
-                =UpdateContext({ShowSuggestedAgendaItems : false});
-            PressedBorderColor: =RGBA(77, 45, 8, 1)
-            PressedColor: =RGBA(77, 45, 8, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
-            RadiusBottomLeft: =5
-            RadiusBottomRight: =5
-            RadiusTopLeft: =5
-            RadiusTopRight: =5
-            Size: =15
-            Text: ="Close"
-            X: =485
-            Y: =567
-            ZIndex: =6
-
-        Label11_2 As Label:
-            Alignment: =Align.Center
-            DisplayMode: =DisplayMode.Edit
-            Height: =28
-            PCFTeamsTheme: =TeamsTheme.Default
-            Text: |-
-                ="Based of the type of meeting, we suggest the following agenda items:"
-            Width: =613
-            X: =258
-            Y: =79
-            ZIndex: =8
 
