@@ -3254,19 +3254,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_50.FocusedBorderThickness"
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Gallery6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_50.FocusedBorderThickness",
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Gallery6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "FocusedBorderThickness",
+                "member": "TabIndex",
                 "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_50"
+                "type": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Gallery6"
               }
             }
           ],
@@ -3276,8 +3276,68 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Gallery6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Gallery6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scn_ManageMeeting",
+                "type": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Gallery6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Gallery6.Rectangle10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Gallery6.Rectangle10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scn_ManageMeeting",
+                "type": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Gallery6.Rectangle10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3554,7 +3614,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Scn_ManageMeeting\" is 301, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Scn_ManageMeeting\" is 316, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],

@@ -2214,6 +2214,52 @@
             Width: =Parent.Width
             ZIndex: =1
 
+        Gallery6 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            DelayItemLoading: =true
+            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+            FocusedBorderThickness: =2
+            Height: =294
+            Items: =Filter('Agenda Item Definitions', 'Meeting Type'.'Meeting Type' = AssociatedMeetingRecord.'Meeting Type'.'Meeting Type')
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            ShowNavigation: =true
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =63
+            Width: =750
+            X: =190
+            Y: =127
+            ZIndex: =1
+
+            Rectangle10 As rectangle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                DisabledFill: =RGBA(0,0,0,0)
+                Fill: =RGBA(0,0,0,0)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                Height: =Parent.TemplateHeight
+                HoverFill: =RGBA(0,0,0,0)
+                OnSelect: =Select(Parent)
+                PressedFill: =RGBA(0,0,0,0)
+                TabIndex: =0
+                Width: =Parent.TemplateWidth
+                ZIndex: =1
+
+            Title10 As Label:
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =10.5
+                FontWeight: =FontWeight.Normal
+                Height: =45
+                OnSelect: =Select(Parent)
+                PCFTeamsTheme: =TeamsTheme.Default
+                TabIndex: =-1
+                Text: =ThisItem.Name
+                VerticalAlignment: =VerticalAlign.Top
+                Width: =548
+                X: =12
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2) - 2
+                ZIndex: =2
+
         Button1_49 As button:
             BorderColor: =
             BorderThickness: =0
@@ -2257,36 +2303,6 @@
             Y: =0
             ZIndex: =4
 
-        Button1_50 As button:
-            BorderColor: =
-            BorderThickness: =0
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(238, 140, 29, 1)
-            FocusedBorderThickness: =0
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            HoverBorderColor: =RGBA(238, 140, 29, 1)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: |-
-                =ColorFade(ColorValue("#EE8C1D"), -20%)
-            OnSelect: |-
-                =
-                UpdateContext({ShowAddAgendaItemModal : false});
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: |-
-                =ColorFade(ColorValue("#EE8C1D"), -20%)
-            RadiusBottomLeft: =5
-            RadiusBottomRight: =5
-            RadiusTopLeft: =5
-            RadiusTopRight: =5
-            Size: =15
-            Text: ="Add"
-            X: =275
-            Y: =430
-            ZIndex: =5
-
         Button1_51 As button:
             BorderColor: =RGBA(238, 140, 29, 1)
             Color: =RGBA(238, 140, 29, 1)
@@ -2311,17 +2327,18 @@
             RadiusTopLeft: =5
             RadiusTopRight: =5
             Size: =15
-            Text: ="Cancel"
-            X: =471
-            Y: =430
+            Text: ="Close"
+            X: =485
+            Y: =567
             ZIndex: =6
 
         Label11_2 As Label:
             DisplayMode: =DisplayMode.Edit
-            Height: =32
+            Height: =28
             PCFTeamsTheme: =TeamsTheme.Default
-            Text: ="Agenda Item Subject"
-            Width: =320
+            Text: |-
+                ="Based of the type of meeting, we suggest the following agenda items:"
+            Width: =613
             X: =206
             Y: =68
             ZIndex: =8
