@@ -1724,96 +1724,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SideBar_3.Gal_SideNav_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SideBar_3.Gal_SideNav_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.ScreenContainer1.SideBar_3.Gal_SideNav_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SideBar_3.Gal_SideNav_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SideBar_3.Gal_SideNav_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.ScreenContainer1.SideBar_3.Gal_SideNav_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SideBar_3.Gal_SideNav_3.Rectangle8_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SideBar_3.Gal_SideNav_3.Rectangle8_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.ScreenContainer1.SideBar_3.Gal_SideNav_3.Rectangle8_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Scn_ManageMeeting.ScreenContainer1.SidebarContainer1.Container11_1.Button1_9.FocusedBorderThickness"
                 }
               ],
@@ -3338,35 +3248,6 @@
           },
           "ruleId": "app-CollectDelegatableDataSource",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scn_ManageMeeting"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 6
         }
       ],
       "tool": {
@@ -3474,27 +3355,6 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "Using the 'Collect' function to create a collection directly from a connected data source may not load every row if the data source is too large."
-              }
-            },
-            {
-              "id": "app-ScreenHasManyControls",
-              "messageStrings": {
-                "issue": {
-                  "text": "Too many controls on a screen"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Reduce the number of controls on the screen.",
-                  "Break the app into more screens to reduce the per-screen complexity.",
-                  "Use components to unify grouped controls that are identical across screens, reducing duplication.",
-                  "Use galleries to represent a series of repeated similar controls.",
-                  "Break the app into multiple apps so that each app is small and performant."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Scn_ManageMeeting\" is 306, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
