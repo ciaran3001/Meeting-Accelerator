@@ -427,7 +427,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Add
                         OnSelect: |-
-                            =UpdateContext({AddEditMeetingType : true});
+                            =UpdateContext({AddEditAgendaItemDefinition : true});
                         PaddingBottom: =5
                         PaddingLeft: =3
                         PaddingRight: =3
@@ -534,7 +534,7 @@
                             RadiusBottomRight: =3
                             RadiusTopLeft: =3
                             RadiusTopRight: =3
-                            Width: =48
+                            Width: =38
                             ZIndex: =2
 
                         Title8 As Label:
@@ -547,10 +547,57 @@
                             TabIndex: =-1
                             Text: =ThisItem.Name
                             VerticalAlignment: =VerticalAlign.Middle
-                            Width: =177
+                            Width: =125
                             X: =38
                             Y: =0
                             ZIndex: =3
+
+                        Icon5_3 As icon.Add:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            Height: =32
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.Trash
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =5
+                            PaddingLeft: =3
+                            PaddingRight: =3
+                            PaddingTop: =5
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Width: =32
+                            X: =195
+                            Y: =8
+                            ZIndex: =4
+
+                        Icon5_4 As icon.Add:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            Height: =32
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.Edit
+                            OnSelect: |-
+                                =UpdateContext({AddEditAgendaItemDefinition : true});
+                            PaddingBottom: =5
+                            PaddingLeft: =3
+                            PaddingRight: =3
+                            PaddingTop: =5
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Width: =32
+                            X: =163
+                            Y: =8
+                            ZIndex: =5
 
                     Icon5_2 As icon.Add:
                         BorderColor: =RGBA(0, 0, 0, 0)
