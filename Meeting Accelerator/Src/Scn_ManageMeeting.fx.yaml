@@ -1204,9 +1204,17 @@
                                 ZIndex: =3
 
                             "ComboBox4 As 'Combo box'.pcfdataset":
+                                DefaultSelectedItems: =LookUp(local_MeetingRoles, Value = ThisItem.Role)
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =29
-                                Items: =Choices('Meeting Role')
+                                Items: =local_MeetingRoles
+                                OnChange: |-
+                                    =Patch(Attendances, 
+                                    LookUp(Attendances, Attendance = ThisItem.Attendance),
+                                    {
+                                        Role : Self.Selected.Value
+                                    }
+                                    );
                                 PCFTeamsTheme: =TeamsTheme.Default
                                 Width: =185
                                 X: =37

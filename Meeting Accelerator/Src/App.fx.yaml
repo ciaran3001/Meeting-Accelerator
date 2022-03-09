@@ -14,7 +14,7 @@ App As appinfo:
         {Name: "Settings", UnselectedIcon : Cog, SelectedIcon : 'Cog-White', Screen: Scn_Configuration }
         );
         
-        
+        ClearCollect(local_MeetingRoles, Choices('Meeting Role'));
         Set(SelectedSideNavItem, First(SideNavItems));
 
     Teams As hostControl.TeamsHostControlVariant:
