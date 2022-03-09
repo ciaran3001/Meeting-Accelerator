@@ -1246,7 +1246,15 @@
                                 HoverFill: |-
                                     =ColorFade(ColorValue("#EE8C1D"), -20%)
                                 OnSelect: |-
-                                    =UpdateContext({ShowAddAgendaItemModal : true});
+                                    =Patch(Attendances, LookUp(Attendances, Attendance = ThisItem.Attendance),
+                                    {
+                                        Attended : If(ThisItem.Attended, false, true)
+                                    });
+                                    
+                                    Patch(AttendancesForThisMeeting, LookUp(AttendancesForThisMeeting, Attendance = ThisItem.Attendance),
+                                    {
+                                        Attended : If(ThisItem.Attended, false, true)
+                                    });
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: |-
                                     =ColorFade(ColorValue("#EE8C1D"), -20%)
