@@ -7580,7 +7580,7 @@
     "Properties": [
       {
         "Category": "Data",
-        "NameMap": "{\"Labels\":\"City\",\"Series1\":\"Area\",\"Series2\":\"Density\",\"Series3\":\"Population\",\"Series4\":\"Population\",\"Series5\":\"Population\",\"Series6\":\"Population\",\"Series7\":\"Population\",\"Series8\":\"Population\",\"Series9\":\"Population\"}",
+        "NameMap": "{\"Labels\":\"ciarank_followupmeetingcalendarid\",\"Series1\":\"ciarank_agendacompleted\",\"Series2\":\"importsequencenumber\",\"Series3\":\"timezoneruleversionnumber\",\"Series4\":\"utcconversiontimezonecode\",\"Series5\":\"versionnumber\",\"Series6\":\"versionnumber\",\"Series7\":\"versionnumber\",\"Series8\":\"versionnumber\",\"Series9\":\"versionnumber\"}",
         "PropertyName": "Items",
         "RuleProviderType": "Unknown"
       },
