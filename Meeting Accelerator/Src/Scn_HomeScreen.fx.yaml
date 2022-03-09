@@ -720,7 +720,7 @@ Scn_HomeScreen As screen:
                     HtmlText: =SelectedMeeting.body
                     Width: =731
                     X: =34
-                    Y: =289
+                    Y: =319
                     ZIndex: =9
 
                 Button1_4 As button:
@@ -826,8 +826,8 @@ Scn_HomeScreen As screen:
                     Text: |-
                         ="Ref: " & AssociatedMeetingRecord.'Meeting Accelerator ID'
                     Width: =251
-                    X: =514
-                    Y: =95
+                    X: =34
+                    Y: =278
                     ZIndex: =11
 
                 "ComboBox1_1 As 'Combo box'.pcfdataset":
