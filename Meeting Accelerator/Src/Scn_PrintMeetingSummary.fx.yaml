@@ -39,7 +39,8 @@ Scn_PrintMeetingSummary As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =48
-        X: =359
+        Width: =657
+        X: =354
         Y: =174
         ZIndex: =3
 
