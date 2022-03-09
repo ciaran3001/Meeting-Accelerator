@@ -14,6 +14,7 @@ Scn_PrintMeetingSummary As screen:
         ZIndex: =1
 
     HtmlText2_1 As htmlViewer:
+        AutoHeight: =true
         BorderStyle: =BorderStyle.Solid
         BorderThickness: =2
         Fill: =RGBA(0, 0, 0, 0)
