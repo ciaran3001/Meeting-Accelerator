@@ -3194,6 +3194,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_48.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_48.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Scn_ManageMeeting",
+                "type": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_48"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_49.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_49.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Scn_ManageMeeting",
+                "type": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_49"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_50.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_50.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Scn_ManageMeeting",
+                "type": "Scn_ManageMeeting.Cnt_ShowSuggestedAgendaItems.Button1_50"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.undraw_calendar_re_ki49"
                 }
               ],
@@ -3314,17 +3404,16 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ShowSuggestedAgendaItems"
+                  "fullyQualifiedName": "Scn_ManageMeeting"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.ShowSuggestedAgendaItems",
+                  "fullyQualifiedName": "Scn_ManageMeeting",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ShowSuggestedAgendaItems",
                 "module": "Scn_ManageMeeting",
                 "type": "Scn_ManageMeeting"
               }
@@ -3336,7 +3425,7 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
+          "ruleId": "app-ScreenHasManyControls",
           "ruleIndex": 6
         }
       ],
@@ -3448,20 +3537,24 @@
               }
             },
             {
-              "id": "app-UnusedVariables",
+              "id": "app-ScreenHasManyControls",
               "messageStrings": {
                 "issue": {
-                  "text": "Unused variable"
+                  "text": "Too many controls on a screen"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove the unused variable."
+                  "Reduce the number of controls on the screen.",
+                  "Break the app into more screens to reduce the per-screen complexity.",
+                  "Use components to unify grouped controls that are identical across screens, reducing duplication.",
+                  "Use galleries to represent a series of repeated similar controls.",
+                  "Break the app into multiple apps so that each app is small and performant."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Scn_ManageMeeting\" is 301, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
