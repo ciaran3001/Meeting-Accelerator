@@ -2197,9 +2197,11 @@
             HoverFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
             OnSelect: |-
-                =
+                =RemoveIf('Agenda Items', 'Agenda Item' = AgendaItemToshow.'Agenda Item');
                 
-                UpdateContext({ShowAddAgendaItemModal : false});
+                RemoveIf(AgendaItemsForThisMeeting, 'Agenda Item' = AgendaItemToshow.'Agenda Item');
+                UpdateContext({ShowAgendaItemModal : false});
+                Notify("Agenda Item Removed", NotificationType.Success, 2000);
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
