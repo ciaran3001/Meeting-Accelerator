@@ -100,6 +100,7 @@
     "Scn_ThemeScreen",
     "Scn_ManageMeeting",
     "Scn_Configuration",
-    "Scn_Analyse"
+    "Scn_Analyse",
+    "Scn_PrintMeetingSummary"
   ]
 }
