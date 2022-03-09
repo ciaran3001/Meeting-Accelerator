@@ -94,36 +94,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_PrintMeetingSummary.Btn_PrintSummary.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_PrintMeetingSummary.Btn_PrintSummary.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scn_PrintMeetingSummary",
-                "type": "Scn_PrintMeetingSummary.Btn_PrintSummary"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Scn_PrintMeetingSummary.Gallery7.AccessibleLabel"
                 }
               ],
@@ -4324,6 +4294,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Scn_PrintMeetingSummary.Printing"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_PrintMeetingSummary.Printing",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Printing",
+                "module": "Scn_PrintMeetingSummary",
+                "type": "Scn_PrintMeetingSummary"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Scn_ManageMeeting"
                 }
               ],
@@ -4346,7 +4346,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 7
+          "ruleIndex": 8
         }
       ],
       "tool": {
@@ -4473,6 +4473,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "Using the 'Collect' function to create a collection directly from a connected data source may not load every row if the data source is too large."
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             },
             {

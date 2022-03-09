@@ -1,6 +1,6 @@
 Scn_PrintMeetingSummary As screen:
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
-    OnVisible: =Select(Btn_PrintSummary);
+    OnVisible: =
 
     Label18 As Label:
         DisplayMode: =DisplayMode.Edit
@@ -309,24 +309,9 @@ Scn_PrintMeetingSummary As screen:
         Y: =130
         ZIndex: =14
 
-    Btn_PrintSummary As Button:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        OnSelect: |-
-            =
-            Print();
-            If(!Debug,
-            Navigate(Scn_ManageMeeting);
-            );
-        PCFTeamsTheme: =TeamsTheme.Default
-        Visible: =false
-        Width: =96
-        X: =0
-        Y: =0
-        ZIndex: =15
-
     Container8 As groupContainer.manualLayoutContainer:
         Height: =81
+        Visible: =!Printing
         Width: =323
         X: =1043
         ZIndex: =16
@@ -345,7 +330,10 @@ Scn_PrintMeetingSummary As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
-            OnSelect: =UpdateContext({});
+            OnSelect: |-
+                =UpdateContext({Printing : true});
+                Print();
+                UpdateContext({Printing : false});
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
@@ -383,7 +371,7 @@ Scn_PrintMeetingSummary As screen:
             RadiusTopLeft: =5
             RadiusTopRight: =5
             Size: =15
-            Text: ="Backl"
+            Text: ="Back"
             Width: =119
             X: =147
             Y: =20
