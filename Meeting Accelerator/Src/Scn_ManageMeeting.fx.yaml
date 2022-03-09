@@ -1707,35 +1707,40 @@
                         To_Do
                     )
                 OnSelect: |-
-                    =If(
-                        IsBlank(
-                            LookUp(
-                                MyCopiedOutcomes,
-                                'Copied Outcome'.Outcome = ThisItem.Outcome
-                            )
-                        ),
-                        
-                        UpdateContext({MyToDoList :  'MicrosoftTo-Do(Business)'.GetToDoListV2(PersonalConfigurationRecord.'To Do List ID')});
-                    
-                        UpdateContext({ CreatedTask : 'MicrosoftTo-Do(Business)'.CreateToDoV3(MyToDoList.id , ThisItem.Name)});
-                    
-                        //'MicrosoftTo-Do(Business)'.CreateToDo(ThisItem.Name, {DueDateTime : ThisItem.'Time due' });
-                    
-                        Patch('Outcome To Do Copies', Defaults('Outcome To Do Copies'), 
-                            {
-                                'Outcome Name': "Copied to To Do", 
-                                'Copied Outcome': ThisItem,
-                                Meeting: AssociatedMeetingRecord,
-                                'To Do ID': CreatedTask.id,
-                                'To Do List ID': MyToDoList.id
-                            });
-                            
-                            //Select(Btn_GetAssociatedMeetingData);
-                            Select(Btn_GetMyCopiedOutcomes);
-                            Notify("Outcome copied to 'To Do'", NotificationType.Success, 3000);
-                    
+                    =If(IsBlank(PersonalConfigurationRecord.'To Do List ID'),
+                        Notify("Please configure your 'To Do' list in settings. '", NotificationType.Error, 3000);
                         ,
-                        Notify("Outcome has already been copied to 'To Do'", NotificationType.Error, 3000);
+                    
+                        If(
+                            IsBlank(
+                                LookUp(
+                                    MyCopiedOutcomes,
+                                    'Copied Outcome'.Outcome = ThisItem.Outcome
+                                )
+                            ),
+                            
+                            UpdateContext({MyToDoList :  'MicrosoftTo-Do(Business)'.GetToDoListV2(PersonalConfigurationRecord.'To Do List ID')});
+                    
+                            UpdateContext({ CreatedTask : 'MicrosoftTo-Do(Business)'.CreateToDoV3(MyToDoList.id , ThisItem.Name)});
+                    
+                            //'MicrosoftTo-Do(Business)'.CreateToDo(ThisItem.Name, {DueDateTime : ThisItem.'Time due' });
+                    
+                            Patch('Outcome To Do Copies', Defaults('Outcome To Do Copies'), 
+                                {
+                                    'Outcome Name': "Copied to To Do", 
+                                    'Copied Outcome': ThisItem,
+                                    Meeting: AssociatedMeetingRecord,
+                                    'To Do ID': CreatedTask.id,
+                                    'To Do List ID': MyToDoList.id
+                                });
+                                
+                                //Select(Btn_GetAssociatedMeetingData);
+                                Select(Btn_GetMyCopiedOutcomes);
+                                Notify("Outcome copied to 'To Do'", NotificationType.Success, 3000);
+                    
+                            ,
+                            Notify("Outcome has already been copied to 'To Do'", NotificationType.Error, 3000);
+                        );
                     );
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)

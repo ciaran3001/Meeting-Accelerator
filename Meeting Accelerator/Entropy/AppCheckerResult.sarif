@@ -2804,36 +2804,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Image5_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Image5_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scn_ManageMeeting",
-                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Image5_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Image5_1.TabIndex"
                 }
               ],
@@ -2858,6 +2828,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Image5_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Image5_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scn_ManageMeeting",
+                "type": "Scn_ManageMeeting.Cnt_ShowAgendaItem.Gal_Outcomes.Image5_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
