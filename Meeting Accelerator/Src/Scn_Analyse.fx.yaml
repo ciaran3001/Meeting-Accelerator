@@ -586,6 +586,7 @@ Scn_Analyse As screen:
             Clear(PeopleWorkedWith);
             Clear(OutComesFromMyMeetings);
             Clear(MeetingsIAttendedFullRecord);
+            Clear(MeetingsAgendaGraphData);
             
             Set(CurrentMonthStartDay, Date(  Year(Now()) , Month(Now()), 1));
             
@@ -604,8 +605,11 @@ Scn_Analyse As screen:
             ForAll(MeetingsForThisMonth,
              If(ThisRecord.Meeting in MeetingsIAttendedReferences.Meeting,
                 Collect(MeetingsIAttendedFullRecord, ThisRecord);
+                Collect(MeetingsAgendaGraphData, { Completed : ThisRecord.'% Agenda Completed', Subject : ThisRecord.Subject});
              );
             );
+            
+            
             
             //Get all of the people I've worked With.
             ForAll(AttendancesForThisMonth,
