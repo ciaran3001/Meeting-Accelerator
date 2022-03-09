@@ -3664,6 +3664,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Scn_PrintMeetingSummary.Btn_PrintSummary.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_PrintMeetingSummary.Btn_PrintSummary.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scn_PrintMeetingSummary",
+                "type": "Scn_PrintMeetingSummary.Btn_PrintSummary"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.undraw_calendar_re_ki49"
                 }
               ],

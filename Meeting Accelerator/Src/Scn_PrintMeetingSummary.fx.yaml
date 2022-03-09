@@ -1,5 +1,6 @@
 Scn_PrintMeetingSummary As screen:
     LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+    OnVisible: =Select(Btn_PrintSummary);
 
     Label18 As Label:
         DisplayMode: =DisplayMode.Edit
@@ -305,4 +306,16 @@ Scn_PrintMeetingSummary As screen:
         X: =40
         Y: =130
         ZIndex: =14
+
+    Btn_PrintSummary As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |-
+            =Print();
+            Navigate(Scn_ManageMeeting);
+        PCFTeamsTheme: =TeamsTheme.Default
+        Width: =96
+        X: =39
+        Y: =46
+        ZIndex: =15
 

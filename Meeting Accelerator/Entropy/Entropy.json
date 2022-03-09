@@ -7,6 +7,7 @@
     "Btn_GetMyCopiedOutcomes": 294,
     "Btn_LoadAnalyticsData": 47,
     "Btn_LoadData": 110,
+    "Btn_PrintSummary": 346,
     "Btn_ProcessAttendees": 292,
     "Btn_RetreiveConfigurationRecord": 174,
     "Btn_RetreiveMeetingTypes": 175,
@@ -346,7 +347,7 @@
     "Value2": 289
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/09/2022 19:13:36",
+  "HeaderLastSavedDateTimeUTC": "03/09/2022 19:15:20",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -569,6 +570,7 @@
     "Btn_GetMyCopiedOutcomes": 174,
     "Btn_LoadAnalyticsData": 305,
     "Btn_LoadData": 57,
+    "Btn_PrintSummary": 0,
     "Btn_ProcessAttendees": 172,
     "Btn_RetreiveConfigurationRecord": 261,
     "Btn_RetreiveMeetingTypes": 262,
