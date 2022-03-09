@@ -884,6 +884,33 @@
                                     Y: =32
                                     ZIndex: =15
 
+                        Button1_53 As button:
+                            BorderColor: =
+                            BorderThickness: =0
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            Fill: =RGBA(0, 0, 0, 0)
+                            FocusedBorderThickness: =0
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            Height: =89
+                            HoverBorderColor: =RGBA(238, 140, 29, 0)
+                            HoverColor: =RGBA(255, 255, 255, 1)
+                            HoverFill: =
+                            OnSelect: =Select(Parent)
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =
+                            RadiusBottomLeft: =5
+                            RadiusBottomRight: =5
+                            RadiusTopLeft: =5
+                            RadiusTopRight: =5
+                            Size: =15
+                            Text: =""
+                            Width: =Gal_AgendaItems.Width - 10
+                            Y: =1
+                            ZIndex: =21
+
                     Button1_6 As button:
                         AlignInContainer: =AlignInContainer.Center
                         BorderColor: =
