@@ -1,7 +1,8 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =Set(SelectedMeetingTab, "Today");
+        =Set(Debug, false);
+        Set(SelectedMeetingTab, "Today");
         
         ClearCollect(SettingNavigationItems, 
             {label: "Preferences"},
