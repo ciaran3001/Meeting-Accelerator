@@ -695,7 +695,7 @@ Scn_HomeScreen As screen:
                     Text: =If(AgendaFound, " " , "We did not find an agenda for this meeting!")
                     Width: =395
                     X: =370
-                    Y: =265
+                    Y: =291
                     ZIndex: =7
 
                 Label2_4 As Label:

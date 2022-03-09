@@ -1253,7 +1253,8 @@
                                     
                                     Patch(AttendancesForThisMeeting, LookUp(AttendancesForThisMeeting, Attendance = ThisItem.Attendance),
                                     {
-                                        Attended : If(ThisItem.Attended, false, true)
+                                        Attended : If(ThisItem.Attended, false, true),
+                                        Role: ThisItem.Role
                                     });
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: |-
