@@ -368,6 +368,7 @@
                             ZIndex: =1
 
                         Button1_7 As button:
+                            AlignInContainer: =AlignInContainer.Center
                             BorderColor: =
                             BorderThickness: =0
                             Color: =RGBA(93, 95, 98, 1)
