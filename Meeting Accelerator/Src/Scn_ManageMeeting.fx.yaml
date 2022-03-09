@@ -1312,7 +1312,9 @@
                         HoverFill: |-
                             =ColorFade(ColorValue("#EE8C1D"), -20%)
                         OnSelect: |-
-                            =UpdateContext({ShowAddAgendaItemModal : true});
+                            =Navigate(Scn_PrintMeetingSummary);
+                            Print();
+                            Navigate(Scn_ManageMeeting);
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: |-
                             =ColorFade(ColorValue("#EE8C1D"), -20%)
