@@ -1215,6 +1215,8 @@
                                         Role : Self.Selected.Value
                                     }
                                     );
+                                    
+                                    Notify("Role updated for " & ThisItem.'Attendee Email', NotificationType.Information, 1000);
                                 PCFTeamsTheme: =TeamsTheme.Default
                                 Width: =185
                                 X: =37
