@@ -325,3 +325,67 @@ Scn_PrintMeetingSummary As screen:
         Y: =0
         ZIndex: =15
 
+    Container8 As groupContainer.manualLayoutContainer:
+        Height: =81
+        Width: =323
+        X: =1043
+        ZIndex: =16
+
+        Button1_61 As button:
+            BorderColor: =
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(238, 140, 29, 1)
+            FocusedBorderThickness: =0
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            OnSelect: =UpdateContext({});
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =15
+            Text: ="Print"
+            Width: =119
+            X: =9
+            Y: =20
+            ZIndex: =1
+
+        Button1_62 As button:
+            BorderColor: =
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(238, 140, 29, 1)
+            FocusedBorderThickness: =0
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(238, 140, 29, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            OnSelect: =Navigate(Scn_ManageMeeting);
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: |-
+                =ColorFade(ColorValue("#EE8C1D"), -20%)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =15
+            Text: ="Backl"
+            Width: =119
+            X: =147
+            Y: =20
+            ZIndex: =2
+

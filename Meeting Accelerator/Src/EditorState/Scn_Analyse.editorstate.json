@@ -7245,7 +7245,7 @@
         "Property": {
           "Category": "Design",
           "PropertyName": "FillPortions",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         "PropertyName": "FillPortions"
       },
@@ -7391,7 +7391,7 @@
       {
         "Category": "Design",
         "PropertyName": "XLabelAngle",
-        "RuleProviderType": "User"
+        "RuleProviderType": "Unknown"
       }
     ],
     "StyleName": "defaultLineChartStyle",
