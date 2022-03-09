@@ -1431,6 +1431,12 @@
             ClearCollect(ExistingOutComesForThisMeeting, Filter(Outcomes, Meeting.Meeting = AssociatedMeetingRecord.Meeting));
             
             UpdateContext({AgendaPercentCompleted : If(CountRows(AgendaItemsForThisMeeting) = 0, 0 ,RoundUp((CountRows(Filter(AgendaItemsForThisMeeting, Addressed = 'Addressed (Agenda Items)'.Yes)) / CountRows(AgendaItemsForThisMeeting) ) * 100, 0))});
+            
+            Patch(Meetings, LookUp(Meetings, Meeting = AssociatedMeetingRecord.Meeting),
+            {
+            '% Agenda Completed': AgendaPercentCompleted
+            }
+            );
         PCFTeamsTheme: =TeamsTheme.Default
         Visible: =false
         Width: =96
