@@ -2267,6 +2267,7 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(ThisItem.Name in AgendaItemsForThisMeeting.Name,  DisplayMode.Disabled,DisplayMode.Edit)
                 Fill: =RGBA(238, 140, 29, 1)
                 FocusedBorderThickness: =0
                 Font: =Font.'Segoe UI'
