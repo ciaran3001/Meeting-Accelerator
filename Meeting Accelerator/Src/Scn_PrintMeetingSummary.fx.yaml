@@ -79,7 +79,7 @@ Scn_PrintMeetingSummary As screen:
             OnSelect: =Select(Parent)
             PCFTeamsTheme: =TeamsTheme.Default
             TabIndex: =-1
-            Text: =Text(ThisItem.'Time due', "dd/mm/yyyy")
+            Text: =If(IsBlank(ThisItem.'Time due'), "No Time Set", Text(ThisItem.'Time due', "dd/mm/yyyy"))
             VerticalAlignment: =VerticalAlign.Middle
             Width: =143
             X: =495
