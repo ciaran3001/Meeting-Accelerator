@@ -368,7 +368,7 @@
     "Value2": 289
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/09/2022 21:01:02",
+  "HeaderLastSavedDateTimeUTC": "03/09/2022 21:03:23",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -457,7 +457,7 @@
     "Attendees\\default.cds_ciarank_attendee_views": 52,
     "CurrentMeetingAttendees": 69,
     "CustomGallerySample": 54,
-    "Durations": 89,
+    "Durations": 83,
     "ExistingOutComesForThisMeeting": 70,
     "LegendSample": 55,
     "LineChartSample": 65,
@@ -474,7 +474,8 @@
     "Meetings\\ciarank_meeting_statuscode": 12,
     "Meetings\\default.cds_ciarank_meeting_views": 47,
     "MeetingsForThisMonth": 86,
-    "MeetingsIAttended": 83,
+    "MeetingsIAttendedFullRecord": 89,
+    "MeetingsIAttendedReferences": 91,
     "MicrosoftTo-Do(Business)": 0,
     "MyCopiedOutcomes": 75,
     "MyMeetings": 71,
@@ -491,8 +492,8 @@
     "Outcomes\\default.cds_ciarank_outcome_views": 48,
     "OutcomesForThisAgenda": 74,
     "OutcomesForThisMonth": 85,
-    "OutComesFromMyMeetings": 88,
-    "PeopleWorkedWith": 82,
+    "OutComesFromMyMeetings": 82,
+    "PeopleWorkedWith": 88,
     "Personal Configurations": 64,
     "Personal Configurations\\ciarank_personalconfiguration_statecode": 35,
     "Personal Configurations\\ciarank_personalconfiguration_statuscode": 36,
@@ -1003,6 +1004,6 @@
       "timer": 2
     },
     "DeserializationLoadTime": 5.7732683,
-    "ErrorCount": 2
+    "ErrorCount": 14
   }
 }

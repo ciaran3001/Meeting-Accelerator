@@ -439,7 +439,7 @@ Scn_Analyse As screen:
                         HoverBorderColor: =RGBA(99, 139, 44, 1)
                         ItemColorSet: |-
                             =[ColorValue("#EE8C1D")]
-                        Items: =MeetingsIAttended
+                        Items: =MeetingsIAttendedFullRecord
                         PressedBorderColor: =RGBA(255, 191, 0, 1)
                         Size: =15
                         X: =40
@@ -582,9 +582,10 @@ Scn_Analyse As screen:
         OnSelect: |-
             =UpdateContext({LoadingAnalytics : true});
             
-            Clear(MeetingsIAttended);
+            Clear(MeetingsIAttendedReferences);
             Clear(PeopleWorkedWith);
             Clear(OutComesFromMyMeetings);
+            Clear(MeetingsIAttendedFullRecord);
             
             Set(CurrentMonthStartDay, Date(  Year(Now()) , Month(Now()), 1));
             
@@ -595,9 +596,15 @@ Scn_Analyse As screen:
             
             //Get Meetings that I attended
             ForAll(AttendancesForThisMonth,
-                If(ThisRecord.'Attendee Email' = User().Email And !(ThisRecord.Meeting.Meeting in MeetingsIAttended.Meeting),
-                    Collect(MeetingsIAttended, ThisRecord.Meeting);
+                If(ThisRecord.'Attendee Email' = User().Email And !(ThisRecord.Meeting.Meeting in MeetingsIAttendedReferences.Meeting),
+                    Collect(MeetingsIAttendedReferences, ThisRecord.Meeting);
                 );
+            );
+            
+            ForAll(MeetingsForThisMonth,
+             If(ThisRecord.Meeting in MeetingsIAttendedReferences.Meeting,
+                Collect(MeetingsIAttendedFullRecord, ThisRecord);
+             );
             );
             
             //Get all of the people I've worked With.
