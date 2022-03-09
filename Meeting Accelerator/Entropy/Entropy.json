@@ -93,7 +93,6 @@
     "ComboBox2": 318,
     "ComboBox3": 217,
     "ComboBox4": 288,
-    "CompositeLineChart1": 37,
     "Container1": 68,
     "Container10": 266,
     "Container11": 228,
@@ -298,7 +297,6 @@
     "Label8_1": 234,
     "Label9": 263,
     "Lbl_NoOutcomesInGallery": 321,
-    "Legend1": 36,
     "LineChart1": 35,
     "MainSectionContainer1": 232,
     "Meeting Accelerator ID1": 227,
@@ -354,7 +352,6 @@
     "Title11_1": 127,
     "Title11_2": 134,
     "Title11_3": 133,
-    "Title2": 34,
     "Title3": 287,
     "Title4": 44,
     "Title5": 163,
@@ -371,7 +368,7 @@
     "Value2": 289
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/09/2022 20:58:15",
+  "HeaderLastSavedDateTimeUTC": "03/09/2022 20:59:22",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -525,11 +522,6 @@
     "Users\\systemuser_setupuser": 19
   },
   "OrderGroupControls": {
-    "CompositeLineChart1": {
-      "Legend1": 2,
-      "LineChart1": 1,
-      "Title2": 0
-    },
     "Group1": {
       "Circle1": 1,
       "Label6_3": 3,
@@ -571,21 +563,20 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 4,
-    "circle": 15,
+    "circle": 14,
     "gallery": 1,
     "groupContainer": 0,
-    "htmlViewer": 11,
-    "icon": 9,
+    "htmlViewer": 10,
+    "icon": 8,
     "image": 3,
-    "label": 5,
-    "legend": 7,
-    "lineChart": 6,
-    "pcfDataField": 10,
-    "pieChart": 14,
+    "label": 6,
+    "lineChart": 5,
+    "pcfDataField": 9,
+    "pieChart": 13,
     "rectangle": 2,
-    "richTextEditor": 13,
-    "text": 12,
-    "timer": 8
+    "richTextEditor": 12,
+    "text": 11,
+    "timer": 7
   },
   "PublishOrderIndices": {
     "Agenda Detected1": 99,
@@ -680,7 +671,6 @@
     "ComboBox2": 200,
     "ComboBox3": 97,
     "ComboBox4": 169,
-    "CompositeLineChart1": 307,
     "Container1": 15,
     "Container10": 147,
     "Container11": 108,
@@ -885,7 +875,6 @@
     "Label8_1": 114,
     "Label9": 116,
     "Lbl_NoOutcomesInGallery": 203,
-    "Legend1": 310,
     "LineChart1": 309,
     "MainSectionContainer1": 112,
     "Meeting Accelerator ID1": 107,
@@ -941,7 +930,6 @@
     "Title11_1": 342,
     "Title11_2": 349,
     "Title11_3": 348,
-    "Title2": 308,
     "Title3": 168,
     "Title4": 317,
     "Title5": 252,

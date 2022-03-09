@@ -318,20 +318,6 @@
     "TemplateDisplayName": "Label",
     "Version": "1.5.1"
   },
-  "legend": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/legend",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "legend",
-    "OverridableProperties": {},
-    "Version": "2.1.0"
-  },
   "lineChart": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,

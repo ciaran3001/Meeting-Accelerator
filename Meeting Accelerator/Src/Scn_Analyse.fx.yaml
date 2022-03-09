@@ -426,66 +426,25 @@ Scn_Analyse As screen:
                         Y: =15
                         ZIndex: =1
 
-                    CompositeLineChart1 As group:
-                        Height: =5
-                        LayoutMinHeight: =5
-                        LayoutMinWidth: =5
-                        Width: =5
+                    LineChart1 As lineChart:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(128, 128, 128, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisplayMode: =DisplayMode.View
+                        FillPortions: =1
+                        Font: =Font.'Segoe UI'
+                        HoverBorderColor: =RGBA(99, 139, 44, 1)
+                        ItemColorSet: |-
+                            =[ColorValue("#EE8C1D")]
+                        Items: =MeetingsIAttended
+                        PressedBorderColor: =RGBA(255, 191, 0, 1)
+                        Size: =15
                         X: =40
-                        Y: =40
-                        ZIndex: =1
-
-                        Title2 As label:
-                            Align: =Align.Center
-                            AlignInContainer: =AlignInContainer.Center
-                            Color: =RGBA(37, 36, 35, 1)
-                            DisabledColor: =RGBA(200, 198, 196, 1)
-                            Font: =Font.'Segoe UI'
-                            Height: =25
-                            Text: ="Chart Title"
-                            Width: =400
-                            X: =40
-                            Y: =40
-                            ZIndex: =2
-
-                        LineChart1 As lineChart:
-                            AlignInContainer: =AlignInContainer.Stretch
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            BorderStyle: =BorderStyle.None
-                            BorderThickness: =2
-                            Color: =RGBA(128, 128, 128, 1)
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisplayMode: =DisplayMode.View
-                            Font: =Font.'Segoe UI'
-                            HoverBorderColor: =RGBA(99, 139, 44, 1)
-                            ItemColorSet: |-
-                                =[ColorValue("#EE8C1D")]
-                            Items: =Meetings
-                            PressedBorderColor: =RGBA(255, 191, 0, 1)
-                            Size: =15
-                            X: =40
-                            Y: =70
-                            ZIndex: =3
-
-                        Legend1 As legend:
-                            AlignInContainer: =AlignInContainer.Center
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            BorderStyle: =BorderStyle.None
-                            BorderThickness: =2
-                            Color: =RGBA(37, 36, 35, 1)
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledColor: =RGBA(200, 198, 196, 1)
-                            DisabledFill: =RGBA(220, 220, 220, 1)
-                            Font: =Font.'Segoe UI'
-                            Height: =80
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            ItemColorSet: =LineChart1.ItemColorSet
-                            Items: =LineChart1.SeriesLabels
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            Width: =320
-                            X: =80
-                            Y: =480
-                            ZIndex: =4
+                        Y: =70
+                        ZIndex: =3
 
                 Container19 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0.4
