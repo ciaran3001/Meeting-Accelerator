@@ -172,7 +172,6 @@
     "Image5": 45,
     "Image5_1": 295,
     "Image6": 268,
-    "Image7": 264,
     "Image8": 58,
     "Image8_1": 147,
     "Image8_2": 10,
@@ -314,7 +313,7 @@
     "Value1": 299
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/09/2022 12:15:11",
+  "HeaderLastSavedDateTimeUTC": "03/09/2022 12:15:18",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -701,7 +700,6 @@
     "Image5": 297,
     "Image5_1": 200,
     "Image6": 173,
-    "Image7": 169,
     "Image8": 5,
     "Image8_1": 223,
     "Image8_2": 262,
