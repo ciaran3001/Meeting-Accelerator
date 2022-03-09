@@ -1112,7 +1112,7 @@
 
                     Container13_1 As groupContainer.manualLayoutContainer:
                         FillPortions: =0
-                        Height: =500
+                        Height: =400
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         Width: =400
