@@ -1295,6 +1295,38 @@
                             Y: =0
                             ZIndex: =2
 
+                    Button1_52 As button:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =
+                        BorderThickness: =0
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(238, 140, 29, 1)
+                        FocusedBorderThickness: =0
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =35
+                        HoverBorderColor: =RGBA(238, 140, 29, 1)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        OnSelect: |-
+                            =UpdateContext({ShowAddAgendaItemModal : true});
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: |-
+                            =ColorFade(ColorValue("#EE8C1D"), -20%)
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
+                        Size: =12
+                        Text: ="Print Summary"
+                        Width: =140
+                        X: =108
+                        Y: =276
+                        ZIndex: =3
+
     Tmr_MeetingTimerLoop As timer:
         AutoStart: =true
         BorderColor: =RGBA(98, 100, 167, 1)
