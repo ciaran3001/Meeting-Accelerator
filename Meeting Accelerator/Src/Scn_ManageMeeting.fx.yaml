@@ -2280,8 +2280,8 @@
                     =Collect(AgendaItemsForThisMeeting,
                         Patch('Agenda Items', Defaults('Agenda Items'), 
                         { 
-                        Name: Inpt_AgendaItemName.Text,
-                        Description: Inpt_AgendaItemDesc.HtmlText,
+                        Name: ThisItem.Name,
+                        Description:  "No Description Entered",
                         Meeting: AssociatedMeetingRecord
                     
                         })
