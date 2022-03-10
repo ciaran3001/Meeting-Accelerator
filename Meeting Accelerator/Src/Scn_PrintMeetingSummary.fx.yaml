@@ -300,7 +300,7 @@ Scn_PrintMeetingSummary As screen:
             =Text(DateTimeValue(SelectedMeeting.start), "hh:mm") & " to " & Text(DateTimeValue(SelectedMeeting.end), "hh:mm") & " ("& DateDiff(SelectedMeeting.start, SelectedMeeting.end,Minutes) & " mins)"
         Width: =320
         X: =40
-        Y: =78
+        Y: =58
         ZIndex: =12
 
     Label6_11 As Label:
@@ -313,7 +313,7 @@ Scn_PrintMeetingSummary As screen:
             ="Meeting Type: " & AssociatedMeetingRecord.'Meeting Type'.Name
         Width: =320
         X: =39
-        Y: =106
+        Y: =86
         ZIndex: =13
 
     Label6_12 As Label:
@@ -321,14 +321,14 @@ Scn_PrintMeetingSummary As screen:
         DisplayMode: =DisplayMode.Edit
         FontSize: =12
         FontWeight: =FontWeight.Normal
-        Height: =31
+        Height: =32
         NoWrap: =true
         Text: |-
             ="Follow up Meeting:" & AssociatedMeetingRecord.'Follow up Meeting Record'.Subject
         Visible: = If(!IsBlank(AssociatedMeetingRecord.'Follow up Meeting Record'), true, false)
-        Width: =320
+        Width: =577
         X: =40
-        Y: =130
+        Y: =110
         ZIndex: =14
 
     Container8 As groupContainer.manualLayoutContainer:
