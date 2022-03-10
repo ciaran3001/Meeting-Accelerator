@@ -3,10 +3,4 @@ Meeting accelerator is an application designed to be used directly from Microsof
 
 This applicaiton acts as a wrapper around your outlook meetings calendar, and integrates with elements from Microsoft's producivity stack, giving you a one-stop-shop dashboard to use while conducting your meetings. 
 
-# Agenda Management
-
-
-# Persona Assignments
-
-
-# Generating Outcomes
+For more information see, https://www.ciarankelly.ie/meeting-accelerator/
