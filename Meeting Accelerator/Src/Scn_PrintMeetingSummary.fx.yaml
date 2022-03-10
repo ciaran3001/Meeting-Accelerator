@@ -75,7 +75,7 @@ Scn_PrintMeetingSummary As screen:
             Text: =ThisItem.Name
             VerticalAlignment: =VerticalAlign.Middle
             Width: =411
-            X: =72
+            X: =87
             Y: =0
             ZIndex: =3
 
@@ -208,7 +208,7 @@ Scn_PrintMeetingSummary As screen:
         PCFTeamsTheme: =TeamsTheme.Default
         Text: ="Outcome"
         Width: =376
-        X: =430
+        X: =445
         Y: =136
         ZIndex: =6
 
