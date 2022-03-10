@@ -4384,19 +4384,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scn_Configuration.Cnt_AddMeetingComponent.TextBox1.AccessibleLabel"
+                  "fullyQualifiedName": "Scn_Configuration.Cnt_AddMeetingComponent.Inpt_AgendaOrMeetingName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scn_Configuration.Cnt_AddMeetingComponent.TextBox1.AccessibleLabel",
+                  "fullyQualifiedName": "Scn_Configuration.Cnt_AddMeetingComponent.Inpt_AgendaOrMeetingName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scn_Configuration",
-                "type": "Scn_Configuration.Cnt_AddMeetingComponent.TextBox1"
+                "type": "Scn_Configuration.Cnt_AddMeetingComponent.Inpt_AgendaOrMeetingName"
               }
             }
           ],

@@ -430,8 +430,9 @@
                         HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Add
-                        OnSelect: |-
-                            =UpdateContext({AddEditAgendaItemDefinition : true});
+                        OnSelect: |+
+                            =UpdateContext({AddEditAgendaItemDefinition : true, Mode : "New"});
+                            
                         PaddingBottom: =5
                         PaddingLeft: =3
                         PaddingRight: =3
@@ -551,7 +552,7 @@
                             HoverFill: =RGBA(0, 0, 0, 0)
                             Icon: =Icon.Edit
                             OnSelect: |-
-                                =UpdateContext({AddEditAgendaItemDefinition : true});
+                                =UpdateContext({AddEditAgendaItemDefinition : true, AgendaToEdit : ThisItem, Mode:"Edit"});
                             PaddingBottom: =5
                             PaddingLeft: =3
                             PaddingRight: =3
@@ -576,7 +577,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Edit
                         OnSelect: |-
-                            =UpdateContext({AddEditMeetingType : true});
+                            =UpdateContext({AddEditMeetingType : true, MeetingTypeToEdit : ThisItem, Mode:"Edit"});
                         PaddingBottom: =5
                         PaddingLeft: =3
                         PaddingRight: =3
@@ -1044,6 +1045,26 @@
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
+            OnSelect: |+
+                =
+                
+                If(Mode = "New",
+                    
+                    //Add new
+                    false
+                    ,
+                    If(AddEditMeetingType,
+                    //Update existing meeting type or agenda item. 
+                
+                     Patch('Meeting Types', LookUp('Meeting Types', 'Meeting Type' = MeetingTypeToEdit.'Meeting Type'), { Name : Inpt_AgendaOrMeetingName.Value } );
+                     ,
+                     Patch('Agenda Item Definitions', LookUp('Agenda Item Definitions', 'Agenda Item Definition' = AgendaToEdit.'Agenda Item Definition'), { Name : Inpt_AgendaOrMeetingName.Value } );
+                    )
+                );
+                
+                Select(Btn_RetreiveMeetingTypes);
+                UpdateContext({AddEditMeetingType : false, AddEditAgendaItemDefinition: false});
+                
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
@@ -1057,10 +1078,19 @@
             Y: =301
             ZIndex: =6
 
-        "TextBox1 As 'Text box'":
+        "Inpt_AgendaOrMeetingName As 'Text box'":
             DisplayMode: =DisplayMode.Edit
             Height: =32
             PCFTeamsTheme: =TeamsTheme.Default
+            Value: |+
+                =
+                
+                If(Mode = "New",
+                Blank()
+                    ,
+                    If(AddEditMeetingType, MeetingTypeToEdit.Name, AgendaToEdit.Name)
+                )
+                
             Width: =320
             X: =220
             Y: =115
