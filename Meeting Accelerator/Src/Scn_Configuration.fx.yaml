@@ -446,6 +446,32 @@
                         Y: =36
                         ZIndex: =6
 
+                    Icon5_2 As icon.Add:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        Height: =32
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Edit
+                        OnSelect: |-
+                            =UpdateContext({AddEditMeetingType : true, MeetingTypeToEdit : ThisItem, Mode:"Edit"});
+                        PaddingBottom: =5
+                        PaddingLeft: =3
+                        PaddingRight: =3
+                        PaddingTop: =5
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: =!ThisItem.DummyRecord
+                        Width: =32
+                        X: =177
+                        Y: =35
+                        ZIndex: =9
+
                     Gallery5 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
                         BorderColor: =RGBA(243, 242, 241, 1)
                         DelayItemLoading: =true
@@ -463,7 +489,7 @@
                         Width: =227
                         X: =8
                         Y: =67
-                        ZIndex: =9
+                        ZIndex: =10
 
                         Rectangle6 As rectangle:
                             BorderColor: =RGBA(243, 242, 241, 1)
@@ -564,32 +590,6 @@
                             X: =163
                             Y: =8
                             ZIndex: =5
-
-                    Icon5_2 As icon.Add:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(243, 242, 241, 1)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        Height: =32
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Edit
-                        OnSelect: |-
-                            =UpdateContext({AddEditMeetingType : true, MeetingTypeToEdit : ThisItem, Mode:"Edit"});
-                        PaddingBottom: =5
-                        PaddingLeft: =3
-                        PaddingRight: =3
-                        PaddingTop: =5
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Visible: =!ThisItem.DummyRecord
-                        Width: =32
-                        X: =177
-                        Y: =35
-                        ZIndex: =10
 
                     Group6 As group:
                         Height: =5
