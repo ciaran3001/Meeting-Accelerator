@@ -75,7 +75,7 @@ Scn_PrintMeetingSummary As screen:
             Text: =ThisItem.Name
             VerticalAlignment: =VerticalAlign.Middle
             Width: =411
-            X: =87
+            X: =133
             Y: =0
             ZIndex: =3
 
@@ -90,8 +90,8 @@ Scn_PrintMeetingSummary As screen:
             TabIndex: =-1
             Text: =If(IsBlank(ThisItem.'Time due'), "No Time Set", Text(ThisItem.'Time due', "dd/mm/yyyy"))
             VerticalAlignment: =VerticalAlign.Middle
-            Width: =143
-            X: =495
+            Width: =113
+            X: =544
             Y: =0
             ZIndex: =4
 
@@ -99,7 +99,7 @@ Scn_PrintMeetingSummary As screen:
             Alignment: =Align.Center
             DisplayMode: =DisplayMode.Edit
             FontSize: =10
-            FontWeight: =FontWeight.Semibold
+            FontWeight: =FontWeight.Normal
             Height: =48
             OnSelect: =Select(Parent)
             PCFTeamsTheme: =TeamsTheme.Default
@@ -107,9 +107,25 @@ Scn_PrintMeetingSummary As screen:
             Text: =ThisItem.'Outcome Type'
             VerticalAlignment: =VerticalAlign.Middle
             Width: =72
-            X: =0
+            X: =56
             Y: =0
             ZIndex: =5
+
+        Title11_4 As Label:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =8
+            FontWeight: =FontWeight.Bold
+            Height: =48
+            OnSelect: =Select(Parent)
+            PCFTeamsTheme: =TeamsTheme.Default
+            TabIndex: =-1
+            Text: =ThisItem.'Reference Number'
+            VerticalAlignment: =VerticalAlign.Middle
+            Width: =56
+            X: =0
+            Y: =0
+            ZIndex: =6
 
     Gallery7_1 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
         BorderThickness: =2
@@ -196,7 +212,7 @@ Scn_PrintMeetingSummary As screen:
         PCFTeamsTheme: =TeamsTheme.Default
         Text: ="Type"
         Width: =53
-        X: =377
+        X: =421
         Y: =136
         ZIndex: =5
 
@@ -208,19 +224,19 @@ Scn_PrintMeetingSummary As screen:
         PCFTeamsTheme: =TeamsTheme.Default
         Text: ="Outcome"
         Width: =376
-        X: =445
-        Y: =136
+        X: =487
+        Y: =135
         ZIndex: =6
 
     Label18_3 As Label:
         DisplayMode: =DisplayMode.Edit
         FontSize: =10
         FontWeight: =FontWeight.Bold
-        Height: =36
+        Height: =37
         PCFTeamsTheme: =TeamsTheme.Default
         Text: ="Due Date"
-        Width: =106
-        X: =893
+        Width: =90
+        X: =921
         Y: =138
         ZIndex: =7
 
@@ -381,4 +397,16 @@ Scn_PrintMeetingSummary As screen:
             X: =147
             Y: =20
             ZIndex: =2
+
+    Label18_8 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =10
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        PCFTeamsTheme: =TeamsTheme.Default
+        Text: ="Ref"
+        Width: =53
+        X: =359
+        Y: =139
+        ZIndex: =17
 
