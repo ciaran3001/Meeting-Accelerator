@@ -1065,7 +1065,7 @@
                         If(AddEditMeetingType,
                         //Update existing meeting type or agenda item. 
                 
-                        Patch('Meeting Types', LookUp('Meeting Types', 'Meeting Type' = MeetingTypeToEdit.'Meeting Type'), { Name : Inpt_AgendaOrMeetingName.Value } );
+                        Patch('Meeting Types', LookUp('Meeting Types', 'Meeting Type' = MeetingTypeToEdit.ciarank_meetingtypeid), { Name : Inpt_AgendaOrMeetingName.Value } );
                         ,
                         Patch('Agenda Item Definitions', LookUp('Agenda Item Definitions', 'Agenda Item Definition' = AgendaToEdit.'Agenda Item Definition'), { Name : Inpt_AgendaOrMeetingName.Value } );
                         )
