@@ -374,7 +374,7 @@
     "Value2": 313
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/10/2022 14:09:30",
+  "HeaderLastSavedDateTimeUTC": "03/10/2022 14:09:48",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -1010,7 +1010,7 @@
       "Microsoft_CoreControls_Button": 8,
       "Microsoft_CoreControls_ComboBox": 6,
       "Microsoft_CoreControls_DatePicker": 1,
-      "Microsoft_CoreControls_Label": 107,
+      "Microsoft_CoreControls_Label": 108,
       "pcfDataField": 15,
       "pieChart": 2,
       "rectangle": 17,
