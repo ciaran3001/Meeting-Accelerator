@@ -382,7 +382,7 @@
                         OnSelect: =Select(Parent)
                         PCFTeamsTheme: =TeamsTheme.Default
                         TabIndex: =-1
-                        Text: =ThisItem.Name
+                        Text: =ThisItem.ciarank_name
                         VerticalAlignment: =VerticalAlign.Top
                         Visible: =!ThisItem.DummyRecord
                         Width: =134
@@ -402,7 +402,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
                         OnSelect: |-
-                            =RemoveIf('Meeting Types', 'Meeting Type' = ThisItem.'Meeting Type');
+                            =RemoveIf('Meeting Types', 'Meeting Type' = ThisItem.ciarank_meetingtypeid);
                             Notify("Meeting Type Removed", NotificationType.Success, 2000);
                             
                             Select(Btn_RetreiveMeetingTypes);
@@ -452,7 +452,7 @@
                         FocusedBorderColor: =RGBA(98, 100, 167, 1)
                         FocusedBorderThickness: =2
                         Height: =183
-                        Items: =Filter(local_AgendaItemDefinitions, 'Meeting Type'.'Meeting Type'  = ThisItem.'Meeting Type')
+                        Items: =Filter(local_AgendaItemDefinitions, 'Meeting Type'.'Meeting Type'  = ThisItem.ciarank_meetingtypeid)
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
                         ShowNavigation: =true
@@ -658,8 +658,9 @@
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |
-            =ClearCollect(local_MeetingTypes, AddColumns('Meeting Types', "DummyRecord", false));
-            Collect(local_MeetingTypes, {'Meeting Type' : Blank(), DummyRecord : true});
+            =ClearCollect(local_MeetingTypes, AddColumns(ShowColumns('Meeting Types', "ciarank_meetingtypeid", "ciarank_name"), "DummyRecord", false));
+            Collect(local_MeetingTypes, { DummyRecord : true});
+            
             
             ClearCollect(local_AgendaItemDefinitions,'Agenda Item Definitions');
         PCFTeamsTheme: =TeamsTheme.Default
@@ -1056,7 +1057,9 @@
                         If(AddEditMeetingType,
                         Patch('Meeting Types', Defaults('Meeting Types'), { Name : Inpt_AgendaOrMeetingName.Value } );
                         ,
-                        Patch('Agenda Item Definitions', Defaults('Agenda Item Definitions'), { Name : Inpt_AgendaOrMeetingName.Value, 'Meeting Type': MeetingTypeToCreateAgendaItemFor} );
+                        UpdateContext({ ParentMeetingType : LookUp('Meeting Types', 'Meeting Type' = MeetingTypeToCreateAgendaItemFor.ciarank_meetingtypeid) });
+                
+                        Patch('Agenda Item Definitions', Defaults('Agenda Item Definitions'), { Name : Inpt_AgendaOrMeetingName.Value, 'Meeting Type': ParentMeetingType });
                         )
                         ,
                         If(AddEditMeetingType,
@@ -1094,7 +1097,7 @@
                 If(Mode = "New",
                 Blank()
                     ,
-                    If(AddEditMeetingType, MeetingTypeToEdit.Name, AgendaToEdit.Name)
+                    If(AddEditMeetingType, MeetingTypeToEdit.ciarank_name, AgendaToEdit.Name)
                 )
                 
             Width: =320
