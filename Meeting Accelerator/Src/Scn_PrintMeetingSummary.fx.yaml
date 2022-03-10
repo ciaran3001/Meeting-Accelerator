@@ -322,6 +322,7 @@ Scn_PrintMeetingSummary As screen:
         FontSize: =12
         FontWeight: =FontWeight.Normal
         Height: =31
+        NoWrap: =true
         Text: |-
             ="Follow up Meeting:" & AssociatedMeetingRecord.'Follow up Meeting Record'.Subject
         Visible: = If(!IsBlank(AssociatedMeetingRecord.'Follow up Meeting Record'), true, false)
