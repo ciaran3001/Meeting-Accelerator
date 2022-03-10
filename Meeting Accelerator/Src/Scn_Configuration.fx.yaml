@@ -1045,30 +1045,32 @@
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
-            OnSelect: |+
+            OnSelect: |
                 =
+                If(IsBlank(Inpt_AgendaOrMeetingName.Value),
+                    Notify("Please enter a name value", NotificationType.Error, 2000);
+                ,
+                    If(Mode = "New",
+                        
+                        //Add new
+                        If(AddEditMeetingType,
+                        Patch('Meeting Types', Defaults('Meeting Types'), { Name : Inpt_AgendaOrMeetingName.Value } );
+                        ,
+                        Patch('Agenda Item Definitions', Defaults('Agenda Item Definitions'), { Name : Inpt_AgendaOrMeetingName.Value, 'Meeting Type': MeetingTypeToCreateAgendaItemFor} );
+                        )
+                        ,
+                        If(AddEditMeetingType,
+                        //Update existing meeting type or agenda item. 
                 
-                If(Mode = "New",
-                    
-                    //Add new
-                    If(AddEditMeetingType,
-                     Patch('Meeting Types', Defaults('Meeting Types'), { Name : Inpt_AgendaOrMeetingName.Value } );
-                     ,
-                     Patch('Agenda Item Definitions', Defaults('Agenda Item Definitions'), { Name : Inpt_AgendaOrMeetingName.Value, 'Meeting Type': MeetingTypeToCreateAgendaItemFor} );
-                    )
-                    ,
-                    If(AddEditMeetingType,
-                    //Update existing meeting type or agenda item. 
+                        Patch('Meeting Types', LookUp('Meeting Types', 'Meeting Type' = MeetingTypeToEdit.'Meeting Type'), { Name : Inpt_AgendaOrMeetingName.Value } );
+                        ,
+                        Patch('Agenda Item Definitions', LookUp('Agenda Item Definitions', 'Agenda Item Definition' = AgendaToEdit.'Agenda Item Definition'), { Name : Inpt_AgendaOrMeetingName.Value } );
+                        )
+                    );
                 
-                     Patch('Meeting Types', LookUp('Meeting Types', 'Meeting Type' = MeetingTypeToEdit.'Meeting Type'), { Name : Inpt_AgendaOrMeetingName.Value } );
-                     ,
-                     Patch('Agenda Item Definitions', LookUp('Agenda Item Definitions', 'Agenda Item Definition' = AgendaToEdit.'Agenda Item Definition'), { Name : Inpt_AgendaOrMeetingName.Value } );
-                    )
+                    Select(Btn_RetreiveMeetingTypes);
+                    UpdateContext({AddEditMeetingType : false, AddEditAgendaItemDefinition: false});
                 );
-                
-                Select(Btn_RetreiveMeetingTypes);
-                UpdateContext({AddEditMeetingType : false, AddEditAgendaItemDefinition: false});
-                
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: |-
                 =ColorFade(ColorValue("#EE8C1D"), -20%)
