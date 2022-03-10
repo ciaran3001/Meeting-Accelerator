@@ -445,48 +445,6 @@
                         Y: =36
                         ZIndex: =6
 
-                    Image10 As image:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        Height: =104
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: =AddItem
-                        OnSelect: =Select(Parent)
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        RadiusBottomLeft: =3
-                        RadiusBottomRight: =3
-                        RadiusTopLeft: =3
-                        RadiusTopRight: =3
-                        Visible: =ThisItem.DummyRecord
-                        Width: =112
-                        X: =65
-                        Y: =68
-                        ZIndex: =7
-
-                    Title5_1 As Label:
-                        Alignment: =Align.Center
-                        Color: =RGBA(238, 140, 29, 1)
-                        DisplayMode: =DisplayMode.Edit
-                        FontSize: =10.5
-                        FontWeight: =FontWeight.Bold
-                        Height: =47
-                        OnSelect: =Select(Parent)
-                        Overflow: ='''Microsoft.CoreControls.Label.Overflow'''.Hidden
-                        PCFTeamsTheme: =TeamsTheme.Default
-                        TabIndex: =-1
-                        Text: ="Add Meeting Type"
-                        VerticalAlignment: =VerticalAlign.Top
-                        Visible: =ThisItem.DummyRecord
-                        Width: =134
-                        X: =54
-                        Y: =172
-                        ZIndex: =8
-
                     Gallery5 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
                         BorderColor: =RGBA(243, 242, 241, 1)
                         DelayItemLoading: =true
@@ -631,6 +589,57 @@
                         X: =177
                         Y: =35
                         ZIndex: =10
+
+                    Group6 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =11
+
+                        Image10 As image:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            Height: =104
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Image: =AddItem
+                            OnSelect: |-
+                                =UpdateContext({AddEditMeetingType : true, Mode:"New", Entity:"Meeting"});
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            RadiusBottomLeft: =3
+                            RadiusBottomRight: =3
+                            RadiusTopLeft: =3
+                            RadiusTopRight: =3
+                            Visible: =ThisItem.DummyRecord
+                            Width: =112
+                            X: =65
+                            Y: =68
+                            ZIndex: =7
+
+                        Title5_1 As Label:
+                            Alignment: =Align.Center
+                            Color: =RGBA(238, 140, 29, 1)
+                            DisplayMode: =DisplayMode.Edit
+                            FontSize: =10.5
+                            FontWeight: =FontWeight.Bold
+                            Height: =47
+                            OnSelect: |-
+                                =UpdateContext({AddEditMeetingType : true, Mode:"New", Entity:"Meeting"});
+                            Overflow: ='''Microsoft.CoreControls.Label.Overflow'''.Hidden
+                            PCFTeamsTheme: =TeamsTheme.Default
+                            TabIndex: =-1
+                            Text: ="Add Meeting Type"
+                            VerticalAlignment: =VerticalAlign.Top
+                            Visible: =ThisItem.DummyRecord
+                            Width: =134
+                            X: =54
+                            Y: =172
+                            ZIndex: =8
 
     Btn_RetreiveConfigurationRecord As Button:
         DisplayMode: =DisplayMode.Edit
@@ -969,8 +978,11 @@
             Height: =55
             PCFTeamsTheme: =TeamsTheme.Default
             Text: |-
-                =
-                If(AddEditMeetingType, "Add Meeting Type", "Add Agenda Item")
+                =If(Mode = "New",
+                    If(AddEditMeetingType, "Add Meeting Type", "Add Agenda Item")
+                    ,
+                    If(AddEditMeetingType, "Edit Meeting Type", "Edit Agenda Item")
+                )
             Width: =760
             X: =0
             Y: =0
@@ -1007,14 +1019,14 @@
             ZIndex: =4
 
         Label11_5 As Label:
-            Alignment: =Align.Center
+            Alignment: =Align.Justify
             DisplayMode: =DisplayMode.Edit
             Height: =28
             PCFTeamsTheme: =TeamsTheme.Default
             Text: |-
-                ="Based of the type of meeting, we suggest the following agenda items:"
-            Width: =613
-            X: =84
+                ="Name:"
+            Width: =320
+            X: =225
             Y: =87
             ZIndex: =5
 
@@ -1044,4 +1056,13 @@
             X: =225
             Y: =301
             ZIndex: =6
+
+        "TextBox1 As 'Text box'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            PCFTeamsTheme: =TeamsTheme.Default
+            Width: =320
+            X: =220
+            Y: =115
+            ZIndex: =7
 

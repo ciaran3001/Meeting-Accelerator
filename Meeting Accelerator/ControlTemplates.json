@@ -416,6 +416,21 @@
     "OverridableProperties": {},
     "Version": "2.3.1"
   },
+  "Text box": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_TextBox",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "Microsoft_CoreControls_TextBox",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Text box",
+    "Version": "1.6.1"
+  },
   "timer": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
