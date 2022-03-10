@@ -905,9 +905,9 @@
             ZIndex: =10
 
     Cnt_AddMeetingComponent As groupContainer.manualLayoutContainer:
-        Height: =373
+        Height: =326
         Visible: =AddEditMeetingType Or AddEditAgendaItemDefinition
-        Width: =760
+        Width: =685
         X: =App.Width / 2 - (Cnt_AddMeetingComponent.Width / 2)
         Y: =App.Height / 2 - (Cnt_AddMeetingComponent.Height / 2)
         ZIndex: =6
@@ -1015,8 +1015,8 @@
             Size: =15
             Text: ="Close"
             Width: =159
-            X: =415
-            Y: =301
+            X: =358
+            Y: =237
             ZIndex: =4
 
         Label11_5 As Label:
@@ -1027,8 +1027,8 @@
             Text: |-
                 ="Name:"
             Width: =320
-            X: =225
-            Y: =87
+            X: =185
+            Y: =105
             ZIndex: =5
 
         Button1_59 As button:
@@ -1080,8 +1080,8 @@
             RadiusTopRight: =5
             Size: =15
             Text: ="Save"
-            X: =225
-            Y: =301
+            X: =168
+            Y: =237
             ZIndex: =6
 
         "Inpt_AgendaOrMeetingName As 'Text box'":
@@ -1098,7 +1098,7 @@
                 )
                 
             Width: =320
-            X: =220
-            Y: =115
+            X: =180
+            Y: =133
             ZIndex: =7
 
