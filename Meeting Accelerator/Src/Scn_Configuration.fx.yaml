@@ -401,7 +401,11 @@
                         HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
-                        OnSelect: =Select(Parent)
+                        OnSelect: |-
+                            =RemoveIf('Meeting Types', 'Meeting Type' = ThisItem.'Meeting Type');
+                            Notify("Meeting Type Removed", NotificationType.Success, 2000);
+                            
+                            Select(Btn_RetreiveMeetingTypes);
                         PaddingBottom: =5
                         PaddingLeft: =3
                         PaddingRight: =3
@@ -562,7 +566,10 @@
                             HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
                             HoverFill: =RGBA(0, 0, 0, 0)
                             Icon: =Icon.Trash
-                            OnSelect: =Select(Parent)
+                            OnSelect: |-
+                                =RemoveIf('Agenda Item Definitions', 'Agenda Item Definition' = ThisItem.'Agenda Item Definition');
+                                Notify("Agenda Item Definition Removed", NotificationType.Success, 2000);
+                                Select(Btn_RetreiveMeetingTypes);
                             PaddingBottom: =5
                             PaddingLeft: =3
                             PaddingRight: =3

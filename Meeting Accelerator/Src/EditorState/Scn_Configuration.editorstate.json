@@ -97,7 +97,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Btn_RetreiveMeetingTypes",
-    "ParentIndex": 4,
+    "ParentIndex": 3,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -3486,7 +3486,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Cnt_AddMeetingComponent",
-    "ParentIndex": 3,
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -5829,7 +5829,7 @@
       {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "defaultIconStyle",
@@ -6498,7 +6498,7 @@
       {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "User"
       }
     ],
     "StyleName": "defaultIconStyle",

@@ -4174,6 +4174,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Gallery5.Icon5_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Gallery5.Icon5_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scn_Configuration",
+                "type": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Gallery5.Icon5_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Gallery5.Icon5_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Gallery5.Icon5_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Scn_Configuration",
+                "type": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Gallery5.Icon5_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Icon5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Icon5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scn_Configuration",
+                "type": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Icon5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Icon5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Scn_Configuration",
+                "type": "Scn_Configuration.ScreenContainer2.RightSideContainer2.Cnt_Settings_MeetingTypes.Gallery3.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.undraw_calendar_re_ki49"
                 }
               ],
