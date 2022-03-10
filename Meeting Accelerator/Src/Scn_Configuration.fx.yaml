@@ -640,9 +640,9 @@
     Btn_RetreiveMeetingTypes As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        OnSelect: |-
+        OnSelect: |
             =ClearCollect(local_MeetingTypes, AddColumns('Meeting Types', "DummyRecord", false));
-            Collect(local_MeetingTypes, { DummyRecord : true});
+            Collect(local_MeetingTypes, {'Meeting Type' : Blank(), DummyRecord : true});
             
             ClearCollect(local_AgendaItemDefinitions,'Agenda Item Definitions');
         PCFTeamsTheme: =TeamsTheme.Default
