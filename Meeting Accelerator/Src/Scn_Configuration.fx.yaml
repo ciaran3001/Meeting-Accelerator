@@ -431,7 +431,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Add
                         OnSelect: |+
-                            =UpdateContext({AddEditAgendaItemDefinition : true, Mode : "New"});
+                            =UpdateContext({AddEditAgendaItemDefinition : true, Mode : "New", MeetingTypeToCreateAgendaItemFor: ThisItem});
                             
                         PaddingBottom: =5
                         PaddingLeft: =3
@@ -1051,7 +1051,11 @@
                 If(Mode = "New",
                     
                     //Add new
-                    false
+                    If(AddEditMeetingType,
+                     Patch('Meeting Types', Defaults('Meeting Types'), { Name : Inpt_AgendaOrMeetingName.Value } );
+                     ,
+                     Patch('Agenda Item Definitions', Defaults('Agenda Item Definitions'), { Name : Inpt_AgendaOrMeetingName.Value, 'Meeting Type': MeetingTypeToCreateAgendaItemFor} );
+                    )
                     ,
                     If(AddEditMeetingType,
                     //Update existing meeting type or agenda item. 
